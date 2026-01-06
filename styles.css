@@ -1086,7 +1086,40 @@
             /* (保留你原有的样式...) */
             animation: cardEntrance 0.5s ease-out backwards; /* backwards 保证开始前是透明的 */
         }
+        
+        /* =============================================
+        ★ 补丁：顶部按钮一行两个 + 容器占满全屏
+        (请加在 @media (max-width: 850px) 的最后面)
+        ============================================= */
 
+        /* 1. 顶部按钮容器：允许更小宽度 */
+        .view-toggle {
+            width: 100% !important;
+            min-width: 0 !important;    /* 覆盖掉全局的 350px 限制 */
+            padding: 0 10px !important;
+            box-sizing: border-box;
+            gap: 10px !important;
+            justify-content: flex-start !important;
+        }
+
+        /* 2. 按钮本体：强制 50% 宽度 */
+        .view-btn, .ranking-main-btn {
+            width: calc(50% - 5px) !important; /* (100% - 10px间距) / 2 */
+            flex: none !important;
+            min-width: 0 !important;
+            margin: 0 !important;
+            font-size: 0.85em !important; /* 字体稍微改小一点点防止换行 */
+            padding: 10px 2px !important;
+        }
+
+        /* 3. 全局容器：减少两侧留白 (让排行榜变宽) */
+        .container {
+            padding: 0 6px !important; /* 从 20px 改为 6px */
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+        }
+        
         /* =========================================
         排行榜 (Ranking) 专用样式
         ========================================= */
