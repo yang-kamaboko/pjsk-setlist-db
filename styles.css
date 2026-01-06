@@ -1053,472 +1053,86 @@
         }
         
         /* =========================================
-        手机/平板 适配 (强制换行)
-        ========================================= */
-        @media (max-width: 850px) {
-            .setlist-header {
-                /* ★ 关键：手机上切回 Flex 布局，否则 Grid 没法自动换行 */
-                display: flex; 
-                flex-wrap: wrap; 
-                gap: 10px;
-            }
-
-            /* 手机上按钮组的样式 */
-            .session-switch-group {
-                width: 100%; /* 手机上占满一行 */
-                margin-top: 10px;
-                background: transparent;
-                padding: 0;
-                order: 3; /* 强制排到最后 */
-                flex-wrap: wrap;
-            }
-            
-            .session-btn {
-                flex: 1;
-                text-align: center;
-                background: #f4f4f4;
-                margin-bottom: 5px;
-                min-width: 80px;
-            }
-            
-            /* 确保标题和保存按钮在第一行两端 */
-            .setlist-title { order: 1; }
-            .save-btn { order: 2; margin-left: auto; }
-        }
-
-        /* === Medley 颜色 (磨砂透白风格) === */
-        .badge-medley-glass {
-            /* 背景：白色，带很高透明度 */
-            background: rgba(255, 255, 255, 0.85);
-            /* 如果浏览器支持，加个模糊滤镜 */
-            backdrop-filter: blur(4px);
-            
-            color: #000;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        /* 定义动画关键帧 */
-        @keyframes modalPop {
-            0% {
-                opacity: 0;
-                transform: scale(0.95) translateY(10px); /* 开始时稍微小一点，位置偏下 */
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1) translateY(0);       /* 结束时恢复正常 */
-            }
-        }
-
-        /* 应用给模态窗内容 */
-        .modal-content {
-            /* 在原有的样式基础上，加上这一行 */
-            animation: modalPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-            /* cubic-bezier 让它带一点点回弹效果，像果冻一样 */
-        }
-
-        /* 定义卡片进场动画 */
-        @keyframes cardEntrance {
-            from {
-                opacity: 0;
-                transform: translateY(20px); /* 从下方20px处浮上来 */
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* 给卡片加上这个动画，但默认暂停，等JS给延迟 */
-        .event-card {
-            /* (保留你原有的样式...) */
-            animation: cardEntrance 0.5s ease-out backwards; /* backwards 保证开始前是透明的 */
-        }
-
-        /* =========================================
-        排行榜 (Ranking) 专用样式
-        ========================================= */
-
-        /* 1. 顶部大按钮样式 */
-        .ranking-main-btn {
-            width: 100% !important;     /* 强制占满一行 */
-            flex: none !important;      /* 不参与均分 */
-            background: linear-gradient(135deg, #fff, #f9f9f9);
-            border: 2px solid #ffd700 !important; /* 金色边框 */
-            color: #d4a000 !important;
-            font-size: 1.1em !important;
-            margin-bottom: 5px;
-        }
-        .ranking-main-btn.active {
-            background: linear-gradient(135deg, #ffd700, #ffb300) !important;
-            color: white !important;
-            border-color: #ffb300 !important;
-            box-shadow: 0 4px 15px rgba(255, 179, 0, 0.4);
-        }
-
-        /* === 2. 筛选器区域 (修改版：整齐排列) === */
-        .ranking-filters {
-            background: white;
-            padding: 15px;
-            border-radius: 12px;
-            margin-bottom: 20px;
-            
-            display: flex;        /* 弹性布局 */
-            flex-wrap: wrap;      /* 允许换行 */
-            align-items: center;
-            gap: 10px;            /* 按钮之间的间距 */
-            
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        /* 标题样式：让它独占一行，或者在手机上更好看 */
-        .filter-label { 
-            width: 100%;          /* ★ 关键：强制占满一行，把按钮挤到下一行去 */
-            font-weight: bold; 
-            color: #444; 
-            margin-bottom: 5px;   /* 和下面的按钮拉开距离 */
-            font-size: 0.95em;
-            border-left: 4px solid var(--primary-color); /* 加个竖线装饰更好看 */
-            padding-left: 10px;
-        }
-
-        /* 筛选开关按钮 */
-        .filter-chip {
-            /* ★ 关键：flex: 1 让四个按钮平分宽度 */
-            flex: 1;              
-            
-            padding: 10px 0;      /* 增加高度，更容易点击 */
-            text-align: center;   /* 文字居中 */
-            
-            border-radius: 8px;   /* 改成圆角矩形，稍微方一点，像上面的按钮 */
-            border: 1px solid #ddd;
-            background: #f8f9fa;
-            color: #666;
-            cursor: pointer;
-            font-size: 0.9em;
-            font-weight: bold;
-            transition: all 0.2s;
-            
-            /* 防止按钮被压得太扁 */
-            min-width: 80px;      
-            white-space: nowrap;
-        }
-
-        /* 鼠标悬停 */
-        .filter-chip:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        /* 选中状态：保持原来的渐变色逻辑 */
-        .filter-chip.active { color: white; border: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        /* 具体的颜色定义保持不变 */
-        .filter-chip.active[onclick*="'1'"] { background: linear-gradient(135deg, #ff5f6d, #ffc371); }
-        .filter-chip.active[onclick*="'2'"] { background: linear-gradient(135deg, #f09819, #edde5d); }
-        .filter-chip.active[onclick*="'3'"] { background: linear-gradient(135deg, #ab47bc, #7b1fa2); }
-        .filter-chip.active[onclick*="'4'"] { background: linear-gradient(135deg, #00c6ff, #0072ff); }
-
-        /* === 3. 排行榜列表项 (紧凑版) === */
-        .ranking-row {
-            background: white;
-            border-radius: 8px; /* 圆角稍微小一点 */
-            
-            /* ★★★ 修改 1：减小垂直内边距 (10px -> 6px) ★★★ */
-            padding: 6px 15px; 
-            margin-bottom: 8px; /* 间距也紧凑一点 */
-            
-            display: grid;
-            /* ★★★ 修改 2：调整列宽 (图片列改为 45px) ★★★ */
-            /* 布局：排名(45px) | 封面(45px) | 歌名(自适应) | 回数(80px) | 标签(240px) */
-            grid-template-columns: 45px 45px 1fr 80px 240px; 
-            
-            align-items: center;
-            gap: 15px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* 阴影变浅一点，更扁平 */
-            transition: transform 0.2s;
-        }
-        .ranking-row:hover { transform: translateX(3px); }
-
-        /* 排名数字 */
-        .rank-num {
-            font-size: 1.4em; /* 稍微缩小 */
-            font-weight: bold;
-            color: #888;      /* 默认灰色 (前三名会被覆盖) */
-            text-align: center;
-            font-family: 'Impact', sans-serif;
-            line-height: 1;   /* 防止撑开高度 */
-        }
-
-        /* 前三名金银铜 (保持不变，但可以微调大小) */
-        .rank-1 { color: #FFD700; font-size: 1.8em; }
-        .rank-2 { color: #C0C0C0; font-size: 1.6em; }
-        .rank-3 { color: #CD7F32; font-size: 1.5em; }
-
-        /* ★★★ 修改 3：封面图缩小 ★★★ */
-        .rank-cover {
-            width: 45px;
-            height: 45px;
-            border-radius: 4px;
-            object-fit: cover;
-            background: #eee;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        /* 歌名容器 */
-        .rank-song-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            overflow: hidden;
-            /* 字体稍微改小一点，显得精致 */
-            font-size: 0.95em; 
-        }
-
-        /* ★★★ 修改 4：回数盒子 (删掉了 label 的样式，调整数字样式) ★★★ */
-        .rank-count-box {
-            text-align: center;
-            background: #f1f8fa; /* 接近图中的浅青色背景 */
-            padding: 6px 0;      /* 减小内边距 */
-            border-radius: 6px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: fit-content;
-        }
-
-        .rank-count-num {
-            font-size: 1.1em;
-            font-weight: bold;
-            color: #00b0ba; /* 接近图中的青色字体 */
-            line-height: 1;
-        }
-
-        /* 活动标签容器 */
-        .rank-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 4px;
-            justify-content: flex-end; 
-            align-content: center;
-            height: 100%;
-        }
-
-        /* 标签样式 (微调) */
-        .rank-tag {
-            font-size: 0.6em;
-            padding: 2px 8px;
-            border-radius: 6px;
-            color: white;
-            white-space: nowrap;
-            height: fit-content;
-        }
-
-        /* =========================================
-        6. 排行榜标签悬停浮窗 (Tooltip) - 美化版
-        ========================================= */
-
-        /* 1. 锚点设定 */
-        .rank-tag {
-            position: relative;
-            cursor: help;
-        }
-
-        /* 新增：淡入小动画定义 */
-        @keyframes tooltipFadeUp {
-            from { opacity: 0; transform: translate(-50%, 8px); } /* 初始在下排一点，透明 */
-            to   { opacity: 1; transform: translate(-50%, 0); }   /* 最终到位 */
-        }
-
-        /* 2. 浮窗本体 (白底卡片风) */
-        .rank-tag[data-tooltip]:hover::after {
-            content: attr(data-tooltip);
-            
-            position: absolute;
-            bottom: 135%;
-            left: 50%;
-            /* transform 由动画控制 */
-            
-            background-color: #ffffff;
-            
-            /* ★★★ 修改 1：颜色改为主题色 (初音未来色) ★★★ */
-            color: var(--primary-color); 
-            
-            border: 1px solid #e8e8e8;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.12),
-                        0 2px 6px rgba(0,0,0,0.08);
-
-            padding: 12px 16px;
-            border-radius: 10px;
-            
-            /* ★★★ 修改 2：字体加粗，并稍微调大一点点以防模糊 ★★★ */
-            font-size: 0.95em; 
-            font-weight: bold;
-            
-            font-family: sans-serif;
-            line-height: 1.6;
-            white-space: pre;
-            text-align: left;
-            
-            min-width: 220px;
-            max-width: 500px;
-            width: max-content;
-            
-            z-index: 1000;
-            pointer-events: none;
-
-            /* 应用动画 */
-            animation: tooltipFadeUp 0.2s ease-out forwards;
-        }
-
-        /* 3. 浮窗的小三角 (白色箭头) */
-        .rank-tag[data-tooltip]:hover::before {
-            content: '';
-            position: absolute;
-            bottom: 125%;         /* 位置配合本体微调 */
-            left: 50%;
-            /* transform 由动画控制 */
-            
-            border: 8px solid transparent; /* 三角形稍微大一点 */
-            border-top-color: #ffffff;     /* ★ 改成白色，和本体融合 */
-            z-index: 1001;                 /* 比本体高一层，盖住边框线 */
-            
-            /* 应用同样的动画 */
-            animation: tooltipFadeUp 0.2s ease-out forwards;
-            /* 为了让三角看起来也有阴影（高级技巧）：用 filter 给它加个投影 */
-            filter: drop-shadow(0 3px 2px rgba(0,0,0,0.05));
-        }
-
-        /* 4. 没有内容时不显示 */
-        .rank-tag[data-tooltip=""]:hover::after,
-        .rank-tag[data-tooltip=""]:hover::before {
-            display: none;
-            animation: none; /* 不显示时禁用动画 */
-        }
-        
-        /* =========================================
-        7. 排行榜“加载更多”按钮
-        ========================================= */
-        .ranking-load-more-btn {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            margin-top: 20px;
-            
-            background-color: #f8f9fa;
-            border: 2px dashed #ddd; /* 虚线边框，表示“这里还有内容” */
-            border-radius: 12px;
-            
-            color: #666;
-            font-size: 1em;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .ranking-load-more-btn:hover {
-            background-color: #f0f0f0;
-            border-color: #ccc;
-            color: #333;
-            transform: translateY(-2px);
-        }
-
-        .ranking-load-more-btn i {
-            margin-right: 8px;
-        }
-
-        /* =========================================
-        9. 排行榜容器瘦身 (布局调整)
-        ========================================= */
-
-        /* 1. 限制排行榜整体的宽度，并居中 */
-        #rankingView {
-            max-width: 850px; /* ★★★ 核心：限制最大宽度为 850px (你可以根据喜好调整这个数字) ★★★ */
-            margin: 0 auto;   /* 左右自动边距，实现居中 */
-            width: 100%;      /* 在手机等小屏幕上仍然占满 */
-        }
-
-        /* 2. 微调筛选器区域 (让它适应变窄的宽度) */
-        .ranking-filters {
-            padding: 10px 15px; /* 减小一点内边距 */
-            gap: 8px;           /* 减小按钮间距 */
-            /* 保持 flex 布局，宽度会自动跟随 #rankingView */
-        }
-
-        /* 3. 微调筛选按钮 (集計対象) */
-        .filter-chip {
-            padding: 8px 0;    /* 高度稍微变矮一点，更精致 */
-            font-size: 0.85em; /* 字体稍微小一点点 */
-            min-width: 60px;   /* 允许按钮压得更扁一点，防止换行 */
-        }
-
-        /* 4. 如果你想让最上面的“黄色大奖杯按钮”也变窄和下面对齐 (可选) */
-        /* 注意：如果你的黄色按钮是在 #rankingView 外面，你需要给那个按钮加这个样式 */
-        .ranking-main-btn {
-            max-width: 850px; /* 和排行榜保持一样的宽度 */
-            margin-left: auto !important;  /* 强制居中 */
-            margin-right: auto !important;
-        }
-
-      /* =============================================
-   ★ 手机端最终完美适配 (Mobile Final) ★
-   包含：歌单单列显示 + 排行榜清爽布局
-   ============================================= */
+   手机/平板 最终整合适配 (Mobile Final)
+   包含：
+   1. 歌单详情页：单列显示 + 标题防遮挡
+   2. 排行榜：左图右文 + 数据横排在歌名下方
+   ========================================= */
 @media (max-width: 850px) {
 
-    /* --- Part 1: 排行榜 (Ranking) 优化 --- */
+    /* --- Part 1: 详情页 (Setlist) 修复 --- */
     
-    /* 1. 排行榜单行容器：用 Flex 布局防止挤压 */
+    .setlist-header {
+        display: flex !important; 
+        flex-wrap: wrap !important; 
+        gap: 10px !important;
+    }
+
+    /* 手机上按钮组的样式 */
+    .session-switch-group {
+        width: 100% !important; 
+        margin-top: 10px !important;
+        background: transparent !important;
+        padding: 0 !important;
+        order: 3 !important; 
+        flex-wrap: wrap !important;
+    }
+    
+    .session-btn {
+        flex: 1 !important;
+        text-align: center !important;
+        background: #f4f4f4 !important;
+        margin-bottom: 5px !important;
+        min-width: 80px !important;
+    }
+    
+    /* 确保标题和保存按钮在第一行两端 */
+    .setlist-title { order: 1 !important; }
+    .save-btn { order: 2 !important; margin-left: auto !important; }
+
+    /* 歌单强制单列 */
+    #modalSongs {
+        flex-direction: column !important; 
+        gap: 0 !important;
+    }
+
+    .setlist-column {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* 歌名换行修复 */
+    .song-row {
+        padding: 10px 8px !important;
+    }
+    .song-title {
+        white-space: normal !important;
+        word-break: break-word !important;
+    }
+    
+    /* 水印变淡 */
+    .unit-watermark {
+        opacity: 0.15 !important;
+        z-index: 0 !important;
+    }
+    
+    /* 弹窗宽度 */
+    .modal-content {
+        width: 95% !important;
+        margin: 10px auto !important;
+    }
+
+
+    /* --- Part 2: 排行榜 (Ranking) 最终布局 --- */
+    /* 目标：左边排名+图，右边歌名，歌名下方横排数据 */
+
+    /* 1. 整体容器：横排 */
     .ranking-row {
         display: flex !important;
         flex-direction: row !important;
         align-items: center !important;
         padding: 8px 10px !important;
-        gap: 12px !important; /* 元素之间的间距 */
-        height: auto !important;
-    }
-
-    /* 2. 排名数字：固定宽度，不许变大 */
-    .rank-num {
-        width: 25px !important;
-        font-size: 1.1em !important;
-        text-align: center !important;
-        flex-shrink: 0 !important; /* 禁止被压缩 */
-        margin: 0 !important;
-    }
-
-    /* 3. 封面图：固定 48px 正方形 */
-    .rank-cover {
-        width: 48px !important;
-        height: 48px !important;
-        border-radius: 6px !important;
-        flex-shrink: 0 !important;
-        margin: 0 !important;
-        object-fit: cover;
-    }
-
-    /* 4. 右侧信息区：占满剩余空间 */
-    .rank-song-info {
-        flex: 1 !important;
-        display: flex !important;
-        flex-direction: column !important; /* 上下排列 */
-        justify-content: center !important;
-        min-width: 0 !important; /* 关键：防止文字溢出 */
-    }
-    
-    /* =============================================
-   ★ 手机端最终布局修正 (Mobile Layout Fix) ★
-   目标：将回数和标签移到歌名下方，横向排列
-   ============================================= */
-@media (max-width: 850px) {
-
-    /* 1. 排行榜整体容器：强制不换行，左中右结构 */
-    .ranking-row {
-        display: flex !important;
-        flex-direction: row !important; /* 强制横排 */
-        align-items: center !important; /* 垂直居中 */
-        flex-wrap: nowrap !important;   /* 禁止折行 */
-        padding: 8px 10px !important;
-        gap: 0 !important; /* 间距由内部元素控制 */
+        gap: 0 !important; 
         height: auto !important;
     }
 
@@ -1537,53 +1151,51 @@
         width: 50px !important;
         height: 50px !important;
         border-radius: 6px !important;
-        margin: 0 12px 0 5px !important; /* 右边留点空隙给歌名 */
+        margin: 0 12px 0 5px !important; /* 右边留空隙 */
         flex-shrink: 0 !important;
         object-fit: cover;
     }
 
-    /* 4. 右侧：歌名+数据容器 (这就是那个红框区域) */
+    /* 4. 右侧：歌名+数据容器 (红框区域) */
     .rank-song-info {
-        flex: 1 !important; /* 占满剩下的所有宽度 */
+        flex: 1 !important; /* 占满剩余宽度 */
         display: flex !important;
-        flex-direction: column !important; /* 上下排列：上面歌名，下面标签 */
+        flex-direction: column !important; /* 上下排列 */
         justify-content: center !important;
         align-items: flex-start !important; /* 左对齐 */
-        min-width: 0 !important; /* 防止文字过长撑爆屏幕 */
+        min-width: 0 !important; 
     }
 
     /* 5. 歌名样式 */
     .rank-song-info div[style*="font-weight:bold"] {
         font-size: 1em !important;
         line-height: 1.3 !important;
-        margin-bottom: 4px !important; /* 和下面的标签拉开一点距离 */
-        
-        /* 歌名太长就显示省略号，保持整洁 */
+        margin-bottom: 6px !important; /* 和下面的标签拉开距离 */
         white-space: nowrap !important; 
         overflow: hidden !important;
         text-overflow: ellipsis !important;
         width: 100% !important;
     }
 
-    /* 6. 核心修改：数据栏 (蓝框内容) */
+    /* 6. 数据栏 (蓝框内容)：横排显示 */
     .rank-meta-mobile {
         display: flex !important;
-        flex-direction: row !important; /* ★ 强制横排！★ */
+        flex-direction: row !important; /* ★ 强制横排 */
         align-items: center !important;
-        flex-wrap: nowrap !important;   /* 尽量一行显示 */
-        gap: 6px !important;            /* 标签之间的间距 */
+        flex-wrap: nowrap !important;
+        gap: 6px !important;
         width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
         border: none !important;
-        overflow-x: auto !important;    /* 如果标签实在太多，允许横向滑动 */
+        overflow-x: auto !important; /* 允许横向滑动 */
     }
 
-    /* 7. 那个“11回”的小胶囊 */
+    /* 7. “11回”小胶囊 */
     .rank-meta-mobile > div:first-child span {
         font-size: 0.75em !important;
-        background-color: #e0f7fa !important; /* 浅青色背景 */
-        color: #00acc1 !important;            /* 深青色文字 */
+        background-color: #e0f7fa !important; 
+        color: #00acc1 !important;            
         padding: 2px 6px !important;
         border-radius: 4px !important;
         display: inline-block !important;
@@ -1591,7 +1203,7 @@
         font-weight: bold !important;
     }
 
-    /* 8. 其他彩色标签 */
+    /* 8. 标签小胶囊 */
     .rank-tag {
         font-size: 0.6em !important;
         padding: 2px 5px !important;
@@ -1601,19 +1213,8 @@
         margin: 0 !important;
     }
     
-    /* 隐藏电脑端的大组件 */
+    /* 隐藏电脑端组件 */
     .rank-count-box, .rank-tags.mobile-hidden {
         display: none !important;
     }
-
-    /* --- 下面是详情页(Setlist)的修复，保持不动 --- */
-    #modalSongs { flex-direction: column !important; gap: 0 !important; }
-    .setlist-column { width: 100% !important; }
-    .song-row { padding: 10px 8px !important; }
-    .song-title { white-space: normal !important; }
-    /* ...其他详情页样式保持你之前觉得满意的状态... */
-    .unit-watermark { opacity: 0.15 !important; z-index: 0 !important; }
-    #modalTitle { position: relative; z-index: 5 !important; }
-    .modal-content { width: 95% !important; margin: 10px auto !important; }
-}
 }
