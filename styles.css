@@ -1050,40 +1050,6 @@
         #actionBar {
             display: none !important;
         }
-        
-        /* =========================================
-        手机/平板 适配 (强制换行)
-        ========================================= */
-        @media (max-width: 850px) {
-            .setlist-header {
-                /* ★ 关键：手机上切回 Flex 布局，否则 Grid 没法自动换行 */
-                display: flex; 
-                flex-wrap: wrap; 
-                gap: 10px;
-            }
-
-            /* 手机上按钮组的样式 */
-            .session-switch-group {
-                width: 100%; /* 手机上占满一行 */
-                margin-top: 10px;
-                background: transparent;
-                padding: 0;
-                order: 3; /* 强制排到最后 */
-                flex-wrap: wrap;
-            }
-            
-            .session-btn {
-                flex: 1;
-                text-align: center;
-                background: #f4f4f4;
-                margin-bottom: 5px;
-                min-width: 80px;
-            }
-            
-            /* 确保标题和保存按钮在第一行两端 */
-            .setlist-title { order: 1; }
-            .save-btn { order: 2; margin-left: auto; }
-        }
 
         /* === Medley 颜色 (磨砂透白风格) === */
         .badge-medley-glass {
