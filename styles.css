@@ -1265,42 +1265,170 @@
             height: fit-content;
         }
 
-        /* 手机适配 (必须更新，否则手机上会挤坏) */
+        /* =========================================
+        手机/平板 最终整合适配 (Mobile Final)
+        包含：
+        1. 歌单详情页：单列显示 + 标题防遮挡
+        2. 排行榜：左图右文 + 数据横排在歌名下方
+        ========================================= */
         @media (max-width: 850px) {
-            .tag-medley {
-                padding: 1px 5px;
-                font-size: 0.65em;
-                margin-left: 6px;
+
+            /* --- Part 1: 详情页 (Setlist) 修复 --- */
+            
+            .setlist-header {
+                display: flex !important; 
+                flex-wrap: wrap !important; 
+                gap: 10px !important;
             }
 
-            .ranking-row {
-                /* 手机上变成两行，恢复原来的灵活布局 */
-                grid-template-columns: 40px 50px 1fr;
-                grid-template-rows: auto auto;
-                gap: 10px;
-                padding: 10px;
+            /* 手机上按钮组的样式 */
+            .session-switch-group {
+                width: 100% !important; 
+                margin-top: 10px !important;
+                background: transparent !important;
+                padding: 0 !important;
+                order: 3 !important; 
+                flex-wrap: wrap !important;
             }
             
-            /* 隐藏电脑端专用的列 */
-            .rank-count-box.mobile-hidden { display: none; }
-            .rank-tags.mobile-hidden { display: none; }
+            .session-btn {
+                flex: 1 !important;
+                text-align: center !important;
+                background: #f4f4f4 !important;
+                margin-bottom: 5px !important;
+                min-width: 80px !important;
+            }
             
-            /* 排名和图片跨两行 */
-            .rank-num { grid-row: 1 / 3; align-self: center; font-size: 1.2em; } 
-            .rank-cover { grid-row: 1 / 3; align-self: center; width: 50px; height: 50px; } 
+            /* 确保标题和保存按钮在第一行两端 */
+            .setlist-title { order: 1 !important; }
+            .save-btn { order: 2 !important; margin-left: auto !important; }
+
+            /* 歌单强制单列 */
+            #modalSongs {
+                flex-direction: column !important; 
+                gap: 0 !important;
+            }
+
+            .setlist-column {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            /* 歌名换行修复 */
+            .song-row {
+                padding: 10px 8px !important;
+            }
+            .song-title {
+                white-space: normal !important;
+                word-break: break-word !important;
+            }
             
-            /* 标题在第一行 */
-            .rank-song-info { grid-column: 3; }
+            /* 水印变淡 */
+            .unit-watermark {
+                opacity: 0.15 !important;
+                z-index: 0 !important;
+            }
             
-            /* 手机专用的混合信息栏 */
+            /* 弹窗宽度 */
+            .modal-content {
+                width: 95% !important;
+                margin: 10px auto !important;
+            }
+
+
+            /* --- Part 2: 排行榜 (Ranking) 最终布局 --- */
+            /* 目标：左边排名+图，右边歌名，歌名下方横排数据 */
+
+            /* 1. 整体容器：横排 */
+            .ranking-row {
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                padding: 8px 10px !important;
+                gap: 0 !important; 
+                height: auto !important;
+            }
+
+            /* 2. 左侧：排名 (固定宽度) */
+            .rank-num {
+                width: 30px !important;
+                min-width: 30px !important;
+                font-size: 1.1em !important;
+                text-align: center !important;
+                margin: 0 !important;
+                flex-shrink: 0 !important;
+            }
+
+            /* 3. 左侧：封面图 (固定大小) */
+            .rank-cover {
+                width: 50px !important;
+                height: 50px !important;
+                border-radius: 6px !important;
+                margin: 0 12px 0 5px !important; /* 右边留空隙 */
+                flex-shrink: 0 !important;
+                object-fit: cover;
+            }
+
+            /* 4. 右侧：歌名+数据容器 (红框区域) */
+            .rank-song-info {
+                flex: 1 !important; /* 占满剩余宽度 */
+                display: flex !important;
+                flex-direction: column !important; /* 上下排列 */
+                justify-content: center !important;
+                align-items: flex-start !important; /* 左对齐 */
+                min-width: 0 !important; 
+            }
+
+            /* 5. 歌名样式 */
+            .rank-song-info div[style*="font-weight:bold"] {
+                font-size: 1em !important;
+                line-height: 1.3 !important;
+                margin-bottom: 6px !important; /* 和下面的标签拉开距离 */
+                white-space: nowrap !important; 
+                overflow: hidden !important;
+                text-overflow: ellipsis !important;
+                width: 100% !important;
+            }
+
+            /* 6. 数据栏 (蓝框内容)：横排显示 */
             .rank-meta-mobile {
-                grid-column: 3;
-                display: flex !important; /* 强制显示 */
-                justify-content: space-between;
-                align-items: center;
-                margin-top: 5px;
-                border-top: 1px dashed #eee;
-                padding-top: 5px;
+                display: flex !important;
+                flex-direction: row !important; /* ★ 强制横排 */
+                align-items: center !important;
+                flex-wrap: nowrap !important;
+                gap: 6px !important;
+                width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                border: none !important;
+                overflow-x: auto !important; /* 允许横向滑动 */
+            }
+
+            /* 7. “11回”小胶囊 */
+            .rank-meta-mobile > div:first-child span {
+                font-size: 0.75em !important;
+                background-color: #e0f7fa !important; 
+                color: #00acc1 !important;            
+                padding: 2px 6px !important;
+                border-radius: 4px !important;
+                display: inline-block !important;
+                white-space: nowrap !important;
+                font-weight: bold !important;
+            }
+
+            /* 8. 标签小胶囊 */
+            .rank-tag {
+                font-size: 0.6em !important;
+                padding: 2px 5px !important;
+                height: auto !important;
+                white-space: nowrap !important;
+                display: inline-block !important;
+                margin: 0 !important;
+            }
+            
+            /* 隐藏电脑端组件 */
+            .rank-count-box, .rank-tags.mobile-hidden {
+                display: none !important;
             }
         }
 
