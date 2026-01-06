@@ -1278,42 +1278,113 @@
             height: fit-content;
         }
 
-        /* 手机适配 (必须更新，否则手机上会挤坏) */
+        /* =============================================
+        ★ 手机端终极修复包 (Mobile Ultimate Fix) ★
+        请确保这段代码在 styles.css 的最底端
+        ============================================= */
         @media (max-width: 850px) {
-            .tag-medley {
-                padding: 1px 5px;
-                font-size: 0.65em;
-                margin-left: 6px;
+            
+            /* 1. 强制歌单变成单列显示 (关键修复！) */
+            #modalSongs {
+                flex-direction: column !important; /* 上下堆叠，不再左右并排 */
+                gap: 0 !important;
             }
 
-            .ranking-row {
-                /* 手机上变成两行，恢复原来的灵活布局 */
-                grid-template-columns: 40px 50px 1fr;
-                grid-template-rows: auto auto;
-                gap: 10px;
-                padding: 10px;
+            /* 每一列占满宽度 */
+            .setlist-column {
+                width: 100% !important;
+                max-width: 100% !important;
+                margin-bottom: 0px;
+            }
+
+            /* 2. 修复歌名被挤成竖排的问题 */
+            .song-row {
+                padding: 10px 5px !important; /* 减小内边距 */
+            }
+
+            .song-body {
+                align-items: flex-start !important; /* 顶端对齐 */
+            }
+
+            .song-info {
+                min-width: 0 !important; /* 防止Flex子元素溢出 */
+                width: 100% !important;  /* 占满剩余空间 */
+            }
+
+            .song-title {
+                font-size: 1.1em !important;
+                
+                /* ★ 核心修复：强制正常换行，不再一个字一行 ★ */
+                white-space: normal !important; 
+                word-break: break-word !important; 
+                
+                margin-bottom: 5px !important;
+                line-height: 1.4 !important;
+            }
+
+            /* 3. 调整图片大小 */
+            .song-cover-img {
+                width: 60px !important;  /* 手机上图片稍微小一点 */
+                height: 60px !important;
+                margin-right: 10px !important;
             }
             
-            /* 隐藏电脑端专用的列 */
-            .rank-count-box.mobile-hidden { display: none; }
-            .rank-tags.mobile-hidden { display: none; }
+            .song-left-col {
+                width: 60px !important; /* 容器跟随图片缩小 */
+                margin-right: 10px !important;
+            }
+
+            /* 4. 修复标题被水印遮挡 (加个白边发光) */
+            #modalTitle {
+                position: relative;
+                z-index: 5 !important; /* 提到最上层 */
+                font-size: 1.4em !important;
+                /* 给文字加一圈白色光晕，防止被背景干扰 */
+                text-shadow: 0 0 5px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,1); 
+            }
+
+            /* 让水印变淡，退到后面 */
+            .unit-watermark {
+                opacity: 0.15 !important; /* 变得很淡 (15%) */
+                z-index: 0 !important;
+                top: 10px !important;
+                right: 0 !important;
+                height: 60px !important;
+            }
+
+            /* 5. 调整弹窗头部布局 */
+            .setlist-header {
+                flex-direction: column !important; /* 竖着排 */
+                align-items: stretch !important;   /* 拉伸占满 */
+                gap: 15px !important;
+            }
+
+            .session-switch-group {
+                width: 100% !important;
+                order: 2; /* 按钮放中间 */
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+            }
             
-            /* 排名和图片跨两行 */
-            .rank-num { grid-row: 1 / 3; align-self: center; font-size: 1.2em; } 
-            .rank-cover { grid-row: 1 / 3; align-self: center; width: 50px; height: 50px; } 
+            .session-btn {
+                flex: 1 !important; /* 按钮平分宽度 */
+                min-width: 70px !important;
+                font-size: 0.9em !important;
+                text-align: center !important;
+            }
+
+            /* 保存按钮放最下面，防止挤占标题 */
+            .save-btn {
+                width: 100% !important;
+                text-align: center !important;
+                margin-top: 5px !important;
+                order: 3; 
+            }
             
-            /* 标题在第一行 */
-            .rank-song-info { grid-column: 3; }
-            
-            /* 手机专用的混合信息栏 */
-            .rank-meta-mobile {
-                grid-column: 3;
-                display: flex !important; /* 强制显示 */
-                justify-content: space-between;
-                align-items: center;
-                margin-top: 5px;
-                border-top: 1px dashed #eee;
-                padding-top: 5px;
+            /* 6. 模态窗边距优化 */
+            .modal-content {
+                padding: 15px 10px !important; /* 左右边距改小 */
+                width: 92% !important;
             }
         }
 
