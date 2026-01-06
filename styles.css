@@ -1313,45 +1313,6 @@
             height: fit-content;
         }
 
-        /* 手机适配 (必须更新，否则手机上会挤坏) */
-        @media (max-width: 850px) {
-            .tag-medley {
-                padding: 1px 5px;
-                font-size: 0.65em;
-                margin-left: 6px;
-            }
-
-            .ranking-row {
-                /* 手机上变成两行，恢复原来的灵活布局 */
-                grid-template-columns: 40px 50px 1fr;
-                grid-template-rows: auto auto;
-                gap: 10px;
-                padding: 10px;
-            }
-            
-            /* 隐藏电脑端专用的列 */
-            .rank-count-box.mobile-hidden { display: none; }
-            .rank-tags.mobile-hidden { display: none; }
-            
-            /* 排名和图片跨两行 */
-            .rank-num { grid-row: 1 / 3; align-self: center; font-size: 1.2em; } 
-            .rank-cover { grid-row: 1 / 3; align-self: center; width: 50px; height: 50px; } 
-            
-            /* 标题在第一行 */
-            .rank-song-info { grid-column: 3; }
-            
-            /* 手机专用的混合信息栏 */
-            .rank-meta-mobile {
-                grid-column: 3;
-                display: flex !important; /* 强制显示 */
-                justify-content: space-between;
-                align-items: center;
-                margin-top: 5px;
-                border-top: 1px dashed #eee;
-                padding-top: 5px;
-            }
-        }
-
         /* =========================================
         6. 排行榜标签悬停浮窗 (Tooltip) - 美化版
         ========================================= */
@@ -1497,3 +1458,143 @@
             margin-left: auto !important;  /* 强制居中 */
             margin-right: auto !important;
         }
+
+        /* =============================================
+        ★ 手机端紧急修复包 (Mobile Fixes) ★
+        请把这段放在 styles.css 的最后面，确保覆盖生效
+        ============================================= */
+
+        @media (max-width: 850px) {
+            
+            /* 1. 全局容器修复：防止左右摇晃 */
+            body, html {
+                overflow-x: hidden; /* 禁止水平滚动条 */
+            }
+            
+            .container {
+                padding: 0 10px; /* 减小两边留白，给内容更多空间 */
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            /* 2. 顶部按钮组：变成两行两列 */
+            .view-toggle {
+                width: 100%;
+                gap: 8px;
+                padding: 0;
+                margin: 15px auto;
+            }
+            
+            .view-btn {
+                min-width: 45%; /* 强制两个一行 */
+                padding: 10px 5px; /* 减小按钮内边距 */
+                font-size: 0.9em;
+            }
+
+            /* 3. 排行榜单行布局重构 (关键！) */
+            .ranking-row {
+                display: grid;
+                /* 布局改为：排名(30px) | 封面(50px) | 内容(自动) */
+                grid-template-columns: 35px 55px 1fr; 
+                grid-template-rows: auto; /* 高度自动 */
+                gap: 10px;
+                padding: 10px 8px; /* 减小内边距 */
+                align-items: flex-start; /* 顶端对齐，防止被撑得很难看 */
+            }
+
+            /* 4. 排名数字 */
+            .rank-num {
+                font-size: 1.1em; /* 字体改小 */
+                align-self: center; /* 垂直居中 */
+            }
+
+            /* 5. 封面图 */
+            .rank-cover {
+                width: 50px;
+                height: 50px;
+                /* 确保图片不被压缩变形 */
+                flex-shrink: 0; 
+            }
+
+            /* 6. 歌名和信息区域 */
+            .rank-song-info {
+                /* 这一行非常重要！防止文字把格子撑爆 */
+                min-width: 0; 
+                width: 100%;
+            }
+
+            .rank-song-info div[style*="font-weight:bold"] {
+                font-size: 0.95em; /* 歌名字体改小 */
+                line-height: 1.3;
+                
+                /* 强制长歌名换行 */
+                white-space: normal;
+                word-break: break-all; 
+                overflow-wrap: break-word;
+            }
+
+            /* 7. 手机端信息栏 (回数 + 标签) */
+            .rank-meta-mobile {
+                margin-top: 6px;
+                flex-wrap: wrap; /* 允许标签换行 */
+                gap: 5px;
+            }
+
+            /* 回数胶囊 */
+            .rank-meta-mobile span[style*="font-weight:bold"] {
+                font-size: 0.85em;
+                background: #f0f7ff;
+                padding: 2px 6px;
+                border-radius: 4px;
+                display: inline-block;
+            }
+
+            /* 8. 标签 tag 样式微调 */
+            .rank-tag {
+                font-size: 0.55em; /* 标签字体再小一点 */
+                padding: 1px 5px;
+                margin-bottom: 2px; /* 增加行间距 */
+            }
+            
+            /* 9. 模态窗 (点进去后的详情页) 修复 */
+            .modal-content {
+                width: 95%; /* 弹窗占满屏幕宽度的 95% */
+                padding: 15px 10px; /* 减小内边距 */
+                margin: 10px auto;
+            }
+            
+            .setlist-header {
+                display: flex;
+                flex-direction: column; /* 竖着排：标题在上，按钮在下 */
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .setlist-title {
+                font-size: 1.2em;
+            }
+            
+            /* 歌单列表：强制变成单列 */
+            #modalSongs {
+                flex-direction: column; /* 上下排列，不是左右两列 */
+            }
+            
+            .song-row {
+                padding: 8px;
+            }
+            
+            .song-title {
+                font-size: 0.9em;
+                /* 强制换行 */
+                white-space: normal;
+            }
+            
+            /* 水印 Logo 变小并透明，防止遮挡文字 */
+            .unit-watermark {
+                height: 40px;
+                top: 40px;
+                right: 5px;
+                opacity: 0.3;
+            }
+        }
+        
