@@ -942,21 +942,15 @@
             position: relative;
         }
 
-        /* 2. 中间按钮组：强制锁定在第 2 列 */
-        .session-switch-group {
-            grid-column: 2;       /* ★ 新增：你永远坐中间，哪怕隐身了也要占着位 */
-            
-            position: static; 
-            margin: 0;
-            width: fit-content; 
-            display: flex;
-            justify-content: center;
-            gap: 5px;
-            background: #f4f4f4;
-            padding: 4px 10px;
-            border-radius: 20px;
-            z-index: 1;
-        }
+        /* 手机上按钮组的样式 */
+            .session-switch-group {
+                width: 100% !important; 
+                margin-top: 10px !important;
+                background: transparent !important;
+                padding: 0 !important;
+                order: 3 !important; 
+                flex-wrap: wrap !important;
+            }
 
         /* 1. 标题：强制锁定在第 1 列 */
         .setlist-title {
