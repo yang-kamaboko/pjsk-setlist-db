@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-JP">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>プロセカ ライブセトリ まとめ | PJSK Live Database</title>
+    <meta name="description" content="プロジェクトセカイ（プロセカ）の歴代ライブイベント（セカライ、感謝祭、セカイシンフォニー、コネライ）のセットリスト（セトリ）を網羅した非公式データベースです。">
+    <meta name="keywords" content="プロセカ, プロジェクトセカイ, セットリスト, セトリ, ライブ, PJSK, Project SEKAI">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="プロセカ ライブ セトリ DB">
+    <meta property="og:description" content="歴代ライブのセトリを網羅！画像保存機能付き。">
+    <meta property="og:url" content=""> 
+    <meta property="og:image" content="./assets/logo_test_2.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div style="font-weight: bold; font-size: 1.2em;">Project Sekai Setlist Archive</div>
+        <div style="font-size:0.8em; color:#999;">Unofficial Setlist Database</div>
+    </nav>
+
+    <div class="intro-section">
+    <h1>セットリストのセカイ</h1>
+    <p style="font-size:0.9em; opacity:0.9;">
+        プロジェクトセカイ COLORFUL LIVE・Anniversary 感謝祭・セカイシンフォニー・コネクトライブの全楽曲・出演者情報まとめ
+    </p>
+</div>
+
+    <div class="view-toggle">
+        <button class="view-btn ranking-main-btn" onclick="switchView('ranking')">
+            <i class="fas fa-trophy"></i> 楽曲 歌唱回数 ランキング
+        </button>
+
+        <button class="view-btn" onclick="switchView('1')">
+            <i class="fas fa-music"></i> セカライ
+        </button>
+        <button class="view-btn" onclick="switchView('2')">
+            <i class="fas fa-microphone"></i> 感謝祭
+        </button>
+        <button class="view-btn" onclick="switchView('3')">
+            <i class="fas fa-user-tie"></i> シンフォニー
+        </button>
+        <button class="view-btn" onclick="switchView('4')">
+            <i class="fas fa-wifi"></i> コネライ
+        </button>
+    </div>
+
+    <div class="container">
+        <div id="listView">
+            <div id="results" class="grid-container"></div>
+        </div>
+
+        <div id="rankingView" style="display:none;">
+            <div class="ranking-filters">
+                <div class="filter-label">集計対象:</div>
+                <button class="filter-chip active" onclick="toggleRankFilter('1', this)">セカライ</button>
+                <button class="filter-chip active" onclick="toggleRankFilter('2', this)">感謝祭</button>
+                <button class="filter-chip active" onclick="toggleRankFilter('3', this)">シンフォニー</button>
+                <button class="filter-chip active" onclick="toggleRankFilter('4', this)">コネライ</button>
+            </div>
+
+            <div id="rankingList" class="ranking-list"></div>
+        </div>
+
+        <div id="statsView" class="stats-container">
+            </div>
+    </div>
+
+    <div id="detailModal" class="modal-overlay" onclick="closeModal(event)">
+        <div class="modal-content">
+            <img id="modalWatermark" src="" alt="">
+            <span class="close-btn" onclick="closeModal(event, true)">&times;</span>
+            <h2 id="modalTitle">Event Title</h2>
+            <div id="modalDate" style="color:#666; margin-bottom:10px; font-size:0.9em;"></div>
+            <div id="modalPerformers" style="color:#444; margin-bottom:20px; font-size:0.9em; line-height:1.5; padding-bottom:15px; border-bottom:1px solid #eee;"></div>
+            <div class="setlist-header">            
+                <div class="setlist-title">Setlist</div>       
+                <div id="sessionToggles" class="session-switch-group"></div>
+                <button class="save-btn" onclick="saveSetlistImage()">
+                    <i class="fas fa-camera"></i> 保存
+                </button>
+            </div>
+            
+            <div id="modalSongs"></div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

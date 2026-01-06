@@ -1,0 +1,4965 @@
+
+{
+  
+  
+   "Traits": {
+    "assetbundleName": "jacket_s_00a",
+    "title": "Traits",
+    "cover": "./assets/covers/New Landscape.jpg",
+    "singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'24交響"]
+  },
+  "New Landscape": {
+    "assetbundleName": "jacket_s_00b",
+    "title": "New Landscape",
+    "cover": "./assets/covers/New Landscape.jpg",
+    "singers": [],
+    "unit": "",
+    "defaultTags": ["'24交響"]
+  },
+  "Tell Your World": {
+    "assetbundleName": "jacket_s_001",
+    "title": "Tell Your World",
+    "cover": "./assets/covers/jacket_s_001.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ロキ": {
+    "assetbundleName": "jacket_s_002",
+    "title": "ロキ",
+    "cover": "./assets/covers/jacket_s_002.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["'23交響"]
+  },
+  "テオ": {
+    "assetbundleName": "jacket_s_003",
+    "title": "テオ",
+    "cover": "./assets/covers/jacket_s_003.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ヒバナ -Reloaded-": {
+    "assetbundleName": "jacket_s_006",
+    "title": "ヒバナ -Reloaded-",
+    "cover": "./assets/covers/jacket_s_006.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["セカライ1st","2nd感謝祭","セカライ2nd","レオビビ","セカライ4th"]
+  },
+  "タイムマシン": {
+    "assetbundleName": "jacket_s_008",
+    "title": "タイムマシン",
+    "cover": "./assets/covers/jacket_s_008.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ハッピーシンセサイザ": {
+    "assetbundleName": "jacket_s_010",
+    "title": "ハッピーシンセサイザ",
+    "cover": "./assets/covers/jacket_s_010.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ビバハピ": {
+    "assetbundleName": "jacket_s_011",
+    "title": "ビバハピ",
+    "cover": "./assets/covers/jacket_s_011.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["セカライ1st","3rd感謝祭"]
+  },
+  "Nostalogic": {
+    "assetbundleName": "jacket_s_013",
+    "title": "Nostalogic",
+    "cover": "./assets/covers/jacket_s_013.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "drop pop candy": {
+    "assetbundleName": "jacket_s_015",
+    "title": "drop pop candy",
+    "cover": "./assets/covers/jacket_s_015.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "アスノヨゾラ哨戒班": {
+    "assetbundleName": "jacket_s_018",
+    "title": "アスノヨゾラ哨戒班",
+    "cover": "./assets/covers/jacket_s_018.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "シャルル": {
+    "assetbundleName": "jacket_s_019",
+    "title": "シャルル",
+    "cover": "./assets/covers/jacket_s_019.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "脱法ロック": {
+    "assetbundleName": "jacket_s_021",
+    "title": "脱法ロック",
+    "cover": "./assets/covers/jacket_s_021.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "命に嫌われている": {
+    "assetbundleName": "jacket_s_022",
+    "title": "命に嫌われている",
+    "cover": "./assets/covers/jacket_s_022.webp",
+    "singers": ["25時、ナイトコードで。","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'22交響"]
+  },
+  "劣等上等": {
+    "assetbundleName": "jacket_s_026",
+    "title": "劣等上等",
+    "cover": "./assets/covers/jacket_s_026.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Just Be Friends": {
+    "assetbundleName": "jacket_s_027",
+    "title": "Just Be Friends",
+    "cover": "./assets/covers/jacket_s_027.webp",
+    "singers": ["小豆沢こはね","白石杏","巡音ルカ"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["セカライ1st","CRASH"]
+  },
+  "ドクター＝ファンクビート": {
+    "assetbundleName": "jacket_s_028",
+    "title": "ドクター＝ファンクビート",
+    "cover": "./assets/covers/jacket_s_028.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ミラクルペイント": {
+    "assetbundleName": "jacket_s_036",
+    "title": "ミラクルペイント",
+    "cover": "./assets/covers/jacket_s_036.webp",
+    "singers": ["ワンダーランズ×ショウタイム","初音ミク"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["'21交響","セカライ1st"]
+  },
+  "ブリキノダンス": {
+    "assetbundleName": "jacket_s_038",
+    "title": "ブリキノダンス",
+    "cover": "./assets/covers/jacket_s_038.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "スイートマジック": {
+    "assetbundleName": "jacket_s_041",
+    "title": "スイートマジック",
+    "cover": "./assets/covers/jacket_s_041.webp",
+    "singers": ["ワンダーランズ×ショウタイム","鏡音リン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["'21交響","セカライ1st"]
+  },
+  "ネクストネスト": {
+    "assetbundleName": "jacket_s_043",
+    "title": "ネクストネスト",
+    "cover": "./assets/covers/jacket_s_043.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Hand in Hand": {
+    "assetbundleName": "jacket_s_044",
+    "title": "Hand in Hand",
+    "cover": "./assets/covers/jacket_s_044.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "39みゅーじっく！": {
+    "assetbundleName": "jacket_s_045",
+    "title": "39みゅーじっく！",
+    "cover": "./assets/covers/jacket_s_045.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "グリーンライツ・セレナーデ": {
+    "assetbundleName": "jacket_s_046",
+    "title": "グリーンライツ・セレナーデ",
+    "cover": "./assets/covers/jacket_s_046.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "メルト": {
+    "assetbundleName": "jacket_s_047",
+    "title": "メルト",
+    "cover": "./assets/covers/jacket_s_047.webp",
+    "singers": ["初音ミク"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["コネライ4th"]
+  },
+  "ワールドイズマイン": {
+    "assetbundleName": "jacket_s_048",
+    "title": "ワールドイズマイン",
+    "cover": "./assets/covers/jacket_s_048.webp",
+    "singers": ["初音ミク"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": []
+  },
+  "初音ミクの消失": {
+    "assetbundleName": "jacket_s_049",
+    "title": "初音ミクの消失",
+    "cover": "./assets/covers/jacket_s_049.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Blessing": {
+    "assetbundleName": "jacket_s_050",
+    "title": "Blessing",
+    "cover": "./assets/covers/jacket_s_050.webp",
+    "singers": ["VIRTUAL SINGER"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["コネライ2nd","プロ×あん","ニゴバチャ"]
+  },
+  "セカイはまだ始まってすらいない": {
+    "assetbundleName": "jacket_s_051",
+    "title": "セカイはまだ始まってすらいない",
+    "cover": "./assets/covers/jacket_s_051.webp",
+    "singers": ["ワンダーランズ×ショウタイム","初音ミク"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["'21交響","セカライ1st","STORIES","コネライ3rd"]
+  },
+  "potatoになっていく": {
+    "assetbundleName": "jacket_s_052",
+    "title": "potatoになっていく",
+    "cover": "./assets/covers/jacket_s_052.webp",
+    "singers": ["ワンダーランズ×ショウタイム","初音ミク"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["セカライ1st","2nd感謝祭","'23交響","コネライ3rd"]
+  },
+  "Ready Steady": {
+    "assetbundleName": "jacket_s_054",
+    "title": "Ready Steady",
+    "cover": "./assets/covers/jacket_s_054.webp",
+    "singers": ["Vivid BAD SQUAD","初音ミク"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'21交響","セカライ1st","CRASH","コネライ3rd","セカライ3rd","'24交響"]
+  },
+  "Forward": {
+    "assetbundleName": "jacket_s_055",
+    "title": "Forward",
+    "cover": "./assets/covers/jacket_s_055.webp",
+    "singers": ["Vivid BAD SQUAD", "初音ミク"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["CRASH"]
+  },
+  "アイドル新鋭隊": {
+    "assetbundleName": "jacket_s_057",
+    "title": "アイドル新鋭隊",
+    "cover": "./assets/covers/jacket_s_057.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["セカライ1st","2nd感謝祭","JUMPIN！","コネライ3rd","セカライ3rd","'25交響","5th感謝祭"]
+  },
+  "悔やむと書いてミライ": {
+    "assetbundleName": "jacket_s_060",
+    "title": "悔やむと書いてミライ",
+    "cover": "./assets/covers/jacket_s_060.webp",
+    "singers": ["25時、ナイトコードで。","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["セカライ1st","セカライ2nd","moment","コネライ3rd"]
+  },
+  "携帯恋話": {
+    "assetbundleName": "jacket_s_061",
+    "title": "携帯恋話",
+    "cover": "./assets/covers/jacket_s_061.webp",
+    "singers": ["東雲絵名","暁山瑞希","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["2nd感謝祭"]
+  },
+  "ジャックポットサッドガール": {
+    "assetbundleName": "jacket_s_062",
+    "title": "ジャックポットサッドガール",
+    "cover": "./assets/covers/jacket_s_062.webp",
+    "singers": ["25時、ナイトコードで。","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'21交響","'22交響","コネライ2nd","3rd感謝祭"]
+  },
+  "needLe": {
+    "assetbundleName": "jacket_s_063",
+    "title": "needLe",
+    "cover": "./assets/covers/jacket_s_063.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["セカライ1st","'22交響","SPARKLE","'23交響","コネライ3rd"]
+  },
+  "ステラ": {
+    "assetbundleName": "jacket_s_064",
+    "title": "ステラ",
+    "cover": "./assets/covers/jacket_s_064.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["'21交響","'22交響","コネライ2nd","セカライ2nd","コネライ3rd","セカライ4th"]
+  },
+  "ハロ／ハワユ": {
+    "assetbundleName": "jacket_s_066",
+    "title": "ハロ／ハワユ",
+    "cover": "./assets/covers/jacket_s_066.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "自傷無色": {
+    "assetbundleName": "jacket_s_067",
+    "title": "自傷無色",
+    "cover": "./assets/covers/jacket_s_067.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ダンスロボットダンス": {
+    "assetbundleName": "jacket_s_068",
+    "title": "ダンスロボットダンス",
+    "cover": "./assets/covers/jacket_s_068.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "フラジール": {
+    "assetbundleName": "jacket_s_069",
+    "title": "フラジール",
+    "cover": "./assets/covers/jacket_s_069.webp",
+    "singers": ["東雲彰人","青柳冬弥"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["セカライ1st","プロ×あん"]
+  },
+  "メルティランドナイトメア": {
+    "assetbundleName": "jacket_s_070",
+    "title": "メルティランドナイトメア",
+    "cover": "./assets/covers/jacket_s_070.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["セカライ1st"]
+  },
+  "ツギハギスタッカート": {
+    "assetbundleName": "jacket_s_071",
+    "title": "ツギハギスタッカート",
+    "cover": "./assets/covers/jacket_s_071.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ブレス・ユア・ブレス": {
+    "assetbundleName": "jacket_s_072",
+    "title": "ブレス・ユア・ブレス",
+    "cover": "./assets/covers/jacket_s_072.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ニア": {
+    "assetbundleName": "jacket_s_073",
+    "title": "ニア",
+    "cover": "./assets/covers/jacket_s_073.webp",
+    "singers": ["花里みのり","桐谷遥","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'23交響"]
+  },
+  "独りんぼエンヴィー": {
+    "assetbundleName": "jacket_s_074",
+    "title": "独りんぼエンヴィー",
+    "cover": "./assets/covers/jacket_s_074.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ウミユリ海底譚": {
+    "assetbundleName": "jacket_s_075",
+    "title": "ウミユリ海底譚",
+    "cover": "./assets/covers/jacket_s_075.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "セカイ": {
+    "assetbundleName": "jacket_s_076",
+    "title": "セカイ",
+    "cover": "./assets/covers/jacket_s_076.webp",
+    "singers": ["星乃一歌","天馬司","宵崎奏","初音ミク"],
+    "unit": "",
+    "defaultTags": ["'21交響","セカライ1st","'22交響","2nd感謝祭","コネライ2nd","3rd感謝祭","セカライ3rd"]
+  },
+  "ワーワーワールド": {
+    "assetbundleName": "jacket_s_077",
+    "title": "ワーワーワールド",
+    "cover": "./assets/covers/jacket_s_077.webp",
+    "singers": ["花里みのり","小豆沢こはね","初音ミク"],
+    "unit": "",
+    "defaultTags": ["'21交響","セカライ1st","'22交響","2nd感謝祭","コネライ2nd","3rd感謝祭"]
+  },
+  "ぼうけんのしょがきえました！": {
+    "assetbundleName": "jacket_s_078",
+    "title": "ぼうけんのしょがきえました！",
+    "cover": "./assets/covers/jacket_s_078.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "夜咄ディセイブ": {
+    "assetbundleName": "jacket_s_081",
+    "title": "夜咄ディセイブ",
+    "cover": "./assets/covers/jacket_s_081.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "alive": {
+    "assetbundleName": "jacket_s_082",
+    "title": "alive",
+    "cover": "./assets/covers/jacket_s_082.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Gimme×Gimme": {
+    "assetbundleName": "jacket_s_083",
+    "title": "Gimme×Gimme",
+    "cover": "./assets/covers/jacket_s_083.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ジャンキーナイトタウンオーケストラ": {
+    "assetbundleName": "jacket_s_084",
+    "title": "ジャンキーナイトタウンオーケストラ",
+    "cover": "./assets/covers/jacket_s_084.webp",
+    "singers": ["鏡音レン"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["コネライ4th"]
+  },
+  "Leia - Remind": {
+    "assetbundleName": "jacket_s_085",
+    "title": "Leia - Remind",
+    "cover": "./assets/covers/jacket_s_085.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "on the rocks": {
+    "assetbundleName": "jacket_s_086",
+    "title": "on the rocks",
+    "cover": "./assets/covers/jacket_s_086.webp",
+    "singers": ["MEIKO","KAITO"],
+    "unit": "",
+    "defaultTags": ["コネライ3rd"]
+  },
+  "恋愛裁判": {
+    "assetbundleName": "jacket_s_087",
+    "title": "恋愛裁判",
+    "cover": "./assets/covers/jacket_s_087.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "チュルリラ・チュルリラ・ダッダッダ！": {
+    "assetbundleName": "jacket_s_088",
+    "title": "チュルリラ・チュルリラ・ダッダッダ！",
+    "cover": "./assets/covers/jacket_s_088.webp",
+    "singers": ["ワンダーランズ×ショウタイム"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["'22交響","セカライ4th"]
+  },
+  "Color of Drops": {
+    "assetbundleName": "jacket_s_089",
+    "title": "Color of Drops",
+    "cover": "./assets/covers/jacket_s_089.webp",
+    "singers": ["MORE MORE JUMP!","巡音ルカ"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'22交響","コネライ2nd","3rd感謝祭","わんもあ" ]
+  },
+  "限りなく灰色へ": {
+    "assetbundleName": "jacket_s_090",
+    "title": "限りなく灰色へ",
+    "cover": "./assets/covers/jacket_s_090.webp",
+    "singers": ["25時、ナイトコードで。","鏡音リン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'22交響","2nd感謝祭","moment"]
+  },
+  "ドラマツルギー": {
+    "assetbundleName": "jacket_s_091",
+    "title": "ドラマツルギー",
+    "cover": "./assets/covers/jacket_s_091.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["セカライ1st"]
+  },
+  "乙女解剖": {
+    "assetbundleName": "jacket_s_092",
+    "title": "乙女解剖",
+    "cover": "./assets/covers/jacket_s_092.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "青く駆けろ！": {
+    "assetbundleName": "jacket_s_093",
+    "title": "青く駆けろ！",
+    "cover": "./assets/covers/jacket_s_093.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "とても痛い痛がりたい": {
+    "assetbundleName": "jacket_s_094",
+    "title": "とても痛い痛がりたい",
+    "cover": "./assets/covers/jacket_s_094.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "威風堂々": {
+    "assetbundleName": "jacket_s_095",
+    "title": "威風堂々",
+    "cover": "./assets/covers/jacket_s_095.webp",
+    "singers": ["東雲彰人","青柳冬弥","KAITO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["CRASH"]
+  },
+  "from Y to Y": {
+    "assetbundleName": "jacket_s_096",
+    "title": "from Y to Y",
+    "cover": "./assets/covers/jacket_s_096.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "霽れを待つ": {
+    "assetbundleName": "jacket_s_097",
+    "title": "霽れを待つ",
+    "cover": "./assets/covers/jacket_s_097.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["'21交響","SPARKLE"]
+  },
+  "ロストワンの号哭": {
+    "assetbundleName": "jacket_s_098",
+    "title": "ロストワンの号哭",
+    "cover": "./assets/covers/jacket_s_098.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "モア！ジャンプ！モア！": {
+    "assetbundleName": "jacket_s_099",
+    "title": "モア！ジャンプ！モア！",
+    "cover": "./assets/covers/jacket_s_099.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'21交響","'22交響","セカライ2nd","3rd感謝祭","コネライ3rd","セカライ3rd","セカライ5th"]
+  },
+  "ECHO": {
+    "assetbundleName": "jacket_s_100",
+    "title": "ECHO",
+    "cover": "./assets/covers/jacket_s_100.webp",
+    "singers": ["Vivid BAD SQUAD","巡音ルカ"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["セカライ2nd"]
+  },
+  "RAD DOGS": {
+    "assetbundleName": "jacket_s_101",
+    "title": "RAD DOGS",
+    "cover": "./assets/covers/jacket_s_101.webp",
+    "singers": ["Vivid BAD SQUAD","初音ミク"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'21交響","'22交響","CRASH","2nd感謝祭","コネライ3rd"]
+  },
+  "幽霊東京": {
+    "assetbundleName": "jacket_s_102",
+    "title": "幽霊東京",
+    "cover": "./assets/covers/jacket_s_102.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ニジイロストーリーズ": {
+    "assetbundleName": "jacket_s_103",
+    "title": "ニジイロストーリーズ",
+    "cover": "./assets/covers/jacket_s_103.webp",
+    "singers": ["ワンダーランズ×ショウタイム","MEIKO"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["4th感謝祭"]
+  },
+  "サンドリヨン 10th Anniversary": {
+    "assetbundleName": "jacket_s_104",
+    "title": "サンドリヨン 10th Anniversary",
+    "cover": "./assets/covers/jacket_s_104.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ワンスアポンアドリーム": {
+    "assetbundleName": "jacket_s_105",
+    "title": "ワンスアポンアドリーム",
+    "cover": "./assets/covers/jacket_s_105.webp",
+    "singers": ["ワンダーランズ×ショウタイム","鏡音レン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["コネライ2nd","3rd感謝祭"]
+  },
+  "お気に召すまま": {
+    "assetbundleName": "jacket_s_106",
+    "title": "お気に召すまま",
+    "cover": "./assets/covers/jacket_s_106.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ミルククラウン・オン・ソーネチカ": {
+    "assetbundleName": "jacket_s_107",
+    "title": "ミルククラウン・オン・ソーネチカ",
+    "cover": "./assets/covers/jacket_s_107.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "愛されなくても君がいる": {
+    "assetbundleName": "jacket_s_108",
+    "title": "愛されなくても君がいる",
+    "cover": "./assets/covers/jacket_s_108.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ヒビカセ": {
+    "assetbundleName": "jacket_s_109",
+    "title": "ヒビカセ",
+    "cover": "./assets/covers/jacket_s_109.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "千本桜": {
+    "assetbundleName": "jacket_s_110",
+    "title": "千本桜",
+    "cover": "./assets/covers/jacket_s_110.webp",
+    "singers": ["VIRTUAL SINGER"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["セカライ1st","コネライ2nd","セカライ2nd"]
+  },
+  "カトラリー": {
+    "assetbundleName": "jacket_s_111",
+    "title": "カトラリー",
+    "cover": "./assets/covers/jacket_s_111.webp",
+    "singers": ["宵崎奏","朝比奈まふゆ","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["セカライ1st"]
+  },
+  "天使のクローバー": {
+    "assetbundleName": "jacket_s_112",
+    "title": "天使のクローバー",
+    "cover": "./assets/covers/jacket_s_112.webp",
+    "singers": ["MORE MORE JUMP!","鏡音リン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["セカライ1st","セカライ2nd","JUMPIN！","4th感謝祭","コネライ4th" ]
+  },
+  "ローリンガール": {
+    "assetbundleName": "jacket_s_113",
+    "title": "ローリンガール",
+    "cover": "./assets/covers/jacket_s_113.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "裏表ラバーズ": {
+    "assetbundleName": "jacket_s_114",
+    "title": "裏表ラバーズ",
+    "cover": "./assets/covers/jacket_s_114.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "アンノウン・マザーグース": {
+    "assetbundleName": "jacket_s_115",
+    "title": "アンノウン・マザーグース",
+    "cover": "./assets/covers/jacket_s_115.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "アイディスマイル": {
+    "assetbundleName": "jacket_s_116",
+    "title": "アイディスマイル",
+    "cover": "./assets/covers/jacket_s_116.webp",
+    "singers": ["25時、ナイトコードで。","MEIKO"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'21交響","セカライ1st","'22交響","moment","セカライ3rd","4th感謝祭"]
+  },
+  "ODDS＆ENDS": {
+    "assetbundleName": "jacket_s_117",
+    "title": "ODDS＆ENDS",
+    "cover": "./assets/covers/jacket_s_117.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "＊ハロー、プラネット。": {
+    "assetbundleName": "jacket_s_118",
+    "title": "＊ハロー、プラネット。",
+    "cover": "./assets/covers/jacket_s_118.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ワールズエンド・ダンスホール": {
+    "assetbundleName": "jacket_s_119",
+    "title": "ワールズエンド・ダンスホール",
+    "cover": "./assets/covers/jacket_s_119.webp",
+    "singers": ["初音ミク","巡音ルカ"],
+    "unit": "",
+    "defaultTags": ["コネライ3rd"]
+  },
+  "いかないで": {
+    "assetbundleName": "jacket_s_120",
+    "title": "いかないで",
+    "cover": "./assets/covers/jacket_s_120.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ロミオとシンデレラ": {
+    "assetbundleName": "jacket_s_121",
+    "title": "ロミオとシンデレラ",
+    "cover": "./assets/covers/jacket_s_121.webp",
+    "singers": ["桃井愛莉","日野森雫","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["JUMPIN！"]
+  },
+  "ポジティブ☆ダンスタイム": {
+    "assetbundleName": "jacket_s_122",
+    "title": "ポジティブ☆ダンスタイム",
+    "cover": "./assets/covers/jacket_s_122.webp",
+    "singers": ["鳳えむ","草薙寧々","鏡音リン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["STORIES"]
+  },
+  "どりーみんチュチュ": {
+    "assetbundleName": "jacket_s_123",
+    "title": "どりーみんチュチュ",
+    "cover": "./assets/covers/jacket_s_123.webp",
+    "singers": ["MORE MORE JUMP!","巡音ルカ"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["2nd感謝祭"]
+  },
+  "みくみくにしてあげる♪【してやんよ】": {
+    "assetbundleName": "jacket_s_124",
+    "title": "みくみくにしてあげる♪【してやんよ】",
+    "cover": "./assets/covers/jacket_s_124.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ボッカデラベリタ": {
+    "assetbundleName": "jacket_s_125",
+    "title": "ボッカデラベリタ",
+    "cover": "./assets/covers/jacket_s_125.webp",
+    "singers": ["朝比奈まふゆ","暁山瑞希"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'23交響"]
+  },
+  "シネマ": {
+    "assetbundleName": "jacket_s_126",
+    "title": "シネマ",
+    "cover": "./assets/covers/jacket_s_126.webp",
+    "singers": ["Vivid BAD SQUAD","KAITO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'21交響","セカライ1st","'22交響","CRASH","2nd感謝祭","セカライ2nd","コネライ4th","セカライ5th"]
+  },
+  "トンデモワンダーズ": {
+    "assetbundleName": "jacket_s_127",
+    "title": "トンデモワンダーズ",
+    "cover": "./assets/covers/jacket_s_127.webp",
+    "singers": ["ワンダーランズ×ショウタイム","KAITO"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["'21交響","'22交響","コネライ2nd","2nd感謝祭","セカライ2nd","セカライ3rd"]
+  },
+  "Brand New Day": {
+    "assetbundleName": "jacket_s_128",
+    "title": "Brand New Day",
+    "cover": "./assets/covers/jacket_s_128.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ビターチョコデコレーション": {
+    "assetbundleName": "jacket_s_129",
+    "title": "ビターチョコデコレーション",
+    "cover": "./assets/covers/jacket_s_129.webp",
+    "singers": ["25時、ナイトコードで。","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'22交響","2nd感謝祭","セカライ2nd"]
+  },
+  "フロムトーキョー": {
+    "assetbundleName": "jacket_s_130",
+    "title": "フロムトーキョー",
+    "cover": "./assets/covers/jacket_s_130.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["セカライ1st","セカライ3rd"]
+  },
+  "初音ミクの激唱": {
+    "assetbundleName": "jacket_s_388",
+    "title": "初音ミクの激唱",
+    "cover": "./assets/covers/jacket_s_388.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "「１」": {
+    "assetbundleName": "jacket_s_132",
+    "title": "「１」",
+    "cover": "./assets/covers/jacket_s_132.webp",
+    "singers": ["Leo/need","巡音ルカ"],
+    "unit": "Leo/need",
+    "defaultTags": ["2nd感謝祭","コネライ2nd","コネライ3rd","'25交響" ]
+  },
+  "悪魔の踊り方": {
+    "assetbundleName": "jacket_s_133",
+    "title": "悪魔の踊り方",
+    "cover": "./assets/covers/jacket_s_133.webp",
+    "singers": ["Vivid BAD SQUAD","鏡音リン"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["3rd感謝祭"]
+  },
+  "テレキャスタービーボーイ": {
+    "assetbundleName": "jacket_s_134",
+    "title": "テレキャスタービーボーイ",
+    "cover": "./assets/covers/jacket_s_134.webp",
+    "singers": ["ワンダーランズ×ショウタイム","鏡音レン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["セカライ1st","セカライ2nd","セカライ4th"]
+  },
+  "六兆年と一夜物語": {
+    "assetbundleName": "jacket_s_135",
+    "title": "六兆年と一夜物語",
+    "cover": "./assets/covers/jacket_s_135.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "チルドレンレコード": {
+    "assetbundleName": "jacket_s_136",
+    "title": "チルドレンレコード",
+    "cover": "./assets/covers/jacket_s_136.webp",
+    "singers": ["Vivid BAD SQUAD","鏡音レン"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["3rd感謝祭"]
+  },
+  "花を唄う": {
+    "assetbundleName": "jacket_s_137",
+    "title": "花を唄う",
+    "cover": "./assets/covers/jacket_s_137.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "KING": {
+    "assetbundleName": "jacket_s_138",
+    "title": "KING",
+    "cover": "./assets/covers/jacket_s_138.webp",
+    "singers": ["天馬司","神代類"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["STORIES","'24交響","プロ×あん"]
+  },
+  "夜に駆ける": {
+    "assetbundleName": "jacket_s_139",
+    "title": "夜に駆ける",
+    "cover": "./assets/covers/jacket_s_139.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "アイスドロップ": {
+    "assetbundleName": "jacket_s_140",
+    "title": "アイスドロップ",
+    "cover": "./assets/covers/jacket_s_140.webp",
+    "singers": ["MORE MORE JUMP!","鏡音レン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["JUMPIN！"]
+  },
+  "群青讃歌": {
+    "assetbundleName": "jacket_s_141",
+    "title": "群青讃歌",
+    "cover": "./assets/covers/jacket_s_141.webp",
+    "singers": ["星乃一歌","花里みのり","小豆沢こはね","天馬司","宵崎奏","初音ミク"],
+    "unit": "Rainbow",
+    "defaultTags": ["'21交響","セカライ1st","'22交響","2nd感謝祭","コネライ2nd","セカライ2nd","'23交響","3rd感謝祭","4th感謝祭","ニゴバチャ","5th感謝祭"]
+  },
+  "再生": {
+    "assetbundleName": "jacket_s_142",
+    "title": "再生",
+    "cover": "./assets/covers/jacket_s_142.webp",
+    "singers": ["25時、ナイトコードで。","鏡音リン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'23交響","コネライ4th"]
+  },
+  "トラフィック・ジャム": {
+    "assetbundleName": "jacket_s_143",
+    "title": "トラフィック・ジャム",
+    "cover": "./assets/covers/jacket_s_143.webp",
+    "singers": ["Vivid BAD SQUAD","鏡音リン"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'22交響", "2nd感謝祭"]
+  },
+  "アイノマテリアル": {
+    "assetbundleName": "jacket_s_144",
+    "title": "アイノマテリアル",
+    "cover": "./assets/covers/jacket_s_144.webp",
+    "singers": ["MORE MORE JUMP!","MEIKO"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'21交響","2nd感謝祭","JUMPIN！"]
+  },
+  "ベノム": {
+    "assetbundleName": "jacket_s_145",
+    "title": "ベノム",
+    "cover": "./assets/covers/jacket_s_145.webp",
+    "singers": ["東雲絵名","暁山瑞希"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["セカライ1st"]
+  },
+  "リモコン": {
+    "assetbundleName": "jacket_s_146",
+    "title": "リモコン",
+    "cover": "./assets/covers/jacket_s_146.webp",
+    "singers": ["鏡音リン","鏡音レン"],
+    "unit": "",
+    "defaultTags": ["コネライ3rd"]
+  },
+  "からくりピエロ": {
+    "assetbundleName": "jacket_s_147",
+    "title": "からくりピエロ",
+    "cover": "./assets/covers/jacket_s_147.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ray": {
+    "assetbundleName": "jacket_s_148",
+    "title": "ray",
+    "cover": "./assets/covers/jacket_s_148.webp",
+    "singers": ["星乃一歌","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["'22交響"]
+  },
+  "カナデトモスソラ": {
+    "assetbundleName": "jacket_s_149",
+    "title": "カナデトモスソラ",
+    "cover": "./assets/covers/jacket_s_149.webp",
+    "singers": ["25時、ナイトコードで。","巡音ルカ"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'22交響","コネライ4th","ニゴバチャ"]
+  },
+  "トキヲ・ファンカ": {
+    "assetbundleName": "jacket_s_150",
+    "title": "トキヲ・ファンカ",
+    "cover": "./assets/covers/jacket_s_150.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "泡沫未来": {
+    "assetbundleName": "jacket_s_151",
+    "title": "泡沫未来",
+    "cover": "./assets/covers/jacket_s_151.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "だれかの心臓になれたなら": {
+    "assetbundleName": "jacket_s_152",
+    "title": "だれかの心臓になれたなら",
+    "cover": "./assets/covers/jacket_s_152.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Miku": {
+    "assetbundleName": "jacket_s_153",
+    "title": "Miku",
+    "cover": "./assets/covers/jacket_s_153.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "地球最後の告白を": {
+    "assetbundleName": "jacket_s_154",
+    "title": "地球最後の告白を",
+    "cover": "./assets/covers/jacket_s_154.webp",
+    "singers": ["桐谷遥","日野森雫","巡音ルカ"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'22交響","セカライ3rd"]
+  },
+  "心拍数♯0822": {
+    "assetbundleName": "jacket_s_155",
+    "title": "心拍数♯0822",
+    "cover": "./assets/covers/jacket_s_155.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Beat Eater": {
+    "assetbundleName": "jacket_s_156",
+    "title": "Beat Eater",
+    "cover": "./assets/covers/jacket_s_156.webp",
+    "singers": ["Vivid BAD SQUAD","鏡音レン"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["CRASH","3rd感謝祭"]
+  },
+  "マシュマリー": {
+    "assetbundleName": "jacket_s_157",
+    "title": "マシュマリー",
+    "cover": "./assets/covers/jacket_s_157.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ナンセンス文学": {
+    "assetbundleName": "jacket_s_158",
+    "title": "ナンセンス文学",
+    "cover": "./assets/covers/jacket_s_158.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "STAGE OF SEKAI": {
+    "assetbundleName": "jacket_s_159",
+    "title": "STAGE OF SEKAI",
+    "cover": "./assets/covers/jacket_s_159.webp",
+    "singers": ["Leo/need","鏡音レン"],
+    "unit": "Leo/need",
+    "defaultTags": ["セカライ2nd","セカライ3rd","'24交響","コネライ4th","プロ×あん"]
+  },
+  "ショウタイム・ルーラー": {
+    "assetbundleName": "jacket_s_160",
+    "title": "ショウタイム・ルーラー",
+    "cover": "./assets/covers/jacket_s_160.webp",
+    "singers": ["ワンダーランズ×ショウタイム","鏡音リン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["STORIES","3rd感謝祭","セカライ3rd","セカライ4th"]
+  },
+  "magic number": {
+    "assetbundleName": "jacket_s_161",
+    "title": "magic number",
+    "cover": "./assets/covers/jacket_s_161.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "エンドマークに希望と涙を添えて": {
+    "assetbundleName": "jacket_s_162",
+    "title": "エンドマークに希望と涙を添えて",
+    "cover": "./assets/covers/jacket_s_162.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "the EmpErroR": {
+    "assetbundleName": "jacket_s_163",
+    "title": "the EmpErroR",
+    "cover": "./assets/covers/jacket_s_163.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Don't Fight The Music": {
+    "assetbundleName": "jacket_s_164",
+    "title": "Don't Fight The Music",
+    "cover": "./assets/covers/jacket_s_164.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "そうだった！！": {
+    "assetbundleName": "jacket_s_165",
+    "title": "そうだった！！",
+    "cover": "./assets/covers/jacket_s_165.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Glory Steady Go!": {
+    "assetbundleName": "jacket_s_166",
+    "title": "Glory Steady Go!",
+    "cover": "./assets/covers/jacket_s_166.webp",
+    "singers": ["ワンダーランズ×ショウタイム","巡音ルカ"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["'21交響","'22交響","2nd感謝祭","STORIES","コネライ4th","セカライ4th","セカライ5th"]
+  },
+  "オルターエゴ": {
+    "assetbundleName": "jacket_s_167",
+    "title": "オルターエゴ",
+    "cover": "./assets/covers/jacket_s_167.webp",
+    "singers": ["Vivid BAD SQUAD","初音ミク"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["2nd感謝祭"]
+  },
+  "ダーリンダンス": {
+    "assetbundleName": "jacket_s_168",
+    "title": "ダーリンダンス",
+    "cover": "./assets/covers/jacket_s_168.webp",
+    "singers": ["花里みのり","桐谷遥","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["JUMPIN！"]
+  },
+  "少女レイ": {
+    "assetbundleName": "jacket_s_169",
+    "title": "少女レイ",
+    "cover": "./assets/covers/jacket_s_169.webp",
+    "singers": ["桐谷遥","日野森雫","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'25交響"]
+  },
+  "ヴィラン": {
+    "assetbundleName": "jacket_s_170",
+    "title": "ヴィラン",
+    "cover": "./assets/covers/jacket_s_170.webp",
+    "singers": ["朝比奈まふゆ","暁山瑞希"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["moment"]
+  },
+  "カゲロウデイズ": {
+    "assetbundleName": "jacket_s_171",
+    "title": "カゲロウデイズ",
+    "cover": "./assets/covers/jacket_s_171.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["プロ×あん"]
+  },
+  "Happy Halloween": {
+    "assetbundleName": "jacket_s_172",
+    "title": "Happy Halloween",
+    "cover": "./assets/covers/jacket_s_172.webp",
+    "singers": ["MORE MORE JUMP!","鏡音リン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "流星のパルス": {
+    "assetbundleName": "jacket_s_173",
+    "title": "流星のパルス",
+    "cover": "./assets/covers/jacket_s_173.webp",
+    "singers": ["Leo/need","MEIKO"],
+    "unit": "Leo/need",
+    "defaultTags": ["2nd感謝祭","レオビビ","コネライ4th"]
+  },
+  "いーあるふぁんくらぶ": {
+    "assetbundleName": "jacket_s_174",
+    "title": "いーあるふぁんくらぶ",
+    "cover": "./assets/covers/jacket_s_174.webp",
+    "singers": ["ワンダーランズ×ショウタイム","鏡音リン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["2nd感謝祭"]
+  },
+  "拝啓ドッペルゲンガー": {
+    "assetbundleName": "jacket_s_175",
+    "title": "拝啓ドッペルゲンガー",
+    "cover": "./assets/covers/jacket_s_175.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "マシンガンポエムドール": {
+    "assetbundleName": "jacket_s_176",
+    "title": "マシンガンポエムドール",
+    "cover": "./assets/covers/jacket_s_176.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "右肩の蝶": {
+    "assetbundleName": "jacket_s_177",
+    "title": "右肩の蝶",
+    "cover": "./assets/covers/jacket_s_177.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "にっこり^^調査隊のテーマ": {
+    "assetbundleName": "jacket_s_178",
+    "title": "にっこり^^調査隊のテーマ",
+    "cover": "./assets/covers/jacket_s_178.webp",
+    "singers": ["ワンダーランズ×ショウタイム","初音ミク"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["セカライ2nd","STORIES","コネライ3rd","セカライ3rd","セカライ5th"]
+  },
+  "炉心融解": {
+    "assetbundleName": "jacket_s_179",
+    "title": "炉心融解",
+    "cover": "./assets/covers/jacket_s_179.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ミライ": {
+    "assetbundleName": "jacket_s_180",
+    "title": "ミライ",
+    "cover": "./assets/covers/jacket_s_180.webp",
+    "singers": ["Vivid BAD SQUAD","巡音ルカ"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'24交響","プロ×あん"]
+  },
+  "愛して愛して愛して": {
+    "assetbundleName": "jacket_s_181",
+    "title": "愛して愛して愛して",
+    "cover": "./assets/covers/jacket_s_181.webp",
+    "singers": ["朝比奈まふゆ","東雲絵名","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'24交響"]
+  },
+  "Flyer!": {
+    "assetbundleName": "jacket_s_182",
+    "title": "Flyer!",
+    "cover": "./assets/covers/jacket_s_182.webp",
+    "singers": ["Vivid BAD SQUAD","鏡音レン"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["2nd感謝祭","コネライ3rd","レオビビ","セカライ4th"]
+  },
+  "フィクサー": {
+    "assetbundleName": "jacket_s_183",
+    "title": "フィクサー",
+    "cover": "./assets/covers/jacket_s_183.webp",
+    "singers": ["天馬司","神代類"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["セカライ3rd"]
+  },
+  "Hello,world!": {
+    "assetbundleName": "jacket_s_184",
+    "title": "Hello,world!",
+    "cover": "./assets/covers/jacket_s_184.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "しっくおぶはうす！": {
+    "assetbundleName": "jacket_s_185",
+    "title": "しっくおぶはうす！",
+    "cover": "./assets/covers/jacket_s_185.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "初音天地開闢神話": {
+    "assetbundleName": "jacket_s_186",
+    "title": "初音天地開闢神話",
+    "cover": "./assets/covers/jacket_s_186.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ロウワー": {
+    "assetbundleName": "jacket_s_187",
+    "title": "ロウワー",
+    "cover": "./assets/covers/jacket_s_187.webp",
+    "singers": ["25時、ナイトコードで。","MEIKO"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": [ "2nd感謝祭","コネライ2nd","セカライ2nd","コネライ3rd","セカライ3rd","'25交響"]
+  },
+  "心予報": {
+    "assetbundleName": "jacket_s_188",
+    "title": "心予報",
+    "cover": "./assets/covers/jacket_s_188.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["セカライ2nd"]
+  },
+  "ノマド": {
+    "assetbundleName": "jacket_s_189",
+    "title": "ノマド",
+    "cover": "./assets/covers/jacket_s_189.webp",
+    "singers": ["25時、ナイトコードで。","鏡音リン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["コネライ3rd","セカライ4th"]
+  },
+  "悪ノ娘": {
+    "assetbundleName": "jacket_s_190",
+    "title": "悪ノ娘",
+    "cover": "./assets/covers/jacket_s_190.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "悪ノ召使": {
+    "assetbundleName": "jacket_s_191",
+    "title": "悪ノ召使",
+    "cover": "./assets/covers/jacket_s_191.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "去り人達のワルツ": {
+    "assetbundleName": "jacket_s_192",
+    "title": "去り人達のワルツ",
+    "cover": "./assets/covers/jacket_s_192.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ワールドワイドワンダー": {
+    "assetbundleName": "jacket_s_193",
+    "title": "ワールドワイドワンダー",
+    "cover": "./assets/covers/jacket_s_193.webp",
+    "singers": ["MORE MORE JUMP!","KAITO"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["コネライ2nd","3rd感謝祭","コネライ3rd","プロ×あん"]
+  },
+  "妄想感傷代償連盟": {
+    "assetbundleName": "jacket_s_194",
+    "title": "妄想感傷代償連盟",
+    "cover": "./assets/covers/jacket_s_194.webp",
+    "singers": ["宵崎奏","東雲絵名","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["moment"]
+  },
+  "PaⅢ.SENSATION": {
+    "assetbundleName": "jacket_s_195",
+    "title": "PaⅢ.SENSATION",
+    "cover": "./assets/covers/jacket_s_195.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "オーダーメイド": {
+    "assetbundleName": "jacket_s_196",
+    "title": "オーダーメイド",
+    "cover": "./assets/covers/jacket_s_196.webp",
+    "singers": ["Leo/need","巡音ルカ"],
+    "unit": "Leo/need",
+    "defaultTags": ["SPARKLE","'23交響","セカライ5th"]
+  },
+  "ラストスコア": {
+    "assetbundleName": "jacket_s_197",
+    "title": "ラストスコア",
+    "cover": "./assets/covers/jacket_s_197.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "グッバイ宣言": {
+    "assetbundleName": "jacket_s_198",
+    "title": "グッバイ宣言",
+    "cover": "./assets/covers/jacket_s_198.webp",
+    "singers": ["ワンダーランズ×ショウタイム"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["4th感謝祭"]
+  },
+  "ゴーストルール": {
+    "assetbundleName": "jacket_s_199",
+    "title": "ゴーストルール",
+    "cover": "./assets/covers/jacket_s_199.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ガランド": {
+    "assetbundleName": "jacket_s_200",
+    "title": "ガランド",
+    "cover": "./assets/covers/jacket_s_200.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "神のまにまに": {
+    "assetbundleName": "jacket_s_201",
+    "title": "神のまにまに",
+    "cover": "./assets/covers/jacket_s_201.webp",
+    "singers": ["ワンダーランズ×ショウタイム","初音ミク"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["2nd感謝祭"]
+  },
+  "Q": {
+    "assetbundleName": "jacket_s_202",
+    "title": "Q",
+    "cover": "./assets/covers/jacket_s_202.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "トリコロージュ": {
+    "assetbundleName": "jacket_s_203",
+    "title": "トリコロージュ",
+    "cover": "./assets/covers/jacket_s_203.webp",
+    "singers": ["25時、ナイトコードで。","鏡音リン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["moment","'25交響"]
+  },
+  "うっせぇわ": {
+    "assetbundleName": "jacket_s_204",
+    "title": "うっせぇわ",
+    "cover": "./assets/covers/jacket_s_204.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "踊": {
+    "assetbundleName": "jacket_s_205",
+    "title": "踊",
+    "cover": "./assets/covers/jacket_s_205.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "君色マリンスノウ": {
+    "assetbundleName": "jacket_s_206",
+    "title": "君色マリンスノウ",
+    "cover": "./assets/covers/jacket_s_206.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Peaky Peaky": {
+    "assetbundleName": "jacket_s_207",
+    "title": "Peaky Peaky",
+    "cover": "./assets/covers/jacket_s_207.webp",
+    "singers": ["Leo/need","KAITO"],
+    "unit": "Leo/need",
+    "defaultTags": ["2nd感謝祭","SPARKLE","セカライ4th"]
+  },
+  "僕らまだアンダーグラウンド": {
+    "assetbundleName": "jacket_s_208",
+    "title": "僕らまだアンダーグラウンド",
+    "cover": "./assets/covers/jacket_s_208.webp",
+    "singers": ["Leo/need","KAITO"],
+    "unit": "Leo/need",
+    "defaultTags": []
+  },
+  "メタモリボン": {
+    "assetbundleName": "jacket_s_209",
+    "title": "メタモリボン",
+    "cover": "./assets/covers/jacket_s_209.webp",
+    "singers": ["MORE MORE JUMP!","鏡音リン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["JUMPIN！"]
+  },
+  "雨とペトラ": {
+    "assetbundleName": "jacket_s_210",
+    "title": "雨とペトラ",
+    "cover": "./assets/covers/jacket_s_210.webp",
+    "singers": ["東雲彰人","青柳冬弥","鏡音レン"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["セカライ3rd"]
+  },
+  "イフ": {
+    "assetbundleName": "jacket_s_211",
+    "title": "イフ",
+    "cover": "./assets/covers/jacket_s_211.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["セカライ3rd","'25交響","5th感謝祭"]
+  },
+  "星空のメロディー": {
+    "assetbundleName": "jacket_s_212",
+    "title": "星空のメロディー",
+    "cover": "./assets/covers/jacket_s_212.webp",
+    "singers": ["ワンダーランズ×ショウタイム","MEIKO"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["わんもあ"]
+  },
+  "ヴァンパイア": {
+    "assetbundleName": "jacket_s_213",
+    "title": "ヴァンパイア",
+    "cover": "./assets/covers/jacket_s_213.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["セカライ2nd","セカライ4th"]
+  },
+  "パレットには君がいっぱい": {
+    "assetbundleName": "jacket_s_214",
+    "title": "パレットには君がいっぱい",
+    "cover": "./assets/covers/jacket_s_214.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ジウダス": {
+    "assetbundleName": "jacket_s_215",
+    "title": "ジウダス",
+    "cover": "./assets/covers/jacket_s_215.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ルカルカ★ナイトフィーバー": {
+    "assetbundleName": "jacket_s_216",
+    "title": "ルカルカ★ナイトフィーバー",
+    "cover": "./assets/covers/jacket_s_216.webp",
+    "singers": ["巡音ルカ"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["ニゴバチャ"]
+  },
+  "街": {
+    "assetbundleName": "jacket_s_217",
+    "title": "街",
+    "cover": "./assets/covers/jacket_s_217.webp",
+    "singers": ["Vivid BAD SQUAD","鏡音リン"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["コネライ2nd","セカライ2nd","セカライ3rd"]
+  },
+  "メリュー": {
+    "assetbundleName": "jacket_s_218",
+    "title": "メリュー",
+    "cover": "./assets/covers/jacket_s_218.webp",
+    "singers": ["宵崎奏","朝比奈まふゆ","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["セカライ3rd"]
+  },
+  "砂の惑星": {
+    "assetbundleName": "jacket_s_219",
+    "title": "砂の惑星",
+    "cover": "./assets/covers/jacket_s_219.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ドーナツホール 2024": {
+    "assetbundleName": "jacket_s_220",
+    "title": "ドーナツホール 2024",
+    "cover": "./assets/covers/jacket_s_220.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "マトリョシカ": {
+    "assetbundleName": "jacket_s_221",
+    "title": "マトリョシカ",
+    "cover": "./assets/covers/jacket_s_221.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ピアノ×フォルテ×スキャンダル": {
+    "assetbundleName": "jacket_s_222",
+    "title": "ピアノ×フォルテ×スキャンダル",
+    "cover": "./assets/covers/jacket_s_222.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "千年の独奏歌": {
+    "assetbundleName": "jacket_s_223",
+    "title": "千年の独奏歌",
+    "cover": "./assets/covers/jacket_s_223.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "88☆彡": {
+    "assetbundleName": "jacket_s_224",
+    "title": "88☆彡",
+    "cover": "./assets/covers/jacket_s_224.webp",
+    "singers": ["ワンダーランズ×ショウタイム","KAITO"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["'23交響","STORIES","3rd感謝祭"]
+  },
+  "エゴロック": {
+    "assetbundleName": "jacket_s_225",
+    "title": "エゴロック",
+    "cover": "./assets/covers/jacket_s_225.webp",
+    "singers": ["ワンダーランズ×ショウタイム","鏡音レン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["3rd感謝祭"]
+  },
+  "ロストエンファウンド": {
+    "assetbundleName": "jacket_s_226",
+    "title": "ロストエンファウンド",
+    "cover": "./assets/covers/jacket_s_226.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ONESELF": {
+    "assetbundleName": "jacket_s_227",
+    "title": "ONESELF",
+    "cover": "./assets/covers/jacket_s_227.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Goodbye": {
+    "assetbundleName": "jacket_s_228",
+    "title": "Goodbye",
+    "cover": "./assets/covers/jacket_s_228.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "脳漿炸裂ガール": {
+    "assetbundleName": "jacket_s_229",
+    "title": "脳漿炸裂ガール",
+    "cover": "./assets/covers/jacket_s_229.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "サラマンダー": {
+    "assetbundleName": "jacket_s_230",
+    "title": "サラマンダー",
+    "cover": "./assets/covers/jacket_s_230.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "アイデンティティ": {
+    "assetbundleName": "jacket_s_231",
+    "title": "アイデンティティ",
+    "cover": "./assets/covers/jacket_s_231.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "青色絵具": {
+    "assetbundleName": "jacket_s_232",
+    "title": "青色絵具",
+    "cover": "./assets/covers/jacket_s_232.webp",
+    "singers": ["日野森志歩","日野森雫","初音ミク"],
+    "unit": "",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "コスモスパイス": {
+    "assetbundleName": "jacket_s_233",
+    "title": "コスモスパイス",
+    "cover": "./assets/covers/jacket_s_233.webp",
+    "singers": ["天馬咲希","天馬司","初音ミク"],
+    "unit": "",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "徳川カップヌードル禁止令": {
+    "assetbundleName": "jacket_s_234",
+    "title": "徳川カップヌードル禁止令",
+    "cover": "./assets/covers/jacket_s_234.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Journey": {
+    "assetbundleName": "jacket_s_235",
+    "title": "Journey",
+    "cover": "./assets/covers/jacket_s_235.webp",
+    "singers": ["星乃一歌","花里みのり","小豆沢こはね","天馬司","宵崎奏","初音ミク"],
+    "unit": "",
+    "defaultTags": ["2nd感謝祭","コネライ2nd","セカライ2nd","'23交響","3rd感謝祭","コネライ3rd","セカライ3rd","4th感謝祭","コネライ4th","5th感謝祭","わんもあ"]
+  },
+  "Voices": {
+    "assetbundleName": "jacket_s_236",
+    "title": "Voices",
+    "cover": "./assets/covers/jacket_s_236.webp",
+    "singers": ["Leo/need","鏡音リン"],
+    "unit": "Leo/need",
+    "defaultTags": ["'23交響","レオビビ","4th感謝祭"]
+  },
+  "君の夜をくれ": {
+    "assetbundleName": "jacket_s_237",
+    "title": "君の夜をくれ",
+    "cover": "./assets/covers/jacket_s_237.webp",
+    "singers": ["25時、ナイトコードで。","巡音ルカ"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["4th感謝祭"]
+  },
+  "ブラック★ロックシューター": {
+    "assetbundleName": "jacket_s_238",
+    "title": "ブラック★ロックシューター",
+    "cover": "./assets/covers/jacket_s_238.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "月光": {
+    "assetbundleName": "jacket_s_239",
+    "title": "月光",
+    "cover": "./assets/covers/jacket_s_239.webp",
+    "singers": ["Vivid BAD SQUAD","MEIKO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["コネライ2nd","3rd感謝祭","4th感謝祭"]
+  },
+  "踊れオーケストラ": {
+    "assetbundleName": "jacket_s_240",
+    "title": "踊れオーケストラ",
+    "cover": "./assets/covers/jacket_s_240.webp",
+    "singers": ["ワンダーランズ×ショウタイム","巡音ルカ"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["セカライ2nd","'23交響","3rd感謝祭"]
+  },
+  "アサガオの散る頃に": {
+    "assetbundleName": "jacket_s_241",
+    "title": "アサガオの散る頃に",
+    "cover": "./assets/covers/jacket_s_241.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "トリノコシティ": {
+    "assetbundleName": "jacket_s_242",
+    "title": "トリノコシティ",
+    "cover": "./assets/covers/jacket_s_242.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Calc.": {
+    "assetbundleName": "jacket_s_243",
+    "title": "Calc.",
+    "cover": "./assets/covers/jacket_s_243.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["2nd感謝祭","セカライ2nd"]
+  },
+  "Awake Now": {
+    "assetbundleName": "jacket_s_244",
+    "title": "Awake Now",
+    "cover": "./assets/covers/jacket_s_244.webp",
+    "singers": ["Vivid BAD SQUAD","初音ミク"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'23交響","レオビビ","5th感謝祭"]
+  },
+  "阿吽のビーツ": {
+    "assetbundleName": "jacket_s_245",
+    "title": "阿吽のビーツ",
+    "cover": "./assets/covers/jacket_s_245.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "エイリアンエイリアン": {
+    "assetbundleName": "jacket_s_246",
+    "title": "エイリアンエイリアン",
+    "cover": "./assets/covers/jacket_s_246.webp",
+    "singers": ["鳳えむ","草薙寧々","初音ミク"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["セカライ3rd"]
+  },
+  "Copycat": {
+    "assetbundleName": "jacket_s_247",
+    "title": "Copycat",
+    "cover": "./assets/covers/jacket_s_247.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "バグ": {
+    "assetbundleName": "jacket_s_248",
+    "title": "バグ",
+    "cover": "./assets/covers/jacket_s_248.webp",
+    "singers": ["25時、ナイトコードで。","鏡音レン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["2nd感謝祭","moment","コネライ3rd","セカライ3rd","4th感謝祭","セカライ4th","プロ×あん"]
+  },
+  "ぼくらの16bit戦争": {
+    "assetbundleName": "jacket_s_249",
+    "title": "ぼくらの16bit戦争",
+    "cover": "./assets/covers/jacket_s_249.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "腐れ外道とチョコレゐト": {
+    "assetbundleName": "jacket_s_250",
+    "title": "腐れ外道とチョコレゐト",
+    "cover": "./assets/covers/jacket_s_250.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "フロイライン＝ビブリォチカ": {
+    "assetbundleName": "jacket_s_251",
+    "title": "フロイライン＝ビブリォチカ",
+    "cover": "./assets/covers/jacket_s_251.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "DREAM PLACE": {
+    "assetbundleName": "jacket_s_252",
+    "title": "DREAM PLACE",
+    "cover": "./assets/covers/jacket_s_252.webp",
+    "singers": ["MORE MORE JUMP!","MEIKO"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'23交響"]
+  },
+  "DAYBREAK FRONTLINE": {
+    "assetbundleName": "jacket_s_253",
+    "title": "DAYBREAK FRONTLINE",
+    "cover": "./assets/covers/jacket_s_253.webp",
+    "singers": ["Vivid BAD SQUAD","初音ミク"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["セカライ2nd","レオビビ","セカライ4th","5th感謝祭"]
+  },
+  "未完成讃歌": {
+    "assetbundleName": "jacket_s_254",
+    "title": "未完成讃歌",
+    "cover": "./assets/covers/jacket_s_254.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "夜もすがら君想ふ": {
+    "assetbundleName": "jacket_s_255",
+    "title": "夜もすがら君想ふ",
+    "cover": "./assets/covers/jacket_s_255.webp",
+    "singers": ["Leo/need","鏡音リン"],
+    "unit": "Leo/need",
+    "defaultTags": ["セカライ4th","5th感謝祭"]
+  },
+  "ダブルラリアット": {
+    "assetbundleName": "jacket_s_256",
+    "title": "ダブルラリアット",
+    "cover": "./assets/covers/jacket_s_256.webp",
+    "singers": ["巡音ルカ"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["コネライ4th"]
+  },
+  "てらてら": {
+    "assetbundleName": "jacket_s_257",
+    "title": "てらてら",
+    "cover": "./assets/covers/jacket_s_257.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["SPARKLE","セカライ3rd","レオビビ","4th感謝祭","セカライ5th"]
+  },
+  "深海少女": {
+    "assetbundleName": "jacket_s_258",
+    "title": "深海少女",
+    "cover": "./assets/covers/jacket_s_258.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "the WALL": {
+    "assetbundleName": "jacket_s_259",
+    "title": "the WALL",
+    "cover": "./assets/covers/jacket_s_259.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["コネライ3rd","セカライ3rd"]
+  },
+  "ラブカ？": {
+    "assetbundleName": "jacket_s_260",
+    "title": "ラブカ？",
+    "cover": "./assets/covers/jacket_s_260.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "星屑ユートピア": {
+    "assetbundleName": "jacket_s_261",
+    "title": "星屑ユートピア",
+    "cover": "./assets/covers/jacket_s_261.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "帝国少女": {
+    "assetbundleName": "jacket_s_262",
+    "title": "帝国少女",
+    "cover": "./assets/covers/jacket_s_262.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Highlight": {
+    "assetbundleName": "jacket_s_263",
+    "title": "Highlight",
+    "cover": "./assets/covers/jacket_s_263.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "パラソルサイダー": {
+    "assetbundleName": "jacket_s_264",
+    "title": "パラソルサイダー",
+    "cover": "./assets/covers/jacket_s_264.webp",
+    "singers": ["MORE MORE JUMP!","巡音ルカ"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["セカライ3rd","4th感謝祭","コネライ4th","セカライ4th","'25交響"]
+  },
+  "Change me": {
+    "assetbundleName": "jacket_s_265",
+    "title": "Change me",
+    "cover": "./assets/covers/jacket_s_265.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "YY": {
+    "assetbundleName": "jacket_s_266",
+    "title": "YY",
+    "cover": "./assets/covers/jacket_s_266.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "仮死化": {
+    "assetbundleName": "jacket_s_267",
+    "title": "仮死化",
+    "cover": "./assets/covers/jacket_s_267.webp",
+    "singers": ["Vivid BAD SQUAD","MEIKO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'23交響","コネライ3rd","セカライ3rd","'24交響","セカライ4th"]
+  },
+  "ノンブレス・オブリージュ": {
+    "assetbundleName": "jacket_s_268",
+    "title": "ノンブレス・オブリージュ",
+    "cover": "./assets/covers/jacket_s_268.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ロンリーユニバース": {
+    "assetbundleName": "jacket_s_269",
+    "title": "ロンリーユニバース",
+    "cover": "./assets/covers/jacket_s_269.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "泥中に咲く": {
+    "assetbundleName": "jacket_s_270",
+    "title": "泥中に咲く",
+    "cover": "./assets/covers/jacket_s_270.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "あったかいと": {
+    "assetbundleName": "jacket_s_271",
+    "title": "あったかいと",
+    "cover": "./assets/covers/jacket_s_271.webp",
+    "singers": ["KAITO"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["ニゴバチャ"]
+  },
+  "ジェヘナ": {
+    "assetbundleName": "jacket_s_272",
+    "title": "ジェヘナ",
+    "cover": "./assets/covers/jacket_s_272.webp",
+    "singers": ["東雲絵名","暁山瑞希","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["セカライ3rd"]
+  },
+  "フューチャー・イヴ": {
+    "assetbundleName": "jacket_s_273",
+    "title": "フューチャー・イヴ",
+    "cover": "./assets/covers/jacket_s_273.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "それでもいいんだよ": {
+    "assetbundleName": "jacket_s_274",
+    "title": "それでもいいんだよ",
+    "cover": "./assets/covers/jacket_s_274.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "パラジクロロベンゼン": {
+    "assetbundleName": "jacket_s_275",
+    "title": "パラジクロロベンゼン",
+    "cover": "./assets/covers/jacket_s_275.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "シャンティ": {
+    "assetbundleName": "jacket_s_276",
+    "title": "シャンティ",
+    "cover": "./assets/covers/jacket_s_276.webp",
+    "singers": ["Vivid BAD SQUAD","KAITO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["4th感謝祭"]
+  },
+  "フォニイ": {
+    "assetbundleName": "jacket_s_277",
+    "title": "フォニイ",
+    "cover": "./assets/covers/jacket_s_277.webp",
+    "singers": ["25時、ナイトコードで。","MEIKO"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["セカライ2nd","3rd感謝祭","セカライ4th"]
+  },
+  "Bad ∞ End ∞ Night": {
+    "assetbundleName": "jacket_s_278",
+    "title": "Bad ∞ End ∞ Night",
+    "cover": "./assets/covers/jacket_s_278.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "こちら、幸福安心委員会です。": {
+    "assetbundleName": "jacket_s_279",
+    "title": "こちら、幸福安心委員会です。",
+    "cover": "./assets/covers/jacket_s_279.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "虚ろを扇ぐ": {
+    "assetbundleName": "jacket_s_280",
+    "title": "虚ろを扇ぐ",
+    "cover": "./assets/covers/jacket_s_280.webp",
+    "singers": ["Vivid BAD SQUAD","KAITO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["セカライ3rd","レオビビ","4th感謝祭","コネライ4th","セカライ5th"]
+  },
+  "気まぐれメルシィ": {
+    "assetbundleName": "jacket_s_281",
+    "title": "気まぐれメルシィ",
+    "cover": "./assets/covers/jacket_s_281.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["3rd感謝祭"]
+  },
+  "星空オーケストラ": {
+    "assetbundleName": "jacket_s_282",
+    "title": "星空オーケストラ",
+    "cover": "./assets/covers/jacket_s_282.webp",
+    "singers": ["ワンダーランズ×ショウタイム","巡音ルカ"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["コネライ4th"]
+  },
+  "レイニースノードロップ": {
+    "assetbundleName": "jacket_s_283",
+    "title": "レイニースノードロップ",
+    "cover": "./assets/covers/jacket_s_283.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "インビジブル": {
+    "assetbundleName": "jacket_s_284",
+    "title": "インビジブル",
+    "cover": "./assets/covers/jacket_s_284.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ÅMARA(大未来電脳)": {
+    "assetbundleName": "jacket_s_285",
+    "title": "ÅMARA(大未来電脳)",
+    "cover": "./assets/covers/jacket_s_285.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Hello, Worker": {
+    "assetbundleName": "jacket_s_286",
+    "title": "Hello, Worker",
+    "cover": "./assets/covers/jacket_s_286.webp",
+    "singers": ["Leo/need","巡音ルカ"],
+    "unit": "Leo/need",
+    "defaultTags": ["セカライ3rd"]
+  },
+  "私は、私達は": {
+    "assetbundleName": "jacket_s_287",
+    "title": "私は、私達は",
+    "cover": "./assets/covers/jacket_s_287.webp",
+    "singers": ["MORE MORE JUMP!","鏡音レン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["コネライ3rd"]
+  },
+  "アンハッピーリフレイン": {
+    "assetbundleName": "jacket_s_288",
+    "title": "アンハッピーリフレイン",
+    "cover": "./assets/covers/jacket_s_288.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "天ノ弱": {
+    "assetbundleName": "jacket_s_289",
+    "title": "天ノ弱",
+    "cover": "./assets/covers/jacket_s_289.webp",
+    "singers": ["Leo/need"],
+    "unit": "Leo/need",
+    "defaultTags": ["SPARKLE","5th感謝祭"]
+  },
+  "どんな結末がお望みだい？": {
+    "assetbundleName": "jacket_s_290",
+    "title": "どんな結末がお望みだい？",
+    "cover": "./assets/covers/jacket_s_290.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "フェレス": {
+    "assetbundleName": "jacket_s_291",
+    "title": "フェレス",
+    "cover": "./assets/covers/jacket_s_291.webp",
+    "singers": ["小豆沢こはね","白石杏","初音ミク","MEIKO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'23交響","セカライ3rd"]
+  },
+  "いちにのさんで": {
+    "assetbundleName": "jacket_s_292",
+    "title": "いちにのさんで",
+    "cover": "./assets/covers/jacket_s_292.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "アイロニ": {
+    "assetbundleName": "jacket_s_293",
+    "title": "アイロニ",
+    "cover": "./assets/covers/jacket_s_293.webp",
+    "singers": ["25時、ナイトコードで。","鏡音レン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["3rd感謝祭"]
+  },
+  "それがあなたの幸せとしても": {
+    "assetbundleName": "jacket_s_294",
+    "title": "それがあなたの幸せとしても",
+    "cover": "./assets/covers/jacket_s_294.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "フロート・プランナー": {
+    "assetbundleName": "jacket_s_295",
+    "title": "フロート・プランナー",
+    "cover": "./assets/covers/jacket_s_295.webp",
+    "singers": ["MORE MORE JUMP!","MEIKO"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["コネライ3rd"]
+  },
+  "カンタレラ": {
+    "assetbundleName": "jacket_s_296",
+    "title": "カンタレラ",
+    "cover": "./assets/covers/jacket_s_296.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "p.h.": {
+    "assetbundleName": "jacket_s_297",
+    "title": "p.h.",
+    "cover": "./assets/covers/jacket_s_297.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ネトゲ廃人シュプレヒコール": {
+    "assetbundleName": "jacket_s_298",
+    "title": "ネトゲ廃人シュプレヒコール",
+    "cover": "./assets/covers/jacket_s_298.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "エゴイスト": {
+    "assetbundleName": "jacket_s_299",
+    "title": "エゴイスト",
+    "cover": "./assets/covers/jacket_s_299.webp",
+    "singers": ["Vivid BAD SQUAD","MEIKO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "ザムザ": {
+    "assetbundleName": "jacket_s_300",
+    "title": "ザムザ",
+    "cover": "./assets/covers/jacket_s_300.webp",
+    "singers": ["25時、ナイトコードで。","KAITO"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["コネライ3rd","セカライ3rd","セカライ5th"]
+  },
+  "私の恋はヘルファイア": {
+    "assetbundleName": "jacket_s_301",
+    "title": "私の恋はヘルファイア",
+    "cover": "./assets/covers/jacket_s_301.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "フレー": {
+    "assetbundleName": "jacket_s_302",
+    "title": "フレー",
+    "cover": "./assets/covers/jacket_s_302.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "リンちゃんなう！": {
+    "assetbundleName": "jacket_s_303",
+    "title": "リンちゃんなう！",
+    "cover": "./assets/covers/jacket_s_303.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Iなんです": {
+    "assetbundleName": "jacket_s_304",
+    "title": "Iなんです",
+    "cover": "./assets/covers/jacket_s_304.webp",
+    "singers": ["25時、ナイトコードで。","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'23交響","3rd感謝祭","コネライ4th"]
+  },
+  "ストロボラスト": {
+    "assetbundleName": "jacket_s_305",
+    "title": "ストロボラスト",
+    "cover": "./assets/covers/jacket_s_305.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "1925": {
+    "assetbundleName": "jacket_s_306",
+    "title": "1925",
+    "cover": "./assets/covers/jacket_s_306.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "おこちゃま戦争": {
+    "assetbundleName": "jacket_s_307",
+    "title": "おこちゃま戦争",
+    "cover": "./assets/covers/jacket_s_307.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ももいろの鍵": {
+    "assetbundleName": "jacket_s_308",
+    "title": "ももいろの鍵",
+    "cover": "./assets/covers/jacket_s_308.webp",
+    "singers": ["MORE MORE JUMP!","巡音ルカ"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'23交響","セカライ4th"]
+  },
+  "Afterglow": {
+    "assetbundleName": "jacket_s_309",
+    "title": "Afterglow",
+    "cover": "./assets/covers/jacket_s_309.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Flyway": {
+    "assetbundleName": "jacket_s_310",
+    "title": "Flyway",
+    "cover": "./assets/covers/jacket_s_310.webp",
+    "singers": ["Leo/need","鏡音レン"],
+    "unit": "Leo/need",
+    "defaultTags": ["'23交響","コネライ3rd","4th感謝祭"]
+  },
+  "夜明けと蛍": {
+    "assetbundleName": "jacket_s_311",
+    "title": "夜明けと蛍",
+    "cover": "./assets/covers/jacket_s_311.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ココロ": {
+    "assetbundleName": "jacket_s_312",
+    "title": "ココロ",
+    "cover": "./assets/covers/jacket_s_312.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "FREELY TOMORROW": {
+    "assetbundleName": "jacket_s_313",
+    "title": "FREELY TOMORROW",
+    "cover": "./assets/covers/jacket_s_313.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "陽だまりのセツナ": {
+    "assetbundleName": "jacket_s_314",
+    "title": "陽だまりのセツナ",
+    "cover": "./assets/covers/jacket_s_314.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "What's up? Pop!": {
+    "assetbundleName": "jacket_s_315",
+    "title": "What's up? Pop!",
+    "cover": "./assets/covers/jacket_s_315.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ひつじがいっぴき": {
+    "assetbundleName": "jacket_s_316",
+    "title": "ひつじがいっぴき",
+    "cover": "./assets/covers/jacket_s_316.webp",
+    "singers": ["Vivid BAD SQUAD","MEIKO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'24交響","コネライ4th"]
+  },
+  "魔法みたいなミュージック！": {
+    "assetbundleName": "jacket_s_317",
+    "title": "魔法みたいなミュージック！",
+    "cover": "./assets/covers/jacket_s_317.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Sharing The World": {
+    "assetbundleName": "jacket_s_318",
+    "title": "Sharing The World",
+    "cover": "./assets/covers/jacket_s_318.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Decade": {
+    "assetbundleName": "jacket_s_319",
+    "title": "Decade",
+    "cover": "./assets/covers/jacket_s_319.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Booo!": {
+    "assetbundleName": "jacket_s_320",
+    "title": "Booo!",
+    "cover": "./assets/covers/jacket_s_320.webp",
+    "singers": ["MORE MORE JUMP!","鏡音リン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["3rd感謝祭","わんもあ"]
+  },
+  "アトラクトライト": {
+    "assetbundleName": "jacket_s_321",
+    "title": "アトラクトライト",
+    "cover": "./assets/covers/jacket_s_321.webp",
+    "singers": ["Leo/need","鏡音レン"],
+    "unit": "Leo/need",
+    "defaultTags": ["'23交響","セカライ3rd","4th感謝祭"]
+  },
+  "絶え間なく藍色": {
+    "assetbundleName": "jacket_s_322",
+    "title": "絶え間なく藍色",
+    "cover": "./assets/covers/jacket_s_322.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "快晴": {
+    "assetbundleName": "jacket_s_323",
+    "title": "快晴",
+    "cover": "./assets/covers/jacket_s_323.webp",
+    "singers": ["Leo/need","MEIKO"],
+    "unit": "Leo/need",
+    "defaultTags": ["SPARKLE","'25交響"]
+  },
+  "箱庭のコラル": {
+    "assetbundleName": "jacket_s_324",
+    "title": "箱庭のコラル",
+    "cover": "./assets/covers/jacket_s_324.webp",
+    "singers": ["ワンダーランズ×ショウタイム","KAITO"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["コネライ3rd","'24交響","4th感謝祭"]
+  },
+  "豚になってyeah yeah": {
+    "assetbundleName": "jacket_s_325",
+    "title": "豚になってyeah yeah",
+    "cover": "./assets/covers/jacket_s_325.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "天使の翼。": {
+    "assetbundleName": "jacket_s_326",
+    "title": "天使の翼。",
+    "cover": "./assets/covers/jacket_s_326.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "SnowMix♪": {
+    "assetbundleName": "jacket_s_327",
+    "title": "SnowMix♪",
+    "cover": "./assets/covers/jacket_s_327.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "星界ちゃんと可不ちゃんのおつかい合騒曲": {
+    "assetbundleName": "jacket_s_328",
+    "title": "星界ちゃんと可不ちゃんのおつかい合騒曲",
+    "cover": "./assets/covers/jacket_s_328.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ヤミナベ!!!!": {
+    "assetbundleName": "jacket_s_329",
+    "title": "ヤミナベ!!!!",
+    "cover": "./assets/covers/jacket_s_329.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "インタビュア": {
+    "assetbundleName": "jacket_s_330",
+    "title": "インタビュア",
+    "cover": "./assets/covers/jacket_s_330.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "39": {
+    "assetbundleName": "jacket_s_331",
+    "title": "39",
+    "cover": "./assets/covers/jacket_s_331.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "エピローグに君はいない": {
+    "assetbundleName": "jacket_s_332",
+    "title": "エピローグに君はいない",
+    "cover": "./assets/covers/jacket_s_332.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Mr. Showtime": {
+    "assetbundleName": "jacket_s_333",
+    "title": "Mr. Showtime",
+    "cover": "./assets/covers/jacket_s_333.webp",
+    "singers": ["ワンダーランズ×ショウタイム","巡音ルカ"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["コネライ3rd","セカライ3rd","'24交響","4th感謝祭"]
+  },
+  "Vampire's ∞ pathoS": {
+    "assetbundleName": "jacket_s_334",
+    "title": "Vampire's ∞ pathoS",
+    "cover": "./assets/covers/jacket_s_334.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "トラッシュ・アンド・トラッシュ！": {
+    "assetbundleName": "jacket_s_335",
+    "title": "トラッシュ・アンド・トラッシュ！",
+    "cover": "./assets/covers/jacket_s_335.webp",
+    "singers": ["鏡音リン"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": [ "コネライ4th"]
+  },
+  "Be The MUSIC!": {
+    "assetbundleName": "jacket_s_336",
+    "title": "Be The MUSIC!",
+    "cover": "./assets/covers/jacket_s_336.webp",
+    "singers": ["VIRTUAL SINGER"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["セカライ4th","セカライ5th"]
+  },
+  "METEOR": {
+    "assetbundleName": "jacket_s_337",
+    "title": "METEOR",
+    "cover": "./assets/covers/jacket_s_337.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Where shall we go?": {
+    "assetbundleName": "jacket_s_338",
+    "title": "Where shall we go?",
+    "cover": "./assets/covers/jacket_s_338.webp",
+    "singers": ["鏡音リン","鏡音レン"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["ニゴバチャ"]
+  },
+  "glow": {
+    "assetbundleName": "jacket_s_339",
+    "title": "glow",
+    "cover": "./assets/covers/jacket_s_339.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "とても素敵な六月でした": {
+    "assetbundleName": "jacket_s_340",
+    "title": "とても素敵な六月でした",
+    "cover": "./assets/covers/jacket_s_340.webp",
+    "singers": ["25時、ナイトコードで。","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["3rd感謝祭"]
+  },
+  "難聴系男子が倒せない": {
+    "assetbundleName": "jacket_s_341",
+    "title": "難聴系男子が倒せない",
+    "cover": "./assets/covers/jacket_s_341.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Blue Star": {
+    "assetbundleName": "jacket_s_342",
+    "title": "Blue Star",
+    "cover": "./assets/covers/jacket_s_342.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "スノーマン": {
+    "assetbundleName": "jacket_s_343",
+    "title": "スノーマン",
+    "cover": "./assets/covers/jacket_s_343.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "脳内革命ガール": {
+    "assetbundleName": "jacket_s_344",
+    "title": "脳内革命ガール",
+    "cover": "./assets/covers/jacket_s_344.webp",
+    "singers": ["Vivid BAD SQUAD","初音ミク"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["3rd感謝祭"]
+  },
+  "演劇": {
+    "assetbundleName": "jacket_s_345",
+    "title": "演劇",
+    "cover": "./assets/covers/jacket_s_345.webp",
+    "singers": ["25時、ナイトコードで。","巡音ルカ"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["コネライ3rd","'24交響","プロ×あん","5th感謝祭"]
+  },
+  "嗚呼、素晴らしきニャン生": {
+    "assetbundleName": "jacket_s_346",
+    "title": "嗚呼、素晴らしきニャン生",
+    "cover": "./assets/covers/jacket_s_346.webp",
+    "singers": ["ワンダーランズ×ショウタイム","鏡音レン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["わんもあ"]
+  },
+  "円尾坂の仕立屋": {
+    "assetbundleName": "jacket_s_347",
+    "title": "円尾坂の仕立屋",
+    "cover": "./assets/covers/jacket_s_347.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "悪徳のジャッジメント": {
+    "assetbundleName": "jacket_s_348",
+    "title": "悪徳のジャッジメント",
+    "cover": "./assets/covers/jacket_s_348.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "悪食娘コンチータ": {
+    "assetbundleName": "jacket_s_349",
+    "title": "悪食娘コンチータ",
+    "cover": "./assets/covers/jacket_s_349.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "眠らせ姫からの贈り物": {
+    "assetbundleName": "jacket_s_350",
+    "title": "眠らせ姫からの贈り物",
+    "cover": "./assets/covers/jacket_s_350.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "相生": {
+    "assetbundleName": "jacket_s_351",
+    "title": "相生",
+    "cover": "./assets/covers/jacket_s_351.webp",
+    "singers": ["Leo/need","MEIKO"],
+    "unit": "Leo/need",
+    "defaultTags": ["'23交響","コネライ4th"]
+  },
+  "命ばっかり": {
+    "assetbundleName": "jacket_s_352",
+    "title": "命ばっかり",
+    "cover": "./assets/covers/jacket_s_352.webp",
+    "singers": ["25時、ナイトコードで。","MEIKO"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["4th感謝祭"]
+  },
+  "キティ": {
+    "assetbundleName": "jacket_s_353",
+    "title": "キティ",
+    "cover": "./assets/covers/jacket_s_353.webp",
+    "singers": ["25時、ナイトコードで。","鏡音レン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["3rd感謝祭","'24交響","コネライ4th","セカライ4th","セカライ5th"]
+  },
+  "セツナトリップ": {
+    "assetbundleName": "jacket_s_354",
+    "title": "セツナトリップ",
+    "cover": "./assets/covers/jacket_s_354.webp",
+    "singers": ["花里みのり","桃井愛莉","鏡音リン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["セカライ3rd"]
+  },
+  "白い雪のプリンセスは": {
+    "assetbundleName": "jacket_s_355",
+    "title": "白い雪のプリンセスは",
+    "cover": "./assets/covers/jacket_s_355.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["4th感謝祭"]
+  },
+  "リアライズ": {
+    "assetbundleName": "jacket_s_356",
+    "title": "リアライズ",
+    "cover": "./assets/covers/jacket_s_356.webp",
+    "singers": ["Vivid BAD SQUAD","初音ミク"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["コネライ3rd","セカライ5th"]
+  },
+  "ブループラネット": {
+    "assetbundleName": "jacket_s_357",
+    "title": "ブループラネット",
+    "cover": "./assets/covers/jacket_s_357.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "心做し": {
+    "assetbundleName": "jacket_s_358",
+    "title": "心做し",
+    "cover": "./assets/covers/jacket_s_358.webp",
+    "singers": ["宵崎奏","朝比奈まふゆ","鏡音レン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'25交響"]
+  },
+  "名も無き革命": {
+    "assetbundleName": "jacket_s_359",
+    "title": "名も無き革命",
+    "cover": "./assets/covers/jacket_s_359.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "太陽系デスコ": {
+    "assetbundleName": "jacket_s_360",
+    "title": "太陽系デスコ",
+    "cover": "./assets/covers/jacket_s_360.webp",
+    "singers": ["ワンダーランズ×ショウタイム","初音ミク"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["3rd感謝祭","プロ×あん"]
+  },
+  "きゅうくらりん": {
+    "assetbundleName": "jacket_s_361",
+    "title": "きゅうくらりん",
+    "cover": "./assets/covers/jacket_s_361.webp",
+    "singers": ["MORE MORE JUMP!","MEIKO"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'24交響","プロ×あん"]
+  },
+  "Wonder Style": {
+    "assetbundleName": "jacket_s_362",
+    "title": "Wonder Style",
+    "cover": "./assets/covers/jacket_s_362.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "UNDERWATER": {
+    "assetbundleName": "jacket_s_363",
+    "title": "UNDERWATER",
+    "cover": "./assets/covers/jacket_s_363.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "エターナルアリア": {
+    "assetbundleName": "jacket_s_364",
+    "title": "エターナルアリア",
+    "cover": "./assets/covers/jacket_s_364.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "恋は戦争": {
+    "assetbundleName": "jacket_s_365",
+    "title": "恋は戦争",
+    "cover": "./assets/covers/jacket_s_365.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "NEO": {
+    "assetbundleName": "jacket_s_366",
+    "title": "NEO",
+    "cover": "./assets/covers/jacket_s_366.webp",
+    "singers": ["星乃一歌","花里みのり","小豆沢こはね","天馬司","宵崎奏","初音ミク"],
+    "unit": "",
+    "defaultTags": ["3rd感謝祭","コネライ3rd","セカライ3rd","'24交響","レオビビ","4th感謝祭","コネライ4th","セカライ4th","'25交響","5th感謝祭"]
+  },
+  "すきなことだけでいいです": {
+    "assetbundleName": "jacket_s_367",
+    "title": "すきなことだけでいいです",
+    "cover": "./assets/covers/jacket_s_367.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "アイムマイン": {
+    "assetbundleName": "jacket_s_368",
+    "title": "アイムマイン",
+    "cover": "./assets/covers/jacket_s_368.webp",
+    "singers": ["VIRTUAL SINGER"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["コネライ3rd","セカライ3rd","セカライ4th","プロ×あん"]
+  },
+  "メランコリック": {
+    "assetbundleName": "jacket_s_369",
+    "title": "メランコリック",
+    "cover": "./assets/covers/jacket_s_369.webp",
+    "singers": ["MORE MORE JUMP!","鏡音リン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["4th感謝祭","わんもあ"]
+  },
+  "人生": {
+    "assetbundleName": "jacket_s_370",
+    "title": "人生",
+    "cover": "./assets/covers/jacket_s_370.webp",
+    "singers": ["VIRTUAL SINGER"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["ニゴバチャ"]
+  },
+  "天樂": {
+    "assetbundleName": "jacket_s_372",
+    "title": "天樂",
+    "cover": "./assets/covers/jacket_s_372.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "下剋上": {
+    "assetbundleName": "jacket_s_373",
+    "title": "下剋上",
+    "cover": "./assets/covers/jacket_s_373.webp",
+    "singers": ["Vivid BAD SQUAD","鏡音リン"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["3rd感謝祭","コネライ3rd","'25交響"]
+  },
+  "チームメイト": {
+    "assetbundleName": "jacket_s_374",
+    "title": "チームメイト",
+    "cover": "./assets/covers/jacket_s_374.webp",
+    "singers": ["MORE MORE JUMP!","鏡音レン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["コネライ3rd","'24交響","プロ×あん","'25交響"]
+  },
+  "星を繋ぐ": {
+    "assetbundleName": "jacket_s_375",
+    "title": "星を繋ぐ",
+    "cover": "./assets/covers/jacket_s_375.webp",
+    "singers": ["Leo/need","KAITO"],
+    "unit": "Leo/need",
+    "defaultTags": ["コネライ3rd","'24交響","プロ×あん","5th感謝祭"]
+  },
+  "我儘姫": {
+    "assetbundleName": "jacket_s_376",
+    "title": "我儘姫",
+    "cover": "./assets/covers/jacket_s_376.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "悪役にキスシーンを": {
+    "assetbundleName": "jacket_s_377",
+    "title": "悪役にキスシーンを",
+    "cover": "./assets/covers/jacket_s_377.webp",
+    "singers": ["MORE MORE JUMP!","KAITO"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["わんもあ"]
+  },
+  "スロウダウナー": {
+    "assetbundleName": "jacket_s_378",
+    "title": "スロウダウナー",
+    "cover": "./assets/covers/jacket_s_378.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ずんだパーリナイ": {
+    "assetbundleName": "jacket_s_379",
+    "title": "ずんだパーリナイ",
+    "cover": "./assets/covers/jacket_s_379.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "スターダストメドレー": {
+    "assetbundleName": "jacket_s_380",
+    "title": "スターダストメドレー",
+    "cover": "./assets/covers/jacket_s_380.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "新人類": {
+    "assetbundleName": "jacket_s_381",
+    "title": "新人類",
+    "cover": "./assets/covers/jacket_s_381.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "心拍ペアリング": {
+    "assetbundleName": "jacket_s_382",
+    "title": "心拍ペアリング",
+    "cover": "./assets/covers/jacket_s_382.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "purpose": {
+    "assetbundleName": "jacket_s_383",
+    "title": "purpose",
+    "cover": "./assets/covers/jacket_s_383.webp",
+    "singers": ["Leo/need","鏡音リン"],
+    "unit": "Leo/need",
+    "defaultTags": ["'24交響","コネライ4th","5th感謝祭"]
+  },
+  "トワイライトライト": {
+    "assetbundleName": "jacket_s_384",
+    "title": "トワイライトライト",
+    "cover": "./assets/covers/jacket_s_384.webp",
+    "singers": ["25時、ナイトコードで。","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["コネライ4th","セカライ4th"]
+  },
+  "神っぽいな": {
+    "assetbundleName": "jacket_s_385",
+    "title": "神っぽいな",
+    "cover": "./assets/covers/jacket_s_385.webp",
+    "singers": ["25時、ナイトコードで。","初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["セカライ4th"]
+  },
+  "キラピピ★キラピカ": {
+    "assetbundleName": "jacket_s_386",
+    "title": "キラピピ★キラピカ",
+    "cover": "./assets/covers/jacket_s_386.webp",
+    "singers": ["ワンダーランズ×ショウタイム","MEIKO"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["コネライ3rd","'24交響","プロ×あん"]
+  },
+  "Hello Builder": {
+    "assetbundleName": "jacket_s_387",
+    "title": "Hello Builder",
+    "cover": "./assets/covers/jacket_s_387.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Dear": {
+    "assetbundleName": "jacket_s_390",
+    "title": "Dear",
+    "cover": "./assets/covers/jacket_s_390.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "キュートなカノジョ": {
+    "assetbundleName": "jacket_s_391",
+    "title": "キュートなカノジョ",
+    "cover": "./assets/covers/jacket_s_391.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "春嵐": {
+    "assetbundleName": "jacket_s_392",
+    "title": "春嵐",
+    "cover": "./assets/covers/jacket_s_392.webp",
+    "singers": ["Vivid BAD SQUAD","MEIKO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["セカライ5th"]
+  },
+  "Un-Lock": {
+    "assetbundleName": "jacket_s_393",
+    "title": "Un-Lock",
+    "cover": "./assets/covers/jacket_s_393.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ボトルケーキ": {
+    "assetbundleName": "jacket_s_394",
+    "title": "ボトルケーキ",
+    "cover": "./assets/covers/jacket_s_394.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "サマータイムレコード": {
+    "assetbundleName": "jacket_s_395",
+    "title": "サマータイムレコード",
+    "cover": "./assets/covers/jacket_s_395.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "東京テディベア": {
+    "assetbundleName": "jacket_s_396",
+    "title": "東京テディベア",
+    "cover": "./assets/covers/jacket_s_396.webp",
+    "singers": ["Leo/need","鏡音リン"],
+    "unit": "Leo/need",
+    "defaultTags": ["4th感謝祭"]
+  },
+  "フィラメントフィーバー": {
+    "assetbundleName": "jacket_s_397",
+    "title": "フィラメントフィーバー",
+    "cover": "./assets/covers/jacket_s_397.webp",
+    "singers": ["ワンダーランズ×ショウタイム","MEIKO"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["コネライ4th","プロ×あん","セカライ5th"]
+  },
+  "Beyond the way": {
+    "assetbundleName": "jacket_s_398",
+    "title": "Beyond the way",
+    "cover": "./assets/covers/jacket_s_398.webp",
+    "singers": ["Vivid BAD SQUAD","初音ミク"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'24交響","コネライ4th","セカライ4th"]
+  },
+  "Disco No.39": {
+    "assetbundleName": "jacket_s_399",
+    "title": "Disco No.39",
+    "cover": "./assets/covers/jacket_s_399.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "我らステインバスターズ！": {
+    "assetbundleName": "jacket_s_400",
+    "title": "我らステインバスターズ！",
+    "cover": "./assets/covers/jacket_s_400.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "まにまに": {
+    "assetbundleName": "jacket_s_401",
+    "title": "まにまに",
+    "cover": "./assets/covers/jacket_s_401.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "エンヴィーベイビー": {
+    "assetbundleName": "jacket_s_402",
+    "title": "エンヴィーベイビー",
+    "cover": "./assets/covers/jacket_s_402.webp",
+    "singers": ["25時、ナイトコードで。","鏡音リン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["4th感謝祭","プロ×あん"]
+  },
+  "番凩": {
+    "assetbundleName": "jacket_s_403",
+    "title": "番凩",
+    "cover": "./assets/covers/jacket_s_403.webp",
+    "singers": ["MEIKO","KAITO"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["コネライ4th"]
+  },
+  "blender": {
+    "assetbundleName": "jacket_s_404",
+    "title": "blender",
+    "cover": "./assets/covers/jacket_s_404.webp",
+    "singers": ["Vivid BAD SQUAD","MEIKO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["セカライ4th","'25交響"]
+  },
+  "MOTTO!!!": {
+    "assetbundleName": "jacket_s_405",
+    "title": "MOTTO!!!",
+    "cover": "./assets/covers/jacket_s_405.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["コネライ4th","セカライ4th"]
+  },
+  "ARQETYPE": {
+    "assetbundleName": "jacket_s_406",
+    "title": "ARQETYPE",
+    "cover": "./assets/covers/jacket_s_406.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "初めての恋が終わる時": {
+    "assetbundleName": "jacket_s_407",
+    "title": "初めての恋が終わる時",
+    "cover": "./assets/covers/jacket_s_407.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "CIRCUS PANIC!!!": {
+    "assetbundleName": "jacket_s_408",
+    "title": "CIRCUS PANIC!!!",
+    "cover": "./assets/covers/jacket_s_408.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "25時の情熱": {
+    "assetbundleName": "jacket_s_409",
+    "title": "25時の情熱",
+    "cover": "./assets/covers/jacket_s_409.webp",
+    "singers": ["25時、ナイトコードで。","KAITO"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'24交響"]
+  },
+  "マーシャル・マキシマイザー": {
+    "assetbundleName": "jacket_s_410",
+    "title": "マーシャル・マキシマイザー",
+    "cover": "./assets/covers/jacket_s_410.webp",
+    "singers": ["Vivid BAD SQUAD","巡音ルカ"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'24交響","4th感謝祭","プロ×あん"]
+  },
+  "世界を照らすテトラッド": {
+    "assetbundleName": "jacket_s_411",
+    "title": "世界を照らすテトラッド",
+    "cover": "./assets/covers/jacket_s_411.webp",
+    "singers": ["ワンダーランズ×ショウタイム","初音ミク"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["コネライ4th","セカライ4th"]
+  },
+  "デビルじゃないもん": {
+    "assetbundleName": "jacket_s_412",
+    "title": "デビルじゃないもん",
+    "cover": "./assets/covers/jacket_s_412.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "さよならプリンセス": {
+    "assetbundleName": "jacket_s_413",
+    "title": "さよならプリンセス",
+    "cover": "./assets/covers/jacket_s_413.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "HERO": {
+    "assetbundleName": "jacket_s_414",
+    "title": "HERO",
+    "cover": "./assets/covers/jacket_s_414.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ラッキー☆オーブ": {
+    "assetbundleName": "jacket_s_415",
+    "title": "ラッキー☆オーブ",
+    "cover": "./assets/covers/jacket_s_415.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "limbo": {
+    "assetbundleName": "jacket_s_416",
+    "title": "limbo",
+    "cover": "./assets/covers/jacket_s_416.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "くうになる": {
+    "assetbundleName": "jacket_s_417",
+    "title": "くうになる",
+    "cover": "./assets/covers/jacket_s_417.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "金木犀": {
+    "assetbundleName": "jacket_s_418",
+    "title": "金木犀",
+    "cover": "./assets/covers/jacket_s_418.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "imaginary love story": {
+    "assetbundleName": "jacket_s_420",
+    "title": "imaginary love story",
+    "cover": "./assets/covers/jacket_s_420.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "CR詠ZY": {
+    "assetbundleName": "jacket_s_421",
+    "title": "CR詠ZY",
+    "cover": "./assets/covers/jacket_s_421.webp",
+    "singers": ["Vivid BAD SQUAD","巡音ルカ"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["レオビビ"]
+  },
+  "JUMPIN’ OVER !": {
+    "assetbundleName": "jacket_s_422",
+    "title": "JUMPIN’ OVER !",
+    "cover": "./assets/covers/jacket_s_422.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'24交響","コネライ4th","セカライ5th"]
+  },
+  "レグルス": {
+    "assetbundleName": "jacket_s_423",
+    "title": "レグルス",
+    "cover": "./assets/covers/jacket_s_423.webp",
+    "singers": ["Leo/need","KAITO"],
+    "unit": "Leo/need",
+    "defaultTags": ["レオビビ","セカライ4th","'25交響","セカライ5th"]
+  },
+  "インテグラル": {
+    "assetbundleName": "jacket_s_424",
+    "title": "インテグラル",
+    "cover": "./assets/covers/jacket_s_424.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["コネライ4th","セカライ4th"]
+  },
+  "Cool Me Down": {
+    "assetbundleName": "jacket_s_425",
+    "title": "Cool Me Down",
+    "cover": "./assets/covers/jacket_s_425.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "On&On": {
+    "assetbundleName": "jacket_s_426",
+    "title": "On&On",
+    "cover": "./assets/covers/jacket_s_426.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "幽光、1/fのゆらめき": {
+    "assetbundleName": "jacket_s_427",
+    "title": "幽光、1/fのゆらめき",
+    "cover": "./assets/covers/jacket_s_427.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ときめきジェットコースター": {
+    "assetbundleName": "jacket_s_428",
+    "title": "ときめきジェットコースター",
+    "cover": "./assets/covers/jacket_s_428.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "はぐ": {
+    "assetbundleName": "jacket_s_429",
+    "title": "はぐ",
+    "cover": "./assets/covers/jacket_s_429.webp",
+    "singers": ["MORE MORE JUMP!","鏡音レン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'24交響","4th感謝祭","コネライ4th","セカライ4th","セカライ5th"]
+  },
+  "『んっあっあっ。』": {
+    "assetbundleName": "jacket_s_430",
+    "title": "『んっあっあっ。』",
+    "cover": "./assets/covers/jacket_s_430.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "flos": {
+    "assetbundleName": "jacket_s_431",
+    "title": "flos",
+    "cover": "./assets/covers/jacket_s_431.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "強風オールバック": {
+    "assetbundleName": "jacket_s_432",
+    "title": "強風オールバック",
+    "cover": "./assets/covers/jacket_s_432.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ヒアソビ": {
+    "assetbundleName": "jacket_s_433",
+    "title": "ヒアソビ",
+    "cover": "./assets/covers/jacket_s_433.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "1000年生きてる": {
+    "assetbundleName": "jacket_s_434",
+    "title": "1000年生きてる",
+    "cover": "./assets/covers/jacket_s_434.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "リレイアウター": {
+    "assetbundleName": "jacket_s_435",
+    "title": "リレイアウター",
+    "cover": "./assets/covers/jacket_s_435.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "古書屋敷殺人事件": {
+    "assetbundleName": "jacket_s_436",
+    "title": "古書屋敷殺人事件",
+    "cover": "./assets/covers/jacket_s_436.webp",
+    "singers": ["ワンダーランズ×ショウタイム","KAITO"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["わんもあ"]
+  },
+  "え？あぁ、そう。": {
+    "assetbundleName": "jacket_s_437",
+    "title": "え？あぁ、そう。",
+    "cover": "./assets/covers/jacket_s_437.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ハイドアンド・シーク": {
+    "assetbundleName": "jacket_s_438",
+    "title": "ハイドアンド・シーク",
+    "cover": "./assets/covers/jacket_s_438.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "一千光年": {
+    "assetbundleName": "jacket_s_439",
+    "title": "一千光年",
+    "cover": "./assets/covers/jacket_s_439.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ショウタイム×オーディエンス": {
+    "assetbundleName": "jacket_s_440",
+    "title": "ショウタイム×オーディエンス",
+    "cover": "./assets/covers/jacket_s_440.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "酔いどれ知らず": {
+    "assetbundleName": "jacket_s_441",
+    "title": "酔いどれ知らず",
+    "cover": "./assets/covers/jacket_s_441.webp",
+    "singers": ["Vivid BAD SQUAD","MEIKO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["セカライ4th"]
+  },
+  "すれすれ": {
+    "assetbundleName": "jacket_s_442",
+    "title": "すれすれ",
+    "cover": "./assets/covers/jacket_s_442.webp",
+    "singers": ["Leo/need","MEIKO"],
+    "unit": "Leo/need",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "林檎売りの泡沫少女": {
+    "assetbundleName": "jacket_s_443",
+    "title": "林檎売りの泡沫少女",
+    "cover": "./assets/covers/jacket_s_443.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "心泥夢(syndrome)": {
+    "assetbundleName": "jacket_s_444",
+    "title": "心泥夢(syndrome)",
+    "cover": "./assets/covers/jacket_s_444.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Twilight Melody": {
+    "assetbundleName": "jacket_s_445",
+    "title": "Twilight Melody",
+    "cover": "./assets/covers/jacket_s_445.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "オーバーコード": {
+    "assetbundleName": "jacket_s_446",
+    "title": "オーバーコード",
+    "cover": "./assets/covers/jacket_s_446.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "folern": {
+    "assetbundleName": "jacket_s_447",
+    "title": "folern",
+    "cover": "./assets/covers/jacket_s_447.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Sage": {
+    "assetbundleName": "jacket_s_448",
+    "title": "Sage",
+    "cover": "./assets/covers/jacket_s_448.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "MarbleBlue.": {
+    "assetbundleName": "jacket_s_449",
+    "title": "MarbleBlue.",
+    "cover": "./assets/covers/jacket_s_449.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "オペラ！スペースオペラ！": {
+    "assetbundleName": "jacket_s_450",
+    "title": "オペラ！スペースオペラ！",
+    "cover": "./assets/covers/jacket_s_450.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "熱異常": {
+    "assetbundleName": "jacket_s_451",
+    "title": "熱異常",
+    "cover": "./assets/covers/jacket_s_451.webp",
+    "singers": ["25時、ナイトコードで。","KAITO"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["セカライ5th"]
+  },
+  "サイバーパンクデッドボーイ": {
+    "assetbundleName": "jacket_s_452",
+    "title": "サイバーパンクデッドボーイ",
+    "cover": "./assets/covers/jacket_s_452.webp",
+    "singers": ["ワンダーランズ×ショウタイム","鏡音リン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["コネライ4th","'25交響","5th感謝祭","セカライ5th"]
+  },
+  "えれくとりっく・えんじぇぅ": {
+    "assetbundleName": "jacket_s_454",
+    "title": "えれくとりっく・えんじぇぅ",
+    "cover": "./assets/covers/jacket_s_454.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ド屑": {
+    "assetbundleName": "jacket_s_455",
+    "title": "ド屑",
+    "cover": "./assets/covers/jacket_s_455.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "幾望の月": {
+    "assetbundleName": "jacket_s_456",
+    "title": "幾望の月",
+    "cover": "./assets/covers/jacket_s_456.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Supernova": {
+    "assetbundleName": "jacket_s_457",
+    "title": "Supernova",
+    "cover": "./assets/covers/jacket_s_457.webp",
+    "singers": ["MORE MORE JUMP!","KAITO"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["コネライ4th"]
+  },
+  "抜錨": {
+    "assetbundleName": "jacket_s_458",
+    "title": "抜錨",
+    "cover": "./assets/covers/jacket_s_458.webp",
+    "singers": ["Leo/need","鏡音レン"],
+    "unit": "Leo/need",
+    "defaultTags": ["'24交響"]
+  },
+  "LEADER": {
+    "assetbundleName": "jacket_s_460",
+    "title": "LEADER",
+    "cover": "./assets/covers/jacket_s_460.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "おどロボ": {
+    "assetbundleName": "jacket_s_461",
+    "title": "おどロボ",
+    "cover": "./assets/covers/jacket_s_461.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "レッドランドマーカー": {
+    "assetbundleName": "jacket_s_462",
+    "title": "レッドランドマーカー",
+    "cover": "./assets/covers/jacket_s_462.webp",
+    "singers": ["MEIKO"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["ニゴバチャ"]
+  },
+  "ハッピーチートデー": {
+    "assetbundleName": "jacket_s_463",
+    "title": "ハッピーチートデー",
+    "cover": "./assets/covers/jacket_s_463.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Intergalactic Bound": {
+    "assetbundleName": "jacket_s_464",
+    "title": "Intergalactic Bound",
+    "cover": "./assets/covers/jacket_s_464.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "嬢王": {
+    "assetbundleName": "jacket_s_465",
+    "title": "嬢王",
+    "cover": "./assets/covers/jacket_s_465.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ガーネットの涙": {
+    "assetbundleName": "jacket_s_466",
+    "title": "ガーネットの涙",
+    "cover": "./assets/covers/jacket_s_466.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "あいのうた": {
+    "assetbundleName": "jacket_s_467",
+    "title": "あいのうた",
+    "cover": "./assets/covers/jacket_s_467.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "十六歳の心臓": {
+    "assetbundleName": "jacket_s_468",
+    "title": "十六歳の心臓",
+    "cover": "./assets/covers/jacket_s_468.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ラグトレイン": {
+    "assetbundleName": "jacket_s_469",
+    "title": "ラグトレイン",
+    "cover": "./assets/covers/jacket_s_469.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ハジメテノオト": {
+    "assetbundleName": "jacket_s_470",
+    "title": "ハジメテノオト",
+    "cover": "./assets/covers/jacket_s_470.webp",
+    "singers": ["初音ミク"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["ニゴバチャ"]
+  },
+  "ULTRA C": {
+    "assetbundleName": "jacket_s_471",
+    "title": "ULTRA C",
+    "cover": "./assets/covers/jacket_s_471.webp",
+    "singers": ["Vivid BAD SQUAD","初音ミク"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'24交響","4th感謝祭","コネライ4th","プロ×あん","セカライ5th"]
+  },
+  "成敗いたAAAAAす！": {
+    "assetbundleName": "jacket_s_472",
+    "title": "成敗いたAAAAAす！",
+    "cover": "./assets/covers/jacket_s_472.webp",
+    "singers": ["ワンダーランズ×ショウタイム","巡音ルカ"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["コネライ4th","セカライ4th"]
+  },
+  "マインドブランド": {
+    "assetbundleName": "jacket_s_473",
+    "title": "マインドブランド",
+    "cover": "./assets/covers/jacket_s_473.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "キラー": {
+    "assetbundleName": "jacket_s_474",
+    "title": "キラー",
+    "cover": "./assets/covers/jacket_s_474.webp",
+    "singers": ["MORE MORE JUMP!","鏡音リン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["5th感謝祭","セカライ5th"]
+  },
+  "ちがう!!!": {
+    "assetbundleName": "jacket_s_475",
+    "title": "ちがう!!!",
+    "cover": "./assets/covers/jacket_s_475.webp",
+    "singers": ["ワンダーランズ×ショウタイム","初音ミク"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["わんもあ"]
+  },
+  "Shadow Shadow": {
+    "assetbundleName": "jacket_s_476",
+    "title": "Shadow Shadow",
+    "cover": "./assets/covers/jacket_s_476.webp",
+    "singers": ["25時、ナイトコードで。","鏡音レン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "モザイクロール (Reloaded)": {
+    "assetbundleName": "jacket_s_477",
+    "title": "モザイクロール (Reloaded)",
+    "cover": "./assets/covers/jacket_s_477.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "フューエル": {
+    "assetbundleName": "jacket_s_478",
+    "title": "フューエル",
+    "cover": "./assets/covers/jacket_s_478.webp",
+    "singers": ["Vivid BAD SQUAD","KAITO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "おちゃめ機能": {
+    "assetbundleName": "jacket_s_480",
+    "title": "おちゃめ機能",
+    "cover": "./assets/covers/jacket_s_480.webp",
+    "singers": ["ワンダーランズ×ショウタイム","鏡音レン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["わんもあ"]
+  },
+  "明鏡止水": {
+    "assetbundleName": "jacket_s_481",
+    "title": "明鏡止水",
+    "cover": "./assets/covers/jacket_s_481.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "だめにんげんだ!": {
+    "assetbundleName": "jacket_s_482",
+    "title": "だめにんげんだ!",
+    "cover": "./assets/covers/jacket_s_482.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "アコトバ": {
+    "assetbundleName": "jacket_s_483",
+    "title": "アコトバ",
+    "cover": "./assets/covers/jacket_s_483.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Henceforth": {
+    "assetbundleName": "jacket_s_484",
+    "title": "Henceforth",
+    "cover": "./assets/covers/jacket_s_484.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "だんだん早くなる": {
+    "assetbundleName": "jacket_s_485",
+    "title": "だんだん早くなる",
+    "cover": "./assets/covers/jacket_s_485.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "おぎゃりないざー": {
+    "assetbundleName": "jacket_s_486",
+    "title": "おぎゃりないざー",
+    "cover": "./assets/covers/jacket_s_486.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ダイジョブですか？": {
+    "assetbundleName": "jacket_s_487",
+    "title": "ダイジョブですか？",
+    "cover": "./assets/covers/jacket_s_487.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "メモリア": {
+    "assetbundleName": "jacket_s_488",
+    "title": "メモリア",
+    "cover": "./assets/covers/jacket_s_488.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "熱風": {
+    "assetbundleName": "jacket_s_489",
+    "title": "熱風",
+    "cover": "./assets/covers/jacket_s_489.webp",
+    "singers": ["星乃一歌","花里みのり","小豆沢こはね","天馬司","宵崎奏","初音ミク"],
+    "unit": "",
+    "defaultTags": ["4th感謝祭","コネライ4th","セカライ4th","'25交響","5th感謝祭"]
+  },
+  "ルーマー": {
+    "assetbundleName": "jacket_s_490",
+    "title": "ルーマー",
+    "cover": "./assets/covers/jacket_s_490.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "キャットラビング": {
+    "assetbundleName": "jacket_s_491",
+    "title": "キャットラビング",
+    "cover": "./assets/covers/jacket_s_491.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "私は雨": {
+    "assetbundleName": "jacket_s_492",
+    "title": "私は雨",
+    "cover": "./assets/covers/jacket_s_492.webp",
+    "singers": ["25時、ナイトコードで。","鏡音レン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["コネライ4th","5th感謝祭"]
+  },
+  "きょうもハレバレ": {
+    "assetbundleName": "jacket_s_493",
+    "title": "きょうもハレバレ",
+    "cover": "./assets/covers/jacket_s_493.webp",
+    "singers": ["ワンダーランズ×ショウタイム","鏡音リン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["4th感謝祭"]
+  },
+  "ポッピンキャンディ☆フィーバー！": {
+    "assetbundleName": "jacket_s_494",
+    "title": "ポッピンキャンディ☆フィーバー！",
+    "cover": "./assets/covers/jacket_s_494.webp",
+    "singers": ["MORE MORE JUMP!","鏡音リン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["セカライ4th"]
+  },
+  "スーパーヒーロー": {
+    "assetbundleName": "jacket_s_495",
+    "title": "スーパーヒーロー",
+    "cover": "./assets/covers/jacket_s_495.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "シルバーコレクター": {
+    "assetbundleName": "jacket_s_496",
+    "title": "シルバーコレクター",
+    "cover": "./assets/covers/jacket_s_496.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "烈火": {
+    "assetbundleName": "jacket_s_497",
+    "title": "烈火",
+    "cover": "./assets/covers/jacket_s_497.webp",
+    "singers": ["Vivid BAD SQUAD","巡音ルカ"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'24交響","コネライ4th"]
+  },
+  "はしる! とおく! とどく!": {
+    "assetbundleName": "jacket_s_498",
+    "title": "はしる! とおく! とどく!",
+    "cover": "./assets/covers/jacket_s_498.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'25交響","5th感謝祭"]
+  },
+  "混沌ブギ": {
+    "assetbundleName": "jacket_s_499",
+    "title": "混沌ブギ",
+    "cover": "./assets/covers/jacket_s_499.webp",
+    "singers": ["ワンダーランズ×ショウタイム","KAITO"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["5th感謝祭","セカライ5th"]
+  },
+  "余花にみとれて": {
+    "assetbundleName": "jacket_s_500",
+    "title": "余花にみとれて",
+    "cover": "./assets/covers/jacket_s_500.webp",
+    "singers": ["25時、ナイトコードで。","MEIKO"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["'25交響","ニゴバチャ","セカライ5th"]
+  },
+  "Bad Apple!! feat.SEKAI": {
+    "assetbundleName": "jacket_s_501",
+    "title": "Bad Apple!! feat.SEKAI",
+    "cover": "./assets/covers/jacket_s_501.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Help me, ERINNNNNN!!": {
+    "assetbundleName": "jacket_s_502",
+    "title": "Help me, ERINNNNNN!!",
+    "cover": "./assets/covers/jacket_s_502.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "超最終鬼畜妹フランドール・Ｓ": {
+    "assetbundleName": "jacket_s_503",
+    "title": "超最終鬼畜妹フランドール・Ｓ",
+    "cover": "./assets/covers/jacket_s_503.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "I know 愛脳.": {
+    "assetbundleName": "jacket_s_504",
+    "title": "I know 愛脳.",
+    "cover": "./assets/covers/jacket_s_504.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "コールボーイ": {
+    "assetbundleName": "jacket_s_505",
+    "title": "コールボーイ",
+    "cover": "./assets/covers/jacket_s_505.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "QUEEN": {
+    "assetbundleName": "jacket_s_506",
+    "title": "QUEEN",
+    "cover": "./assets/covers/jacket_s_506.webp",
+    "singers": ["鳳えむ","草薙寧々","MEIKO"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["'25交響"]
+  },
+  "エンパープル": {
+    "assetbundleName": "jacket_s_507",
+    "title": "エンパープル",
+    "cover": "./assets/covers/jacket_s_507.webp",
+    "singers": ["25時、ナイトコードで。","鏡音リン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["4th感謝祭","ニゴバチャ"]
+  },
+  "ヘイヴン": {
+    "assetbundleName": "jacket_s_508",
+    "title": "ヘイヴン",
+    "cover": "./assets/covers/jacket_s_508.webp",
+    "singers": ["Vivid BAD SQUAD","鏡音レン"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'25交響","5th感謝祭"]
+  },
+  "ライアーダンサー": {
+    "assetbundleName": "jacket_s_509",
+    "title": "ライアーダンサー",
+    "cover": "./assets/covers/jacket_s_509.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "失敗作少女": {
+    "assetbundleName": "jacket_s_510",
+    "title": "失敗作少女",
+    "cover": "./assets/covers/jacket_s_510.webp",
+    "singers": ["25時、ナイトコードで。","MEIKO"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "如月アテンション": {
+    "assetbundleName": "jacket_s_511",
+    "title": "如月アテンション",
+    "cover": "./assets/covers/jacket_s_511.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "合成するミライ": {
+    "assetbundleName": "jacket_s_512",
+    "title": "合成するミライ",
+    "cover": "./assets/covers/jacket_s_512.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "CH4NGE": {
+    "assetbundleName": "jacket_s_513",
+    "title": "CH4NGE",
+    "cover": "./assets/covers/jacket_s_513.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "イガク": {
+    "assetbundleName": "jacket_s_515",
+    "title": "イガク",
+    "cover": "./assets/covers/jacket_s_515.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "あちこちデートさん": {
+    "assetbundleName": "jacket_s_516",
+    "title": "あちこちデートさん",
+    "cover": "./assets/covers/jacket_s_516.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "メリーゴーラウンド": {
+    "assetbundleName": "jacket_s_517",
+    "title": "メリーゴーラウンド",
+    "cover": "./assets/covers/jacket_s_517.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "みかぼし": {
+    "assetbundleName": "jacket_s_518",
+    "title": "みかぼし",
+    "cover": "./assets/covers/jacket_s_518.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "夏夜ノ唄": {
+    "assetbundleName": "jacket_s_519",
+    "title": "夏夜ノ唄",
+    "cover": "./assets/covers/jacket_s_519.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "透明エレジー": {
+    "assetbundleName": "jacket_s_520",
+    "title": "透明エレジー",
+    "cover": "./assets/covers/jacket_s_520.webp",
+    "singers": ["Leo/need","鏡音レン"],
+    "unit": "Leo/need",
+    "defaultTags": ["セカライ5th"]
+  },
+  "オーバーライド": {
+    "assetbundleName": "jacket_s_521",
+    "title": "オーバーライド",
+    "cover": "./assets/covers/jacket_s_521.webp",
+    "singers": ["MORE MORE JUMP!","鏡音リン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["セカライ5th"]
+  },
+  "WAVE": {
+    "assetbundleName": "jacket_s_522",
+    "title": "WAVE",
+    "cover": "./assets/covers/jacket_s_522.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "きみとぼくのレゾナンス": {
+    "assetbundleName": "jacket_s_523",
+    "title": "きみとぼくのレゾナンス",
+    "cover": "./assets/covers/jacket_s_523.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "それでも僕らは歌うことをやめない": {
+    "assetbundleName": "jacket_s_524",
+    "title": "それでも僕らは歌うことをやめない",
+    "cover": "./assets/covers/jacket_s_524.webp",
+    "singers": ["Leo/need","鏡音レン"],
+    "unit": "Leo/need",
+    "defaultTags": ["コネライ4th","'25交響"]
+  },
+  "アンテナ39": {
+    "assetbundleName": "jacket_s_525",
+    "title": "アンテナ39",
+    "cover": "./assets/covers/jacket_s_525.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "彗星ノ銀河": {
+    "assetbundleName": "jacket_s_526",
+    "title": "彗星ノ銀河",
+    "cover": "./assets/covers/jacket_s_526.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Unpoison": {
+    "assetbundleName": "jacket_s_527",
+    "title": "Unpoison",
+    "cover": "./assets/covers/jacket_s_527.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "カルチャ": {
+    "assetbundleName": "jacket_s_529",
+    "title": "カルチャ",
+    "cover": "./assets/covers/jacket_s_529.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "キャットフード": {
+    "assetbundleName": "jacket_s_530",
+    "title": "キャットフード",
+    "cover": "./assets/covers/jacket_s_530.webp",
+    "singers": ["MORE MORE JUMP!","初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["わんもあ"]
+  },
+  "メズマライザー": {
+    "assetbundleName": "jacket_s_531",
+    "title": "メズマライザー",
+    "cover": "./assets/covers/jacket_s_531.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "レイヤーノート": {
+    "assetbundleName": "jacket_s_532",
+    "title": "レイヤーノート",
+    "cover": "./assets/covers/jacket_s_532.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "転生林檎": {
+    "assetbundleName": "jacket_s_533",
+    "title": "転生林檎",
+    "cover": "./assets/covers/jacket_s_533.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ワールド・ランプシェード [reunion]": {
+    "assetbundleName": "jacket_s_534",
+    "title": "ワールド・ランプシェード [reunion]",
+    "cover": "./assets/covers/jacket_s_534.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Fire◎Flower (Rerec)": {
+    "assetbundleName": "jacket_s_536",
+    "title": "Fire◎Flower (Rerec)",
+    "cover": "./assets/covers/jacket_s_536.webp",
+    "singers": ["東雲彰人","青柳冬弥","天馬司","神代類","鏡音レン","KAITO"],
+    "unit": "",
+    "defaultTags": ["プロ×あん"]
+  },
+  "花に風": {
+    "assetbundleName": "jacket_s_537",
+    "title": "花に風",
+    "cover": "./assets/covers/jacket_s_537.webp",
+    "singers": ["Vivid BAD SQUAD","初音ミク"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["'25交響"]
+  },
+  "オールセーブチャレンジ": {
+    "assetbundleName": "jacket_s_538",
+    "title": "オールセーブチャレンジ",
+    "cover": "./assets/covers/jacket_s_538.webp",
+    "singers": ["ワンダーランズ×ショウタイム","KAITO"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["'25交響","わんもあ"]
+  },
+  "イレヴンス": {
+    "assetbundleName": "jacket_s_539",
+    "title": "イレヴンス",
+    "cover": "./assets/covers/jacket_s_539.webp",
+    "singers": ["MORE MORE JUMP!","MEIKO"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["わんもあ","'25交響"]
+  },
+  "虚無さん": {
+    "assetbundleName": "jacket_s_540",
+    "title": "虚無さん",
+    "cover": "./assets/covers/jacket_s_540.webp",
+    "singers": ["25時、ナイトコードで。","鏡音レン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["セカライ5th"]
+  },
+  "メインキャラクター": {
+    "assetbundleName": "jacket_s_541",
+    "title": "メインキャラクター",
+    "cover": "./assets/covers/jacket_s_541.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Blackjack": {
+    "assetbundleName": "jacket_s_542",
+    "title": "Blackjack",
+    "cover": "./assets/covers/jacket_s_542.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "生命性シンドロウム": {
+    "assetbundleName": "jacket_s_543",
+    "title": "生命性シンドロウム",
+    "cover": "./assets/covers/jacket_s_543.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "妄想アスパルテーム": {
+    "assetbundleName": "jacket_s_544",
+    "title": "妄想アスパルテーム",
+    "cover": "./assets/covers/jacket_s_544.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "脳天": {
+    "assetbundleName": "jacket_s_545",
+    "title": "脳天",
+    "cover": "./assets/covers/jacket_s_545.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "その音が鳴るなら": {
+    "assetbundleName": "jacket_s_546",
+    "title": "その音が鳴るなら",
+    "cover": "./assets/covers/jacket_s_546.webp",
+    "singers": ["Leo/need","巡音ルカ"],
+    "unit": "Leo/need",
+    "defaultTags": ["セカライ5th"]
+  },
+  "終焉逃避行": {
+    "assetbundleName": "jacket_s_547",
+    "title": "終焉逃避行",
+    "cover": "./assets/covers/jacket_s_547.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ぼくのかみさま": {
+    "assetbundleName": "jacket_s_548",
+    "title": "ぼくのかみさま",
+    "cover": "./assets/covers/jacket_s_548.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "化けの花": {
+    "assetbundleName": "jacket_s_549",
+    "title": "化けの花",
+    "cover": "./assets/covers/jacket_s_549.webp",
+    "singers": ["25時、ナイトコードで。","KAITO"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["ニゴバチャ"]
+  },
+  "ロストアンブレラ": {
+    "assetbundleName": "jacket_s_551",
+    "title": "ロストアンブレラ",
+    "cover": "./assets/covers/jacket_s_551.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "M@GICAL☆CURE! LOVE ♥ SHOT!": {
+    "assetbundleName": "jacket_s_552",
+    "title": "M@GICAL☆CURE! LOVE ♥ SHOT!",
+    "cover": "./assets/covers/jacket_s_552.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "パリィ": {
+    "assetbundleName": "jacket_s_553",
+    "title": "パリィ",
+    "cover": "./assets/covers/jacket_s_553.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "snooze": {
+    "assetbundleName": "jacket_s_554",
+    "title": "snooze",
+    "cover": "./assets/covers/jacket_s_554.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "フュージョン": {
+    "assetbundleName": "jacket_s_555",
+    "title": "フュージョン",
+    "cover": "./assets/covers/jacket_s_555.webp",
+    "singers": ["東雲彰人","青柳冬弥","天馬司","神代類"],
+    "unit": "",
+    "defaultTags": ["プロ×あん","5th感謝祭"]
+  },
+  "サイハテ": {
+    "assetbundleName": "jacket_s_556",
+    "title": "サイハテ",
+    "cover": "./assets/covers/jacket_s_556.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "花溺れ": {
+    "assetbundleName": "jacket_s_557",
+    "title": "花溺れ",
+    "cover": "./assets/covers/jacket_s_557.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "のだ": {
+    "assetbundleName": "jacket_s_558",
+    "title": "のだ",
+    "cover": "./assets/covers/jacket_s_558.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "おどりゃんせ": {
+    "assetbundleName": "jacket_s_559",
+    "title": "おどりゃんせ",
+    "cover": "./assets/covers/jacket_s_559.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "アイリッド": {
+    "assetbundleName": "jacket_s_560",
+    "title": "アイリッド",
+    "cover": "./assets/covers/jacket_s_560.webp",
+    "singers": ["ワンダーランズ×ショウタイム","巡音ルカ"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["わんもあ","セカライ5th"]
+  },
+  "プロトディスコ": {
+    "assetbundleName": "jacket_s_561",
+    "title": "プロトディスコ",
+    "cover": "./assets/covers/jacket_s_561.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "アンヘル": {
+    "assetbundleName": "jacket_s_562",
+    "title": "アンヘル",
+    "cover": "./assets/covers/jacket_s_562.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "そこに在る、光。": {
+    "assetbundleName": "jacket_s_564",
+    "title": "そこに在る、光。",
+    "cover": "./assets/covers/jacket_s_564.webp",
+    "singers": ["25時、ナイトコードで。"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "夏に透明": {
+    "assetbundleName": "jacket_s_565",
+    "title": "夏に透明",
+    "cover": "./assets/covers/jacket_s_565.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "パンダヒーロー": {
+    "assetbundleName": "jacket_s_566",
+    "title": "パンダヒーロー",
+    "cover": "./assets/covers/jacket_s_566.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "結ンデ開イテ羅刹ト骸": {
+    "assetbundleName": "jacket_s_567",
+    "title": "結ンデ開イテ羅刹ト骸",
+    "cover": "./assets/covers/jacket_s_567.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "シークレット・シーカー": {
+    "assetbundleName": "jacket_s_569",
+    "title": "シークレット・シーカー",
+    "cover": "./assets/covers/jacket_s_569.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "スター": {
+    "assetbundleName": "jacket_s_570",
+    "title": "スター",
+    "cover": "./assets/covers/jacket_s_570.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "偽物人間40号": {
+    "assetbundleName": "jacket_s_571",
+    "title": "偽物人間40号",
+    "cover": "./assets/covers/jacket_s_571.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "飾って": {
+    "assetbundleName": "jacket_s_572",
+    "title": "飾って",
+    "cover": "./assets/covers/jacket_s_572.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "はじまりの未来": {
+    "assetbundleName": "jacket_s_573",
+    "title": "はじまりの未来",
+    "cover": "./assets/covers/jacket_s_573.webp",
+    "singers": ["初音ミク"],
+    "unit": "",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "SToRY": {
+    "assetbundleName": "jacket_s_574",
+    "title": "SToRY",
+    "cover": "./assets/covers/jacket_s_574.webp",
+    "singers": ["Leo/need"],
+    "unit": "Leo/need",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "FUN!!": {
+    "assetbundleName": "jacket_s_575",
+    "title": "FUN!!",
+    "cover": "./assets/covers/jacket_s_575.webp",
+    "singers": ["MORE MORE JUMP!"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["5th感謝祭","わんもあ"]
+  },
+  "ファイアダンス": {
+    "assetbundleName": "jacket_s_576",
+    "title": "ファイアダンス",
+    "cover": "./assets/covers/jacket_s_576.webp",
+    "singers": ["Vivid BAD SQUAD"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "スマイル*シンフォニー": {
+    "assetbundleName": "jacket_s_577",
+    "title": "スマイル*シンフォニー",
+    "cover": "./assets/covers/jacket_s_577.webp",
+    "singers": ["ワンダーランズ×ショウタイム"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["5th感謝祭","わんもあ"]
+  },
+  "ハローセカイ": {
+    "assetbundleName": "jacket_s_578",
+    "title": "ハローセカイ",
+    "cover": "./assets/covers/jacket_s_578.webp",
+    "singers": ["VIRTUAL SINGER"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["5th感謝祭","セカライ5th"]
+  },
+  "Worlders": {
+    "assetbundleName": "jacket_s_579",
+    "title": "Worlders",
+    "cover": "./assets/covers/jacket_s_579.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "三日月ステップ": {
+    "assetbundleName": "jacket_s_580",
+    "title": "三日月ステップ",
+    "cover": "./assets/covers/jacket_s_580.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "厨病激発ボーイ": {
+    "assetbundleName": "jacket_s_581",
+    "title": "厨病激発ボーイ",
+    "cover": "./assets/covers/jacket_s_581.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "アンチユー": {
+    "assetbundleName": "jacket_s_582",
+    "title": "アンチユー",
+    "cover": "./assets/covers/jacket_s_582.webp",
+    "singers": ["MORE MORE JUMP!","巡音ルカ"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["'25交響","わんもあ","セカライ5th"]
+  },
+  "アクセラレイト": {
+    "assetbundleName": "jacket_s_583",
+    "title": "アクセラレイト",
+    "cover": "./assets/covers/jacket_s_583.webp",
+    "singers": ["Vivid BAD SQUAD","巡音ルカ"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["セカライ5th"]
+  },
+  "IMAWANOKIWA": {
+    "assetbundleName": "jacket_s_584",
+    "title": "IMAWANOKIWA",
+    "cover": "./assets/covers/jacket_s_584.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ペンタトニック": {
+    "assetbundleName": "jacket_s_585",
+    "title": "ペンタトニック",
+    "cover": "./assets/covers/jacket_s_585.webp",
+    "singers": ["星乃一歌","花里みのり","小豆沢こはね","天馬司","宵崎奏","初音ミク"],
+    "unit": "",
+    "defaultTags": ["'25交響","5th感謝祭","セカライ5th"]
+  },
+  "ルルブ": {
+    "assetbundleName": "jacket_s_587",
+    "title": "ルルブ",
+    "cover": "./assets/covers/jacket_s_587.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "プラネットヒーロー": {
+    "assetbundleName": "jacket_s_588",
+    "title": "プラネットヒーロー",
+    "cover": "./assets/covers/jacket_s_588.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "バレリーコ": {
+    "assetbundleName": "jacket_s_589",
+    "title": "バレリーコ",
+    "cover": "./assets/covers/jacket_s_589.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "マンハッタン": {
+    "assetbundleName": "jacket_s_590",
+    "title": "マンハッタン",
+    "cover": "./assets/covers/jacket_s_590.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "吉原ラメント 再来盤": {
+    "assetbundleName": "jacket_s_591",
+    "title": "吉原ラメント 再来盤",
+    "cover": "./assets/covers/jacket_s_591.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "クイーンオブハート": {
+    "assetbundleName": "jacket_s_592",
+    "title": "クイーンオブハート",
+    "cover": "./assets/covers/jacket_s_592.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "クリスタルスノウ": {
+    "assetbundleName": "jacket_s_593",
+    "title": "クリスタルスノウ",
+    "cover": "./assets/covers/jacket_s_593.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Call!!": {
+    "assetbundleName": "jacket_s_594",
+    "title": "Call!!",
+    "cover": "./assets/covers/jacket_s_594.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "エンヴィキャットウォーク": {
+    "assetbundleName": "jacket_s_595",
+    "title": "エンヴィキャットウォーク",
+    "cover": "./assets/covers/jacket_s_595.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "D/N/A": {
+    "assetbundleName": "jacket_s_596",
+    "title": "D/N/A",
+    "cover": "./assets/covers/jacket_s_596.webp",
+    "singers": ["25時、ナイトコードで。","鏡音リン"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["5th感謝祭","セカライ5th"]
+  },
+  "その絵の名前は": {
+    "assetbundleName": "jacket_s_597",
+    "title": "その絵の名前は",
+    "cover": "./assets/covers/jacket_s_597.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "征け": {
+    "assetbundleName": "jacket_s_600",
+    "title": "征け",
+    "cover": "./assets/covers/jacket_s_600.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ルマ": {
+    "assetbundleName": "jacket_s_601",
+    "title": "ルマ",
+    "cover": "./assets/covers/jacket_s_601.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ドレミファロンド": {
+    "assetbundleName": "jacket_s_603",
+    "title": "ドレミファロンド",
+    "cover": "./assets/covers/jacket_s_603.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Packaged": {
+    "assetbundleName": "jacket_s_604",
+    "title": "Packaged",
+    "cover": "./assets/covers/jacket_s_604.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Sympathy": {
+    "assetbundleName": "jacket_s_605",
+    "title": "Sympathy",
+    "cover": "./assets/covers/jacket_s_605.webp",
+    "singers": ["Leo/need","初音ミク"],
+    "unit": "Leo/need",
+    "defaultTags": ["セカライ5th"]
+  },
+  "スーサイドパレヱド": {
+    "assetbundleName": "jacket_s_606",
+    "title": "スーサイドパレヱド",
+    "cover": "./assets/covers/jacket_s_606.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "回る空うさぎ": {
+    "assetbundleName": "jacket_s_607",
+    "title": "回る空うさぎ",
+    "cover": "./assets/covers/jacket_s_607.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "星宙メランコリア": {
+    "assetbundleName": "jacket_s_608",
+    "title": "星宙メランコリア",
+    "cover": "./assets/covers/jacket_s_608.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Connecting": {
+    "assetbundleName": "jacket_s_619",
+    "title": "Connecting",
+    "cover": "./assets/covers/jacket_s_619.webp",
+    "singers": ["VIRTUAL SINGER"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["セカライ5th"]
+  },
+  "紗痲": {
+    "assetbundleName": "jacket_s_620",
+    "title": "紗痲",
+    "cover": "./assets/covers/jacket_s_620.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "東京サマーセッション": {
+    "assetbundleName": "jacket_s_621",
+    "title": "東京サマーセッション",
+    "cover": "./assets/covers/jacket_s_621.webp",
+    "singers": ["MORE MORE JUMP!","MEIKO"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["5th感謝祭"]
+  },
+  "超ナイト・オブ・ナイツ": {
+    "assetbundleName": "jacket_s_622",
+    "title": "超ナイト・オブ・ナイツ",
+    "cover": "./assets/covers/jacket_s_622.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "とうほう☆ワンダーランド": {
+    "assetbundleName": "jacket_s_623",
+    "title": "とうほう☆ワンダーランド",
+    "cover": "./assets/covers/jacket_s_623.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "チルノのパーフェクトさんすう学園": {
+    "assetbundleName": "jacket_s_624",
+    "title": "チルノのパーフェクトさんすう学園",
+    "cover": "./assets/covers/jacket_s_624.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "このふざけた素晴らしき世界は、僕の為にある": {
+    "assetbundleName": "jacket_s_625",
+    "title": "このふざけた素晴らしき世界は、僕の為にある",
+    "cover": "./assets/covers/jacket_s_625.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "フィッシュアンドTips": {
+    "assetbundleName": "jacket_s_626",
+    "title": "フィッシュアンドTips",
+    "cover": "./assets/covers/jacket_s_626.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "テトリス": {
+    "assetbundleName": "jacket_s_627",
+    "title": "テトリス",
+    "cover": "./assets/covers/jacket_s_627.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "モニタリング": {
+    "assetbundleName": "jacket_s_628",
+    "title": "モニタリング",
+    "cover": "./assets/covers/jacket_s_628.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "8.32": {
+    "assetbundleName": "jacket_s_629",
+    "title": "8.32",
+    "cover": "./assets/covers/jacket_s_629.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Surges": {
+    "assetbundleName": "jacket_s_632",
+    "title": "Surges",
+    "cover": "./assets/covers/jacket_s_632.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "庭師のおはなしによると": {
+    "assetbundleName": "jacket_s_633",
+    "title": "庭師のおはなしによると",
+    "cover": "./assets/covers/jacket_s_633.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "光線歌": {
+    "assetbundleName": "jacket_s_634",
+    "title": "光線歌",
+    "cover": "./assets/covers/jacket_s_634.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ありのままのストーリーを": {
+    "assetbundleName": "jacket_s_635",
+    "title": "ありのままのストーリーを",
+    "cover": "./assets/covers/jacket_s_635.webp",
+    "singers": ["MORE MORE JUMP!","KAITO"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["わんもあ"]
+  },
+  "エクスプロウル": {
+    "assetbundleName": "jacket_s_636",
+    "title": "エクスプロウル",
+    "cover": "./assets/covers/jacket_s_636.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "笑えたらえーやん！": {
+    "assetbundleName": "jacket_s_637",
+    "title": "笑えたらえーやん！",
+    "cover": "./assets/covers/jacket_s_637.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "花弁、それにまつわる音声": {
+    "assetbundleName": "jacket_s_638",
+    "title": "花弁、それにまつわる音声",
+    "cover": "./assets/covers/jacket_s_638.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "マリオネットダンサー": {
+    "assetbundleName": "jacket_s_639",
+    "title": "マリオネットダンサー",
+    "cover": "./assets/covers/jacket_s_639.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "生きる": {
+    "assetbundleName": "jacket_s_644",
+    "title": "生きる",
+    "cover": "./assets/covers/jacket_s_644.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "深海シティアンダーグラウンド": {
+    "assetbundleName": "jacket_s_645",
+    "title": "深海シティアンダーグラウンド",
+    "cover": "./assets/covers/jacket_s_645.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "透明なパレット": {
+    "assetbundleName": "jacket_s_646",
+    "title": "透明なパレット",
+    "cover": "./assets/covers/jacket_s_646.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "SAN値直葬": {
+    "assetbundleName": "jacket_s_647",
+    "title": "SAN値直葬",
+    "cover": "./assets/covers/jacket_s_647.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Life Will Change": {
+    "assetbundleName": "jacket_s_648",
+    "title": "Life Will Change",
+    "cover": "./assets/covers/jacket_s_648.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "サヨナラ天国また来て地獄": {
+    "assetbundleName": "jacket_s_649",
+    "title": "サヨナラ天国また来て地獄",
+    "cover": "./assets/covers/jacket_s_649.webp",
+    "singers": ["ワンダーランズ×ショウタイム","初音ミク"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["わんもあ","'25交響"]
+  },
+  "あの夏が飽和する。": {
+    "assetbundleName": "jacket_s_650",
+    "title": "あの夏が飽和する。",
+    "cover": "./assets/covers/jacket_s_650.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ホワイトハッピー": {
+    "assetbundleName": "jacket_s_651",
+    "title": "ホワイトハッピー",
+    "cover": "./assets/covers/jacket_s_651.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "カレシのジュード": {
+    "assetbundleName": "jacket_s_652",
+    "title": "カレシのジュード",
+    "cover": "./assets/covers/jacket_s_652.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "パメラ": {
+    "assetbundleName": "jacket_s_653",
+    "title": "パメラ",
+    "cover": "./assets/covers/jacket_s_653.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ラストラス": {
+    "assetbundleName": "jacket_s_654",
+    "title": "ラストラス",
+    "cover": "./assets/covers/jacket_s_654.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "リリィララ": {
+    "assetbundleName": "jacket_s_655",
+    "title": "リリィララ",
+    "cover": "./assets/covers/jacket_s_655.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ブラッドドール": {
+    "assetbundleName": "jacket_s_656",
+    "title": "ブラッドドール",
+    "cover": "./assets/covers/jacket_s_656.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "あなたの空が泣くのなら": {
+    "assetbundleName": "jacket_s_659",
+    "title": "あなたの空が泣くのなら",
+    "cover": "./assets/covers/jacket_s_659.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ヴィーナス": {
+    "assetbundleName": "jacket_s_663",
+    "title": "ヴィーナス",
+    "cover": "./assets/covers/jacket_s_663.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "人マニア": {
+    "assetbundleName": "jacket_s_664",
+    "title": "人マニア",
+    "cover": "./assets/covers/jacket_s_664.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ロケットサイダー": {
+    "assetbundleName": "jacket_s_665",
+    "title": "ロケットサイダー",
+    "cover": "./assets/covers/jacket_s_665.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "少女A": {
+    "assetbundleName": "jacket_s_666",
+    "title": "少女A",
+    "cover": "./assets/covers/jacket_s_666.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "㋰責任集合体": {
+    "assetbundleName": "jacket_s_667",
+    "title": "㋰責任集合体",
+    "cover": "./assets/covers/jacket_s_667.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ネクラチューンサーカス": {
+    "assetbundleName": "jacket_s_668",
+    "title": "ネクラチューンサーカス",
+    "cover": "./assets/covers/jacket_s_668.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "げんてん": {
+    "assetbundleName": "jacket_s_669",
+    "title": "げんてん",
+    "cover": "./assets/covers/jacket_s_669.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "い〜やい〜やい〜や": {
+    "assetbundleName": "jacket_s_670",
+    "title": "い〜やい〜やい〜や",
+    "cover": "./assets/covers/jacket_s_670.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "怪獣になりたい": {
+    "assetbundleName": "jacket_s_671",
+    "title": "怪獣になりたい",
+    "cover": "./assets/covers/jacket_s_671.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ハウトゥー世界征服": {
+    "assetbundleName": "jacket_s_672",
+    "title": "ハウトゥー世界征服",
+    "cover": "./assets/covers/jacket_s_672.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "MASTER高難易度楽曲メドレー": {
+    "assetbundleName": "jacket_s_674",
+    "title": "MASTER高難易度楽曲メドレー",
+    "cover": "./assets/covers/jacket_s_674.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "プロセカULTIMATE楽曲メドレー": {
+    "assetbundleName": "jacket_s_675",
+    "title": "プロセカULTIMATE楽曲メドレー",
+    "cover": "./assets/covers/jacket_s_675.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "周年記念高難易度書き下ろし楽曲メドレー": {
+    "assetbundleName": "jacket_s_676",
+    "title": "周年記念高難易度書き下ろし楽曲メドレー",
+    "cover": "./assets/covers/jacket_s_676.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "アベリア": {
+    "assetbundleName": "jacket_s_677",
+    "title": "アベリア",
+    "cover": "./assets/covers/jacket_s_677.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "金時計": {
+    "assetbundleName": "jacket_s_678",
+    "title": "金時計",
+    "cover": "./assets/covers/jacket_s_678.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ファイター": {
+    "assetbundleName": "jacket_s_684",
+    "title": "ファイター",
+    "cover": "./assets/covers/jacket_s_684.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "電光刹歌": {
+    "assetbundleName": "jacket_s_685",
+    "title": "電光刹歌",
+    "cover": "./assets/covers/jacket_s_685.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "トレジャーガーデン": {
+    "assetbundleName": "jacket_s_686",
+    "title": "トレジャーガーデン",
+    "cover": "./assets/covers/jacket_s_686.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ジェットブラック": {
+    "assetbundleName": "jacket_s_687",
+    "title": "ジェットブラック",
+    "cover": "./assets/covers/jacket_s_687.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ウィーアーピコピコハンマーズ!!!!": {
+    "assetbundleName": "jacket_s_688",
+    "title": "ウィーアーピコピコハンマーズ!!!!",
+    "cover": "./assets/covers/jacket_s_688.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "最愛人生ランナー": {
+    "assetbundleName": "jacket_s_689",
+    "title": "最愛人生ランナー",
+    "cover": "./assets/covers/jacket_s_689.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "0.0000034": {
+    "assetbundleName": "jacket_s_691",
+    "title": "0.0000034",
+    "cover": "./assets/covers/jacket_s_691.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "花結び": {
+    "assetbundleName": "jacket_s_695",
+    "title": "花結び",
+    "cover": "./assets/covers/jacket_s_695.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "ドリーム・キス": {
+    "assetbundleName": "jacket_s_696",
+    "title": "ドリーム・キス",
+    "cover": "./assets/covers/jacket_s_696.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  }
+}

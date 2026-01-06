@@ -1,0 +1,317 @@
+{
+  "events": 
+    [
+        {
+            "id": 201,
+            "type": "offline",
+            "title": "2nd Anniversary 感謝祭",
+            "eventType": "2",
+            "date": "2022.9.23 - 9.24",
+            "location": "立川ステージガーデン",
+            "image": "./assets/event_logo/kansya2nd.png",
+            "performers": ["野口瑠璃子","中島由貴","秋奈","鷲見友美ジェナ","今井文也","鈴木みのり","佐藤日向"],
+            "sublists": [
+            {
+                "name": "D1昼公演",
+                "date": "2022.9.23 14:00", 
+                "performers": ["野口瑠璃子","中島由貴","秋奈","鷲見友美ジェナ","今井文也","鈴木みのり","佐藤日向"],
+                "data":
+                  [
+                  { "songId": "携帯恋話","singers": ["鈴木みのり","佐藤日向"],"liveVocals": true}, 
+                  { "songId": "ロウワー","singers": ["鈴木みのり","佐藤日向"],"liveVocals": true}, 
+                  { "songId": "Flyer!","singers": ["秋奈","鷲見友美ジェナ","今井文也"],"liveVocals": true},
+                  { "songId": "シネマ","singers": ["秋奈","鷲見友美ジェナ","今井文也"],"liveVocals": true},
+                  { "songId": "流星のパルス","singers": ["野口瑠璃子","中島由貴"],"liveVocals": true},
+                  { "songId": "「１」","singers": ["野口瑠璃子","中島由貴"],"liveVocals": true},
+                  { "songId": "トラフィック・ジャム","singers": ["秋奈","鷲見友美ジェナ","今井文也"],"liveVocals": true,"shortVer": true},
+                  { "songId": "ビターチョコデコレーション","singers": ["鈴木みのり","佐藤日向"],"liveVocals": true,"shortVer": true},
+                  { "songId": "ヒバナ -Reloaded-","singers": ["野口瑠璃子"],"liveVocals": true,"shortVer": true},
+                  { "type": "break", "text": "アンコール"},
+                  { "songId": "群青讃歌","singers": ["野口瑠璃子","佐藤日向","初音ミク"],"liveVocals": true},
+                  { "songId": "Journey","singers": ["野口瑠璃子","中島由貴","秋奈","鷲見友美ジェナ","今井文也","鈴木みのり","佐藤日向","初音ミク"],"liveVocals": true}
+                  ]    
+              },
+              {
+                "name": "D2昼公演",
+                "date": "2022.9.24 13:00", 
+                "performers": ["小倉唯","吉岡茉祐","本泉莉奈","秋奈","鷲見友美ジェナ","今井文也","伊東健人","廣瀬大介","木野日菜","Machico","土岐隼一"],
+                "data":
+                  [
+                  { "songId": "アイドル新鋭隊","singers": ["小倉唯","吉岡茉祐","本泉莉奈"],"liveVocals": true}, 
+                  { "songId": "アイノマテリアル","singers": ["小倉唯","吉岡茉祐","本泉莉奈"],"liveVocals": true}, 
+                  { "songId": "RAD DOGS","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],"liveVocals": true},
+                  { "songId": "Flyer!","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],"liveVocals": true},
+                  { "songId": "potatoになっていく","singers": ["廣瀬大介","木野日菜","Machico","土岐隼一"],"liveVocals": true},
+                  { "songId": "トンデモワンダーズ","singers": ["廣瀬大介","木野日菜","Machico","土岐隼一"],"liveVocals": true},
+                  { "songId": "どりーみんチュチュ","singers": ["小倉唯","吉岡茉祐","本泉莉奈"],"liveVocals": true,"shortVer": true},
+                  { "songId": "オルターエゴ","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],"liveVocals": true,"shortVer": true},
+                  { "songId": "神のまにまに","singers": ["廣瀬大介","木野日菜","Machico","土岐隼一"],"liveVocals": true,"shortVer": true},
+                  { "type": "break", "text": "アンコール"},
+                  { "songId": "ワーワーワールド","singers": ["小倉唯","秋奈","初音ミク"],"liveVocals": true},
+                  { "songId": "Journey","singers": ["小倉唯","吉岡茉祐","本泉莉奈","秋奈","鷲見友美ジェナ","今井文也","伊東健人","廣瀬大介","木野日菜","Machico","土岐隼一","初音ミク"],"liveVocals": true}
+                  ]   
+                  
+              },
+              {
+                "name": "D2夜公演",
+                "date": "2022.9.24 18:45",
+                "performers": ["野口瑠璃子","中島由貴","廣瀬大介","木野日菜","Machico","土岐隼一","田辺留依","鈴木みのり","佐藤日向"],
+                "data":
+                  [
+                  { "songId": "流星のパルス","singers": ["野口瑠璃子","中島由貴"],"liveVocals": true}, 
+                  { "songId": "Peaky Peaky","singers": ["野口瑠璃子","中島由貴"],"liveVocals": true}, 
+                  { "songId": "Glory Steady Go!","singers": ["廣瀬大介","木野日菜","Machico","土岐隼一"],"liveVocals": true},
+                  { "songId": "トンデモワンダーズ","singers": ["廣瀬大介","木野日菜","Machico","土岐隼一"],"liveVocals": true},
+                  { "songId": "限りなく灰色へ","singers": ["田辺留依","鈴木みのり","佐藤日向"],"liveVocals": true}, 
+                  { "songId": "バグ","singers": ["田辺留依","鈴木みのり","佐藤日向"],"liveVocals": true}, 
+                  { "songId": "Calc.","singers": ["野口瑠璃子","中島由貴"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "ビターチョコデコレーション","singers": ["田辺留依","鈴木みのり","佐藤日向"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "いーあるふぁんくらぶ","singers": ["廣瀬大介","木野日菜","Machico","土岐隼一"],"liveVocals": true,"shortVer": true}, 
+                  { "type": "break", "text": "アンコール"},
+                  { "songId": "セカイ","singers": ["野口瑠璃子","廣瀬大介","初音ミク"],"liveVocals": true},
+                  { "songId": "Journey","singers": ["野口瑠璃子","中島由貴","廣瀬大介","木野日菜","Machico","土岐隼一","田辺留依","鈴木みのり","佐藤日向","初音ミク"],"liveVocals": true}
+                  ]   
+                  
+              }
+            ]
+        },
+        {
+            "id": 202,
+            "type": "offline",
+            "title": "3rd Anniversary 感謝祭",
+            "eventType": "2",
+            "date": "2023.9.16 - 9.17",
+            "location": "TOKYO DOME CITY HALL",
+            "image": "./assets/event_logo/kansya3rd.webp",
+            "performers": ["小倉唯","降幡愛","本泉莉奈","秋奈","鷲見友美ジェナ","今井文也","廣瀬大介","木野日菜","土岐隼一","田辺留依","鈴木みのり","佐藤日向"],
+            "sublists": [
+            {
+                "name": "D1昼公演",
+                "date": "2023.9.16 13:00", 
+                "performers": ["小倉唯","降幡愛","本泉莉奈","秋奈","鷲見友美ジェナ","今井文也"],
+                "data":
+                  [
+                  { "songId": "モア！ジャンプ！モア！","singers": ["小倉唯","降幡愛","本泉莉奈","初音ミク"],"liveVocals": true}, 
+                  { "songId": "Color of Drops","singers": ["小倉唯","降幡愛","本泉莉奈","巡音ルカ"],"liveVocals": true}, 
+                  { "songId": "Beat Eater","singers": ["秋奈","鷲見友美ジェナ","今井文也","鏡音レン"],"liveVocals": true},
+                  { "songId": "下剋上","singers": ["秋奈","鷲見友美ジェナ","今井文也","鏡音リン"],"liveVocals": true},
+                  { "songId": "Booo!","singers": ["小倉唯","降幡愛","本泉莉奈"],"liveVocals": true,"shortVer": true},
+                  { "songId": "気まぐれメルシィ","singers": ["小倉唯","降幡愛","本泉莉奈"],"liveVocals": true,"shortVer": true},
+                  { "songId": "チルドレンレコード","singers": ["秋奈","鷲見友美ジェナ","今井文也"],"liveVocals": true,"shortVer": true},
+                  { "songId": "脳内革命ガール","singers": ["秋奈","鷲見友美ジェナ","今井文也"],"liveVocals": true,"shortVer": true},
+                  { "type": "break", "text": "アンコール"},
+                  { "songId": "Journey","singers": ["初音ミク"]},
+                  { "songId": "NEO","singers": ["小倉唯","降幡愛","本泉莉奈","秋奈","鷲見友美ジェナ","今井文也","初音ミク"],"liveVocals": true}
+                  ]    
+              },
+              {
+                "name": "D1夜公演",
+                "date": "2023.9.16 18:45", 
+                "performers": ["小倉唯","降幡愛","本泉莉奈","秋奈","鷲見友美ジェナ","今井文也"],
+                "data":
+                  [
+                  { "songId": "Beat Eater","singers": ["秋奈","鷲見友美ジェナ","今井文也","鏡音レン"],"liveVocals": true}, 
+                  { "songId": "月光","singers": ["秋奈","鷲見友美ジェナ","今井文也","MEIKO"],"liveVocals": true}, 
+                  { "songId": "モア！ジャンプ！モア！","singers": ["小倉唯","降幡愛","本泉莉奈","初音ミク"],"liveVocals": true},
+                  { "songId": "ワールドワイドワンダー","singers": ["小倉唯","降幡愛","本泉莉奈","KAITO"],"liveVocals": true},
+                  { "songId": "チルドレンレコード","singers": ["秋奈","鷲見友美ジェナ","今井文也"],"liveVocals": true,"shortVer": true},
+                  { "songId": "悪魔の踊り方","singers": ["秋奈","鷲見友美ジェナ","今井文也"],"liveVocals": true,"shortVer": true},
+                  { "songId": "ビバハピ","singers": ["小倉唯","降幡愛","本泉莉奈"],"liveVocals": true,"shortVer": true},
+                  { "songId": "気まぐれメルシィ","singers": ["小倉唯","降幡愛","本泉莉奈"],"liveVocals": true,"shortVer": true},
+                  { "type": "break", "text": "アンコール"},
+                  { "songId": "セカイ","singers": ["初音ミク"]},
+                  { "songId": "NEO","singers": ["小倉唯","降幡愛","本泉莉奈","秋奈","鷲見友美ジェナ","今井文也","初音ミク"],"liveVocals": true}
+                  ]      
+              },
+              {
+                "name": "D2昼公演",
+                "date": "2023.9.17 13:00",
+                "performers": ["廣瀬大介","木野日菜","土岐隼一","田辺留依","鈴木みのり","佐藤日向"],
+                "data":
+                  [
+                  { "songId": "ショウタイム・ルーラー","singers": ["廣瀬大介","木野日菜","土岐隼一","鏡音リン"],"liveVocals": true}, 
+                  { "songId": "88☆彡","singers": ["廣瀬大介","木野日菜","土岐隼一","KAITO"],"liveVocals": true}, 
+                  { "songId": "ジャックポットサッドガール","singers": ["田辺留依","鈴木みのり","佐藤日向","初音ミク"],"liveVocals": true},
+                  { "songId": "Iなんです","singers": ["田辺留依","鈴木みのり","佐藤日向","初音ミク"],"liveVocals": true},
+                  { "songId": "エゴロック","singers": ["廣瀬大介","木野日菜","土岐隼一"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "踊れオーケストラ","singers": ["廣瀬大介","木野日菜","土岐隼一"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "アイロニ","singers": ["田辺留依","鈴木みのり","佐藤日向"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "フォニイ","singers": ["田辺留依","鈴木みのり","佐藤日向"],"liveVocals": true,"shortVer": true}, 
+                  { "type": "break", "text": "アンコール"},
+                  { "songId": "群青讃歌","singers": ["初音ミク"]},
+                  { "songId": "NEO","singers": ["廣瀬大介","木野日菜","土岐隼一","田辺留依","鈴木みのり","佐藤日向","初音ミク"],"liveVocals": true}
+                  ]   
+                },
+                {
+                "name": "D2夜公演",
+                "date": "2023.9.17 18:45",
+                "performers": ["廣瀬大介","木野日菜","土岐隼一","田辺留依","鈴木みのり","佐藤日向"],
+                "data":
+                  [
+                  { "songId": "Iなんです","singers": ["田辺留依","鈴木みのり","佐藤日向","初音ミク"],"liveVocals": true},
+                  { "songId": "キティ","singers": ["田辺留依","鈴木みのり","佐藤日向","鏡音レン"],"liveVocals": true}, 
+                  { "songId": "ワンスアポンアドリーム","singers": ["廣瀬大介","木野日菜","土岐隼一","鏡音レン"],"liveVocals": true}, 
+                  { "songId": "88☆彡","singers": ["廣瀬大介","木野日菜","土岐隼一","KAITO"],"liveVocals": true},
+                  { "songId": "とても素敵な六月でした","singers": ["田辺留依","鈴木みのり","佐藤日向"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "フォニイ","singers": ["田辺留依","鈴木みのり","佐藤日向"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "エゴロック","singers": ["廣瀬大介","木野日菜","土岐隼一"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "太陽系デスコ","singers": ["廣瀬大介","木野日菜","土岐隼一"],"liveVocals": true,"shortVer": true}, 
+                  { "type": "break", "text": "アンコール"},
+                  { "songId": "ワーワーワールド","singers": ["初音ミク","鏡音リン"]},
+                  { "songId": "NEO","singers": ["廣瀬大介","木野日菜","土岐隼一","田辺留依","鈴木みのり","佐藤日向","初音ミク"],"liveVocals": true}
+                  ]       
+              }
+              ]
+          },
+          {
+            "id": 203,
+            "type": "offline",
+            "title": "4th Anniversary 感謝祭",
+            "eventType": "2",
+            "date": "2024.9.27 - 9.28",
+            "location": "横浜BUNTAI",
+            "image": "./assets/event_logo/kansya4th.webp",
+            "performers": ["野口瑠璃子","礒部花凜","中島由貴","小倉唯","吉岡茉祐","本泉莉奈","秋奈","鷲見友美ジェナ","今井文也","伊東健人","廣瀬大介","Machico","土岐隼一","田辺留依","鈴木みのり","佐藤日向"],
+            "sublists": [
+            {
+                "name": "前夜祭",
+                "date": "2024.9.27 18:30", 
+                "performers": ["礒部花凜","鷲見友美ジェナ","今井文也","廣瀬大介","田辺留依","佐藤日向"],
+                "data":
+                  [
+                  { "songId": "群青讃歌","singers": ["礒部花凜","鷲見友美ジェナ","今井文也","廣瀬大介","田辺留依","佐藤日向"],"liveVocals": true}, 
+                  { "songId": "Journey","singers": ["礒部花凜","鷲見友美ジェナ","今井文也","廣瀬大介","田辺留依","佐藤日向"],"liveVocals": true}, 
+                  { "songId": "NEO","singers": ["礒部花凜","鷲見友美ジェナ","今井文也","廣瀬大介","田辺留依","佐藤日向"],"liveVocals": true}
+                  ]    
+              },
+              {
+                "name": "昼公演",
+                "date": "2024.9.28 13:00", 
+                "performers": ["野口瑠璃子","礒部花凜","中島由貴","小倉唯","吉岡茉祐","本泉莉奈","秋奈","鷲見友美ジェナ","今井文也","伊東健人","廣瀬大介","Machico","土岐隼一","田辺留依","鈴木みのり","佐藤日向"],
+                "data":
+                  [
+                  { "songId": "シャンティ","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "エンヴィーベイビー","singers": ["田辺留依","鈴木みのり","佐藤日向"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "メランコリック","singers": ["小倉唯","吉岡茉祐","本泉莉奈"],"liveVocals": true,"shortVer": true},
+                  { "songId": "グッバイ宣言","singers": ["廣瀬大介","Machico","土岐隼一"],"liveVocals": true,"shortVer": true},
+                  { "songId": "東京テディベア","singers": ["野口瑠璃子","礒部花凜","中島由貴"],"liveVocals": true,"shortVer": true},
+                  { "songId": "エンパープル","singers": ["田辺留依","鈴木みのり","佐藤日向","鏡音リン"],"liveVocals": true},
+                  { "songId": "Mr. Showtime","singers": ["廣瀬大介","Machico","土岐隼一","巡音ルカ"],"liveVocals": true},
+                  { "songId": "虚ろを扇ぐ","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人","KAITO"],"liveVocals": true},
+                  { "songId": "天使のクローバー","singers": ["小倉唯","吉岡茉祐","本泉莉奈","鏡音リン"],"liveVocals": true},
+                  { "songId": "てらてら","singers": ["野口瑠璃子","礒部花凜","中島由貴","初音ミク"],"liveVocals": true},
+                  { "type": "break", "text": "アンコール"},
+                  { "songId": "バグ","singers": ["鏡音リン","鏡音レン"],"shortVer": true},
+                  { "songId": "ニジイロストーリーズ","singers": ["MEIKO","KAITO"],"shortVer": true},
+                  { "songId":"君の夜をくれ","singers": ["初音ミク","巡音ルカ"],"shortVer": true},
+                  { "songId": "熱風","singers": ["野口瑠璃子","礒部花凜","中島由貴","小倉唯","吉岡茉祐","本泉莉奈","秋奈","鷲見友美ジェナ","今井文也","伊東健人","廣瀬大介","Machico","土岐隼一","田辺留依","鈴木みのり","佐藤日向","初音ミク"],"liveVocals": true}
+                  ]      
+              },
+              {
+                "name": "夜公演",
+                "date": "2024.9.28 18:45",
+                "performers": ["野口瑠璃子","礒部花凜","中島由貴","小倉唯","吉岡茉祐","本泉莉奈","秋奈","鷲見友美ジェナ","今井文也","伊東健人","廣瀬大介","Machico","土岐隼一","田辺留依","鈴木みのり","佐藤日向"],
+                "data":
+                  [
+                  { "songId": "きょうもハレバレ","singers": ["廣瀬大介","Machico","土岐隼一"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "白い雪のプリンセスは","singers": ["小倉唯","吉岡茉祐","本泉莉奈"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "命ばっかり","singers": ["廣瀬大介","木野日菜","Machico","土岐隼一"],"liveVocals": true,"shortVer": true},
+                  { "songId": "アトラクトライト","singers": ["野口瑠璃子","礒部花凜","中島由貴"],"liveVocals": true,"shortVer": true},
+                  { "songId": "マーシャル・マキシマイザー","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "はぐ","singers": ["小倉唯","吉岡茉祐","本泉莉奈","鏡音レン"],"liveVocals": true}, 
+                  { "songId": "箱庭のコラル","singers": ["廣瀬大介","Machico","土岐隼一","KAITO"],"liveVocals": true}, 
+                  { "songId": "アイディスマイル","singers": ["田辺留依","鈴木みのり","佐藤日向","MEIKO"],"liveVocals": true}, 
+                  { "songId": "Voices","singers": ["野口瑠璃子","礒部花凜","中島由貴","鏡音リン"],"liveVocals": true}, 
+                  { "songId": "ULTRA C","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人","初音ミク"],"liveVocals": true},
+                  { "type": "break", "text": "アンコール"},
+                  { "songId": "パラソルサイダー","singers": ["巡音ルカ","MEIKO"],"shortVer": true},
+                  { "songId": "Flyway","singers": ["鏡音レン","KAITO"],"shortVer": true},
+                  { "songId": "月光","singers": ["初音ミク","鏡音リン"],"shortVer": true},
+                  { "songId": "熱風","singers": ["野口瑠璃子","礒部花凜","中島由貴","小倉唯","吉岡茉祐","本泉莉奈","秋奈","鷲見友美ジェナ","今井文也","伊東健人","廣瀬大介","Machico","土岐隼一","田辺留依","鈴木みのり","佐藤日向","初音ミク"],"liveVocals": true}
+                  ] 
+              }
+              ]
+          },
+          {
+            "id": 204,
+            "type": "offline",
+            "title": "5th Anniversary 感謝祭",
+            "eventType": "2",
+            "date": "2025.10.18 - 10.19",
+            "location": "東京ガーデンシアター",
+            "image": "./assets/event_logo/kansya5th.webp",
+            "performers": ["野口瑠璃子", "礒部花凜", "中島由貴", "吉岡茉祐", "降幡愛", "本泉莉奈", "秋奈", "鷲見友美ジェナ", "伊東健人", "廣瀬大介", "Machico", "土岐隼一", "楠木ともり", "田辺留依", "鈴木みのり", "佐藤日向"],
+            "sublists": [
+            {
+                "name": "D1公演",
+                "date": "2025.10.18 12:30", 
+                "performers": ["野口瑠璃子", "礒部花凜", "中島由貴", "吉岡茉祐", "降幡愛", "本泉莉奈", "秋奈", "鷲見友美ジェナ", "伊東健人", "廣瀬大介", "田辺留依", "鈴木みのり", "佐藤日向"],
+                "data":
+                  [
+                  { "songId": "天ノ弱","singers": ["野口瑠璃子", "礒部花凜", "中島由貴"],"liveVocals": true}, 
+                  { "songId": "Happy Halloween","singers": ["吉岡茉祐", "降幡愛", "本泉莉奈"],"liveVocals": true}, 
+                  { "songId": "失敗作少女","singers": [ "田辺留依", "鈴木みのり", "佐藤日向"],"liveVocals": true},
+                  { "songId": "DAYBREAK FRONTLINE","singers": ["秋奈", "鷲見友美ジェナ", "伊東健人"],"liveVocals": true},
+                  { "type": "mc","text": "MC"},
+                  { "songId": "Awake Now","singers": ["秋奈", "鷲見友美ジェナ", "伊東健人","初音ミク"],"liveVocals": true},
+                  { "songId": "ヘイヴン","singers": ["秋奈", "鷲見友美ジェナ", "伊東健人","鏡音レン"],"liveVocals": true},
+                  { "songId": "私は雨","singers": ["田辺留依", "鈴木みのり", "佐藤日向","鏡音レン"],"liveVocals": true},
+                  { "songId": "演劇","singers": ["田辺留依", "鈴木みのり", "佐藤日向","巡音ルカ"],"liveVocals": true},
+                  { "songId": "すれすれ","singers": ["野口瑠璃子", "礒部花凜", "中島由貴","MEIKO"],"liveVocals": true},
+                  { "songId": "星を繋ぐ","singers": ["野口瑠璃子", "礒部花凜", "中島由貴","KAITO"],"liveVocals": true},
+                  { "songId": "キラー","singers": ["吉岡茉祐", "降幡愛", "本泉莉奈","鏡音リン"],"liveVocals": true},
+                  { "songId": "イフ","singers": ["吉岡茉祐", "降幡愛", "本泉莉奈","初音ミク"],"liveVocals": true},
+                  { "songId": "はじまりの未来","singers": ["初音ミク"]},
+                  { "songId": "ファイアダンス","singers": ["秋奈", "鷲見友美ジェナ","東雲彰人","伊東健人"],"liveVocals": true},
+                  { "songId": "FUN!!","singers": ["吉岡茉祐", "降幡愛", "本泉莉奈"],"liveVocals": true},
+                  { "songId": "そこに在る、光。","singers": ["田辺留依", "鈴木みのり", "佐藤日向"],"liveVocals": true},
+                  { "songId": "SToRY","singers": ["野口瑠璃子", "礒部花凜", "中島由貴"],"liveVocals": true},
+                  { "songId": "ハローセカイ","singers": ["野口瑠璃子", "礒部花凜", "中島由貴", "吉岡茉祐", "降幡愛", "本泉莉奈", "秋奈", "鷲見友美ジェナ", "伊東健人", "廣瀬大介", "田辺留依", "鈴木みのり", "佐藤日向","初音ミク"],"liveVocals": true},
+                  { "songId": "アイドル新鋭隊","singers": ["初音ミク","鏡音リン","巡音ルカ","MEIKO"],"unit": "VIRTUAL SINGER"},
+                  { "songId": "フュージョン","singers": ["鏡音レン","KAITO"]},
+                  { "type": "break", "text": "アンコール"},
+                  { "songId": "群青讃歌","singers": ["VIRTUAL SINGER"],"shortVer": true},
+                  { "songId": "Journey","singers": ["VIRTUAL SINGER"],"shortVer": true},
+                  { "songId": "ペンタトニック","singers": ["野口瑠璃子", "礒部花凜", "中島由貴", "吉岡茉祐", "降幡愛", "本泉莉奈", "秋奈", "鷲見友美ジェナ", "伊東健人", "廣瀬大介", "田辺留依", "鈴木みのり", "佐藤日向","初音ミク"],"liveVocals": true},
+                  { "songId": "Worlders","singers": ["野口瑠璃子", "礒部花凜", "中島由貴", "吉岡茉祐", "降幡愛", "本泉莉奈", "秋奈", "鷲見友美ジェナ", "伊東健人", "廣瀬大介", "田辺留依", "鈴木みのり", "佐藤日向","VIRTUAL SINGER"],"liveVocals": true,"comment": "銀テープ演出あり"}
+                  ]    
+              },
+              {
+                "name": "D2公演",
+                "date": "2025.10.19 16:00", 
+                "performers": ["野口瑠璃子", "礒部花凜", "中島由貴", "吉岡茉祐", "降幡愛", "本泉莉奈", "秋奈", "鷲見友美ジェナ", "伊東健人", "廣瀬大介", "Machico", "土岐隼一", "楠木ともり", "田辺留依", "鈴木みのり", "佐藤日向"],
+                "data":
+                  [
+                  { "songId": "混沌ブギ","singers": [ "廣瀬大介", "Machico", "土岐隼一"],"liveVocals": true}, 
+                  { "songId": "エゴイスト","singers": ["秋奈", "鷲見友美ジェナ", "伊東健人"],"liveVocals": true}, 
+                  { "songId": "夜もすがら君想ふ","singers": [ "野口瑠璃子", "礒部花凜", "中島由貴"],"liveVocals": true},
+                  { "songId": "Shadow Shadow","singers": [ "楠木ともり", "田辺留依", "鈴木みのり", "佐藤日向"],"liveVocals": true},
+                  { "songId": "東京サマーセッション","singers": [ "吉岡茉祐", "降幡愛", "本泉莉奈"],"liveVocals": true},
+                  { "type": "mc","text": "MC"},
+                  { "songId": "はしる! とおく! とどく!","singers": ["吉岡茉祐", "降幡愛", "本泉莉奈","初音ミク"],"liveVocals": true},
+                  { "songId": "フューエル","singers": [ "秋奈", "鷲見友美ジェナ", "伊東健人","KAITO"],"liveVocals": true},
+                  { "songId": "D/N/A","singers": [ "楠木ともり", "田辺留依", "鈴木みのり", "佐藤日向", "佐藤日向","鏡音リン"],"liveVocals": true},
+                  { "songId": "サイバーパンクデッドボーイ","singers": ["廣瀬大介", "Machico", "土岐隼一","鏡音リン"],"liveVocals": true},
+                  { "songId": "purpose","singers": ["野口瑠璃子", "礒部花凜", "中島由貴","鏡音リン"],"liveVocals": true},
+                  { "songId": "はじまりの未来","singers": ["初音ミク"]},
+                  { "songId": "ファイアダンス","singers": ["秋奈", "鷲見友美ジェナ","東雲彰人","伊東健人"],"liveVocals": true},
+                  { "songId": "スマイル*シンフォニー","singers": ["廣瀬大介","鳳えむ","Machico", "土岐隼一"],"liveVocals": true},
+                  { "songId": "FUN!!","singers": ["吉岡茉祐", "降幡愛", "本泉莉奈"],"liveVocals": true},
+                  { "songId": "そこに在る、光。","singers": ["楠木ともり", "田辺留依", "鈴木みのり", "佐藤日向"],"liveVocals": true},
+                  { "songId": "SToRY","singers": ["野口瑠璃子", "礒部花凜", "中島由貴"],"liveVocals": true},
+                  { "songId": "ハローセカイ","singers": ["野口瑠璃子", "礒部花凜", "中島由貴", "吉岡茉祐", "降幡愛", "本泉莉奈", "秋奈", "鷲見友美ジェナ", "伊東健人", "廣瀬大介", "Machico", "土岐隼一", "楠木ともり", "田辺留依", "鈴木みのり", "佐藤日向","初音ミク"],"liveVocals": true},
+                  { "songId": "青色絵具","singers": ["初音ミク","巡音ルカ","MEIKO"]},
+                  { "songId": "フュージョン","singers": ["鏡音レン","KAITO"]},
+                  { "songId": "コスモスパイス","singers": ["初音ミク","鏡音リン","鏡音レン"]},
+                  { "type": "break", "text": "アンコール"},
+                  { "songId": "NEO","singers": ["VIRTUAL SINGER"],"shortVer": true},
+                  { "songId": "熱風","singers": ["VIRTUAL SINGER"],"shortVer": true},
+                  { "songId": "ペンタトニック","singers": ["野口瑠璃子", "礒部花凜", "中島由貴", "吉岡茉祐", "降幡愛", "本泉莉奈", "秋奈", "鷲見友美ジェナ", "伊東健人", "廣瀬大介", "田辺留依", "鈴木みのり", "佐藤日向","初音ミク"],"liveVocals": true},
+                  { "songId": "Worlders","singers": ["野口瑠璃子", "礒部花凜", "中島由貴", "吉岡茉祐", "降幡愛", "本泉莉奈", "秋奈", "鷲見友美ジェナ", "伊東健人", "廣瀬大介", "田辺留依", "鈴木みのり", "佐藤日向","VIRTUAL SINGER"],"liveVocals": true}
+                  ]    
+              }  
+      ]    
+    }       
+  ]         
+}
+    
