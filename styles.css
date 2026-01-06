@@ -1393,6 +1393,16 @@
             filter: drop-shadow(0 3px 2px rgba(0,0,0,0.05));
         }
 
+        /* --- 4. 全局容器优化：减少留白，让内容更宽 --- */
+        .container {
+            /* 原来是 20px，现在改为 5px，让卡片几乎占满屏幕 */
+            padding: 0 5px !important; 
+            
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+        }
+
         /* 4. 没有内容时不显示 */
         .rank-tag[data-tooltip=""]:hover::after,
         .rank-tag[data-tooltip=""]:hover::before {
