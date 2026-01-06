@@ -928,19 +928,11 @@
         #modalActions { display: contents; }
         
         /* === 头部容器 (改为 Grid 布局，这是修复的核心) === */
-        .setlist-header {
-            /* 核心修改：使用 Grid 布局，分为三列：左边自动、中间适应内容、右边自动 */
-            display: grid;
-            grid-template-columns: 1fr auto 1fr; 
-            align-items: center;
-            
-            width: 100%;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            min-height: 40px;
-            z-index: 5;
-            position: relative;
-        }
+                .setlist-header {
+                display: flex !important; 
+                flex-wrap: wrap !important; 
+                gap: 10px !important;
+            }
 
         /* 手机上按钮组的样式 */
             .session-switch-group {
