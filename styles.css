@@ -1,4 +1,4 @@
-:root {
+ :root {
             --primary-color: #33c6b8; /* Miku绿 */
             --secondary-color: #ff9f43; /* 橙色用于强调 */
             --bg-color: #f4f6f9;
@@ -1312,6 +1312,45 @@
             height: fit-content;
         }
 
+        /* 手机适配 (必须更新，否则手机上会挤坏) */
+        @media (max-width: 850px) {
+            .tag-medley {
+                padding: 1px 5px;
+                font-size: 0.65em;
+                margin-left: 6px;
+            }
+
+            .ranking-row {
+                /* 手机上变成两行，恢复原来的灵活布局 */
+                grid-template-columns: 40px 50px 1fr;
+                grid-template-rows: auto auto;
+                gap: 10px;
+                padding: 10px;
+            }
+            
+            /* 隐藏电脑端专用的列 */
+            .rank-count-box.mobile-hidden { display: none; }
+            .rank-tags.mobile-hidden { display: none; }
+            
+            /* 排名和图片跨两行 */
+            .rank-num { grid-row: 1 / 3; align-self: center; font-size: 1.2em; } 
+            .rank-cover { grid-row: 1 / 3; align-self: center; width: 50px; height: 50px; } 
+            
+            /* 标题在第一行 */
+            .rank-song-info { grid-column: 3; }
+            
+            /* 手机专用的混合信息栏 */
+            .rank-meta-mobile {
+                grid-column: 3;
+                display: flex !important; /* 强制显示 */
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 5px;
+                border-top: 1px dashed #eee;
+                padding-top: 5px;
+            }
+        }
+
         /* =========================================
         6. 排行榜标签悬停浮窗 (Tooltip) - 美化版
         ========================================= */
@@ -1457,162 +1496,3 @@
             margin-left: auto !important;  /* 强制居中 */
             margin-right: auto !important;
         }
-
-      /* =============================================
-   ★ 手机端最终完美适配 (Mobile Final) ★
-   包含：歌单单列显示 + 排行榜清爽布局
-   ============================================= */
-@media (max-width: 850px) {
-
-    /* --- Part 1: 排行榜 (Ranking) 优化 --- */
-    
-    /* 1. 排行榜单行容器：用 Flex 布局防止挤压 */
-    .ranking-row {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: center !important;
-        padding: 8px 10px !important;
-        gap: 12px !important; /* 元素之间的间距 */
-        height: auto !important;
-    }
-
-    /* 2. 排名数字：固定宽度，不许变大 */
-    .rank-num {
-        width: 25px !important;
-        font-size: 1.1em !important;
-        text-align: center !important;
-        flex-shrink: 0 !important; /* 禁止被压缩 */
-        margin: 0 !important;
-    }
-
-    /* 3. 封面图：固定 48px 正方形 */
-    .rank-cover {
-        width: 48px !important;
-        height: 48px !important;
-        border-radius: 6px !important;
-        flex-shrink: 0 !important;
-        margin: 0 !important;
-        object-fit: cover;
-    }
-
-    /* 4. 右侧信息区：占满剩余空间 */
-    .rank-song-info {
-        flex: 1 !important;
-        display: flex !important;
-        flex-direction: column !important; /* 上下排列 */
-        justify-content: center !important;
-        min-width: 0 !important; /* 关键：防止文字溢出 */
-    }
-    
-    /* =============================================
-   ★ 手机端最终布局修正 (Mobile Layout Fix) ★
-   目标：将回数和标签移到歌名下方，横向排列
-   ============================================= */
-@media (max-width: 850px) {
-
-    /* 1. 排行榜整体容器：强制不换行，左中右结构 */
-    .ranking-row {
-        display: flex !important;
-        flex-direction: row !important; /* 强制横排 */
-        align-items: center !important; /* 垂直居中 */
-        flex-wrap: nowrap !important;   /* 禁止折行 */
-        padding: 8px 10px !important;
-        gap: 0 !important; /* 间距由内部元素控制 */
-        height: auto !important;
-    }
-
-    /* 2. 左侧：排名 (固定宽度) */
-    .rank-num {
-        width: 30px !important;
-        min-width: 30px !important;
-        font-size: 1.1em !important;
-        text-align: center !important;
-        margin: 0 !important;
-        flex-shrink: 0 !important;
-    }
-
-    /* 3. 左侧：封面图 (固定大小) */
-    .rank-cover {
-        width: 50px !important;
-        height: 50px !important;
-        border-radius: 6px !important;
-        margin: 0 12px 0 5px !important; /* 右边留点空隙给歌名 */
-        flex-shrink: 0 !important;
-        object-fit: cover;
-    }
-
-    /* 4. 右侧：歌名+数据容器 (这就是那个红框区域) */
-    .rank-song-info {
-        flex: 1 !important; /* 占满剩下的所有宽度 */
-        display: flex !important;
-        flex-direction: column !important; /* 上下排列：上面歌名，下面标签 */
-        justify-content: center !important;
-        align-items: flex-start !important; /* 左对齐 */
-        min-width: 0 !important; /* 防止文字过长撑爆屏幕 */
-    }
-
-    /* 5. 歌名样式 */
-    .rank-song-info div[style*="font-weight:bold"] {
-        font-size: 1em !important;
-        line-height: 1.3 !important;
-        margin-bottom: 4px !important; /* 和下面的标签拉开一点距离 */
-        
-        /* 歌名太长就显示省略号，保持整洁 */
-        white-space: nowrap !important; 
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
-        width: 100% !important;
-    }
-
-    /* 6. 核心修改：数据栏 (蓝框内容) */
-    .rank-meta-mobile {
-        display: flex !important;
-        flex-direction: row !important; /* ★ 强制横排！★ */
-        align-items: center !important;
-        flex-wrap: nowrap !important;   /* 尽量一行显示 */
-        gap: 6px !important;            /* 标签之间的间距 */
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        border: none !important;
-        overflow-x: auto !important;    /* 如果标签实在太多，允许横向滑动 */
-    }
-
-    /* 7. 那个“11回”的小胶囊 */
-    .rank-meta-mobile > div:first-child span {
-        font-size: 0.75em !important;
-        background-color: #e0f7fa !important; /* 浅青色背景 */
-        color: #00acc1 !important;            /* 深青色文字 */
-        padding: 2px 6px !important;
-        border-radius: 4px !important;
-        display: inline-block !important;
-        white-space: nowrap !important;
-        font-weight: bold !important;
-    }
-
-    /* 8. 其他彩色标签 */
-    .rank-tag {
-        font-size: 0.6em !important;
-        padding: 2px 5px !important;
-        height: auto !important;
-        white-space: nowrap !important;
-        display: inline-block !important;
-        margin: 0 !important;
-    }
-    
-    /* 隐藏电脑端的大组件 */
-    .rank-count-box, .rank-tags.mobile-hidden {
-        display: none !important;
-    }
-
-    /* --- 下面是详情页(Setlist)的修复，保持不动 --- */
-    #modalSongs { flex-direction: column !important; gap: 0 !important; }
-    .setlist-column { width: 100% !important; }
-    .song-row { padding: 10px 8px !important; }
-    .song-title { white-space: normal !important; }
-    /* ...其他详情页样式保持你之前觉得满意的状态... */
-    .unit-watermark { opacity: 0.15 !important; z-index: 0 !important; }
-    #modalTitle { position: relative; z-index: 5 !important; }
-    .modal-content { width: 95% !important; margin: 10px auto !important; }
-}
-}
