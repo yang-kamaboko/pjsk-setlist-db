@@ -1425,9 +1425,9 @@ body {
 }
 
 /* =============================================
-   ★ 手机端最终调整 (Mobile Final Tweaks) ★
-   1. 排行榜按钮独占一行
-   2. 标签栏向右对齐 (与左侧回数分离)
+   ★ 手机端最终修复 (Mobile Final Fix) ★
+   1. 黄色排行榜按钮独占一行 (100%)
+   2. 标签栏左右彻底分开 (Space Between)
    ============================================= */
 @media (max-width: 850px) {
 
@@ -1439,28 +1439,28 @@ body {
         box-sizing: border-box !important;
     }
 
-    /* --- Part 1: 顶部按钮组 (修正版) --- */
+    /* --- Part 1: 顶部按钮组 (修正布局) --- */
     .view-toggle {
         width: 100% !important;
         min-width: 0 !important;
         padding: 0 5px !important;
         box-sizing: border-box;
         gap: 8px !important;
-        justify-content: flex-start !important; /* 从头开始排 */
+        justify-content: flex-start !important;
     }
 
-    /* 1. 排行榜大按钮：强制占满一行 (100%) */
+    /* ★ 修复 1：黄色排行榜按钮 -> 强制 100% 宽 ★ */
     .ranking-main-btn {
-        width: 100% !important; 
+        width: 100% !important;      /* 独占一行 */
         flex: none !important;
-        margin: 0 !important;
-        font-size: 0.9em !important;
-        padding: 12px 2px !important; /* 稍微高一点，更有分量 */
+        margin: 0 0 5px 0 !important; /* 下方留点间距 */
+        font-size: 0.95em !important;
+        padding: 12px 0 !important;
     }
 
-    /* 2. 其他四个小按钮：一行两个 (50%) */
+    /* ★ 修复 2：其他普通按钮 -> 保持 50% 宽 (一行两个) ★ */
+    /* 注意：这里用了 :not() 排除掉上面的黄色按钮 */
     .view-btn:not(.ranking-main-btn) {
-        /* 计算公式：(100% - 8px间距) / 2 */
         width: calc(50% - 4px) !important; 
         flex: none !important;
         min-width: 0 !important;
@@ -1486,7 +1486,7 @@ body {
         align-items: center !important;
     }
 
-    /* 左侧元素位置保持不变 */
+    /* 左侧元素位置 (保持不变) */
     .rank-num {
         grid-column: 1 !important; grid-row: 1 / 3 !important;
         font-size: 1.2em !important; text-align: center !important; margin: 0 !important; justify-self: center !important;
@@ -1503,7 +1503,7 @@ body {
         font-size: 1em !important; line-height: 1.2 !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; width: 100% !important;
     }
 
-    /* ★★★ Part 3: 数据栏修改 (标签靠右) ★★★ */
+    /* --- Part 3: 数据栏 (红框区域) 修复 --- */
     .rank-meta-mobile {
         grid-column: 3 !important;
         grid-row: 2 !important;
@@ -1512,18 +1512,17 @@ body {
         flex-direction: row !important;
         align-items: center !important;
         
-        /* 核心修改：让左右两端对齐 (回数在左，标签去最右边) */
+        /* ★ 修复 3：关键属性！把左右两端撑开 (回数在左，标签在右) ★ */
         justify-content: space-between !important; 
         
-        gap: 10px !important; /* 增加一点中间的安全距离 */
         width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
         border: none !important;
-        overflow-x: hidden !important; /* 防止超出 */
+        overflow-x: hidden !important; 
     }
 
-    /* 回数小胶囊 (左边) */
+    /* 左边的：回数小胶囊 */
     .rank-meta-mobile > div:first-child span {
         font-size: 0.75em !important;
         background-color: #e0f7fa !important;
@@ -1533,16 +1532,17 @@ body {
         display: inline-block !important;
         font-weight: bold !important;
         white-space: nowrap !important;
-        flex-shrink: 0 !important; /* 别被挤扁了 */
+        flex-shrink: 0 !important; 
     }
     
-    /* 标签组容器 (右边) */
+    /* 右边的：标签组容器 (让它靠右对齐) */
     .rank-meta-mobile > div:last-child {
         display: flex !important;
-        justify-content: flex-end !important; /* 内部标签也靠右排 */
+        justify-content: flex-end !important; /* ★ 强制靠右 ★ */
         gap: 3px !important;
-        overflow-x: auto !important; /* 如果标签太多，这半边可以滑动 */
-        max-width: 80% !important;   /* 限制最大宽度，给左边的回数留点面子 */
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important; 
+        max-width: 80% !important;   
     }
 
     /* 标签本体 */
