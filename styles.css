@@ -1425,48 +1425,111 @@ body {
 }
 
 /* =============================================
-   ★ 手机端最终修复 (Mobile Final Fix) ★
-   1. 黄色排行榜按钮独占一行 (100%)
-   2. 标签栏左右彻底分开 (Space Between)
-   ============================================= */
+★ 手机端终极修复包 (Mobile Ultimate Fix) ★
+============================================= */
 @media (max-width: 850px) {
+    
+    /* 1. 强制歌单变成单列显示 (关键修复！) */
+    #modalSongs {
+        flex-direction: column !important; /* 上下堆叠，不再左右并排 */
+        gap: 0 !important;
+    }
 
-    /* --- Part 0: 全局容器优化 --- */
-    .container {
-        padding: 0 6px !important;
+    /* 每一列占满宽度 */
+    .setlist-column {
         width: 100% !important;
         max-width: 100% !important;
-        box-sizing: border-box !important;
+        margin-bottom: 0px;
     }
 
-    /* --- Part 1: 顶部按钮组 (修正布局) --- */
-    .view-toggle {
+    /* 2. 修复歌名被挤成竖排的问题 */
+    .song-row {
+        padding: 10px 5px !important; /* 减小内边距 */
+    }
+
+    .song-body {
+        align-items: flex-start !important; /* 顶端对齐 */
+    }
+
+    .song-info {
+        min-width: 0 !important; /* 防止Flex子元素溢出 */
+        width: 100% !important;  /* 占满剩余空间 */
+    }
+
+    .song-title {
+        font-size: 1.1em !important;
+        
+        /* ★ 核心修复：强制正常换行，不再一个字一行 ★ */
+        white-space: normal !important; 
+        word-break: break-word !important; 
+        
+        margin-bottom: 5px !important;
+        line-height: 1.4 !important;
+    }
+
+    /* 3. 调整图片大小 */
+    .song-cover-img {
+        width: 60px !important;  /* 手机上图片稍微小一点 */
+        height: 60px !important;
+        margin-right: 10px !important;
+    }
+    
+    .song-left-col {
+        width: 60px !important; /* 容器跟随图片缩小 */
+        margin-right: 10px !important;
+    }
+
+    /* 4. 修复标题被水印遮挡 (加个白边发光) */
+    #modalTitle {
+        position: relative;
+        z-index: 5 !important; /* 提到最上层 */
+        font-size: 1.4em !important;
+        /* 给文字加一圈白色光晕，防止被背景干扰 */
+        text-shadow: 0 0 5px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,1); 
+    }
+
+    /* 让水印变淡，退到后面 */
+    .unit-watermark {
+        opacity: 0.15 !important; /* 变得很淡 (15%) */
+        z-index: 0 !important;
+        top: 10px !important;
+        right: 0 !important;
+        height: 60px !important;
+    }
+
+    /* 5. 调整弹窗头部布局 */
+    .setlist-header {
+        flex-direction: column !important; /* 竖着排 */
+        align-items: stretch !important;   /* 拉伸占满 */
+        gap: 15px !important;
+    }
+
+    .session-switch-group {
         width: 100% !important;
-        min-width: 0 !important;
-        padding: 0 5px !important;
-        box-sizing: border-box;
-        gap: 8px !important;
-        justify-content: flex-start !important;
+        order: 2; /* 按钮放中间 */
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    
+    .session-btn {
+        flex: 1 !important; /* 按钮平分宽度 */
+        min-width: 70px !important;
+        font-size: 0.9em !important;
+        text-align: center !important;
     }
 
-    /* ★ 修复 1：黄色排行榜按钮 -> 强制 100% 宽 ★ */
-    .ranking-main-btn {
-        width: 100% !important;      /* 独占一行 */
-        flex: none !important;
-        margin: 0 0 5px 0 !important; /* 下方留点间距 */
-        font-size: 0.95em !important;
-        padding: 12px 0 !important;
+    /* 保存按钮放最下面，防止挤占标题 */
+    .save-btn {
+        width: 100% !important;
+        text-align: center !important;
+        margin-top: 5px !important;
+        order: 3; 
     }
-
-    /* ★ 修复 2：其他普通按钮 -> 保持 50% 宽 (一行两个) ★ */
-    /* 注意：这里用了 :not() 排除掉上面的黄色按钮 */
-    .view-btn:not(.ranking-main-btn) {
-        width: calc(50% - 4px) !important; 
-        flex: none !important;
-        min-width: 0 !important;
-        margin: 0 !important;
-        font-size: 0.85em !important;
-        padding: 10px 2px !important;
+    
+    /* 6. 模态窗边距优化 */
+    .modal-content {
+        padding: 15px 10px !important; /* 左右边距改小 */
+        width: 92% !important;
     }
     
     /* 隐藏电脑端组件 */
@@ -1474,99 +1537,121 @@ body {
         display: none !important;
     }
 
-    /* --- Part 2: 排行榜 Grid 布局 --- */
+    /* --- 1. 顶部按钮容器：允许更小宽度 --- */
+    .view-toggle {
+        width: 100% !important;
+        min-width: 0 !important;    /* 覆盖掉全局的 350px 限制 */
+        padding: 0 10px !important;
+        box-sizing: border-box;
+        gap: 10px !important;
+        justify-content: flex-start !important;
+    }
+
+    /* --- 2. 按钮本体：强制 50% 宽度 --- */
+    .view-btn, .ranking-main-btn {
+        width: calc(50% - 5px) !important; /* (100% - 10px间距) / 2 */
+        flex: none !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        font-size: 0.85em !important; /* 字体稍微改小一点点防止换行 */
+        padding: 10px 2px !important;
+    }
+
+    /* --- 3. 全局容器：减少两侧留白 (让排行榜变宽) --- */
+    .container {
+        padding: 0 6px !important; /* 从 20px 改为 6px */
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* --- Part 2: 排行榜 (Ranking) 最终布局 --- */
+    /* 目标：左边排名+图，右边歌名，歌名下方横排数据 */
+
+    /* 1. 整体容器：横排 */
     .ranking-row {
-        display: grid !important;
-        /* 三列：排名(30px) | 图片(55px) | 右侧内容(自动) */
-        grid-template-columns: 30px 55px 1fr !important;
-        grid-template-rows: auto auto !important;
-        gap: 4px 10px !important;
-        padding: 10px !important;
-        height: auto !important;
-        align-items: center !important;
-    }
-
-    /* 左侧元素位置 (保持不变) */
-    .rank-num {
-        grid-column: 1 !important; grid-row: 1 / 3 !important;
-        font-size: 1.2em !important; text-align: center !important; margin: 0 !important; justify-self: center !important;
-    }
-    .rank-cover {
-        grid-column: 2 !important; grid-row: 1 / 3 !important;
-        width: 50px !important; height: 50px !important; border-radius: 6px !important; margin: 0 !important; object-fit: cover;
-    }
-    .rank-song-info {
-        grid-column: 3 !important; grid-row: 1 !important;
-        width: 100% !important; display: flex !important; align-items: flex-end !important; min-width: 0 !important; padding-bottom: 2px !important;
-    }
-    .rank-song-info div[style*="font-weight:bold"] {
-        font-size: 1em !important; line-height: 1.2 !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; width: 100% !important;
-    }
-
-    /* --- Part 3: 数据栏 (红框区域) 修复 --- */
-    .rank-meta-mobile {
-        grid-column: 3 !important;
-        grid-row: 2 !important;
-        
         display: flex !important;
         flex-direction: row !important;
         align-items: center !important;
-        
-        /* ★ 修复 3：关键属性！把左右两端撑开 (回数在左，标签在右) ★ */
-        justify-content: space-between !important; 
-        
+        padding: 8px 10px !important;
+        gap: 0 !important; 
+        height: auto !important;
+    }
+
+    /* 2. 左侧：排名 (固定宽度) */
+    .rank-num {
+        width: 30px !important;
+        min-width: 30px !important;
+        font-size: 1.1em !important;
+        text-align: center !important;
+        margin: 0 !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* 3. 左侧：封面图 (固定大小) */
+    .rank-cover {
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 6px !important;
+        margin: 0 12px 0 5px !important; /* 右边留空隙 */
+        flex-shrink: 0 !important;
+        object-fit: cover;
+    }
+
+    /* 4. 右侧：歌名+数据容器 (红框区域) */
+    .rank-song-info {
+        flex: 1 !important; /* 占满剩余宽度 */
+        display: flex !important;
+        flex-direction: column !important; /* 上下排列 */
+        justify-content: center !important;
+        align-items: flex-start !important; /* 左对齐 */
+        min-width: 0 !important; 
+    }
+
+    /* 5. 歌名样式 */
+    .rank-song-info div[style*="font-weight:bold"] {
+        font-size: 1em !important;
+        line-height: 1.3 !important;
+        margin-bottom: 6px !important; /* 和下面的标签拉开距离 */
+        white-space: nowrap !important; 
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        width: 100% !important;
+    }
+
+    /* 6. 数据栏 (蓝框内容)：横排显示 */
+    .rank-meta-mobile {
+        display: flex !important;
+        flex-direction: row !important; /* ★ 强制横排 */
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        gap: 6px !important;
         width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
         border: none !important;
-        overflow-x: hidden !important; 
+        overflow-x: auto !important; /* 允许横向滑动 */
     }
 
-    /* 左边的：回数小胶囊 */
+    /* 7. “11回”小胶囊 */
     .rank-meta-mobile > div:first-child span {
         font-size: 0.75em !important;
-        background-color: #e0f7fa !important;
-        color: #00acc1 !important;
+        background-color: #e0f7fa !important; 
+        color: #00acc1 !important;            
         padding: 2px 6px !important;
         border-radius: 4px !important;
         display: inline-block !important;
-        font-weight: bold !important;
         white-space: nowrap !important;
-        flex-shrink: 0 !important; 
-    }
-    
-    /* 右边的：标签组容器 (让它靠右对齐) */
-    .rank-meta-mobile > div:last-child {
-        display: flex !important;
-        justify-content: flex-end !important; /* ★ 强制靠右 ★ */
-        gap: 3px !important;
-        flex-wrap: nowrap !important;
-        overflow-x: auto !important; 
-        max-width: 80% !important;   
+        font-weight: bold !important;
     }
 
-    /* 标签本体 */
+    /* 8. 标签小胶囊 */
     .rank-tag {
-        font-size: 0.65em !important;
-        padding: 2px 6px !important;
+        font-size: 0.6em !important;
+        padding: 2px 5px !important;
         height: auto !important;
         white-space: nowrap !important;
         display: inline-block !important;
         margin: 0 !important;
     }
-
-    /* --- Part 4: 详情页保持不变 --- */
-    #modalSongs { flex-direction: column !important; gap: 0 !important; }
-    .setlist-column { width: 100% !important; max-width: 100% !important; }
-    .song-row { padding: 10px 5px !important; }
-    .song-title { white-space: normal !important; word-break: break-word !important; font-size: 1.1em !important; }
-    .song-cover-img { width: 60px !important; height: 60px !important; margin-right: 10px !important; }
-    .song-left-col { width: 60px !important; margin-right: 10px !important; }
-    #modalTitle { position: relative; z-index: 5 !important; text-shadow: 0 0 5px white; }
-    .unit-watermark { opacity: 0.15 !important; z-index: 0 !important; }
-    .setlist-header { flex-direction: column !important; gap: 10px !important; }
-    .session-switch-group { width: 100% !important; order: 2; margin-top: 5px !important; }
-    .session-btn { flex: 1 !important; min-width: 60px !important; }
-    .save-btn { width: 100% !important; order: 3; margin-top: 5px !important; }
-    .modal-content { width: 95% !important; padding: 15px 10px !important; margin: 10px auto !important; }
 }
