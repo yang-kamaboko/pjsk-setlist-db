@@ -1,10 +1,1433 @@
+:root {
+    --primary-color: #33c6b8; /* Miku绿 */
+    --secondary-color: #ff9f43; /* 橙色用于强调 */
+    --bg-color: #f4f6f9;
+    --text-color: #2c3e50;
+}
+
+/* === 滚动条美化 (Webkit内核) === */
+::-webkit-scrollbar {
+    width: 8px;              /* 滚动条宽度 */
+    height: 8px;             /* 横向滚动条高度 */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;     /* 轨道背景色 */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;        /* 滚动条滑块默认颜色 */
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color); /* 鼠标悬停时变 Miku 绿 */
+}
+
+body {
+    /* 修改这一行，把新字体放在最前面 */
+    font-family: 'M PLUS Rounded 1c', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: var(--bg-color);
+    margin: 0;
+    color: var(--text-color);
+}
+
+/* 导航栏 */
+.navbar {
+    background: white; padding: 15px 30px; display: flex; justify-content: space-between;
+    align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100;
+}
+
+/* 介绍区 */
+.intro-section {
+    /* 修改背景：拉长背景尺寸，做成 400% 大小 */
+    background: linear-gradient(120deg, #33c6b8, #2ab7ca, #33c6b8, #2ab7ca);
+    background-size: 300% 300%;
+    
+    color: white; 
+    padding: 30px 20px; 
+    text-align: center;
+    
+    /* 加上流动动画 */
+    animation: gradientFlow 8s ease infinite;
+}
+
+/* =========================================
+组曲 (Medley) 专用标签
+========================================= */
+.tag-medley {
+    display: inline-block;
+    
+    /* 渐变背景：紫 -> 粉 */
+    background: linear-gradient(135deg, #b06ab3, #4568dc); 
+    
+    color: white;
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 4px; /* 小圆角矩形 */
+    
+    margin-left: 10px; /* 和歌名拉开一点距离 */
+    vertical-align: middle;
+    
+    box-shadow: 0 2px 5px rgba(70, 100, 220, 0.3);
+    letter-spacing: 0.5px;
+    transform: translateY(-1px); /* 视觉微调 */
+}
+
+/* 定义背景流动关键帧 */
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 核心功能：四个大按钮容器 */
+.view-toggle {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    
+    /* ★★★ 修改重点 ★★★ */
+    width: 60%;           /* 只占用屏幕 60% 的宽度 */
+    max-width: 800px;     /* 限制最大宽度，防止超宽屏上太长 */
+    min-width: 350px;     /* 限制最小宽度，防止手机上挤成一团 */
+    margin: 25px auto;    /* 上下25px，左右自动(实现居中) */
+    
+    padding: 0 10px;
+}
+
+/* === 通用按钮基础样式 === */
+.view-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex: 1;
+    min-width: 100px;
+    
+    /* 默认状态（未选中）：有边框 */
+    padding: 12px;           /* 原始内边距 */
+    border: 2px solid transparent; /* 边框占位 2px */
+    border-radius: 10px;
+    
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+    background: linear-gradient(135deg, #fff, #f9f9f9);
+    color: #555;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.view-btn i {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* === 选中激活状态 (彻底修复：去边框+补内边距) === */
+.view-btn.active {
+    color: white !important;
+    
+    /* ★★★ 核心修改：删掉边框，补上内边距 ★★★ */
+    /* 原来是 border 2px + padding 12px = 14px */
+    /* 现在改为 border 0px + padding 14px = 14px */
+    /* 这样大小不变，但背景色能 100% 填满边缘，没有任何缝隙 */
+    border: 0 !important;   
+    padding: 14px !important; 
+    
+    /* 增强的果冻质感阴影 */
+    /* inset 是内阴影，用来做顶部的反光条，让它看起来像凸起的果冻 */
+    /* 外部阴影保持发光感 */
+}
+
+/* 1. セカライ激活 (珊瑚粉) */
+.view-btn.active[onclick*="'1'"] {
+    background: linear-gradient(to bottom, #ff9aa2, #ff5f6d) !important;
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.4), /* 顶部一条亮线 */
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1),      /* 底部一条暗线 (增加厚度) */
+        0 4px 15px rgba(255, 95, 109, 0.5) !important;
+}
+
+/* 2. 感謝祭激活 (金橙色) */
+.view-btn.active[onclick*="'2'"] {
+    background: linear-gradient(to bottom, #ffca28, #f57c00) !important;
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.5), 
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+        0 4px 15px rgba(245, 124, 0, 0.5) !important;
+}
+
+/* 3. シンフォニー激活 (紫色) */
+.view-btn.active[onclick*="'3'"] {
+    /* 调整了渐变色，让顶部稍微淡一点，更像排行榜那个 */
+    background: linear-gradient(to bottom, #d066e2, #8e24aa) !important;
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.35), 
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+        0 4px 15px rgba(142, 36, 170, 0.5) !important;
+}
+
+/* 4. コネライ激活 (蓝色) */
+.view-btn.active[onclick*="'4'"] {
+    background: linear-gradient(to bottom, #4fc3f7, #0288d1) !important;
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+        0 4px 15px rgba(2, 136, 209, 0.5) !important;
+}
+
+/* 点击时的按压感 */
+.view-btn.active:active {
+    transform: translateY(1px);
+    box-shadow: 
+        inset 0 2px 5px rgba(0, 0, 0, 0.2), 
+        0 2px 5px rgba(0,0,0,0.2) !important;
+}
+
+/* 各个颜色的定义 (微调了渐变角度，让上方更亮) */
+
+/* 1. セカライ激活 */
+.view-btn.active[onclick*="'1'"] {
+    background: linear-gradient(to bottom, #ff9aa2, #ff5f6d) !important;
+    box-shadow: 
+        inset 0 1px 2px rgba(255, 255, 255, 0.6), /* 顶部高光更亮、更薄 */
+        0 4px 15px rgba(255, 95, 109, 0.5) !important;
+}
+
+/* 2. 感謝祭激活 */
+.view-btn.active[onclick*="'2'"] {
+    background: linear-gradient(to bottom, #ffd54f, #f57c00) !important;
+    box-shadow: 
+        inset 0 1px 2px rgba(255, 255, 255, 0.7), 
+        0 4px 15px rgba(245, 124, 0, 0.5) !important;
+}
+
+/* 3. シンフォニー激活 */
+.view-btn.active[onclick*="'3'"] {
+    background: linear-gradient(to bottom, #e1bee7, #8e24aa) !important;
+    box-shadow: 
+        inset 0 1px 2px rgba(255, 255, 255, 0.5), 
+        0 4px 15px rgba(142, 36, 170, 0.5) !important;
+}
+
+/* 4. コネライ激活 */
+.view-btn.active[onclick*="'4'"] {
+    background: linear-gradient(to bottom, #81d4fa, #0288d1) !important;
+    box-shadow: 
+        inset 0 1px 2px rgba(255, 255, 255, 0.6),
+        0 4px 15px rgba(2, 136, 209, 0.5) !important;
+}
+
+/* === 选中激活状态 (升级版：饱满立体质感) === */
+.view-btn.active {
+    color: white !important;
+    border-color: transparent !important;
+    /* 增加一点点内边距的过渡，让点击时感觉更扎实 */
+    transition: all 0.2s ease;
+}
+
+/* 通用的内发光效果 (制造厚度感的核心) */
+/* 我们在具体的颜色定义里，把这个内发光和外发光组合起来 */
+
+/* 1. セカライ激活 (珊瑚粉色系) */
+.view-btn.active[onclick*="'1'"] {
+    /* 从上到下的渐变：上面亮粉，下面深珊瑚色 */
+    background: linear-gradient(to bottom, #ff8a95, #ff5f6d) !important;
+    box-shadow: 
+        inset 0 2px 3px rgba(255, 255, 255, 0.4), /* 顶部的白色高光 */
+        0 4px 15px rgba(255, 95, 109, 0.5) !important; /* 外部的彩色光晕 */
+}
+
+/* 2. 感謝祭激活 (金橙色系 - 模仿图11) */
+.view-btn.active[onclick*="'2'"] {
+    /* 上面金黄，下面深橙 */
+    background: linear-gradient(to bottom, #ffc107, #f57c00) !important;
+    box-shadow: 
+        inset 0 2px 3px rgba(255, 255, 255, 0.5), /* 金色需要更亮的高光 */
+        0 4px 15px rgba(245, 124, 0, 0.5) !important;
+}
+
+/* 3. シンフォニー激活 (深紫色系) */
+.view-btn.active[onclick*="'3'"] {
+    /* 上面亮紫，下面深紫 */
+    background: linear-gradient(to bottom, #ce62e0, #8e24aa) !important;
+    box-shadow: 
+        inset 0 2px 3px rgba(255, 255, 255, 0.3), /* 紫色高光稍微淡一点 */
+        0 4px 15px rgba(142, 36, 170, 0.5) !important;
+}
+
+/* 4. コネライ激活 (海洋蓝色系) */
+.view-btn.active[onclick*="'4'"] {
+    /* 上面天蓝，下面深海蓝 */
+    background: linear-gradient(to bottom, #4fc3f7, #0288d1) !important;
+    box-shadow: 
+        inset 0 2px 3px rgba(255, 255, 255, 0.4),
+        0 4px 15px rgba(2, 136, 209, 0.5) !important;
+}
+
+/* 鼠标按下的瞬间效果 (增加反馈感) */
+.view-btn.active:active {
+    transform: translateY(1px); /* 稍微按下去一点 */
+    box-shadow: 
+        inset 0 2px 5px rgba(0, 0, 0, 0.1), /* 内部变暗一点 */
+        0 2px 5px rgba(0,0,0,0.2) !important; /* 外部阴影收缩 */
+}
+
+/* 容器限制 */
+.container { max-width: 1000px; margin: 0 auto 50px; padding: 0 20px; }
+
+/* --- 列表视图样式 (带海报) --- */
+.grid-container {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;
+}
+.event-card {
+    background-color: #ddd; border-radius: 15px; height: 180px;
+    position: relative; overflow: hidden; cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-size: cover; background-position: center;
+    display: flex; flex-direction: column; justify-content: flex-end;
+}
+
+.event-card:hover { 
+    transform: translateY(-5px); 
+    /* 修改阴影：增加一个带颜色的扩散阴影 */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 0 15px rgba(51, 198, 184, 0.4); 
+}
+
+.event-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%); z-index: 1;
+}
+.card-content { position: relative; z-index: 2; padding: 15px; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+
+/* --- 统计视图样式 (新功能) --- */
+.stats-container { display: none; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+.stat-row { display: flex; align-items: center; margin-bottom: 15px; }
+.stat-label { width: 150px; font-weight: bold; text-align: right; margin-right: 15px; font-size: 0.9em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stat-bar-bg { flex: 1; background: #eee; height: 20px; border-radius: 10px; overflow: hidden; position: relative; }
+.stat-bar-fill { height: 100%; background: var(--primary-color); border-radius: 10px; width: 0%; transition: width 1s ease; }
+.stat-count { width: 40px; margin-left: 10px; font-weight: bold; color: #666; font-size: 0.9em; }
+
+/* 模态窗样式 (和之前一样) */
+.modal-overlay {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6); z-index: 1000; backdrop-filter: blur(5px);
+    align-items: center; justify-content: center;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative; /* 关键：为了让水印能绝对定位 */
+}
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute; /* 绝对定位 */
+    top: 10px;
+    right: 15px;
+    z-index: 100;       /* ★ 关键：层级设得很高，压在水印上面 ★ */
+    transition: color 0.2s;
+    background: rgba(255,255,255,0.8); /* 可选：加个半透明底，防止看不清 */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.close-btn:hover { color: #000; }
+/* === 修复后的歌单样式 (强制横排 + 限制图片大小) === */
+.performers-container {
+    display: flex;
+    flex-wrap: wrap;      /* 允许换行 */
+    gap: 5px;             /* 间距改小 */
+    margin-top: 5px;
+    align-items: center;
+    position: relative;   /* 保证在水印上面 */
+    z-index: 1;
+}
+
+/* === 出演者标签样式 === */
+.performer-badge {
+    font-size: 0.75em;    /* 字体改小 (原来是0.85) */
+    padding: 3px 8px;     /* 边距改小，更紧凑 */
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    white-space: nowrap;  /* 防止标签内部换行 */
+    display: inline-block;/* 确保能并排 */
+}
+
+.song-row.rainbow-bg {
+    background: linear-gradient(120deg, 
+        rgba(255, 182, 193, 0.5), /* 深粉 */
+        rgba(255, 218, 185, 0.5), /* 深橙 */
+        rgba(255, 250, 205, 0.5), /* 深黄 */
+        rgba(152, 251, 152, 0.5), /* 深绿 */
+        rgba(173, 216, 230, 0.5), /* 深蓝 */
+        rgba(221, 160, 221, 0.5)  /* 深紫 */
+    ) !important;
+}
+
+/* =========================================
+   2. 右上角：横排胶囊 (Horizontal Badge)
+   ========================================= */
+.badge-horizontal {
+    position: absolute;
+    top: 2px;
+    right: 2px;             /* 靠右对齐 */
+    
+    padding: 1px 5px;       /* 稍微扁一点 */
+    border-radius: 4px;     /* 圆角 */
+    
+    font-size: 0.6em;       /* 字体大小 */
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+    white-space: nowrap;
+    
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* === 右下角：横排胶囊定位 (修正版) === */
+.badge-bottom-right {
+    position: absolute;
+    
+    /* ★ 修改这里：从 4px 改为 6px (往里挪一点) */
+    bottom: 8px;    
+    right: 2px;     
+    
+    padding: 1px 5px;
+    border-radius: 4px;
+    
+    /* 可选：如果你觉得字太大了撑得慌，可以微调字体大小 */
+    font-size: 0.6em;   
+    
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+    white-space: nowrap;
+    
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* === Short Ver. 颜色 (深灰色渐变) === */
+.badge-short-grey {
+    background: linear-gradient(to bottom, #757575, #424242);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* === 卡片整体内边距 (紧凑版) === */
+.song-row {
+    /* 修改这里：上8px, 右10px, 下3px, 左10px */
+    /* 之前是 padding: 8px 10px; */
+    padding: 8px 10px 3px 10px;      
+    
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    border-bottom: 1px solid #eee;
+    background: white;
+    transition: 0.2s;
+}
+.song-row:hover { background-color: #f9f9f9; }
+
+/* === 5. 上半身容器 (微调) === */
+.song-body {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+    
+    /* ★ 修改点 2：把图片下方的留白给掉，让线能贴上来 */
+    padding-bottom: 2px;    
+}
+
+/* === 底部栏 === */
+.song-footer {
+    display: flex;
+    align-items: center;
+    
+    /* 关键：把距离上面的间距压到最小 */
+    margin-top: 0px;        
+    padding-top:3px;         
+    
+    border-top: 1px dashed #ddd; 
+    width: 100%;
+}
+
+/* === 底部左下角容器 (必须跟着变，否则不对齐) === */
+.song-footer-left {
+    width: 80px;            
+    
+    /* 必须和上面保持一致 */
+    margin-right: 8px; 
+    
+    flex-shrink: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* === 3. 底部右侧：放标签 (对齐上面的文字区域) === */
+.song-footer-right {
+    flex: 1;                /* 占满剩余空间 */
+    display: flex;
+    align-items: center;
+    min-width: 0;           /* 防止溢出 */
+}
+
+/* 歌唱回数文字 */
+.song-count-label {
+    font-size: 0.7em;      /* 稍微改小 */
+    color: #5c5a5a;
+    font-weight: bold;
+}
+
+/* === 1. 修改：给左侧容器加上相对定位和溢出隐藏 (必须改！) === */
+.song-left-col {
+    width: 80px;            
+    margin-right: 8px;     
+    flex-shrink: 0;
+    
+    /* ★ 新增：为了剪裁横幅 */
+    position: relative;     
+    overflow: hidden;       
+    border-radius: 6px;
+}
+
+.song-index {
+    color: #ccc; font-weight: bold; font-size: 1.2em;
+    margin-right: 15px; min-width: 25px; text-align: center;
+    /* 序号也顶端对齐，稍微往下挪一点点 */
+    margin-top: 5px; 
+}
+
+/* === 3. 四种活动类型的颜色定义 === */
+
+/* セカライ (Sekalai) - 红粉色系 */
+.premiere-sekalai { background: linear-gradient(135deg, #ff5f6d, #ffc371); }
+
+/* 感謝祭 (Kanshasai) - 橙黄色系 */
+.premiere-kanshasai { 
+    background: linear-gradient(135deg, #f09819, #edde5d); 
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2); 
+}
+
+/* シンフォニー (Symphony) - 深蓝/紫色系 */
+.premiere-symphony { background: linear-gradient(135deg, #2c3e50, #4ca1af); }
+
+/* コネライ (Connect) - 科技蓝系 */
+.premiere-connect { background: linear-gradient(135deg, #00c6ff, #0072ff); }
+
+.badge-live-red {
+    background: linear-gradient(to bottom, #ff5252, #d32f2f);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* === 图片尺寸 === */
+.song-cover-img {
+    /* 从 100px 改为 80px */
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;     /* 圆角稍微改小适配小图 */
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 0;
+}
+
+/* === 新增：歌名里的序号样式 === */
+.song-number-inline {
+    color: var(black);  
+    font-size: 1.3em;             /* 明显加大字体 */
+    font-weight: 700;             /* 变得非常粗 */
+    margin-right: 5px;           /* 和歌名拉开一点距离 */
+    opacity: 0.9;                 
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.05); /* 加一点点立体阴影 */
+    
+    /* 关键：确保它是内联块级元素，这样变形才生效 */
+    display: inline-block;       
+    min-width: 40px;              /* 给序号留出固定的宽度，防止歌名对其不齐 */
+}
+
+/* === 1. 缩小标题字体 & 往左移 (修改版) === */
+.song-title {
+    font-weight: bold; 
+    color: #333; 
+    
+    /* 修改点 A: 字体改小一点点 (原 1rem -> 0.95rem) */
+    font-size: 0.95rem; 
+    
+    line-height: 1.2;
+    margin-bottom: 6px;     
+}
+
+/* === 修改 .song-info (让标题位置固定在顶部) === */
+.song-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    
+    /* ★★★ 核心修改：从 center 改为 flex-start ★★★ */
+    /* 这样内容就会永远从最上面开始排，不会因为内容少而跑到中间去 */
+    justify-content: flex-start; 
+    
+    /* ★★★ 建议新增：微调顶部距离 ★★★ */
+    /* 因为左边的图片有圆角，文字如果贴得太紧会有点压抑，下移 2px 视觉上会更对齐 */
+    padding-top: 2px;
+
+    min-width: 0;
+    position: relative; 
+    z-index: 2;
+    
+    /* 保持原来的高度设置 */
+    min-height: 80px; 
+    height: auto; 
+}
+
+/* === 标题样式 (微调) === */
+.song-title {
+    font-weight: bold; 
+    color: #333; 
+    font-size: 1rem; 
+    line-height: 1.2;
+    
+    /* 歌名和下面的歌手胶囊拉开一点点距离 */
+    margin-bottom: 6px;     
+}
+
+/* === 歌手胶囊容器 (修改版：自动高度，显示所有行) === */
+.singer-tags { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 3px;
+    
+    /* ★★★ 修改这里：原来是 height: 48px; overflow: hidden; */
+    height: auto;           /* 让高度随内容自动撑开 */
+    overflow: visible;      /* 允许内容显示出来 */
+    
+    align-content: flex-start; 
+}
+
+.song-comment {
+    font-size: 0.85em;       /* 字体小一点 */
+    color: #666;             /* 深灰色 */
+    margin-top: 8px;         /* 离上面标签远一点 */
+    padding-top: 6px;        /* 内部留白 */
+    border-top: 1px dashed #ddd; /* 顶部加一条虚线分割 */
+    line-height: 1.4;        /* 行高舒服一点 */
+    white-space: pre-wrap;   /* 允许在这个字段里换行 */
+}
+
+
+/* === 歌手胶囊 (完美居中版) === */
+.singer-badge {
+    font-size: 0.7em;
+    color: white;
+    padding: 2px 8px;       /* 左右留宽一点点更好看 */
+    border-radius: 10px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    white-space: nowrap;
+    
+    /* ★ 关键修改：启用 Flex 布局实现绝对居中 ★ */
+    display: inline-flex;   
+    align-items: center;    /* 垂直居中 */
+    justify-content: center;/* 水平居中 */
+    height: 18px;           /* 给个固定高度，防止被字体撑歪 */
+    line-height: 1;         /* 重置行高 */
+}
+
+.song-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    /* 去掉之前的 margin-top */
+    margin: 0; 
+}
+
+/* === 安可分割条样式 === */
+.setlist-separator {
+    background-color: #909090;
+    color: #222222;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 8px 0;         /* 稍微调整一下高度 */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    letter-spacing: 1px;    /* 字间距稍微收一点 */
+    width: 100%;
+    
+    /* ★ 新增：Flex 布局，让图标和文字垂直居中对齐 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;               /* 图标和文字的间距 */
+}
+
+.setlist-separator i {
+    font-size: 1.1em;       /* 图标稍微大一点点 */
+    opacity: 0.7;           /* 稍微透明一点更有质感 */
+}
+
+/* === 主页活动卡片横幅 === */
+.card-banner {
+    position: absolute;
+    top: 20px;
+    left: -32px; /* 往左移，配合旋转 */
+    width: 120px; /* 稍微长一点 */
+    
+    text-align: center;
+    font-size: 0.85em; /* 字体适中 */
+    font-weight: bold;
+    color: white;
+    line-height: 1.4;
+    
+    transform: rotate(-45deg); /* 经典的左上角倾斜 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 10; /* 保证在卡片内容上层 */
+    pointer-events: none;
+}
+
+/* === 4种活动颜色 (复用之前的配色逻辑) === */
+
+/* 1. セカライ - 红粉色系 */
+.banner-sekalai { background: linear-gradient(135deg, #ff5f6d, #ffc371); }
+
+/* 2. 感謝祭 - 橙黄色系 */
+.banner-kanshasai { 
+    background: linear-gradient(135deg, #f09819, #edde5d); 
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* 3. シンフォニー - 紫色系 (配合你刚才改的紫色基调) */
+/* 为了保证白字能看清，横幅背景用稍微深一点的渐变紫 */
+.banner-symphony { background: linear-gradient(135deg, #ab47bc, #7b1fa2); }
+
+/* 4. コネライ - 科技蓝系 */
+.banner-connect { background: linear-gradient(135deg, #00c6ff, #0072ff); }
+
+/* === 颜色定义 === */
+
+/* === 1. セカライ (Sekalai) - 红粉渐变 (对应 Banner) === */
+.tag-sekalai {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+}
+
+/* === 2. 感謝祭 (Kanshasai) - 橙黄渐变 (对应 Banner) === */
+.tag-kanshasai {
+    background: linear-gradient(135deg, #f09819, #edde5d);
+}
+
+/* === 3. シンフォニー (Symphony) - 紫色渐变 (对应 Banner) === */
+.tag-symphony {
+    background: linear-gradient(135deg, #ab47bc, #7b1fa2);
+}
+
+/* === 4. コネライ (Connect) - 科技蓝渐变 (对应 Banner) === */
+.tag-connect {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+/* === 5. 未激活/灰色状态 (Ranking专用) === */
+.tag-inactive {
+    background-color: #e0e0e0; /* 浅灰色底 */
+    color: #999;               /* 深灰色字 */
+    border: 1px solid #d0d0d0; /* 稍微深一点的边框，增强立体感 */
+    /* 保持和其他标签一样的尺寸 */
+}
+
+/* === 通用/默认版本 (蓝色) === */
+.tag-version {
+    background-color: #f5f5f5;
+    color: #666;
+    text-shadow: none;      /* 灰色字不需要阴影 */
+    border: 1px solid #ddd; /* 灰色底需要边框才好看 */
+}
+
+/* === 通用/默认版本 (蓝色) === */
+.tag-version {
+    background-color: #f5f5f5;
+    color: #666;
+    border-color: #ddd;
+}
+
+/* 标签微调 */
+.song-tag {
+    /* 1. 字体再稍微小一丢丢 */
+    font-size: 0.6em; 
+    
+    /* 2. ★核心修改：把上下的厚度压扁 (上下1px, 左右6px) */
+    padding: 1px 6px;       
+    
+    /* 3. 圆角稍微改小一点，适配瘦长的形状 */
+    border-radius: 8px;
+    
+    /* 4. 压紧行高，防止被隐形空间撑大 */
+    line-height: 1.2;
+    
+    white-space: normal;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    border: none;
+    
+    /* 文字样式保持不变 */
+    color: white;
+    font-weight: normal; 
+    text-shadow: 0 1px 1px rgba(0,0,0,0.15); 
+}
+
+/* 两种颜色的标签： */
+/* 1. 蓝色系：用于版本说明 (完整版/Acoustic) */
+.tag-version {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    border: 1px solid #bbdefb;
+}
+/* 2. 黄色系：用于历史回顾 (曾于xx演唱) */
+.tag-history {
+    background-color: #fff3e0;
+    color: #ef6c00;
+    border: 1px solid #ffe0b2;
+}
+
+/* === 歌单布局：左右分栏 (N字形) === */
+#modalSongs {
+    display: flex;         /* 改用 Flex 布局 */
+    gap: 20px;             /* 两列中间的间距 */
+    align-items: flex-start; /* 顶端对齐 */
+}
+
+#modalTitle {
+    font-size: 1.8em;     /* 字体加大 */
+    margin-top: 0;
+    margin-bottom: 5px;
+    position: relative;   /* 保证在水印上面 */
+    z-index: 1;
+}
+
+#modalDate {
+    color: #444;
+    margin-bottom: 10px;
+    font-size: 1.1em;     /* 稍大 */
+    font-weight: bold;    /* 加粗 */
+    position: relative;   /* 保证在水印上面 */
+    z-index: 1;
+}
+
+/* === 2. 出演者容器 (让文字和标签在同一行) === */
+.performers-wrapper {
+    display: flex;        /* 弹性布局 */
+    align-items: center;  /* 垂直居中对齐 */
+    flex-wrap: wrap;      /* 如果屏幕太窄，允许换行 */
+    gap: 6px;             /* 文字和标签的间距 */
+    margin-top: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+/* === 3. "出演:" 标题样式 === */
+.performers-label {
+    font-size: 0.85em;
+    color: #555;
+    font-weight: bold;
+    white-space: nowrap;  /* 防止这两个字换行 */
+    margin-right: 0px;    /* 和后面的胶囊拉开一点点距离 */
+}
+
+/* === 4. 胶囊标签 (保持之前的精致感) === */
+.performer-badge {
+    font-size: 0.77em;
+    padding: 2px 7px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    white-space: nowrap;
+}
+
+#modalWatermark {
+    position: absolute;
+    top: 10px;
+    /* right: 20px;  <-- 原来的值太小了 */
+    right: 60px;  
+    
+    height: 90px; /* (提示：这里你之前改回了80px，如果你想要大Logo记得改回160px) */
+    width: auto;
+    opacity: 0.5;
+    z-index: 0;
+    pointer-events: none;
+    object-fit: contain;
+}
+
+/* 按钮本体 (保持精致感) */
+.session-btn {
+    background: transparent;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: #666;
+    white-space: nowrap;
+}
+.session-btn.active {
+    background: white;
+    color: var(--primary-color);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 3. 保存按钮：强制锁定在第 3 列 */
+.save-btn {
+    grid-column: 3;       /* ★ 新增：你永远坐最右边，别往中间挤 */
+    justify-self: end;    
+    
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    white-space: nowrap;
+    z-index: 2;
+    transition: background 0.2s;
+    width: auto; 
+    flex-shrink: 0; 
+}
+
+.save-btn:hover { background-color: #555; }
+
+/* 必须加上这个，防止结构错乱 */
+#modalActions { display: contents; }
+
+/* === 头部容器 (改为 Grid 布局，这是修复的核心) === */
+.setlist-header {
+    /* 核心修改：使用 Grid 布局，分为三列：左边自动、中间适应内容、右边自动 */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    align-items: center;
+    
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 40px;
+    z-index: 5;
+    position: relative;
+}
+
+/* 2. 中间按钮组：强制锁定在第 2 列 */
+.session-switch-group {
+    grid-column: 2;       /* ★ 新增：你永远坐中间，哪怕隐身了也要占着位 */
+    
+    position: static; 
+    margin: 0;
+    width: fit-content; 
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background: #f4f4f4;
+    padding: 4px 10px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/* 1. 标题：强制锁定在第 1 列 */
+.setlist-title {
+    grid-column: 1;       /* ★ 新增：你是老大，永远坐第一把交椅 */
+    justify-self: start; 
+    
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1.2;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+/* 隐藏时不显示 (JS控制) */
+.hidden { display: none !important; }
+
+#modalActions {
+    display: contents;
+    justify-content: space-between; /* 左边切换，右边保存 */
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    z-index: 2; /* 保证按钮可点 */
+}
+
+/* === 新增：独立的备注栏 === */
+.song-comment-row {
+    font-size: 0.85em;
+    color: #666;
+    background-color: rgba(255,255,255,0.6); /* 半透明白底，防止字看不清 */
+    padding: 4px 8px;
+    margin-top: 4px;        /* 和上面的横线拉开一点距离 */
+    border-radius: 4px;
+    line-height: 1.4;
+    
+    /* 保证它在最上层 */
+    position: relative;     
+    z-index: 3;
+}
+
+/* === 修改后的队标水印样式 === */
+.unit-watermark {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    height: 60px;
+    
+    /* 修改点 1：透明度改成 0.5 (即 50%) */
+    opacity: 0.5;
+    
+    z-index: 1;
+    transform: rotate(0deg);
+    pointer-events: none;
+    
+    /* 修改点 2：删掉了原来的 filter: grayscale(100%); 这行代码 */
+    /* 现在它就是原色的了 */
+}
+
+.setlist-mc {
+    padding: 6px 15px;      /* 稍微扁一点 */
+    margin: 6px 0;          /* 上下留白 */
+    border-radius: 20px;    /* 完全圆角，像个胶囊 */
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #444;            /* 深灰字 */
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.1); /* 淡淡的边框 */
+    
+    /* 弹性布局让图标和文字居中 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.setlist-mc i {
+    opacity: 0.6; /* 图标稍微淡一点 */
+}
+
+/* 新增：每一列的容器 */
+.setlist-column {
+    flex: 1;               /* 左右各占 50% */
+    display: flex;
+    flex-direction: column; /* 列内部是从上往下排 */
+    min-width: 0;          /* 防止内容太宽撑爆布局 */
+}
+
+#actionBar {
+    display: none !important;
+}
+
+/* === Medley 颜色 (磨砂透白风格) === */
+.badge-medley-glass {
+    /* 背景：白色，带很高透明度 */
+    background: rgba(255, 255, 255, 0.85);
+    /* 如果浏览器支持，加个模糊滤镜 */
+    backdrop-filter: blur(4px);
+    
+    color: #000;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 定义动画关键帧 */
+@keyframes modalPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateY(10px); /* 开始时稍微小一点，位置偏下 */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);       /* 结束时恢复正常 */
+    }
+}
+
+/* 应用给模态窗内容 */
+.modal-content {
+    /* 在原有的样式基础上，加上这一行 */
+    animation: modalPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    /* cubic-bezier 让它带一点点回弹效果，像果冻一样 */
+}
+
+/* 定义卡片进场动画 */
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* 从下方20px处浮上来 */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 给卡片加上这个动画，但默认暂停，等JS给延迟 */
+.event-card {
+    /* (保留你原有的样式...) */
+    animation: cardEntrance 0.5s ease-out backwards; /* backwards 保证开始前是透明的 */
+}
+
+/* =========================================
+排行榜 (Ranking) 专用样式
+========================================= */
+
+/* 1. 顶部大按钮样式 */
+.ranking-main-btn {
+    width: 100% !important;     /* 强制占满一行 */
+    flex: none !important;      /* 不参与均分 */
+    background: linear-gradient(135deg, #fff, #f9f9f9);
+    border: 2px solid #ffd700 !important; /* 金色边框 */
+    color: #d4a000 !important;
+    font-size: 1.1em !important;
+    margin-bottom: 5px;
+}
+.ranking-main-btn.active {
+    background: linear-gradient(135deg, #ffd700, #ffb300) !important;
+    color: white !important;
+    border-color: #ffb300 !important;
+    box-shadow: 0 4px 15px rgba(255, 179, 0, 0.4);
+}
+
+/* === 2. 筛选器区域 (修改版：整齐排列) === */
+.ranking-filters {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    
+    display: flex;        /* 弹性布局 */
+    flex-wrap: wrap;      /* 允许换行 */
+    align-items: center;
+    gap: 10px;            /* 按钮之间的间距 */
+    
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* 标题样式：让它独占一行，或者在手机上更好看 */
+.filter-label { 
+    width: 100%;          /* ★ 关键：强制占满一行，把按钮挤到下一行去 */
+    font-weight: bold; 
+    color: #444; 
+    margin-bottom: 5px;   /* 和下面的按钮拉开距离 */
+    font-size: 0.95em;
+    border-left: 4px solid var(--primary-color); /* 加个竖线装饰更好看 */
+    padding-left: 10px;
+}
+
+/* 筛选开关按钮 */
+.filter-chip {
+    /* ★ 关键：flex: 1 让四个按钮平分宽度 */
+    flex: 1;              
+    
+    padding: 10px 0;      /* 增加高度，更容易点击 */
+    text-align: center;   /* 文字居中 */
+    
+    border-radius: 8px;   /* 改成圆角矩形，稍微方一点，像上面的按钮 */
+    border: 1px solid #ddd;
+    background: #f8f9fa;
+    color: #666;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: all 0.2s;
+    
+    /* 防止按钮被压得太扁 */
+    min-width: 80px;      
+    white-space: nowrap;
+}
+
+/* 鼠标悬停 */
+.filter-chip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 选中状态：保持原来的渐变色逻辑 */
+.filter-chip.active { color: white; border: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+/* 具体的颜色定义保持不变 */
+.filter-chip.active[onclick*="'1'"] { background: linear-gradient(135deg, #ff5f6d, #ffc371); }
+.filter-chip.active[onclick*="'2'"] { background: linear-gradient(135deg, #f09819, #edde5d); }
+.filter-chip.active[onclick*="'3'"] { background: linear-gradient(135deg, #ab47bc, #7b1fa2); }
+.filter-chip.active[onclick*="'4'"] { background: linear-gradient(135deg, #00c6ff, #0072ff); }
+
+/* === 3. 排行榜列表项 (紧凑版) === */
+.ranking-row {
+    background: white;
+    border-radius: 8px; /* 圆角稍微小一点 */
+    
+    /* ★★★ 修改 1：减小垂直内边距 (10px -> 6px) ★★★ */
+    padding: 6px 15px; 
+    margin-bottom: 8px; /* 间距也紧凑一点 */
+    
+    display: grid;
+    /* ★★★ 修改 2：调整列宽 (图片列改为 45px) ★★★ */
+    /* 布局：排名(45px) | 封面(45px) | 歌名(自适应) | 回数(80px) | 标签(240px) */
+    grid-template-columns: 45px 45px 1fr 80px 240px; 
+    
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* 阴影变浅一点，更扁平 */
+    transition: transform 0.2s;
+}
+.ranking-row:hover { transform: translateX(3px); }
+
+/* 排名数字 */
+.rank-num {
+    font-size: 1.4em; /* 稍微缩小 */
+    font-weight: bold;
+    color: #888;      /* 默认灰色 (前三名会被覆盖) */
+    text-align: center;
+    font-family: 'Impact', sans-serif;
+    line-height: 1;   /* 防止撑开高度 */
+}
+
+/* 前三名金银铜 (保持不变，但可以微调大小) */
+.rank-1 { color: #FFD700; font-size: 1.8em; }
+.rank-2 { color: #C0C0C0; font-size: 1.6em; }
+.rank-3 { color: #CD7F32; font-size: 1.5em; }
+
+/* ★★★ 修改 3：封面图缩小 ★★★ */
+.rank-cover {
+    width: 45px;
+    height: 45px;
+    border-radius: 4px;
+    object-fit: cover;
+    background: #eee;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 歌名容器 */
+.rank-song-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    /* 字体稍微改小一点，显得精致 */
+    font-size: 0.95em; 
+}
+
+/* ★★★ 修改 4：回数盒子 (删掉了 label 的样式，调整数字样式) ★★★ */
+.rank-count-box {
+    text-align: center;
+    background: #f1f8fa; /* 接近图中的浅青色背景 */
+    padding: 6px 0;      /* 减小内边距 */
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.rank-count-num {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #00b0ba; /* 接近图中的青色字体 */
+    line-height: 1;
+}
+
+/* 活动标签容器 */
+.rank-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: flex-end; 
+    align-content: center;
+    height: 100%;
+}
+
+/* 标签样式 (微调) */
+.rank-tag {
+    font-size: 0.6em;
+    padding: 2px 8px;
+    border-radius: 6px;
+    color: white;
+    white-space: nowrap;
+    height: fit-content;
+}
+
+/* =========================================
+6. 排行榜标签悬停浮窗 (Tooltip) - 美化版
+========================================= */
+
+/* 1. 锚点设定 */
+.rank-tag {
+    position: relative;
+    cursor: help;
+}
+
+/* 新增：淡入小动画定义 */
+@keyframes tooltipFadeUp {
+    from { opacity: 0; transform: translate(-50%, 8px); } /* 初始在下排一点，透明 */
+    to   { opacity: 1; transform: translate(-50%, 0); }   /* 最终到位 */
+}
+
+/* 2. 浮窗本体 (白底卡片风) */
+.rank-tag[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    
+    position: absolute;
+    bottom: 135%;
+    left: 50%;
+    /* transform 由动画控制 */
+    
+    background-color: #ffffff;
+    
+    /* ★★★ 修改 1：颜色改为主题色 (初音未来色) ★★★ */
+    color: var(--primary-color); 
+    
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12),
+                0 2px 6px rgba(0,0,0,0.08);
+
+    padding: 12px 16px;
+    border-radius: 10px;
+    
+    /* ★★★ 修改 2：字体加粗，并稍微调大一点点以防模糊 ★★★ */
+    font-size: 0.95em; 
+    font-weight: bold;
+    
+    font-family: sans-serif;
+    line-height: 1.6;
+    white-space: pre;
+    text-align: left;
+    
+    min-width: 220px;
+    max-width: 500px;
+    width: max-content;
+    
+    z-index: 1000;
+    pointer-events: none;
+
+    /* 应用动画 */
+    animation: tooltipFadeUp 0.2s ease-out forwards;
+}
+
+/* 3. 浮窗的小三角 (白色箭头) */
+.rank-tag[data-tooltip]:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 125%;         /* 位置配合本体微调 */
+    left: 50%;
+    /* transform 由动画控制 */
+    
+    border: 8px solid transparent; /* 三角形稍微大一点 */
+    border-top-color: #ffffff;     /* ★ 改成白色，和本体融合 */
+    z-index: 1001;                 /* 比本体高一层，盖住边框线 */
+    
+    /* 应用同样的动画 */
+    animation: tooltipFadeUp 0.2s ease-out forwards;
+    /* 为了让三角看起来也有阴影（高级技巧）：用 filter 给它加个投影 */
+    filter: drop-shadow(0 3px 2px rgba(0,0,0,0.05));
+}
+
+/* 4. 没有内容时不显示 */
+.rank-tag[data-tooltip=""]:hover::after,
+.rank-tag[data-tooltip=""]:hover::before {
+    display: none;
+    animation: none; /* 不显示时禁用动画 */
+}
+
+/* =========================================
+7. 排行榜“加载更多”按钮
+========================================= */
+.ranking-load-more-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    
+    background-color: #f8f9fa;
+    border: 2px dashed #ddd; /* 虚线边框，表示“这里还有内容” */
+    border-radius: 12px;
+    
+    color: #666;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.ranking-load-more-btn:hover {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+    color: #333;
+    transform: translateY(-2px);
+}
+
+.ranking-load-more-btn i {
+    margin-right: 8px;
+}
+
+/* =========================================
+9. 排行榜容器瘦身 (布局调整)
+========================================= */
+
+/* 1. 限制排行榜整体的宽度，并居中 */
+#rankingView {
+    max-width: 850px; /* ★★★ 核心：限制最大宽度为 850px (你可以根据喜好调整这个数字) ★★★ */
+    margin: 0 auto;   /* 左右自动边距，实现居中 */
+    width: 100%;      /* 在手机等小屏幕上仍然占满 */
+}
+
+/* 2. 微调筛选器区域 (让它适应变窄的宽度) */
+.ranking-filters {
+    padding: 10px 15px; /* 减小一点内边距 */
+    gap: 8px;           /* 减小按钮间距 */
+    /* 保持 flex 布局，宽度会自动跟随 #rankingView */
+}
+
+/* 3. 微调筛选按钮 (集計対象) */
+.filter-chip {
+    padding: 8px 0;    /* 高度稍微变矮一点，更精致 */
+    font-size: 0.85em; /* 字体稍微小一点点 */
+    min-width: 60px;   /* 允许按钮压得更扁一点，防止换行 */
+}
+
+/* 4. 如果你想让最上面的“黄色大奖杯按钮”也变窄和下面对齐 (可选) */
+/* 注意：如果你的黄色按钮是在 #rankingView 外面，你需要给那个按钮加这个样式 */
+.ranking-main-btn {
+    max-width: 850px; /* 和排行榜保持一样的宽度 */
+    margin-left: auto !important;  /* 强制居中 */
+    margin-right: auto !important;
+}
+
 /* =============================================
-   ★ 手机端终极修复 (Mobile Final Fix) ★
-   包含：
-   1. 黄色排行榜按钮独占一行
-   2. 排行榜标签左右分开
-   3. 【新】歌单详情页按钮改为两列网格，防止溢出
-   4. 【新】歌单标题避开关闭按钮
+   ★ 手机端最终修复 (Mobile Final Fix) ★
+   1. 黄色排行榜按钮独占一行 (100%)
+   2. 标签栏左右彻底分开 (Space Between)
    ============================================= */
 @media (max-width: 850px) {
 
@@ -16,7 +1439,7 @@
         box-sizing: border-box !important;
     }
 
-    /* --- Part 1: 顶部主页按钮组 --- */
+    /* --- Part 1: 顶部按钮组 (修正布局) --- */
     .view-toggle {
         width: 100% !important;
         min-width: 0 !important;
@@ -26,16 +1449,17 @@
         justify-content: flex-start !important;
     }
 
-    /* 黄色排行榜按钮：独占一行 */
+    /* ★ 修复 1：黄色排行榜按钮 -> 强制 100% 宽 ★ */
     .ranking-main-btn {
-        width: 100% !important;      
+        width: 100% !important;      /* 独占一行 */
         flex: none !important;
-        margin: 0 0 5px 0 !important;
+        margin: 0 0 5px 0 !important; /* 下方留点间距 */
         font-size: 0.95em !important;
         padding: 12px 0 !important;
     }
 
-    /* 其他普通按钮：一行两个 */
+    /* ★ 修复 2：其他普通按钮 -> 保持 50% 宽 (一行两个) ★ */
+    /* 注意：这里用了 :not() 排除掉上面的黄色按钮 */
     .view-btn:not(.ranking-main-btn) {
         width: calc(50% - 4px) !important; 
         flex: none !important;
@@ -45,11 +1469,15 @@
         padding: 10px 2px !important;
     }
     
-    .rank-count-box, .rank-tags.mobile-hidden { display: none !important; }
+    /* 隐藏电脑端组件 */
+    .rank-count-box, .rank-tags.mobile-hidden {
+        display: none !important;
+    }
 
-    /* --- Part 2: 排行榜 Grid 布局 (保持之前修复) --- */
+    /* --- Part 2: 排行榜 Grid 布局 --- */
     .ranking-row {
         display: grid !important;
+        /* 三列：排名(30px) | 图片(55px) | 右侧内容(自动) */
         grid-template-columns: 30px 55px 1fr !important;
         grid-template-rows: auto auto !important;
         gap: 4px 10px !important;
@@ -58,77 +1486,76 @@
         align-items: center !important;
     }
 
-    .rank-num { grid-column: 1 !important; grid-row: 1 / 3 !important; font-size: 1.2em !important; text-align: center !important; margin: 0 !important; justify-self: center !important; }
-    .rank-cover { grid-column: 2 !important; grid-row: 1 / 3 !important; width: 50px !important; height: 50px !important; border-radius: 6px !important; margin: 0 !important; object-fit: cover; }
-    .rank-song-info { grid-column: 3 !important; grid-row: 1 !important; width: 100% !important; display: flex !important; align-items: flex-end !important; min-width: 0 !important; padding-bottom: 2px !important; }
-    .rank-song-info div[style*="font-weight:bold"] { font-size: 1em !important; line-height: 1.2 !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; width: 100% !important; }
+    /* 左侧元素位置 (保持不变) */
+    .rank-num {
+        grid-column: 1 !important; grid-row: 1 / 3 !important;
+        font-size: 1.2em !important; text-align: center !important; margin: 0 !important; justify-self: center !important;
+    }
+    .rank-cover {
+        grid-column: 2 !important; grid-row: 1 / 3 !important;
+        width: 50px !important; height: 50px !important; border-radius: 6px !important; margin: 0 !important; object-fit: cover;
+    }
+    .rank-song-info {
+        grid-column: 3 !important; grid-row: 1 !important;
+        width: 100% !important; display: flex !important; align-items: flex-end !important; min-width: 0 !important; padding-bottom: 2px !important;
+    }
+    .rank-song-info div[style*="font-weight:bold"] {
+        font-size: 1em !important; line-height: 1.2 !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; width: 100% !important;
+    }
 
-    /* 数据栏：左右两端对齐 */
+    /* --- Part 3: 数据栏 (红框区域) 修复 --- */
     .rank-meta-mobile {
-        grid-column: 3 !important; grid-row: 2 !important;
-        display: flex !important; flex-direction: row !important; align-items: center !important;
-        justify-content: space-between !important; 
-        width: 100% !important; margin: 0 !important; padding: 0 !important; border: none !important; overflow-x: hidden !important; 
-    }
-    .rank-meta-mobile > div:first-child span { font-size: 0.75em !important; background-color: #e0f7fa !important; color: #00acc1 !important; padding: 2px 6px !important; border-radius: 4px !important; display: inline-block !important; font-weight: bold !important; white-space: nowrap !important; flex-shrink: 0 !important; }
-    .rank-meta-mobile > div:last-child { display: flex !important; justify-content: flex-end !important; gap: 3px !important; flex-wrap: nowrap !important; overflow-x: auto !important; max-width: 80% !important; }
-    .rank-tag { font-size: 0.65em !important; padding: 2px 6px !important; height: auto !important; white-space: nowrap !important; display: inline-block !important; margin: 0 !important; }
-
-    /* --- Part 3: 详情页 (Setlist) 重点修复 --- */
-    
-    /* 1. 弹窗头部：改为竖向排列，防止被挤爆 */
-    .setlist-header { 
+        grid-column: 3 !important;
+        grid-row: 2 !important;
+        
         display: flex !important;
-        flex-direction: column !important; 
-        gap: 10px !important; 
-        width: 100% !important;
-        padding-right: 0 !important;
-    }
-    
-    /* 2. 标题：允许换行，并给右边的关闭按钮留出安全距离 */
-    .setlist-title { 
-        font-size: 1.2em !important;
-        white-space: normal !important; /* 允许换行 */
-        line-height: 1.3 !important;
-        padding-right: 40px !important; /* ★ 关键：防止文字被右上角的X挡住 */
-        width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    /* 3. 场次切换按钮：改为网格布局 (2列)，完美解决溢出 */
-    .session-switch-group { 
-        width: 100% !important; 
-        order: 2 !important; 
-        margin-top: 5px !important;
+        flex-direction: row !important;
+        align-items: center !important;
         
-        /* ★ 核心修改：变成两列网格 ★ */
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important; 
-        gap: 8px !important;
+        /* ★ 修复 3：关键属性！把左右两端撑开 (回数在左，标签在右) ★ */
+        justify-content: space-between !important; 
         
-        background: transparent !important;
-        padding: 0 !important;
-        height: auto !important;
-    }
-    
-    /* 按钮样式适配 */
-    .session-btn { 
-        width: 100% !important; /* 占满格子 */
-        min-width: 0 !important;
+        width: 100% !important;
         margin: 0 !important;
-        text-align: center !important;
-        border-radius: 8px !important;
-        padding: 8px 0 !important;
-        flex: none !important;
+        padding: 0 !important;
+        border: none !important;
+        overflow-x: hidden !important; 
+    }
+
+    /* 左边的：回数小胶囊 */
+    .rank-meta-mobile > div:first-child span {
+        font-size: 0.75em !important;
+        background-color: #e0f7fa !important;
+        color: #00acc1 !important;
+        padding: 2px 6px !important;
+        border-radius: 4px !important;
+        display: inline-block !important;
+        font-weight: bold !important;
+        white-space: nowrap !important;
+        flex-shrink: 0 !important; 
     }
     
-    /* 4. 保存按钮 */
-    .save-btn { width: 100% !important; order: 3; margin-top: 5px !important; }
+    /* 右边的：标签组容器 (让它靠右对齐) */
+    .rank-meta-mobile > div:last-child {
+        display: flex !important;
+        justify-content: flex-end !important; /* ★ 强制靠右 ★ */
+        gap: 3px !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important; 
+        max-width: 80% !important;   
+    }
 
-    /* 5. 弹窗容器 */
-    .modal-content { width: 95% !important; padding: 15px 12px !important; margin: 10px auto !important; overflow-x: hidden !important; }
+    /* 标签本体 */
+    .rank-tag {
+        font-size: 0.65em !important;
+        padding: 2px 6px !important;
+        height: auto !important;
+        white-space: nowrap !important;
+        display: inline-block !important;
+        margin: 0 !important;
+    }
 
-    /* 6. 其他修正 */
+    /* --- Part 4: 详情页保持不变 --- */
     #modalSongs { flex-direction: column !important; gap: 0 !important; }
     .setlist-column { width: 100% !important; max-width: 100% !important; }
     .song-row { padding: 10px 5px !important; }
@@ -137,7 +1564,9 @@
     .song-left-col { width: 60px !important; margin-right: 10px !important; }
     #modalTitle { position: relative; z-index: 5 !important; text-shadow: 0 0 5px white; }
     .unit-watermark { opacity: 0.15 !important; z-index: 0 !important; }
-    
-    /* 修复出演者标签换行 */
-    .performers-wrapper { flex-wrap: wrap !important; width: 100% !important; }
+    .setlist-header { flex-direction: column !important; gap: 10px !important; }
+    .session-switch-group { width: 100% !important; order: 2; margin-top: 5px !important; }
+    .session-btn { flex: 1 !important; min-width: 60px !important; }
+    .save-btn { width: 100% !important; order: 3; margin-top: 5px !important; }
+    .modal-content { width: 95% !important; padding: 15px 10px !important; margin: 10px auto !important; }
 }
