@@ -1575,6 +1575,90 @@ body {
         display: inline-block !important;
         margin: 0 !important;
     }
+    /* =========================================
+       ★ 弹窗整体缩小 & 防溢出 (Modal Compact) ★
+       ========================================= */
+
+    /* 1. 弹窗容器：减小内边距，限制高度 */
+    .modal-content {
+        width: 92% !important;          /* 稍微留点边，不贴死屏幕 */
+        max-height: 85vh !important;    /* 高度限制，留出手指点击遮罩层的空间 */
+        padding: 12px 10px !important;  /* ★ 关键：减小内边距 (原20px -> 10px) */
+        margin: 5vh auto !important;    /* 垂直居中 */
+        overflow-x: hidden !important;  /* 禁止横向滚动 */
+    }
+
+    /* 2. 顶部大标题 (Event Title) 缩小 */
+    #modalTitle {
+        font-size: 1.3em !important;    /* 原 1.8em -> 1.3em */
+        margin-bottom: 5px !important;
+        line-height: 1.2 !important;
+        padding-right: 30px !important; /* 给关闭按钮留位置 */
+    }
+
+    /* 3. 日期和地点文字缩小 */
+    #modalDate {
+        font-size: 0.8em !important;    /* 原 1.1em -> 0.8em */
+        margin-bottom: 8px !important;
+    }
+
+    /* 4. 出演者区域缩小 */
+    #modalPerformers {
+        font-size: 0.8em !important;    /* 字体变小 */
+        margin-bottom: 10px !important; /* 间距变小 */
+        padding-bottom: 8px !important;
+        line-height: 1.4 !important;
+    }
+    
+    /* 出演者标签也缩小 */
+    .performer-badge {
+        font-size: 0.85em !important;   /* 标签文字缩小 */
+        padding: 2px 6px !important;
+    }
+
+    /* 5. Setlist 头部区域 (瘦身版) */
+    .setlist-header {
+        margin-top: 5px !important;
+        margin-bottom: 10px !important;
+        gap: 8px !important;            /* 间距变紧凑 */
+    }
+
+    /* "Setlist" 小标题 */
+    .setlist-title {
+        font-size: 1.1em !important;    /* 稍微缩小 */
+    }
+
+    /* 6. 场次切换按钮 (字体缩小) */
+    .session-btn {
+        font-size: 0.85em !important;   /* 按钮文字缩小 */
+        padding: 6px 0 !important;      /* 按钮变扁 */
+        min-height: 0 !important;
+    }
+
+    /* 7. 保存按钮 */
+    .save-btn {
+        padding: 6px 0 !important;      /* 按钮变扁 */
+        font-size: 0.85em !important;
+        margin-top: 5px !important;
+    }
+    
+    /* 8. 水印 Logo 进一步变淡变小，防止干扰视线 */
+    #modalWatermark {
+        height: 50px !important;        /* 变小 */
+        top: 10px !important;
+        right: 40px !important;
+        opacity: 0.1 !important;        /* 变得非常淡 */
+    }
+    
+    /* 9. 关闭按钮 (X) 位置微调 */
+    .close-btn {
+        top: 5px !important;
+        right: 5px !important;
+        width: 25px !important;
+        height: 25px !important;
+        font-size: 20px !important;
+        line-height: 25px !important;
+    }
 
     /* --- Part 4: 详情页保持不变 --- */
     #modalSongs { flex-direction: column !important; gap: 0 !important; }
