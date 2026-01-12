@@ -1446,9 +1446,9 @@ body {
 }
 
 /* =============================================
-   ★ 手机端最终修复 (Mobile Final Fix) ★
-   1. 黄色排行榜按钮独占一行 (100%)
-   2. 标签栏左右彻底分开 (Space Between)
+   ★ 手机端最终微调 (Mobile Final Polish) ★
+   1. Setlist头部：标题+保存按钮一行，场次按钮第二行
+   2. 保持之前的所有修复 (排行榜、标签等)
    ============================================= */
 @media (max-width: 850px) {
 
@@ -1460,7 +1460,7 @@ body {
         box-sizing: border-box !important;
     }
 
-    /* --- Part 1: 顶部按钮组 (修正布局) --- */
+    /* --- Part 1: 顶部按钮组 --- */
     .view-toggle {
         width: 100% !important;
         min-width: 0 !important;
@@ -1470,35 +1470,21 @@ body {
         justify-content: flex-start !important;
     }
 
-    /* ★ 修复 1：黄色排行榜按钮 -> 强制 100% 宽 ★ */
+    /* 黄色按钮独占一行 */
     .ranking-main-btn {
-        width: 100% !important;      /* 独占一行 */
-        flex: none !important;
-        margin: 0 0 5px 0 !important; /* 下方留点间距 */
-        font-size: 0.95em !important;
-        padding: 12px 0 !important;
+        width: 100% !important; flex: none !important; margin: 0 0 5px 0 !important; font-size: 0.95em !important; padding: 12px 0 !important;
     }
-
-    /* ★ 修复 2：其他普通按钮 -> 保持 50% 宽 (一行两个) ★ */
-    /* 注意：这里用了 :not() 排除掉上面的黄色按钮 */
+    /* 其他按钮一行两个 */
     .view-btn:not(.ranking-main-btn) {
-        width: calc(50% - 4px) !important; 
-        flex: none !important;
-        min-width: 0 !important;
-        margin: 0 !important;
-        font-size: 0.85em !important;
-        padding: 10px 2px !important;
+        width: calc(50% - 4px) !important; flex: none !important; min-width: 0 !important; margin: 0 !important; font-size: 0.85em !important; padding: 10px 2px !important;
     }
     
-    /* 隐藏电脑端组件 */
-    .rank-count-box, .rank-tags.mobile-hidden {
-        display: none !important;
-    }
+    /* 在手机上隐藏电脑端组件 */
+    .rank-count-box, .rank-tags.mobile-hidden { display: none !important; }
 
     /* --- Part 2: 排行榜 Grid 布局 --- */
     .ranking-row {
         display: grid !important;
-        /* 三列：排名(30px) | 图片(55px) | 右侧内容(自动) */
         grid-template-columns: 30px 55px 1fr !important;
         grid-template-rows: auto auto !important;
         gap: 4px 10px !important;
@@ -1506,161 +1492,81 @@ body {
         height: auto !important;
         align-items: center !important;
     }
+    .rank-num { grid-column: 1 !important; grid-row: 1 / 3 !important; font-size: 1.2em !important; text-align: center !important; margin: 0 !important; justify-self: center !important; }
+    .rank-cover { grid-column: 2 !important; grid-row: 1 / 3 !important; width: 50px !important; height: 50px !important; border-radius: 6px !important; margin: 0 !important; object-fit: cover; }
+    .rank-song-info { grid-column: 3 !important; grid-row: 1 !important; width: 100% !important; display: flex !important; align-items: flex-end !important; padding-bottom: 2px !important; }
+    .rank-song-info div[style*="font-weight:bold"] { font-size: 1em !important; line-height: 1.2 !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; width: 100% !important; }
 
-    /* 左侧元素位置 (保持不变) */
-    .rank-num {
-        grid-column: 1 !important; grid-row: 1 / 3 !important;
-        font-size: 1.2em !important; text-align: center !important; margin: 0 !important; justify-self: center !important;
-    }
-    .rank-cover {
-        grid-column: 2 !important; grid-row: 1 / 3 !important;
-        width: 50px !important; height: 50px !important; border-radius: 6px !important; margin: 0 !important; object-fit: cover;
-    }
-    .rank-song-info {
-        grid-column: 3 !important; grid-row: 1 !important;
-        width: 100% !important; display: flex !important; align-items: flex-end !important; min-width: 0 !important; padding-bottom: 2px !important;
-    }
-    .rank-song-info div[style*="font-weight:bold"] {
-        font-size: 1em !important; line-height: 1.2 !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; width: 100% !important;
-    }
-
-    /* --- Part 3: 数据栏 (红框区域) 修复 --- */
+    /* 数据栏 (左右分开) */
     .rank-meta-mobile {
-        grid-column: 3 !important;
-        grid-row: 2 !important;
-        
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: center !important;
-        
-        /* ★ 修复 3：关键属性！把左右两端撑开 (回数在左，标签在右) ★ */
+        grid-column: 3 !important; grid-row: 2 !important;
+        display: flex !important; flex-direction: row !important; align-items: center !important;
         justify-content: space-between !important; 
-        
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        border: none !important;
-        overflow-x: hidden !important; 
+        width: 100% !important; margin: 0 !important; padding: 0 !important; border: none !important; overflow-x: hidden !important; 
     }
+    .rank-meta-mobile > div:first-child span { font-size: 0.75em !important; background-color: #e0f7fa !important; color: #00acc1 !important; padding: 2px 6px !important; border-radius: 4px !important; display: inline-block !important; font-weight: bold !important; white-space: nowrap !important; flex-shrink: 0 !important; }
+    .rank-meta-mobile > div:last-child { display: flex !important; justify-content: flex-end !important; gap: 3px !important; overflow-x: auto !important; max-width: 80% !important; }
+    .rank-tag { font-size: 0.65em !important; padding: 2px 6px !important; height: auto !important; white-space: nowrap !important; display: inline-block !important; margin: 0 !important; }
 
-    /* 左边的：回数小胶囊 */
-    .rank-meta-mobile > div:first-child span {
-        font-size: 0.75em !important;
-        background-color: #e0f7fa !important;
-        color: #00acc1 !important;
-        padding: 2px 6px !important;
-        border-radius: 4px !important;
-        display: inline-block !important;
-        font-weight: bold !important;
-        white-space: nowrap !important;
-        flex-shrink: 0 !important; 
-    }
+    /* --- Part 4: 歌单详情页 (Setlist) 重点修改 --- */
     
-    /* 右边的：标签组容器 (让它靠右对齐) */
-    .rank-meta-mobile > div:last-child {
-        display: flex !important;
-        justify-content: flex-end !important; /* ★ 强制靠右 ★ */
-        gap: 3px !important;
-        flex-wrap: nowrap !important;
-        overflow-x: auto !important; 
-        max-width: 80% !important;   
-    }
-
-    /* 标签本体 */
-    .rank-tag {
-        font-size: 0.65em !important;
-        padding: 2px 6px !important;
-        height: auto !important;
-        white-space: nowrap !important;
-        display: inline-block !important;
-        margin: 0 !important;
-    }
-    /* =========================================
-       ★ 弹窗整体缩小 & 防溢出 (Modal Compact) ★
-       ========================================= */
-
-    /* 1. 弹窗容器：减小内边距，限制高度 */
-    .modal-content {
-        width: 92% !important;          /* 稍微留点边，不贴死屏幕 */
-        max-height: 85vh !important;    /* 高度限制，留出手指点击遮罩层的空间 */
-        padding: 12px 10px !important;  /* ★ 关键：减小内边距 (原20px -> 10px) */
-        margin: 5vh auto !important;    /* 垂直居中 */
-        overflow-x: hidden !important;  /* 禁止横向滚动 */
-    }
-
-    /* 2. 顶部大标题 (Event Title) 缩小 */
-    #modalTitle {
-        font-size: 1.3em !important;    /* 原 1.8em -> 1.3em */
-        margin-bottom: 5px !important;
-        line-height: 1.2 !important;
-        padding-right: 30px !important; /* 给关闭按钮留位置 */
-    }
-
-    /* 3. 日期和地点文字缩小 */
-    #modalDate {
-        font-size: 0.8em !important;    /* 原 1.1em -> 0.8em */
-        margin-bottom: 8px !important;
-    }
-
-    /* 4. 出演者区域缩小 */
-    #modalPerformers {
-        font-size: 0.8em !important;    /* 字体变小 */
-        margin-bottom: 10px !important; /* 间距变小 */
-        padding-bottom: 8px !important;
-        line-height: 1.4 !important;
-    }
-    
-    /* 出演者标签也缩小 */
-    .performer-badge {
-        font-size: 0.85em !important;   /* 标签文字缩小 */
-        padding: 2px 6px !important;
-    }
-
-    /* 5. Setlist 头部区域 (瘦身版) */
+    /* 1. 头部容器：Flex 换行布局 */
     .setlist-header {
-        margin-top: 5px !important;
-        margin-bottom: 10px !important;
-        gap: 8px !important;            /* 间距变紧凑 */
+        display: flex !important;
+        flex-direction: row !important; /* 横向排列 */
+        flex-wrap: wrap !important;     /* ★ 关键：允许换行 */
+        align-items: center !important;
+        justify-content: space-between !important; /* 左右对齐 */
+        
+        gap: 8px !important;            /* 垂直间距 */
+        width: 100% !important;
+        margin: 5px auto 10px !important;
+        padding-right: 0 !important;
     }
 
-    /* "Setlist" 小标题 */
+    /* 2. 标题：左上 (Order 1) */
     .setlist-title {
-        font-size: 1.1em !important;    /* 稍微缩小 */
+        order: 1 !important;
+        width: auto !important;       /* 自动宽度 */
+        flex: 1 !important;           /* 占据剩余空间 */
+        font-size: 1.2em !important;
+        line-height: 1.3 !important;
+        white-space: nowrap !important;
+        padding-right: 10px !important;
+        margin: 0 !important;
     }
 
-    /* 6. 场次切换按钮 (字体缩小) */
-    .session-btn {
-        font-size: 0.85em !important;   /* 按钮文字缩小 */
-        padding: 6px 0 !important;      /* 按钮变扁 */
-        min-height: 0 !important;
-    }
-
-    /* 7. 保存按钮 */
+    /* 3. 保存按钮：右上 (Order 2) */
     .save-btn {
-        padding: 6px 0 !important;      /* 按钮变扁 */
+        order: 2 !important;
+        width: auto !important;       /* 自动宽度 */
+        margin: 0 !important;
+        padding: 6px 15px !important; /* 稍微舒服点的内边距 */
         font-size: 0.85em !important;
-        margin-top: 5px !important;
-    }
-    
-    /* 8. 水印 Logo 进一步变淡变小，防止干扰视线 */
-    #modalWatermark {
-        height: 50px !important;        /* 变小 */
-        top: 10px !important;
-        right: 40px !important;
-        opacity: 0.1 !important;        /* 变得非常淡 */
-    }
-    
-    /* 9. 关闭按钮 (X) 位置微调 */
-    .close-btn {
-        top: 5px !important;
-        right: 5px !important;
-        width: 25px !important;
-        height: 25px !important;
-        font-size: 20px !important;
-        line-height: 25px !important;
+        flex: none !important;        /* 不缩放 */
     }
 
-    /* --- Part 4: 详情页保持不变 --- */
+    /* 4. 场次按钮组：第二行 (Order 3) */
+    .session-switch-group {
+        order: 3 !important;
+        width: 100% !important;       /* ★ 强制占满第二行 */
+        margin-top: 2px !important;   /* 和第一行拉开一点点距离 */
+        
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important; /* 保持两列网格 */
+        gap: 8px !important;
+        
+        background: transparent !important;
+        padding: 0 !important;
+        height: auto !important;
+    }
+    
+    .session-btn { width: 100% !important; min-width: 0 !important; margin: 0 !important; text-align: center !important; border-radius: 8px !important; padding: 8px 0 !important; flex: none !important; }
+
+    /* 5. 弹窗容器 */
+    .modal-content { width: 95% !important; padding: 15px 12px !important; margin: 10px auto !important; overflow-x: hidden !important; }
+
+    /* 其他细节 */
     #modalSongs { flex-direction: column !important; gap: 0 !important; }
     .setlist-column { width: 100% !important; max-width: 100% !important; }
     .song-row { padding: 10px 5px !important; }
@@ -1669,44 +1575,5 @@ body {
     .song-left-col { width: 60px !important; margin-right: 10px !important; }
     #modalTitle { position: relative; z-index: 5 !important; text-shadow: 0 0 5px white; }
     .unit-watermark { opacity: 0.15 !important; z-index: 0 !important; }
-    .session-btn { flex: 1 !important; min-width: 60px !important; }
-    .modal-content { width: 95% !important; padding: 15px 10px !important; margin: 10px auto !important; }
-
-    /* --- 1. 头部容器：减小间隙 --- */
-    .setlist-header {
-        display: flex !important;
-        flex-direction: column !important;
-        
-        /* ★ 修改这里：从 10px 改为 2px (几乎贴在一起) ★ */
-        gap: 2px !important; 
-        
-        width: 100% !important;
-        margin: 5px auto 10px !important;
-        padding-right: 0 !important;
-    }
-
-    /* 如果你想让里面的“场次按钮”和“保存按钮”也变窄，不占满整行 */
-    /* 可以修改下面的 width */
-    
-    /* --- 2. 按钮组：去掉头顶的距离 --- */
-    .session-switch-group {
-        width: 100% !important;
-        order: 2 !important;
-        
-        /* ★ 修改这里：从 5px 改为 0 !important (彻底去掉上边距) ★ */
-        margin-top: 0 !important; 
-        
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
-        gap: 8px !important;
-        background: transparent !important;
-        padding: 0 !important;
-        height: auto !important;
-    }
-
-    /* 保存按钮 */
-    .save-btn {
-        width: 80% !important;  /* 如果想变窄，比如 80%，改这里 */
-        margin: 5px auto !important; /* 居中 */
-    }
+    .performers-wrapper { flex-wrap: wrap !important; width: 100% !important; }
 }
