@@ -1546,22 +1546,40 @@ body {
         flex: none !important;        /* 不缩放 */
     }
 
-    /* 4. 场次按钮组：第二行 (Order 3) */
+    /* --- 场次切换按钮组：强制 2列布局 --- */
     .session-switch-group {
-        order: 3 !important;
-        width: 100% !important;       /* ★ 强制占满第二行 */
-        margin-top: 2px !important;   /* 和第一行拉开一点点距离 */
+        order: 3 !important;          /* 确保它排在标题和保存按钮下面 */
+        width: 100% !important;       /* 占满整行 */
+        margin-top: 5px !important;   /* 上面留点缝隙 */
         
+        /* ★★★ 核心修改：网格布局，一行两个 ★★★ */
         display: grid !important;
-        grid-template-columns: 1fr 1fr !important; /* 保持两列网格 */
-        gap: 8px !important;
+        grid-template-columns: 1fr 1fr !important; /* 1:1 等分两列 */
+        gap: 8px !important;          /* 按钮之间的间距 */
         
         background: transparent !important;
         padding: 0 !important;
         height: auto !important;
     }
     
-    .session-btn { width: 100% !important; min-width: 0 !important; margin: 0 !important; text-align: center !important; border-radius: 8px !important; padding: 8px 0 !important; flex: none !important; }
+    /* 按钮样式微调 */
+    .session-btn { 
+        width: 100% !important;       /* 占满格子 */
+        min-width: 0 !important;      /* 防止文字太长撑爆 */
+        margin: 0 !important;
+        
+        text-align: center !important;
+        border-radius: 8px !important;
+        padding: 10px 0 !important;   /* 增加高度，更容易点击 */
+        font-size: 0.9em !important;
+        
+        flex: none !important;
+        
+        /* 防止文字换行 */
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
 
     /* 5. 弹窗容器 */
     .modal-content { width: 95% !important; padding: 15px 12px !important; margin: 10px auto !important; overflow-x: hidden !important; }
