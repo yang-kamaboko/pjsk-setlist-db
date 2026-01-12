@@ -1425,25 +1425,11 @@ body {
 }
 
 /* =============================================
-   ★ 紧急修复 & 最终布局 (Emergency Fix) ★
-   1. 强制恢复电脑端标签显示 (修复消失bug)
-   2. 手机端：黄色按钮独占一行
-   3. 手机端：标签栏左右分开
+   ★ 手机端最终修复 (Mobile Final Fix) ★
+   1. 黄色排行榜按钮独占一行 (100%)
+   2. 标签栏左右彻底分开 (Space Between)
    ============================================= */
-
-/* --- 【第一重保险】强制电脑端显示组件 --- */
-/* 这段代码必须放在 @media 的外面，确保电脑上能看见 */
-.rank-count-box, .rank-tags {
-    display: flex !important;
-}
-
-/* --- 【第二重保险】手机端适配 --- */
 @media (max-width: 850px) {
-
-    /* 1. 在手机上，隐藏电脑版的组件 (防止重复) */
-    .rank-count-box, .rank-tags {
-        display: none !important;
-    }
 
     /* --- Part 0: 全局容器优化 --- */
     .container {
@@ -1453,7 +1439,7 @@ body {
         box-sizing: border-box !important;
     }
 
-    /* --- Part 1: 顶部按钮组 --- */
+    /* --- Part 1: 顶部按钮组 (修正布局) --- */
     .view-toggle {
         width: 100% !important;
         min-width: 0 !important;
@@ -1463,16 +1449,17 @@ body {
         justify-content: flex-start !important;
     }
 
-    /* 黄色排行榜按钮：强制 100% 宽，独占一行 */
+    /* ★ 修复 1：黄色排行榜按钮 -> 强制 100% 宽 ★ */
     .ranking-main-btn {
-        width: 100% !important;      
+        width: 100% !important;      /* 独占一行 */
         flex: none !important;
-        margin: 0 0 5px 0 !important;
+        margin: 0 0 5px 0 !important; /* 下方留点间距 */
         font-size: 0.95em !important;
         padding: 12px 0 !important;
     }
 
-    /* 其他普通按钮：一行两个 (50%) */
+    /* ★ 修复 2：其他普通按钮 -> 保持 50% 宽 (一行两个) ★ */
+    /* 注意：这里用了 :not() 排除掉上面的黄色按钮 */
     .view-btn:not(.ranking-main-btn) {
         width: calc(50% - 4px) !important; 
         flex: none !important;
@@ -1481,10 +1468,16 @@ body {
         font-size: 0.85em !important;
         padding: 10px 2px !important;
     }
+    
+    /* 隐藏电脑端组件 */
+    .rank-count-box, .rank-tags.mobile-hidden {
+        display: none !important;
+    }
 
     /* --- Part 2: 排行榜 Grid 布局 --- */
     .ranking-row {
         display: grid !important;
+        /* 三列：排名(30px) | 图片(55px) | 右侧内容(自动) */
         grid-template-columns: 30px 55px 1fr !important;
         grid-template-rows: auto auto !important;
         gap: 4px 10px !important;
@@ -1493,52 +1486,76 @@ body {
         align-items: center !important;
     }
 
-    /* 左侧元素位置 */
-    .rank-num { grid-column: 1 !important; grid-row: 1 / 3 !important; font-size: 1.2em !important; text-align: center !important; margin: 0 !important; justify-self: center !important; }
-    .rank-cover { grid-column: 2 !important; grid-row: 1 / 3 !important; width: 50px !important; height: 50px !important; border-radius: 6px !important; margin: 0 !important; object-fit: cover; }
-    
-    /* 歌名 (第一行) */
+    /* 左侧元素位置 (保持不变) */
+    .rank-num {
+        grid-column: 1 !important; grid-row: 1 / 3 !important;
+        font-size: 1.2em !important; text-align: center !important; margin: 0 !important; justify-self: center !important;
+    }
+    .rank-cover {
+        grid-column: 2 !important; grid-row: 1 / 3 !important;
+        width: 50px !important; height: 50px !important; border-radius: 6px !important; margin: 0 !important; object-fit: cover;
+    }
     .rank-song-info {
         grid-column: 3 !important; grid-row: 1 !important;
-        width: 100% !important; display: flex !important; align-items: flex-end !important; padding-bottom: 2px !important;
+        width: 100% !important; display: flex !important; align-items: flex-end !important; min-width: 0 !important; padding-bottom: 2px !important;
     }
-    .rank-song-info div[style*="font-weight:bold"] { font-size: 1em !important; line-height: 1.2 !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; width: 100% !important; }
+    .rank-song-info div[style*="font-weight:bold"] {
+        font-size: 1em !important; line-height: 1.2 !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; width: 100% !important;
+    }
 
     /* --- Part 3: 数据栏 (红框区域) 修复 --- */
-    /* 强制显示手机端的数据栏 */
     .rank-meta-mobile {
-        grid-column: 3 !important; grid-row: 2 !important;
-        display: flex !important; flex-direction: row !important; align-items: center !important;
+        grid-column: 3 !important;
+        grid-row: 2 !important;
         
-        /* ★ 关键：两端对齐 (回数在左，标签在右) ★ */
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        
+        /* ★ 修复 3：关键属性！把左右两端撑开 (回数在左，标签在右) ★ */
         justify-content: space-between !important; 
         
-        width: 100% !important; margin: 0 !important; padding: 0 !important; border: none !important; overflow-x: hidden !important; 
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        overflow-x: hidden !important; 
     }
 
-    /* 左侧：回数小胶囊 */
+    /* 左边的：回数小胶囊 */
     .rank-meta-mobile > div:first-child span {
-        font-size: 0.75em !important; background-color: #e0f7fa !important; color: #00acc1 !important;
-        padding: 2px 6px !important; border-radius: 4px !important; display: inline-block !important;
-        font-weight: bold !important; white-space: nowrap !important; flex-shrink: 0 !important;
+        font-size: 0.75em !important;
+        background-color: #e0f7fa !important;
+        color: #00acc1 !important;
+        padding: 2px 6px !important;
+        border-radius: 4px !important;
+        display: inline-block !important;
+        font-weight: bold !important;
+        white-space: nowrap !important;
+        flex-shrink: 0 !important; 
     }
     
-    /* 右侧：标签组 (靠右对齐) */
+    /* 右边的：标签组容器 (让它靠右对齐) */
     .rank-meta-mobile > div:last-child {
-        display: flex !important; justify-content: flex-end !important; gap: 3px !important; 
-        overflow-x: auto !important; max-width: 80% !important;
+        display: flex !important;
+        justify-content: flex-end !important; /* ★ 强制靠右 ★ */
+        gap: 3px !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important; 
+        max-width: 80% !important;   
     }
-    
-    /* 标签本体 */
-    .rank-tag { font-size: 0.65em !important; padding: 2px 6px !important; height: auto !important; white-space: nowrap !important; display: inline-block !important; margin: 0 !important; }
 
-    /* --- Part 4: 歌单详情页 (Setlist) 修复 --- */
-    .setlist-header { display: flex !important; flex-direction: column !important; gap: 10px !important; width: 100% !important; padding-right: 0 !important; }
-    .setlist-title { font-size: 1.2em !important; white-space: normal !important; line-height: 1.3 !important; padding-right: 40px !important; width: 100% !important; box-sizing: border-box !important; }
-    .session-switch-group { width: 100% !important; order: 2 !important; margin-top: 5px !important; display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; background: transparent !important; padding: 0 !important; height: auto !important; }
-    .session-btn { width: 100% !important; min-width: 0 !important; margin: 0 !important; text-align: center !important; border-radius: 8px !important; padding: 8px 0 !important; flex: none !important; }
-    .save-btn { width: 100% !important; order: 3; margin-top: 5px !important; }
-    .modal-content { width: 95% !important; padding: 15px 12px !important; margin: 10px auto !important; overflow-x: hidden !important; }
+    /* 标签本体 */
+    .rank-tag {
+        font-size: 0.65em !important;
+        padding: 2px 6px !important;
+        height: auto !important;
+        white-space: nowrap !important;
+        display: inline-block !important;
+        margin: 0 !important;
+    }
+
+    /* --- Part 4: 详情页保持不变 --- */
     #modalSongs { flex-direction: column !important; gap: 0 !important; }
     .setlist-column { width: 100% !important; max-width: 100% !important; }
     .song-row { padding: 10px 5px !important; }
@@ -1547,5 +1564,9 @@ body {
     .song-left-col { width: 60px !important; margin-right: 10px !important; }
     #modalTitle { position: relative; z-index: 5 !important; text-shadow: 0 0 5px white; }
     .unit-watermark { opacity: 0.15 !important; z-index: 0 !important; }
-    .performers-wrapper { flex-wrap: wrap !important; width: 100% !important; }
+    .setlist-header { flex-direction: column !important; gap: 10px !important; }
+    .session-switch-group { width: 100% !important; order: 2; margin-top: 5px !important; }
+    .session-btn { flex: 1 !important; min-width: 60px !important; }
+    .save-btn { width: 100% !important; order: 3; margin-top: 5px !important; }
+    .modal-content { width: 95% !important; padding: 15px 10px !important; margin: 10px auto !important; }
 }
