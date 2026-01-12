@@ -451,11 +451,11 @@
 
                     // ★★★ 初披露判断逻辑 ★★★
                     let premiereHtml = '';
-                    let liveTagHtml = '';
                     // ★★★ 2. 生成生歌唱标签 (右上角 - 横排版) ★★★
+                    let liveHtml = '';
                     if (item.liveVocals) {
                         // ★ 修改这里：使用 .badge-horizontal 类
-                        liveTagHtml = `<div class="badge-horizontal badge-live-red">生歌唱</div>`;
+                        liveHtml = `<div class="badge-horizontal badge-live-red">生歌唱</div>`;
                     }
 
                     // 生成歌手胶囊 (注意这里把 songInfo.singers 改成了 displaySingers)
