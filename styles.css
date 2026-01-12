@@ -1692,14 +1692,14 @@ body {
     
     /* 场次按钮组 */
     .session-switch-group {
-        width: 100% !important;  /* 如果想变窄，比如 80%，改这里 */
+        width: 50% !important;  /* 如果想变窄，比如 80%，改这里 */
         margin: 5px auto !important; /* 居中 */
         /* ...其他 Grid 布局代码保持不变... */
     }
 
     /* 保存按钮 */
     .save-btn {
-        width: 100% !important;  /* 如果想变窄，比如 80%，改这里 */
+        width: 80% !important;  /* 如果想变窄，比如 80%，改这里 */
         margin: 5px auto !important; /* 居中 */
     }
 }
