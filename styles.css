@@ -1669,9 +1669,37 @@ body {
     .song-left-col { width: 60px !important; margin-right: 10px !important; }
     #modalTitle { position: relative; z-index: 5 !important; text-shadow: 0 0 5px white; }
     .unit-watermark { opacity: 0.15 !important; z-index: 0 !important; }
-    .setlist-header { flex-direction: column !important; gap: 10px !important; }
-    .session-switch-group { width: 100% !important; order: 2; margin-top: 5px !important; }
     .session-btn { flex: 1 !important; min-width: 60px !important; }
-    .save-btn { width: 100% !important; order: 3; margin-top: 5px !important; }
     .modal-content { width: 95% !important; padding: 15px 10px !important; margin: 10px auto !important; }
+
+    /* 5. Setlist 头部容器 (控制整体宽度) */
+    .setlist-header {
+        /* ★ 在这里修改宽度 ★ */
+        width: 100% !important;      /* 如果觉得太宽，可以改成 90% 或 95% */
+        max-width: 100% !important;  /* 防止溢出 */
+        
+        margin: 5px auto 10px !important; /* 上下间距5px，左右自动居中 */
+        
+        display: flex !important;
+        flex-direction: column !important; /* 竖向排列 */
+        gap: 10px !important;              /* 内部元素间距 */
+        padding-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 如果你想让里面的“场次按钮”和“保存按钮”也变窄，不占满整行 */
+    /* 可以修改下面的 width */
+    
+    /* 场次按钮组 */
+    .session-switch-group {
+        width: 100% !important;  /* 如果想变窄，比如 80%，改这里 */
+        margin: 5px auto !important; /* 居中 */
+        /* ...其他 Grid 布局代码保持不变... */
+    }
+
+    /* 保存按钮 */
+    .save-btn {
+        width: 100% !important;  /* 如果想变窄，比如 80%，改这里 */
+        margin: 5px auto !important; /* 居中 */
+    }
 }
