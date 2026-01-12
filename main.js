@@ -456,7 +456,7 @@
                     let liveHtml = '';
                     if (item.liveVocals) {
                         // ★ 修改这里：使用 .badge-horizontal 类
-                        liveHtml = `<div class="badge-horizontal badge-live-red">生歌唱</div>`;
+                        liveTagHtml = `<div class="badge-horizontal badge-live-red">生歌唱</div>`;
                     }
 
                     // 生成歌手胶囊 (注意这里把 songInfo.singers 改成了 displaySingers)
