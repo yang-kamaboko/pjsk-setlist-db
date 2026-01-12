@@ -453,7 +453,6 @@
                     let premiereHtml = '';
                     let liveTagHtml = '';
                     // ★★★ 2. 生成生歌唱标签 (右上角 - 横排版) ★★★
-                    let liveHtml = '';
                     if (item.liveVocals) {
                         // ★ 修改这里：使用 .badge-horizontal 类
                         liveTagHtml = `<div class="badge-horizontal badge-live-red">生歌唱</div>`;
@@ -468,8 +467,9 @@
                     let shortHtml = '';
                     // 检查 JSON 里有没有写 "shortVer": true
                     if (item.shortVer) {
-                        shortHtml = `<div class="badge-bottom-right badge-short-grey">Short Ver.</div>`;
+                        shortHtml = `<div class="badge-bottom-right badge-short-grey">Short Ver</div>`;
                     }
+
                     // 修改 renderSongs 函数里的这一行：
                     let medleyHtml = item.medley ? `<div class="badge-bottom-right badge-medley-glass">メドレー</div>` : '';
 
