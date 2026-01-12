@@ -801,6 +801,27 @@ body {
     text-shadow: 0 1px 1px rgba(0,0,0,0.15); 
 }
 
+/* =========================================
+   生演唱 (Live Vocals) 专用标签
+   ========================================= */
+.tag-live-vocals {
+    display: inline-block;
+    /* 渐变红/粉色，体现现场的热烈感 */
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); 
+    color: white;
+    font-size: 0.65em; /* 和其他标签保持一致 */
+    font-weight: bold;
+    padding: 1px 6px;
+    border-radius: 4px;
+    
+    margin-left: 6px; /* 离歌名稍微近一点 */
+    vertical-align: middle;
+    line-height: 1.2;
+    
+    box-shadow: 0 1px 3px rgba(255, 65, 108, 0.4);
+    transform: translateY(-1px); /* 微调位置，对齐文字 */
+}
+
 /* 两种颜色的标签： */
 /* 1. 蓝色系：用于版本说明 (完整版/Acoustic) */
 .tag-version {
