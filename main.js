@@ -451,6 +451,7 @@
 
                     // ★★★ 初披露判断逻辑 ★★★
                     let premiereHtml = '';
+                    let liveTagHtml = '';
                     // ★★★ 2. 生成生歌唱标签 (右上角 - 横排版) ★★★
                     let liveHtml = '';
                     if (item.liveVocals) {
