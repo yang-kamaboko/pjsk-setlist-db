@@ -574,7 +574,7 @@
                             <div class="song-body">
                                 <div class="song-left-col">
                                     <img src="${coverSrc}" class="song-cover-img" alt="cover">
-                                    ${premiereHtml}
+                                    ${liveHtml}      ${premiereHtml}
                                     ${shortHtml}
                                     ${medleyHtml} 
                                 </div>
