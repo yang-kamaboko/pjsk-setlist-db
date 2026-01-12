@@ -1672,29 +1672,36 @@ body {
     .session-btn { flex: 1 !important; min-width: 60px !important; }
     .modal-content { width: 95% !important; padding: 15px 10px !important; margin: 10px auto !important; }
 
-    /* 5. Setlist 头部容器 (控制整体宽度) */
+    /* --- 1. 头部容器：减小间隙 --- */
     .setlist-header {
-        /* ★ 在这里修改宽度 ★ */
-        width: 100% !important;      /* 如果觉得太宽，可以改成 90% 或 95% */
-        max-width: 100% !important;  /* 防止溢出 */
-        
-        margin: 5px auto 10px !important; /* 上下间距5px，左右自动居中 */
-        
         display: flex !important;
-        flex-direction: column !important; /* 竖向排列 */
-        gap: 10px !important;              /* 内部元素间距 */
+        flex-direction: column !important;
+        
+        /* ★ 修改这里：从 10px 改为 2px (几乎贴在一起) ★ */
+        gap: 2px !important; 
+        
+        width: 100% !important;
+        margin: 5px auto 10px !important;
         padding-right: 0 !important;
-        box-sizing: border-box !important;
     }
 
     /* 如果你想让里面的“场次按钮”和“保存按钮”也变窄，不占满整行 */
     /* 可以修改下面的 width */
     
-    /* 场次按钮组 */
+    /* --- 2. 按钮组：去掉头顶的距离 --- */
     .session-switch-group {
-        width: 50% !important;  /* 如果想变窄，比如 80%，改这里 */
-        margin: 5px auto !important; /* 居中 */
-        /* ...其他 Grid 布局代码保持不变... */
+        width: 100% !important;
+        order: 2 !important;
+        
+        /* ★ 修改这里：从 5px 改为 0 !important (彻底去掉上边距) ★ */
+        margin-top: 0 !important; 
+        
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 8px !important;
+        background: transparent !important;
+        padding: 0 !important;
+        height: auto !important;
     }
 
     /* 保存按钮 */
