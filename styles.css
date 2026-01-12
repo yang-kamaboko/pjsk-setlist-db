@@ -1539,7 +1539,7 @@ body {
     /* 3. 保存按钮：右上 (Order 2) */
     .save-btn {
         order: 2 !important;
-        width: auto !important;       /* 自动宽度 */
+        width: 100px !important;      /* 自动宽度 */
         margin: 0 !important;
         padding: 6px 15px !important; /* 稍微舒服点的内边距 */
         font-size: 0.85em !important;
