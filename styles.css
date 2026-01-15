@@ -1562,7 +1562,7 @@ body {
         height: auto !important;
     }
     
-    /* 按钮样式微调 (增强版) */
+    /* 按钮样式微调 */
     .session-btn { 
         width: 100% !important;       /* 占满格子 */
         min-width: 0 !important;      /* 防止文字太长撑爆 */
@@ -1570,20 +1570,15 @@ body {
         
         text-align: center !important;
         border-radius: 8px !important;
-        padding: 10px 0 !important;   
+        padding: 10px 0 !important;   /* 增加高度，更容易点击 */
         font-size: 0.9em !important;
         
         flex: none !important;
         
+        /* 防止文字换行 */
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
-
-        /* ★★★ 新增：让边框更明显 ★★★ */
-        border: 1px solid #ccc !important;       /* 1. 明显的灰色边框 */
-        background-color: #fff !important;       /* 2. 强制白底 */
-        box-shadow: 0 2px 3px rgba(0,0,0,0.05) !important; /* 3. 微弱的立体阴影 */
-        color: #666 !important;                  /* 默认文字深灰色 */
     }
 
     /* 5. 弹窗容器 */
