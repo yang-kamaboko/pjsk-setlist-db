@@ -204,7 +204,7 @@
                 const eType = String(event.eventType || "").toLowerCase();
 
                 if (eType === "1" || eType === "sekalai") { typeText = "セカライ"; typeClass = "banner-sekalai"; }
-                else if (eType === "2" || eType === "kanshasai") { typeText = "感謝祭"; typeClass = "banner-kanshasai"; }
+                else if (eType === "2" || eType === "kanshasai") { typeText = "感謝祭/ファンミーティング"; typeClass = "banner-kanshasai"; }
                 else if (eType === "3" || eType === "symphony") { typeText = "シンフォ"; typeClass = "banner-symphony"; }
                 else if (eType === "4" || eType === "connect") { typeText = "コネライ"; typeClass = "banner-connect"; }
 
@@ -484,8 +484,8 @@
 
                             // ★★★ 核心修改：根据文字内容匹配 4 种颜色 ★★★
                             
-                            // 1. 感謝祭 (Kanshasai) -> 橙色
-                            if (tagText.includes("感謝祭") || tagText.includes("感谢祭")) {
+                            // 1. 感謝祭/ファンミーティング (Kanshasai) -> 橙色
+                            if (tagText.includes("感謝祭/ファンミーティング/ファンミーティング") || tagText.includes("感谢祭")) {
                                 tagClass = "tag-kanshasai";
                             } 
                             // 2. シンフォニー (Symphony) -> 深蓝色

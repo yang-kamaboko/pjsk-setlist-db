@@ -568,7 +568,7 @@
     "cover": "./assets/covers/jacket_s_099.webp",
     "singers": ["MORE MORE JUMP!","初音ミク"],
     "unit": "MORE MORE JUMP!",
-    "defaultTags": ["'21交響","'22交響","セカライ2nd","3rd感謝祭","コネライ3rd","セカライ3rd","セカライ5th"]
+    "defaultTags": ["'21交響","'22交響","セカライ2nd","3rd感謝祭","コネライ3rd","セカライ3rd","セカライ5th","MMJ FAN"]
   },
   "ECHO": {
     "assetbundleName": "jacket_s_100",
@@ -672,7 +672,7 @@
     "cover": "./assets/covers/jacket_s_112.webp",
     "singers": ["MORE MORE JUMP!","鏡音リン"],
     "unit": "MORE MORE JUMP!",
-    "defaultTags": ["セカライ1st","セカライ2nd","JUMPIN！","4th感謝祭","コネライ4th" ]
+    "defaultTags": ["セカライ1st","セカライ2nd","JUMPIN！","4th感謝祭","コネライ4th","MMJ FAN"]
   },
   "ローリンガール": {
     "assetbundleName": "jacket_s_113",
@@ -3176,7 +3176,7 @@
     "cover": "./assets/covers/jacket_s_429.webp",
     "singers": ["MORE MORE JUMP!","鏡音レン"],
     "unit": "MORE MORE JUMP!",
-    "defaultTags": ["'24交響","4th感謝祭","コネライ4th","セカライ4th","セカライ5th"]
+    "defaultTags": ["'24交響","4th感謝祭","コネライ4th","セカライ4th","セカライ5th","MMJ FAN"]
   },
   "『んっあっあっ。』": {
     "assetbundleName": "jacket_s_430",
@@ -4328,7 +4328,7 @@
     "cover": "./assets/covers/jacket_s_582.webp",
     "singers": ["MORE MORE JUMP!","巡音ルカ"],
     "unit": "MORE MORE JUMP!",
-    "defaultTags": ["'25交響","わんもあ","セカライ5th"]
+    "defaultTags": ["'25交響","わんもあ","セカライ5th","MMJ FAN"]
   },
   "アクセラレイト": {
     "assetbundleName": "jacket_s_583",
