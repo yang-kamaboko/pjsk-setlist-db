@@ -574,7 +574,7 @@
                                 <div class="song-left-col">
                                     <img src="${coverSrc}" class="song-cover-img" alt="cover">
                                     ${premiereHtml}
-                                    ${shortHtml}
+                                    ${liveTagHtml}  ${shortHtml}
                                     ${medleyHtml} 
                                 </div>
                                 <div class="song-info">
@@ -731,7 +731,7 @@
             // 3. 【生成 HTML】(逻辑更新！)
             const fixedTags = [
                 { id: '1', name: 'セカライ', activeClass: 'tag-sekalai' },
-                { id: '2', name: '感謝祭/ファンミーティング',   activeClass: 'tag-kanshasai' },
+                { id: '2', name: '感謝祭',   activeClass: 'tag-kanshasai' },
                 { id: '3', name: 'シンフォ', activeClass: 'tag-symphony' },
                 { id: '4', name: 'コネライ', activeClass: 'tag-connect' }
             ];
