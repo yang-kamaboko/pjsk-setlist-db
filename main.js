@@ -467,9 +467,8 @@
                     let shortHtml = '';
                     // 检查 JSON 里有没有写 "shortVer": true
                     if (item.shortVer) {
-                        shortHtml = `<div class="badge-bottom-right badge-short-grey">Short Ver</div>`;
+                        shortHtml = `<div class="badge-bottom-right badge-short-grey">Short Ver.</div>`;
                     }
-
                     // 修改 renderSongs 函数里的这一行：
                     let medleyHtml = item.medley ? `<div class="badge-bottom-right badge-medley-glass">メドレー</div>` : '';
 
@@ -574,7 +573,7 @@
                             <div class="song-body">
                                 <div class="song-left-col">
                                     <img src="${coverSrc}" class="song-cover-img" alt="cover">
-                                    ${liveHtml}      ${premiereHtml}
+                                    ${premiereHtml}
                                     ${shortHtml}
                                     ${medleyHtml} 
                                 </div>
@@ -732,7 +731,7 @@
             // 3. 【生成 HTML】(逻辑更新！)
             const fixedTags = [
                 { id: '1', name: 'セカライ', activeClass: 'tag-sekalai' },
-                { id: '2', name: '感謝祭',   activeClass: 'tag-kanshasai' },
+                { id: '2', name: '感謝祭/ファンミーティング',   activeClass: 'tag-kanshasai' },
                 { id: '3', name: 'シンフォ', activeClass: 'tag-symphony' },
                 { id: '4', name: 'コネライ', activeClass: 'tag-connect' }
             ];

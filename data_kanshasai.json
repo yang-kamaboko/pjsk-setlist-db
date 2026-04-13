@@ -310,8 +310,42 @@
                   { "songId": "Worlders","singers": ["野口瑠璃子", "礒部花凜", "中島由貴", "吉岡茉祐", "降幡愛", "本泉莉奈", "秋奈", "鷲見友美ジェナ", "伊東健人", "廣瀬大介", "田辺留依", "鈴木みのり", "佐藤日向","VIRTUAL SINGER"],"liveVocals": true}
                   ]    
               }  
-      ]    
-    }       
-  ]         
+            ]    
+          },    
+          {
+            "id": 205,
+            "type": "offline",
+            "title": "プロセカユニットファンミーティング MORE MORE JUMP！ in 宮城",
+            "eventType": "2",
+            "date": "2026.4.12",
+            "location": "名取市文化会館大ホール",
+            "image": "./assets/event_logo/mmjfan.png",
+            "performers": ["小倉 唯","吉岡 茉祐","降幡 愛","本泉 莉奈"],
+            "sublists": [
+            {
+                "name": "昼公演",
+                "date": "2026.4.12 14:00", 
+                "performers": ["小倉 唯","吉岡 茉祐","降幡 愛","本泉 莉奈"],
+                "data":
+                  [
+                  { "songId": "アンチユー","singers": ["小倉 唯","吉岡 茉祐","降幡 愛","本泉 莉奈"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "はぐ","singers": ["小倉 唯","吉岡 茉祐","降幡 愛","本泉 莉奈"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "天使のクローバー","singers": ["小倉 唯","吉岡 茉祐","降幡 愛","本泉 莉奈"],"liveVocals": true,"shortVer": true}
+                  ]    
+              },
+              {
+                "name": "昼公演",
+                "date": "2026.4.12 18:30", 
+                "performers": ["小倉 唯","吉岡 茉祐","降幡 愛","本泉 莉奈"],
+                "data":
+                  [
+                  { "songId": "モア！ジャンプ！モア！","singers": ["小倉 唯","吉岡 茉祐","降幡 愛","本泉 莉奈"],"liveVocals": true,"shortVer": true},
+                  { "songId": "アンチユー","singers": ["小倉 唯","吉岡 茉祐","降幡 愛","本泉 莉奈"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "天使のクローバー","singers": ["小倉 唯","吉岡 茉祐","降幡 愛","本泉 莉奈"],"liveVocals": true,"shortVer": true}
+                  ]    
+              }
+            ]
+          } 
+      ]         
 }
     
