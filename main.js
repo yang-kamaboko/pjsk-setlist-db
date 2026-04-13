@@ -572,11 +572,11 @@
                             ${watermarkHtml}
                             <div class="song-body">
                                 <div class="song-left-col">
-                                    <img src="${coverSrc}" class="song-cover-img" alt="cover">
-                                    ${premiereHtml}
-                                    ${liveTagHtml}  ${shortHtml}
-                                    ${medleyHtml} 
-                                </div>
+                                <img src="${coverSrc}" class="song-cover-img" alt="cover">
+                                ${premiereHtml}
+                                ${liveHtml}    ${shortHtml}
+                                ${medleyHtml} 
+                            </div>
                                 <div class="song-info">
                                     <div class="song-title">
                                         <span class="song-number-inline">#${globalIndex}</span>${displayTitle}
