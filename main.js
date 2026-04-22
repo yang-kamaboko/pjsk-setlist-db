@@ -678,9 +678,25 @@
                 // 等两帧让克隆渲染完成
                 await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
 
+                // ★ 关键修复：等待克隆里所有图片真正加载完成
+                // iOS 上 html2canvas 一直转圈通常就是某张图片没就绪
+                const imgs = Array.from(clone.querySelectorAll('img'));
+                await Promise.all(imgs.map(img => {
+                    // 已经加载好的直接放过
+                    if (img.complete && img.naturalWidth > 0) return Promise.resolve();
+                    return new Promise(resolve => {
+                        const done = () => resolve();
+                        img.addEventListener('load', done, { once: true });
+                        img.addEventListener('error', done, { once: true });
+                        // 单张图最多等 4 秒，避免坏图阻塞全部
+                        setTimeout(done, 4000);
+                    });
+                }));
+
                 const dpr = window.devicePixelRatio || 1;
+                // iOS 上 scale 必须很保守：超过 ~16M 像素 toDataURL 会返回空 data:,
                 const scale = isMobile
-                    ? Math.min(1.8, Math.max(1.2, dpr))
+                    ? (isIOS ? 1 : Math.min(1.5, dpr))
                     : Math.max(2, Math.min(3, dpr * 2));
 
                 const canvas = await html2canvas(clone, {
@@ -689,18 +705,27 @@
                     allowTaint: false,
                     backgroundColor: "#ffffff",
                     logging: false,
+                    imageTimeout: 8000,
+                    // ★ PC 用浏览器原生渲染，颜色/渐变更准确（不发白）
+                    //   移动端兼容性差，关闭
+                    foreignObjectRendering: !isMobile,
                     width: clone.scrollWidth,
                     height: clone.scrollHeight,
                 });
 
                 const baseName = currentEventData ? currentEventData.title : 'setlist';
                 const mime = isMobile ? "image/jpeg" : "image/png";
-                const quality = isMobile ? 0.92 : 1.0;
+                const quality = isMobile ? 0.9 : 1.0;
                 const ext = isMobile ? '.jpg' : '.png';
                 const dataUrl = canvas.toDataURL(mime, quality);
 
                 clearTimeout(safetyTimer);
                 cleanup();
+
+                if (!dataUrl || dataUrl === 'data:,') {
+                    alert("画像が大きすぎて生成に失敗しました。もう一度お試しください。");
+                    return;
+                }
 
                 showImagePreview(dataUrl, baseName + ext);
             } catch (err) {
