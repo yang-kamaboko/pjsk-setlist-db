@@ -811,6 +811,9 @@
             }
 
             container.innerHTML = html;
+
+            // タッチデバイス向け：rank-tag をタップしてツールチップ表示
+            attachRankTagTapHandlers(container);
         }
 
 
@@ -818,3 +821,31 @@
                 rankingLimit += 30; // 每次多显示 30 首
                 renderRanking();    // 重新渲染列表
             }
+
+        // --- スマホ用：rank-tag のタップで tooltip を切り替える ---
+        function attachRankTagTapHandlers(container) {
+            // ホバーが効かない端末でだけ動作させる
+            const isTouch = window.matchMedia('(hover: none)').matches;
+            if (!isTouch) return;
+
+            container.querySelectorAll('.rank-tag[data-tooltip]').forEach(tag => {
+                if (!tag.getAttribute('data-tooltip')) return; // 内容なしはスキップ
+                tag.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const isOpen = tag.classList.contains('show-tooltip');
+                    // 既に開いているものを全部閉じる
+                    container.querySelectorAll('.rank-tag.show-tooltip')
+                        .forEach(t => t.classList.remove('show-tooltip'));
+                    if (!isOpen) tag.classList.add('show-tooltip');
+                });
+            });
+
+            // 余白タップで閉じる（毎回付け直しを防ぐためフラグで一度だけ）
+            if (!window.__rankTooltipCloserAttached) {
+                document.addEventListener('click', () => {
+                    document.querySelectorAll('.rank-tag.show-tooltip')
+                        .forEach(t => t.classList.remove('show-tooltip'));
+                });
+                window.__rankTooltipCloserAttached = true;
+            }
+        }

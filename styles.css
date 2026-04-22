@@ -1595,3 +1595,197 @@ body {
     .unit-watermark { opacity: 0.15 !important; z-index: 0 !important; }
     .performers-wrapper { flex-wrap: wrap !important; width: 100% !important; }
 }
+
+/* =============================================
+   ★ 手機端追加最終調整 (Mobile Extra Polish) ★
+   ============================================= */
+
+/* iOS Safari の文字自動拡大を防ぎ、タップ時の青ハイライトを消す */
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+body {
+    -webkit-tap-highlight-color: transparent;
+}
+/* スマホで横スクロールが起きないように body をガード */
+html, body {
+    overflow-x: hidden;
+}
+
+/* タップ可能要素の最小タップターゲットを確保 */
+.view-btn, .session-btn, .filter-chip, .save-btn, .ranking-row, .event-card {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* === 768px 以下：見出し・ナビをコンパクトに === */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px !important;
+    }
+    .navbar > div:first-child {
+        font-size: 1em !important;
+    }
+    .navbar > div:last-child {
+        font-size: 0.7em !important;
+    }
+    .intro-section {
+        padding: 20px 15px !important;
+    }
+    .intro-section h1 {
+        font-size: 1.4em !important;
+        margin: 0 0 6px !important;
+    }
+    .intro-section p {
+        font-size: 0.78em !important;
+        line-height: 1.5 !important;
+        margin: 0 !important;
+    }
+
+    /* モーダルを動的ビューポート高さで表示（iOS のアドレスバー対応） */
+    .modal-content {
+        max-height: 90vh !important;
+        max-height: 90dvh !important;
+        padding: 12px 10px !important;
+        /* 慣性スクロールを滑らかに、外側へのバウンスを止める */
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+    }
+
+    /* 閉じるボタンをタップしやすく (最低 44px 推奨) */
+    .close-btn {
+        width: 38px !important;
+        height: 38px !important;
+        line-height: 38px !important;
+        font-size: 30px !important;
+        top: 8px !important;
+        right: 8px !important;
+    }
+
+    /* スマホ単列時、 song-info の固定高さを解除して詰める */
+    .song-info {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+    .song-row {
+        padding: 8px 6px 4px !important;
+    }
+    .song-cover-img,
+    .song-left-col {
+        width: 70px !important;
+    }
+    .song-cover-img {
+        height: 70px !important;
+    }
+    .song-left-col { margin-right: 10px !important; }
+
+    /* タイトルの番号を少し締めて、長い曲名でも崩れないように */
+    .song-number-inline {
+        font-size: 1.1em !important;
+        min-width: 32px !important;
+        margin-right: 3px !important;
+    }
+    .song-title { font-size: 1em !important; }
+
+    /* 出演者バッジを小さく、はみ出さない */
+    .performer-badge {
+        font-size: 0.7em !important;
+        padding: 2px 7px !important;
+    }
+
+    /* セットリスト内のコメント枠もモバイル向けに */
+    .song-comment-row {
+        font-size: 0.78em !important;
+    }
+
+    /* メイン詳細タイトルを若干小さく */
+    #modalTitle { font-size: 1.4em !important; }
+    #modalDate  { font-size: 0.95em !important; }
+
+    /* 右上ロゴ透かしの位置調整 */
+    #modalWatermark {
+        right: 50px !important;
+        height: 60px !important;
+    }
+}
+
+/* === 480px 以下：iPhone SE などの極小画面向け === */
+@media (max-width: 480px) {
+    .intro-section h1 { font-size: 1.2em !important; }
+    .intro-section p  { font-size: 0.72em !important; }
+
+    /* ランキング行：縮めてタグの横スクロールも自然にする */
+    .ranking-row {
+        grid-template-columns: 26px 46px 1fr !important;
+        gap: 3px 8px !important;
+        padding: 8px !important;
+    }
+    .rank-num { font-size: 1.1em !important; }
+    .rank-1 { font-size: 1.5em !important; }
+    .rank-2 { font-size: 1.4em !important; }
+    .rank-3 { font-size: 1.3em !important; }
+
+    .rank-meta-mobile > div:last-child {
+        max-width: 70% !important;
+    }
+    .rank-tag {
+        font-size: 0.6em !important;
+        padding: 2px 5px !important;
+    }
+
+    /* セッション切替ボタン（昼/夜公演）が3個以上ある場合に詰める */
+    .session-btn {
+        font-size: 0.8em !important;
+        padding: 9px 0 !important;
+    }
+    .save-btn {
+        width: 84px !important;
+        font-size: 0.8em !important;
+        padding: 6px 10px !important;
+    }
+    .setlist-title { font-size: 1.05em !important; }
+}
+
+/* === スマホ／タッチデバイス：rank-tag のツールチップ表示方法を切替 === */
+/* hover 不可能な端末では :hover を発動させず、 .show-tooltip クラスで JS から表示 */
+@media (hover: none) {
+    .rank-tag[data-tooltip]:hover::after,
+    .rank-tag[data-tooltip]:hover::before {
+        display: none;
+    }
+    .rank-tag.show-tooltip[data-tooltip]:not([data-tooltip=""])::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 135%;
+        left: 50%;
+        background-color: #ffffff;
+        color: var(--primary-color);
+        border: 1px solid #e8e8e8;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.08);
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-size: 0.9em;
+        font-weight: bold;
+        font-family: sans-serif;
+        line-height: 1.6;
+        white-space: pre;
+        text-align: left;
+        min-width: 200px;
+        max-width: 80vw;
+        width: max-content;
+        z-index: 1000;
+        pointer-events: none;
+        animation: tooltipFadeUp 0.2s ease-out forwards;
+    }
+    .rank-tag.show-tooltip[data-tooltip]:not([data-tooltip=""])::before {
+        content: '';
+        position: absolute;
+        bottom: 125%;
+        left: 50%;
+        border: 8px solid transparent;
+        border-top-color: #ffffff;
+        z-index: 1001;
+        animation: tooltipFadeUp 0.2s ease-out forwards;
+        filter: drop-shadow(0 3px 2px rgba(0,0,0,0.05));
+    }
+}
