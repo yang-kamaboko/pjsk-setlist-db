@@ -609,7 +609,7 @@
             `;
         }
 
-        // --- 保存图片逻辑（PC清晰 + 移动端兼容） ---
+        // --- 保存图片逻辑（PC清晰 + 移动端兼容：页面内预览方式） ---
         async function saveSetlistImage() {
             const element = document.querySelector(".modal-content");
             const overlay = document.querySelector(".modal-overlay");
@@ -617,7 +617,6 @@
             const closeBtn = document.querySelector(".close-btn");
             const bottomActions = document.querySelector(".modal-bottom-actions");
 
-            // visibility:hidden 用于隐藏按钮但保留布局，避免重排导致的偏移
             const original = {
                 saveVis: saveBtn ? saveBtn.style.visibility : '',
                 closeVis: closeBtn ? closeBtn.style.visibility : '',
@@ -631,20 +630,10 @@
                 overlayBackground: overlay.style.background,
             };
 
-            if (saveBtn) saveBtn.style.visibility = 'hidden';
-            if (closeBtn) closeBtn.style.visibility = 'hidden';
-            if (bottomActions) bottomActions.style.display = 'none';
-
-            // 展开模态框 & 关闭模糊背景（backdrop-filter 是 PC 端图片发白发虚的主因）
-            element.style.overflow = "visible";
-            element.style.height = "auto";
-            element.style.maxHeight = "none";
-            element.style.borderRadius = "0";
-            overlay.style.backdropFilter = "none";
-            overlay.style.webkitBackdropFilter = "none";
-            overlay.style.background = "transparent";
-
+            let restored = false;
             const restoreStyles = () => {
+                if (restored) return;
+                restored = true;
                 if (saveBtn) saveBtn.style.visibility = original.saveVis;
                 if (closeBtn) closeBtn.style.visibility = original.closeVis;
                 if (bottomActions) bottomActions.style.display = original.bottomDisp;
@@ -657,15 +646,25 @@
                 overlay.style.background = original.overlayBackground;
             };
 
-            // 等两帧让布局/字体生效
-            await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
-            if (document.fonts && document.fonts.ready) {
-                try { await document.fonts.ready; } catch (e) {}
-            }
+            // visibility:hidden 用于隐藏按钮但保留布局
+            if (saveBtn) saveBtn.style.visibility = 'hidden';
+            if (closeBtn) closeBtn.style.visibility = 'hidden';
+            if (bottomActions) bottomActions.style.display = 'none';
+
+            // 关闭模糊背景（这是 PC 端图片发白发虚的主因）
+            element.style.overflow = "visible";
+            element.style.height = "auto";
+            element.style.maxHeight = "none";
+            element.style.borderRadius = "0";
+            overlay.style.backdropFilter = "none";
+            overlay.style.webkitBackdropFilter = "none";
+            overlay.style.background = "transparent";
 
             try {
+                // 等两帧让样式生效
+                await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+
                 const dpr = window.devicePixelRatio || 1;
-                // 至少 2 倍，高 DPR 屏幕用更高倍率，保证清晰
                 const scale = Math.max(2, Math.min(3, dpr * 2));
 
                 const canvas = await html2canvas(element, {
@@ -681,69 +680,65 @@
                 });
 
                 const filename = `${currentEventData ? currentEventData.title : 'setlist'}.png`;
+                const dataUrl = canvas.toDataURL("image/png");
 
-                canvas.toBlob((blob) => {
-                    if (!blob) {
-                        alert("画像の生成に失敗しました");
-                        restoreStyles();
-                        return;
-                    }
+                // 先恢复样式（关键：用户关闭预览后按钮还在）
+                restoreStyles();
 
-                    const url = URL.createObjectURL(blob);
-                    const ua = navigator.userAgent;
-                    const isMobile = /iPhone|iPad|iPod|Android/i.test(ua);
-                    const isIOS = /iPhone|iPad|iPod/i.test(ua);
-
-                    // 移动端：iOS 不支持 a.download，统一在新标签页打开
-                    // 让用户长按图片保存
-                    if (isMobile) {
-                        const win = window.open('', '_blank');
-                        if (win && win.document) {
-                            win.document.write(
-                                '<!DOCTYPE html><html><head>' +
-                                '<meta charset="utf-8">' +
-                                '<meta name="viewport" content="width=device-width,initial-scale=1">' +
-                                '<title>' + filename + '</title>' +
-                                '<style>body{margin:0;background:#1a1a1a;color:#fff;font-family:-apple-system,sans-serif;display:flex;flex-direction:column;align-items:center;padding:12px;}p{margin:8px 0 14px;font-size:14px;text-align:center;line-height:1.5;}img{max-width:100%;height:auto;display:block;border-radius:6px;box-shadow:0 4px 18px rgba(0,0,0,.4);}</style>' +
-                                '</head><body>' +
-                                '<p>📱 画像を長押しして「写真に保存」を選択してください<br><span style="opacity:.6;font-size:12px;">Long-press the image to save</span></p>' +
-                                '<img src="' + url + '" alt="setlist">' +
-                                '</body></html>'
-                            );
-                            win.document.close();
-                        } else {
-                            // 弹窗被拦截：尝试 a.download（Android 多数可用，iOS 会失败）
-                            const link = document.createElement('a');
-                            link.download = filename;
-                            link.href = url;
-                            link.target = '_blank';
-                            link.rel = 'noopener';
-                            document.body.appendChild(link);
-                            link.click();
-                            document.body.removeChild(link);
-                            if (isIOS) {
-                                alert("ポップアップがブロックされました。ブラウザの設定でポップアップを許可してください。");
-                            }
-                        }
-                    } else {
-                        // PC：直接下载
-                        const link = document.createElement('a');
-                        link.download = filename;
-                        link.href = url;
-                        document.body.appendChild(link);
-                        link.click();
-                        document.body.removeChild(link);
-                    }
-
-                    // 60 秒后释放，避免新标签页还没加载完就失效
-                    setTimeout(() => URL.revokeObjectURL(url), 60000);
-                    restoreStyles();
-                }, "image/png");
+                // 显示页面内预览覆盖层（兼容 iOS/Android/PC，不依赖 window.open）
+                showImagePreview(dataUrl, filename);
             } catch (err) {
                 console.error("Screenshot failed:", err);
                 alert("保存に失敗しました：" + (err && err.message ? err.message : err));
                 restoreStyles();
             }
+        }
+
+        // 页面内图片预览覆盖层（手机长按保存 / PC 点按钮下载）
+        function showImagePreview(dataUrl, filename) {
+            const existed = document.getElementById('imgPreviewOverlay');
+            if (existed) existed.remove();
+
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            const tip = isMobile
+                ? '📱 画像を長押しして「写真に保存」を選択してください'
+                : '💻 下のボタンからダウンロード、または画像を右クリックして保存できます';
+
+            const wrap = document.createElement('div');
+            wrap.id = 'imgPreviewOverlay';
+            wrap.style.cssText = [
+                'position:fixed', 'inset:0', 'z-index:99999',
+                'background:rgba(0,0,0,0.85)',
+                'display:flex', 'flex-direction:column', 'align-items:center',
+                'padding:14px', 'box-sizing:border-box',
+                'overflow:auto', '-webkit-overflow-scrolling:touch',
+                'font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif'
+            ].join(';');
+
+            wrap.innerHTML =
+                '<div style="color:#fff;font-size:14px;text-align:center;margin:4px 0 12px;line-height:1.6;max-width:600px;">' +
+                    tip +
+                '</div>' +
+                '<img id="imgPreviewImg" src="' + dataUrl + '" alt="setlist" ' +
+                    'style="max-width:100%;height:auto;display:block;border-radius:6px;box-shadow:0 4px 18px rgba(0,0,0,.5);background:#fff;">' +
+                '<div style="display:flex;gap:10px;margin:16px 0 8px;flex-wrap:wrap;justify-content:center;">' +
+                    '<a id="imgPreviewDl" href="' + dataUrl + '" download="' + filename + '" ' +
+                        'style="background:#ff5a8a;color:#fff;text-decoration:none;padding:10px 22px;border-radius:22px;font-weight:bold;font-size:14px;">' +
+                        '⬇ ダウンロード' +
+                    '</a>' +
+                    '<button id="imgPreviewClose" type="button" ' +
+                        'style="background:#444;color:#fff;border:none;padding:10px 22px;border-radius:22px;font-weight:bold;font-size:14px;cursor:pointer;">' +
+                        '✕ 閉じる' +
+                    '</button>' +
+                '</div>';
+
+            document.body.appendChild(wrap);
+
+            const close = () => wrap.remove();
+            wrap.querySelector('#imgPreviewClose').onclick = close;
+            wrap.addEventListener('click', (e) => {
+                if (e.target === wrap) close();
+            });
         }
 
         function closeModal(e, force) {
