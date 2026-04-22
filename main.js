@@ -496,6 +496,10 @@
                             else if (tagText.includes("セカライ") || tagText.includes("COLORFUL")) {
                                 tagClass = "tag-sekalai";
                             }
+                            // 3.5 MMJ FAN ミーティング -> 感謝祭と同じ金橙色
+                            else if (tagText.includes("FAN")) {
+                                tagClass = "tag-kanshasai";
+                            }
                             // 4. コネライ (Connect Live) -> 青色
                             else {
                                 tagClass = "tag-connect";
