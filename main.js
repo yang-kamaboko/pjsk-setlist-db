@@ -609,116 +609,105 @@
             `;
         }
 
-        // --- 保存图片逻辑（PC清晰 + 移动端兼容：页面内预览方式） ---
+        // --- 保存图片逻辑（克隆离屏方案：完全不影响可见模态框）---
         async function saveSetlistImage() {
-            const element = document.querySelector(".modal-content");
-            const overlay = document.querySelector(".modal-overlay");
-            const saveBtn = document.querySelector(".save-btn");
-            const closeBtn = document.querySelector(".close-btn");
-            const bottomActions = document.querySelector(".modal-bottom-actions");
+            const source = document.querySelector(".modal-content");
+            if (!source) return;
 
-            const original = {
-                saveVis: saveBtn ? saveBtn.style.visibility : '',
-                closeVis: closeBtn ? closeBtn.style.visibility : '',
-                bottomDisp: bottomActions ? bottomActions.style.display : '',
-                overflow: element.style.overflow,
-                height: element.style.height,
-                maxHeight: element.style.maxHeight,
-                borderRadius: element.style.borderRadius,
-                overlayBackdrop: overlay.style.backdropFilter,
-                overlayWebkitBackdrop: overlay.style.webkitBackdropFilter,
-                overlayBackground: overlay.style.background,
-            };
-
-            let restored = false;
-            const restoreStyles = () => {
-                if (restored) return;
-                restored = true;
-                if (saveBtn) saveBtn.style.visibility = original.saveVis;
-                if (closeBtn) closeBtn.style.visibility = original.closeVis;
-                if (bottomActions) bottomActions.style.display = original.bottomDisp;
-                element.style.overflow = original.overflow;
-                element.style.height = original.height;
-                element.style.maxHeight = original.maxHeight;
-                element.style.borderRadius = original.borderRadius || "12px";
-                overlay.style.backdropFilter = original.overlayBackdrop;
-                overlay.style.webkitBackdropFilter = original.overlayWebkitBackdrop;
-                overlay.style.background = original.overlayBackground;
-            };
-
-            // visibility:hidden 用于隐藏按钮但保留布局
-            if (saveBtn) saveBtn.style.visibility = 'hidden';
-            if (closeBtn) closeBtn.style.visibility = 'hidden';
-            if (bottomActions) bottomActions.style.display = 'none';
-
-            // 关闭模糊背景（这是 PC 端图片发白发虚的主因）
-            element.style.overflow = "visible";
-            element.style.height = "auto";
-            element.style.maxHeight = "none";
-            element.style.borderRadius = "0";
-            overlay.style.backdropFilter = "none";
-            overlay.style.webkitBackdropFilter = "none";
-            overlay.style.background = "transparent";
-
-            // ★ 安全网：无论发生什么（包括 html2canvas 在 iOS 上静默挂起），
-            // 15 秒后强制恢复按钮，避免按钮永远消失
-            const safetyTimer = setTimeout(() => {
-                if (!restored) {
-                    restoreStyles();
-                    alert("画像生成がタイムアウトしました。もう一度お試しください。");
-                }
-            }, 15000);
-
-            // iOS / Android 判定（用于降低 scale，防止 canvas 过大导致静默失败）
             const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent)
                 || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
             const isMobile = isIOS || /Android/i.test(navigator.userAgent);
 
+            // 1) 离屏容器：把克隆放到屏幕外，但仍参与布局/渲染
+            const stage = document.createElement('div');
+            stage.style.cssText = [
+                'position:fixed',
+                'top:0',
+                'left:-100000px',                  // 移到屏幕外
+                'width:' + source.offsetWidth + 'px',
+                'background:#ffffff',
+                'z-index:-1',
+                'pointer-events:none'
+            ].join(';');
+
+            // 2) 深克隆模态框
+            const clone = source.cloneNode(true);
+            clone.style.position = 'static';
+            clone.style.maxHeight = 'none';
+            clone.style.height = 'auto';
+            clone.style.overflow = 'visible';
+            clone.style.borderRadius = '0';
+            clone.style.width = source.offsetWidth + 'px';
+            clone.style.margin = '0';
+            clone.style.transform = 'none';
+
+            // 3) 移除克隆里的按钮
+            const removeSelectors = ['.save-btn', '.close-btn', '.modal-bottom-actions'];
+            removeSelectors.forEach(sel => {
+                clone.querySelectorAll(sel).forEach(el => el.remove());
+            });
+
+            stage.appendChild(clone);
+            document.body.appendChild(stage);
+
+            // 显示加载提示
+            const loadingTip = document.createElement('div');
+            loadingTip.textContent = '画像を生成中...';
+            loadingTip.style.cssText = [
+                'position:fixed', 'top:50%', 'left:50%',
+                'transform:translate(-50%,-50%)',
+                'background:rgba(0,0,0,0.8)', 'color:#fff',
+                'padding:14px 24px', 'border-radius:24px',
+                'z-index:100000', 'font-size:14px',
+                'font-family:-apple-system,sans-serif'
+            ].join(';');
+            document.body.appendChild(loadingTip);
+
+            const cleanup = () => {
+                if (stage.parentNode) stage.parentNode.removeChild(stage);
+                if (loadingTip.parentNode) loadingTip.parentNode.removeChild(loadingTip);
+            };
+
+            // 安全网：万一卡住也能清理
+            const safetyTimer = setTimeout(() => {
+                cleanup();
+                alert("画像生成がタイムアウトしました。もう一度お試しください。");
+            }, 20000);
+
             try {
-                // 等两帧让样式生效
+                // 等两帧让克隆渲染完成
                 await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
 
                 const dpr = window.devicePixelRatio || 1;
-                // iOS Safari/Chrome 的 canvas 面积上限较低（约 16M 像素），scale 必须控制
                 const scale = isMobile
                     ? Math.min(1.8, Math.max(1.2, dpr))
                     : Math.max(2, Math.min(3, dpr * 2));
 
-                const canvas = await html2canvas(element, {
+                const canvas = await html2canvas(clone, {
                     scale: scale,
                     useCORS: true,
                     allowTaint: false,
                     backgroundColor: "#ffffff",
                     logging: false,
-                    width: element.scrollWidth,
-                    height: element.scrollHeight,
-                    windowWidth: document.documentElement.clientWidth,
-                    windowHeight: document.documentElement.clientHeight,
+                    width: clone.scrollWidth,
+                    height: clone.scrollHeight,
                 });
 
-                const filename = `${currentEventData ? currentEventData.title : 'setlist'}.png`;
-                // iOS では PNG が巨大になりメモリで失敗するので JPEG にフォールバック
+                const baseName = currentEventData ? currentEventData.title : 'setlist';
                 const mime = isMobile ? "image/jpeg" : "image/png";
                 const quality = isMobile ? 0.92 : 1.0;
+                const ext = isMobile ? '.jpg' : '.png';
                 const dataUrl = canvas.toDataURL(mime, quality);
-                const finalName = isMobile
-                    ? filename.replace(/\.png$/i, '') + '.jpg'
-                    : filename;
 
-                // 显示预览前先恢复按钮（关键）
                 clearTimeout(safetyTimer);
-                restoreStyles();
+                cleanup();
 
-                showImagePreview(dataUrl, finalName);
+                showImagePreview(dataUrl, baseName + ext);
             } catch (err) {
                 console.error("Screenshot failed:", err);
                 clearTimeout(safetyTimer);
-                restoreStyles();
+                cleanup();
                 alert("保存に失敗しました：" + (err && err.message ? err.message : err));
-            } finally {
-                // 双保险：万一上面任何一步遗漏
-                clearTimeout(safetyTimer);
-                restoreStyles();
             }
         }
 
