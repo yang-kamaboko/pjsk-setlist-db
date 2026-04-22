@@ -660,12 +660,29 @@
             overlay.style.webkitBackdropFilter = "none";
             overlay.style.background = "transparent";
 
+            // ★ 安全网：无论发生什么（包括 html2canvas 在 iOS 上静默挂起），
+            // 15 秒后强制恢复按钮，避免按钮永远消失
+            const safetyTimer = setTimeout(() => {
+                if (!restored) {
+                    restoreStyles();
+                    alert("画像生成がタイムアウトしました。もう一度お試しください。");
+                }
+            }, 15000);
+
+            // iOS / Android 判定（用于降低 scale，防止 canvas 过大导致静默失败）
+            const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent)
+                || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+            const isMobile = isIOS || /Android/i.test(navigator.userAgent);
+
             try {
                 // 等两帧让样式生效
                 await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
 
                 const dpr = window.devicePixelRatio || 1;
-                const scale = Math.max(2, Math.min(3, dpr * 2));
+                // iOS Safari/Chrome 的 canvas 面积上限较低（约 16M 像素），scale 必须控制
+                const scale = isMobile
+                    ? Math.min(1.8, Math.max(1.2, dpr))
+                    : Math.max(2, Math.min(3, dpr * 2));
 
                 const canvas = await html2canvas(element, {
                     scale: scale,
@@ -680,16 +697,27 @@
                 });
 
                 const filename = `${currentEventData ? currentEventData.title : 'setlist'}.png`;
-                const dataUrl = canvas.toDataURL("image/png");
+                // iOS では PNG が巨大になりメモリで失敗するので JPEG にフォールバック
+                const mime = isMobile ? "image/jpeg" : "image/png";
+                const quality = isMobile ? 0.92 : 1.0;
+                const dataUrl = canvas.toDataURL(mime, quality);
+                const finalName = isMobile
+                    ? filename.replace(/\.png$/i, '') + '.jpg'
+                    : filename;
 
-                // 先恢复样式（关键：用户关闭预览后按钮还在）
+                // 显示预览前先恢复按钮（关键）
+                clearTimeout(safetyTimer);
                 restoreStyles();
 
-                // 显示页面内预览覆盖层（兼容 iOS/Android/PC，不依赖 window.open）
-                showImagePreview(dataUrl, filename);
+                showImagePreview(dataUrl, finalName);
             } catch (err) {
                 console.error("Screenshot failed:", err);
+                clearTimeout(safetyTimer);
+                restoreStyles();
                 alert("保存に失敗しました：" + (err && err.message ? err.message : err));
+            } finally {
+                // 双保险：万一上面任何一步遗漏
+                clearTimeout(safetyTimer);
                 restoreStyles();
             }
         }
