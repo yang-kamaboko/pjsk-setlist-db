@@ -92,6 +92,22 @@
             </div>
             
             <div id="modalSongs"></div>
+
+            <div class="modal-bottom-actions">
+                <button class="modal-close-bottom-btn" onclick="closeModal(event, true)">
+                    <i class="fas fa-times"></i> 閉じる
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="tagInfoPopup" class="tag-popup-overlay" onclick="closeTagPopup(event)">
+        <div class="tag-popup-content">
+            <div class="tag-popup-header">
+                <span id="tagPopupTitle">演唱履歴</span>
+                <span class="tag-popup-close" onclick="closeTagPopup(event, true)">&times;</span>
+            </div>
+            <div id="tagPopupBody" class="tag-popup-body"></div>
         </div>
     </div>
     

@@ -1746,46 +1746,109 @@ html, body {
     .setlist-title { font-size: 1.05em !important; }
 }
 
-/* === スマホ／タッチデバイス：rank-tag のツールチップ表示方法を切替 === */
-/* hover 不可能な端末では :hover を発動させず、 .show-tooltip クラスで JS から表示 */
+/* === スマホ／タッチデバイス：rank-tag の :hover ツールチップを無効化 === */
+/* タップ時は JS でモーダルを開くため、:hover による表示はオフにする */
 @media (hover: none) {
     .rank-tag[data-tooltip]:hover::after,
     .rank-tag[data-tooltip]:hover::before {
-        display: none;
+        display: none !important;
     }
-    .rank-tag.show-tooltip[data-tooltip]:not([data-tooltip=""])::after {
-        content: attr(data-tooltip);
-        position: absolute;
-        bottom: 135%;
-        left: 50%;
-        background-color: #ffffff;
-        color: var(--primary-color);
-        border: 1px solid #e8e8e8;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.08);
-        padding: 10px 14px;
-        border-radius: 10px;
-        font-size: 0.9em;
-        font-weight: bold;
-        font-family: sans-serif;
-        line-height: 1.6;
-        white-space: pre;
-        text-align: left;
-        min-width: 200px;
-        max-width: 80vw;
-        width: max-content;
-        z-index: 1000;
-        pointer-events: none;
-        animation: tooltipFadeUp 0.2s ease-out forwards;
+    .rank-tag[data-tooltip] {
+        cursor: pointer;
     }
-    .rank-tag.show-tooltip[data-tooltip]:not([data-tooltip=""])::before {
-        content: '';
-        position: absolute;
-        bottom: 125%;
-        left: 50%;
-        border: 8px solid transparent;
-        border-top-color: #ffffff;
-        z-index: 1001;
-        animation: tooltipFadeUp 0.2s ease-out forwards;
-        filter: drop-shadow(0 3px 2px rgba(0,0,0,0.05));
-    }
+}
+
+/* =============================================
+   ★ 詳細モーダル下部「閉じる」ボタン
+   ============================================= */
+.modal-bottom-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    position: relative;
+    z-index: 5;
+}
+.modal-close-bottom-btn {
+    background: linear-gradient(135deg, #555, #333);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 0.95em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.15s, box-shadow 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.modal-close-bottom-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+.modal-close-bottom-btn:active {
+    transform: translateY(0);
+}
+
+/* =============================================
+   ★ ランキング タグ詳細ポップアップ (タッチ端末)
+   ============================================= */
+.tag-popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 2000;
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.tag-popup-content {
+    background: #ffffff;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 420px;
+    max-height: 70vh;
+    max-height: 70dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    animation: modalPop 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.tag-popup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    background: linear-gradient(135deg, #33c6b8, #2ab7ca);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+.tag-popup-close {
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 4px;
+    user-select: none;
+}
+.tag-popup-body {
+    padding: 16px 18px;
+    color: #333;
+    font-size: 0.95em;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    flex: 1;
+}
+@media (max-width: 480px) {
+    .tag-popup-header { font-size: 0.95em; padding: 12px 15px; }
+    .tag-popup-body   { font-size: 0.9em; padding: 14px 15px; }
 }

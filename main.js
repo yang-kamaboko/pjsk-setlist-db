@@ -829,23 +829,24 @@
             if (!isTouch) return;
 
             container.querySelectorAll('.rank-tag[data-tooltip]').forEach(tag => {
-                if (!tag.getAttribute('data-tooltip')) return; // 内容なしはスキップ
+                const tip = tag.getAttribute('data-tooltip');
+                if (!tip) return; // 内容なしはスキップ
                 tag.addEventListener('click', (e) => {
                     e.stopPropagation();
-                    const isOpen = tag.classList.contains('show-tooltip');
-                    // 既に開いているものを全部閉じる
-                    container.querySelectorAll('.rank-tag.show-tooltip')
-                        .forEach(t => t.classList.remove('show-tooltip'));
-                    if (!isOpen) tag.classList.add('show-tooltip');
+                    openTagPopup(tag.textContent.trim(), tip);
                 });
             });
+        }
 
-            // 余白タップで閉じる（毎回付け直しを防ぐためフラグで一度だけ）
-            if (!window.__rankTooltipCloserAttached) {
-                document.addEventListener('click', () => {
-                    document.querySelectorAll('.rank-tag.show-tooltip')
-                        .forEach(t => t.classList.remove('show-tooltip'));
-                });
-                window.__rankTooltipCloserAttached = true;
+        // --- タグ詳細ポップアップ (スマホ向け) ---
+        function openTagPopup(title, body) {
+            document.getElementById('tagPopupTitle').textContent = title + ' 演唱履歴';
+            document.getElementById('tagPopupBody').textContent = body || 'データなし';
+            document.getElementById('tagInfoPopup').style.display = 'flex';
+        }
+
+        function closeTagPopup(e, force) {
+            if (force || (e && e.target.classList.contains('tag-popup-overlay'))) {
+                document.getElementById('tagInfoPopup').style.display = 'none';
             }
         }
