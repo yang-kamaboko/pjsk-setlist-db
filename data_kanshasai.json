@@ -315,7 +315,7 @@
           {
             "id": 205,
             "type": "offline",
-            "title": "プロセカユニットファンミーティング MORE MORE JUMP！ in 宮城",
+            "title": "プロセカユニットファンミーティング MORE MORE JUMP! in 宮城",
             "eventType": "2",
             "date": "2026.4.12",
             "location": "名取市文化会館大ホール",
@@ -349,33 +349,33 @@
           {
             "id": 206,
             "type": "offline",
-            "title": "プロセカユニットファンミーティング　Vivid BAD SQUAD　in　兵庫",
+            "title": "プロセカユニットファンミーティング Vivid BAD SQUAD in 兵庫",
             "eventType": "2",
             "date": "2026.5.16",
             "location": "神戸国際会館こくさいホール",
             "image": "./assets/event_logo/vbsfan.jpg",
-            "performers": ["秋奈","鷲見 友美ジェナ","今井 文也","伊東 健人"],
+            "performers": ["秋奈","鷲見友美ジェナ","今井 文也","伊東 健人"],
             "sublists": [
             {
                 "name": "昼公演",
                 "date": "2026.5.16 14:00", 
-                "performers": ["秋奈","鷲見 友美ジェナ","今井 文也","伊東 健人"],
+                "performers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],
                 "data":
                   [
-                  { "songId": "虚ろを扇ぐ","singers": ["秋奈","鷲見 友美ジェナ","今井 文也","伊東 健人"],"liveVocals": true,"shortVer": true}, 
-                  { "songId": "烈火","singers": ["秋奈","鷲見 友美ジェナ","今井 文也","伊東 健人"],"liveVocals": true,"shortVer": true}, 
-                  { "songId": "フューエル","singers": ["秋奈","鷲見 友美ジェナ","今井 文也","伊東 健人"],"liveVocals": true,"shortVer": true}
+                  { "songId": "虚ろを扇ぐ","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "烈火","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "フューエル","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],"liveVocals": true,"shortVer": true}
                   ]    
               },
               {
                 "name": "夜公演",
                 "date": "2026.5.16 18:30", 
-                "performers": ["秋奈","鷲見 友美ジェナ","今井 文也","伊東 健人"],
+                "performers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],
                 "data":
                   [
-                  { "songId": "烈火","singers": ["秋奈","鷲見 友美ジェナ","今井 文也","伊東 健人"],"liveVocals": true,"shortVer": true},
-                  { "songId": "フューエル","singers": ["秋奈","鷲見 友美ジェナ","今井 文也","伊東 健人"],"liveVocals": true,"shortVer": true}, 
-                  { "songId": "ULTRA C","singers": ["秋奈","鷲見 友美ジェナ","今井 文也","伊東 健人"],"liveVocals": true,"shortVer": true}
+                  { "songId": "烈火","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],"liveVocals": true,"shortVer": true},
+                  { "songId": "フューエル","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],"liveVocals": true,"shortVer": true}, 
+                  { "songId": "ULTRA C","singers": ["秋奈","鷲見友美ジェナ","今井文也","伊東健人"],"liveVocals": true,"shortVer": true}
                   ]    
               }
             ]
