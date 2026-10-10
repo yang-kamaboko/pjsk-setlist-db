@@ -485,7 +485,7 @@
                             // ★★★ 核心修改：根据文字内容匹配 4 种颜色 ★★★
                             
                             // 1. 感謝祭/ファンミーティング (Kanshasai) -> 橙色
-                            if (tagText.includes("感謝祭") || tagText.includes("感谢祭")) {
+                            if (tagText.includes("感謝祭") || tagText.includes("感谢祭") || tagText.includes("ファンミ")) {
                                 tagClass = "tag-kanshasai";
                             } 
                             // 2. シンフォニー (Symphony) -> 深蓝色
