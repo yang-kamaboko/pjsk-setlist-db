@@ -381,7 +381,8 @@
                                                 "`21交響",
                                                 "セカライ1st",
                                                 "STORIES",
-                                                "コネライ3rd"
+                                                "コネライ3rd",
+                                                "6th感謝祭"
                                             ]
                         },
     "potatoになっていく":  {
@@ -397,7 +398,8 @@
                                              "セカライ1st",
                                              "2nd感謝祭",
                                              "`23交響",
-                                             "コネライ3rd"
+                                             "コネライ3rd",
+                                             "6th感謝祭"
                                          ]
                      },
     "Ready Steady":  {
@@ -415,7 +417,8 @@
                                              "CRASH",
                                              "コネライ3rd",
                                              "セカライ3rd",
-                                             "`24交響"
+                                             "`24交響",
+                                             "6th感謝祭"
                                          ]
                      },
     "Forward":  {
@@ -447,7 +450,8 @@
                                         "コネライ3rd",
                                         "セカライ3rd",
                                         "`25交響",
-                                        "5th感謝祭"
+                                        "5th感謝祭",
+                                        "6th感謝祭"
                                     ]
                 },
     "悔やむと書いてミライ":  {
@@ -463,7 +467,8 @@
                                            "セカライ1st",
                                            "セカライ2nd",
                                            "moment",
-                                           "コネライ3rd"
+                                           "コネライ3rd",
+                                           "6th感謝祭"
                                        ]
                    },
     "携帯恋話":  {
@@ -493,7 +498,8 @@
                                               "`21交響",
                                               "`22交響",
                                               "コネライ2nd",
-                                              "3rd感謝祭"
+                                              "3rd感謝祭",
+                                              "6th感謝祭"
                                           ]
                       },
     "needLe":  {
@@ -510,7 +516,8 @@
                                        "`22交響",
                                        "SPARKLE",
                                        "`23交響",
-                                       "コネライ3rd"
+                                       "コネライ3rd",
+                                       "6th感謝祭"
                                    ]
                },
     "ステラ":  {
@@ -528,7 +535,8 @@
                                     "コネライ2nd",
                                     "セカライ2nd",
                                     "コネライ3rd",
-                                    "セカライ4th"
+                                    "セカライ4th",
+                                    "6th感謝祭"
                                 ]
             },
     "ハロ／ハワユ":  {
@@ -834,7 +842,8 @@
                     "defaultTags":  [
                                         "`22交響",
                                         "2nd感謝祭",
-                                        "moment"
+                                        "moment",
+                                        "6th感謝祭"
                                     ]
                 },
     "ドラマツルギー":  {
@@ -1319,7 +1328,8 @@
                                     "2nd感謝祭",
                                     "セカライ2nd",
                                     "コネライ4th",
-                                    "セカライ5th"
+                                    "セカライ5th",
+                                    "6th感謝祭"
                                 ]
             },
     "トンデモワンダーズ":  {
@@ -1736,7 +1746,8 @@
                        "unit":  "Vivid BAD SQUAD",
                        "defaultTags":  [
                                            "CRASH",
-                                           "3rd感謝祭"
+                                           "3rd感謝祭",
+                                           "6th感謝祭"
                                        ]
                    },
     "マシュマリー":  {
@@ -1833,17 +1844,17 @@
                                          ]
                      },
     "Don`t Fight The Music":  {
-                                       "assetbundleName":  "jacket_s_164",
-                                       "title":  "Don`t Fight The Music",
-                                       "cover":  "./assets/covers/jacket_s_164.webp",
-                                       "singers":  [
+                                  "assetbundleName":  "jacket_s_164",
+                                  "title":  "Don`t Fight The Music",
+                                  "cover":  "./assets/covers/jacket_s_164.webp",
+                                  "singers":  [
 
-                                                   ],
-                                       "unit":  "",
-                                       "defaultTags":  [
+                                              ],
+                                  "unit":  "",
+                                  "defaultTags":  [
 
-                                                       ]
-                                   },
+                                                  ]
+                              },
     "そうだった！！":  {
                     "assetbundleName":  "jacket_s_165",
                     "title":  "そうだった！！",
@@ -2156,7 +2167,8 @@
                                      "セカライ2nd",
                                      "コネライ3rd",
                                      "セカライ3rd",
-                                     "`25交響"
+                                     "`25交響",
+                                     "6th感謝祭"
                                  ]
              },
     "心予報":  {
@@ -2235,7 +2247,8 @@
                                             "コネライ2nd",
                                             "3rd感謝祭",
                                             "コネライ3rd",
-                                            "プロ×あん"
+                                            "プロ×あん",
+                                            "6th感謝祭"
                                         ]
                     },
     "妄想感傷代償連盟":  {
@@ -2440,7 +2453,8 @@
                                ],
                    "unit":  "MORE MORE JUMP!",
                    "defaultTags":  [
-                                       "JUMPIN！"
+                                       "JUMPIN！",
+                                       "6th感謝祭"
                                    ]
                },
     "雨とペトラ":  {
@@ -3413,7 +3427,8 @@
                                  ],
                      "unit":  "ワンダーランズ×ショウタイム",
                      "defaultTags":  [
-                                         "コネライ4th"
+                                         "コネライ4th",
+                                         "6th感謝祭"
                                      ]
                  },
     "レイニースノードロップ":  {
@@ -3475,7 +3490,8 @@
                                ],
                    "unit":  "MORE MORE JUMP!",
                    "defaultTags":  [
-                                       "コネライ3rd"
+                                       "コネライ3rd",
+                                       "6th感謝祭"
                                    ]
                },
     "アンハッピーリフレイン":  {
@@ -3642,7 +3658,8 @@
                 "defaultTags":  [
                                     "コネライ3rd",
                                     "セカライ3rd",
-                                    "セカライ5th"
+                                    "セカライ5th",
+                                    "6th感謝祭"
                                 ]
             },
     "私の恋はヘルファイア":  {
@@ -3743,7 +3760,8 @@
                    "unit":  "MORE MORE JUMP!",
                    "defaultTags":  [
                                        "`23交響",
-                                       "セカライ4th"
+                                       "セカライ4th",
+                                       "6th感謝祭"
                                    ]
                },
     "Afterglow":  {
@@ -3822,17 +3840,17 @@
                                      ]
                  },
     "What`s up? Pop!":  {
-                                 "assetbundleName":  "jacket_s_315",
-                                 "title":  "What`s up? Pop!",
-                                 "cover":  "./assets/covers/jacket_s_315.webp",
-                                 "singers":  [
+                            "assetbundleName":  "jacket_s_315",
+                            "title":  "What`s up? Pop!",
+                            "cover":  "./assets/covers/jacket_s_315.webp",
+                            "singers":  [
 
-                                             ],
-                                 "unit":  "",
-                                 "defaultTags":  [
+                                        ],
+                            "unit":  "",
+                            "defaultTags":  [
 
-                                                 ]
-                             },
+                                            ]
+                        },
     "ひつじがいっぴき":  {
                      "assetbundleName":  "jacket_s_316",
                      "title":  "ひつじがいっぴき",
@@ -4066,17 +4084,17 @@
                                          ]
                      },
     "Vampire`s ∞ pathoS":  {
-                                    "assetbundleName":  "jacket_s_334",
-                                    "title":  "Vampire`s ∞ pathoS",
-                                    "cover":  "./assets/covers/jacket_s_334.webp",
-                                    "singers":  [
+                               "assetbundleName":  "jacket_s_334",
+                               "title":  "Vampire`s ∞ pathoS",
+                               "cover":  "./assets/covers/jacket_s_334.webp",
+                               "singers":  [
 
-                                                ],
-                                    "unit":  "",
-                                    "defaultTags":  [
+                                           ],
+                               "unit":  "",
+                               "defaultTags":  [
 
-                                                    ]
-                                },
+                                               ]
+                           },
     "トラッシュ・アンド・トラッシュ！":  {
                              "assetbundleName":  "jacket_s_335",
                              "title":  "トラッシュ・アンド・トラッシュ！",
@@ -4553,7 +4571,8 @@
                            ],
                "unit":  "VIRTUAL SINGER",
                "defaultTags":  [
-                                   "ニゴバチャ"
+                                   "ニゴバチャ",
+                                   "6th感謝祭"
                                ]
            },
     "天樂":  {
@@ -5604,7 +5623,8 @@
                                   ],
                       "unit":  "MORE MORE JUMP!",
                       "defaultTags":  [
-                                          "コネライ4th"
+                                          "コネライ4th",
+                                          "6th感謝祭"
                                       ]
                   },
     "抜錨":  {
@@ -5840,11 +5860,12 @@
                                "title":  "モザイクロール (Reloaded)",
                                "cover":  "./assets/covers/jacket_s_477.webp",
                                "singers":  [
-
+                                               "KAITO",
+                                               "Leo/need"
                                            ],
                                "unit":  "",
                                "defaultTags":  [
-
+                                                   "6th感謝祭"
                                                ]
                            },
     "フューエル":  {
@@ -6132,7 +6153,8 @@
                     "defaultTags":  [
                                         "`25交響",
                                         "ニゴバチャ",
-                                        "セカライ5th"
+                                        "セカライ5th",
+                                        "6th感謝祭"
                                     ]
                 },
     "Bad Apple!! feat.SEKAI":  {
@@ -6419,7 +6441,8 @@
                              "unit":  "Leo/need",
                              "defaultTags":  [
                                                  "コネライ4th",
-                                                 "`25交響"
+                                                 "`25交響",
+                                                 "6th感謝祭"
                                              ]
                          },
     "アンテナ39":  {
@@ -6599,7 +6622,8 @@
                              ],
                  "unit":  "25時、ナイトコードで。",
                  "defaultTags":  [
-                                     "セカライ5th"
+                                     "セカライ5th",
+                                     "6th感謝祭"
                                  ]
              },
     "メインキャラクター":  {
@@ -6672,7 +6696,8 @@
                                  ],
                      "unit":  "Leo/need",
                      "defaultTags":  [
-                                         "セカライ5th"
+                                         "セカライ5th",
+                                         "6th感謝祭"
                                      ]
                  },
     "終焉逃避行":  {
@@ -6692,11 +6717,12 @@
                     "title":  "ぼくのかみさま",
                     "cover":  "./assets/covers/jacket_s_548.webp",
                     "singers":  [
-
+                                    "ワンダーランズ×ショウタイム",
+                                    "鏡音レン"
                                 ],
                     "unit":  "",
                     "defaultTags":  [
-
+                                        "6th感謝祭"
                                     ]
                 },
     "化けの花":  {
@@ -6717,11 +6743,12 @@
                      "title":  "ロストアンブレラ",
                      "cover":  "./assets/covers/jacket_s_551.webp",
                      "singers":  [
-
+                                     "鏡音リン",
+                                     "25時、ナイトコードで。"
                                  ],
                      "unit":  "",
                      "defaultTags":  [
-
+                                         "6th感謝祭"
                                      ]
                  },
     "M@GICAL☆CURE! LOVE ♥ SHOT!":  {
@@ -6835,7 +6862,8 @@
                   "unit":  "ワンダーランズ×ショウタイム",
                   "defaultTags":  [
                                       "わんもあ",
-                                      "セカライ5th"
+                                      "セカライ5th",
+                                      "6th感謝祭"
                                   ]
               },
     "プロトディスコ":  {
@@ -6927,11 +6955,12 @@
                 "title":  "スター",
                 "cover":  "./assets/covers/jacket_s_570.webp",
                 "singers":  [
-
+                                "Leo/need",
+                                "MEIKO"
                             ],
                 "unit":  "",
                 "defaultTags":  [
-
+                                    "6th感謝祭"
                                 ]
             },
     "偽物人間40号":  {
@@ -7280,11 +7309,12 @@
                "title":  "ルマ",
                "cover":  "./assets/covers/jacket_s_601.webp",
                "singers":  [
-
+                               "鏡音レン",
+                               "MORE MORE JUMP!"
                            ],
                "unit":  "",
                "defaultTags":  [
-
+                                   "6th感謝祭"
                                ]
            },
     "ドレミファロンド":  {
@@ -7498,11 +7528,12 @@
                    "title":  "Surges",
                    "cover":  "./assets/covers/jacket_s_632.webp",
                    "singers":  [
-
+                                   "巡音ルカ",
+                                   "Vivid BAD SQUAD"
                                ],
                    "unit":  "",
                    "defaultTags":  [
-
+                                       "6th感謝祭"
                                    ]
                },
     "庭師のおはなしによると":  {
@@ -7522,11 +7553,12 @@
                 "title":  "光線歌",
                 "cover":  "./assets/covers/jacket_s_634.webp",
                 "singers":  [
-
+                                "Vivid BAD SQUAD",
+                                "初音ミク"
                             ],
                 "unit":  "",
                 "defaultTags":  [
-
+                                    "6th感謝祭"
                                 ]
             },
     "ありのままのストーリーを":  {
@@ -7539,7 +7571,8 @@
                                      ],
                          "unit":  "MORE MORE JUMP!",
                          "defaultTags":  [
-                                             "わんもあ"
+                                             "わんもあ",
+                                             "6th感謝祭"
                                          ]
                      },
     "エクスプロウル":  {
@@ -7661,7 +7694,8 @@
                          "unit":  "ワンダーランズ×ショウタイム",
                          "defaultTags":  [
                                              "わんもあ",
-                                             "`25交響"
+                                             "`25交響",
+                                             "6th感謝祭"
                                          ]
                      },
     "あの夏が飽和する。":  {
@@ -7789,11 +7823,12 @@
                      "title":  "ロケットサイダー",
                      "cover":  "./assets/covers/jacket_s_665.webp",
                      "singers":  [
-
+                                     "初音ミク",
+                                     "Leo/need"
                                  ],
                      "unit":  "",
                      "defaultTags":  [
-
+                                         "6th感謝祭"
                                      ]
                  },
     "少女A":  {
@@ -7849,11 +7884,12 @@
                       "title":  "い〜やい〜やい〜や",
                       "cover":  "./assets/covers/jacket_s_670.webp",
                       "singers":  [
-
+                                      "鏡音リン",
+                                      "ワンダーランズ×ショウタイム"
                                   ],
                       "unit":  "",
                       "defaultTags":  [
-
+                                          "6th感謝祭"
                                       ]
                   },
     "怪獣になりたい":  {
@@ -7945,11 +7981,12 @@
                   "title":  "ファイター",
                   "cover":  "./assets/covers/jacket_s_684.webp",
                   "singers":  [
-
+                                  "Vivid BAD SQUAD",
+                                  "鏡音レン"
                               ],
                   "unit":  "",
                   "defaultTags":  [
-
+                                      "6th感謝祭"
                                   ]
               },
     "電光刹歌":  {
@@ -8029,11 +8066,12 @@
                 "title":  "花結び",
                 "cover":  "./assets/covers/jacket_s_695.webp",
                 "singers":  [
-
+                                "Leo/need",
+                                "巡音ルカ"
                             ],
                 "unit":  "",
                 "defaultTags":  [
-
+                                    "6th感謝祭"
                                 ]
             },
     "ドリーム・キス":  {
@@ -8077,11 +8115,12 @@
                             "title":  "ヤンキーボーイ・ヤンキーガール",
                             "cover":  "./assets/covers/jacket_s_586.webp",
                             "singers":  [
-
+                                            "KAITO",
+                                            "Vivid BAD SQUAD"
                                         ],
                             "unit":  "",
                             "defaultTags":  [
-
+                                                "6th感謝祭"
                                             ]
                         },
     "Polar Star":  {
@@ -8197,11 +8236,12 @@
                 "title":  "幸福刑",
                 "cover":  "./assets/covers/jacket_s_630.webp",
                 "singers":  [
-
+                                "25時、ナイトコードで。",
+                                "MEIKO"
                             ],
                 "unit":  "",
                 "defaultTags":  [
-
+                                    "6th感謝祭"
                                 ]
             },
     "天才ロック":  {
@@ -8233,11 +8273,12 @@
                       "title":  "このまんまでいこう",
                       "cover":  "./assets/covers/jacket_s_642.webp",
                       "singers":  [
-
+                                      "Leo/need",
+                                      "巡音ルカ"
                                   ],
                       "unit":  "",
                       "defaultTags":  [
-
+                                          "6th感謝祭"
                                       ]
                   },
     "About me":  {
@@ -8305,11 +8346,12 @@
                             "title":  "CRASH THE PARTY",
                             "cover":  "./assets/covers/jacket_s_679.webp",
                             "singers":  [
-
+                                            "Vivid BAD SQUAD",
+                                            "巡音ルカ"
                                         ],
                             "unit":  "",
                             "defaultTags":  [
-
+                                                "6th感謝祭"
                                             ]
                         },
     "Who?":  {
@@ -8701,11 +8743,12 @@
                 "title":  "ラヴィ",
                 "cover":  "./assets/covers/jacket_s_723.webp",
                 "singers":  [
-
+                                "鏡音レン",
+                                "25時、ナイトコードで。"
                             ],
                 "unit":  "",
                 "defaultTags":  [
-
+                                    "6th感謝祭"
                                 ]
             },
     "ハオ":  {
@@ -8773,11 +8816,16 @@
                   "title":  "エメラルド",
                   "cover":  "./assets/covers/jacket_s_730.webp",
                   "singers":  [
-
+                                  "Leo/need",
+                                  "MORE MORE JUMP!",
+                                  "Vivid BAD SQUAD",
+                                  "ワンダーランズ×ショウタイム",
+                                  "25時、ナイトコードで。",
+                                  "初音ミク"
                               ],
                   "unit":  "",
                   "defaultTags":  [
-
+                                      "6th感謝祭"
                                   ]
               },
     "アルティメットセンパイ":  {
@@ -8869,11 +8917,15 @@
                    "title":  "世界の歩き方",
                    "cover":  "./assets/covers/jacket_s_739.webp",
                    "singers":  [
-
+                                   "Leo/need",
+                                   "MORE MORE JUMP!",
+                                   "ワンダーランズ×ショウタイム",
+                                   "25時、ナイトコードで。",
+                                   "初音ミク"
                                ],
                    "unit":  "",
                    "defaultTags":  [
-
+                                       "6th感謝祭"
                                    ]
                },
     "羽歌":  {
@@ -8905,11 +8957,15 @@
                  "title":  "旅に帰る",
                  "cover":  "./assets/covers/jacket_s_742.webp",
                  "singers":  [
-
+                                 "Leo/need",
+                                 "MORE MORE JUMP!",
+                                 "Vivid BAD SQUAD",
+                                 "25時、ナイトコードで。",
+                                 "巡音ルカ"
                              ],
                  "unit":  "",
                  "defaultTags":  [
-
+                                     "6th感謝祭"
                                  ]
              },
     "ドリーマーズビート":  {
@@ -8917,11 +8973,16 @@
                       "title":  "ドリーマーズビート",
                       "cover":  "./assets/covers/jacket_s_743.webp",
                       "singers":  [
-
+                                      "Leo/need",
+                                      "MORE MORE JUMP!",
+                                      "Vivid BAD SQUAD",
+                                      "ワンダーランズ×ショウタイム",
+                                      "鏡音リン",
+                                      "鏡音レン"
                                   ],
                       "unit":  "",
                       "defaultTags":  [
-
+                                          "6th感謝祭"
                                       ]
                   },
     "CHAOS":  {
@@ -9073,11 +9134,12 @@
                         "title":  "Gimme more!",
                         "cover":  "./assets/covers/jacket_s_756.webp",
                         "singers":  [
-
+                                        "MORE MORE JUMP!",
+                                        "初音ミク"
                                     ],
                         "unit":  "",
                         "defaultTags":  [
-
+                                            "6th感謝祭"
                                         ]
                     },
     "ひかりのあつめかた":  {
@@ -9157,11 +9219,15 @@
                "title":  "レム",
                "cover":  "./assets/covers/jacket_s_765.webp",
                "singers":  [
-
+                               "Leo/need",
+                               "Vivid BAD SQUAD",
+                               "ワンダーランズ×ショウタイム",
+                               "25時、ナイトコードで。",
+                               "KAITO"
                            ],
                "unit":  "",
                "defaultTags":  [
-
+                                   "6th感謝祭"
                                ]
            },
     "アブノーマリティ･ダンシンガール":  {
@@ -9253,11 +9319,15 @@
                     "title":  "アンチサイノウ",
                     "cover":  "./assets/covers/jacket_s_788.webp",
                     "singers":  [
-
+                                    "MORE MORE JUMP!",
+                                    "Vivid BAD SQUAD",
+                                    "ワンダーランズ×ショウタイム",
+                                    "25時、ナイトコードで。",
+                                    "MEIKO"
                                 ],
                     "unit":  "",
                     "defaultTags":  [
-
+                                        "6th感謝祭"
                                     ]
                 },
     "天秤、指先で触れて":  {
@@ -9361,11 +9431,12 @@
                "title":  "正解",
                "cover":  "./assets/covers/jacket_s_804.webp",
                "singers":  [
-
+                               "Vivid BAD SQUAD",
+                               "鏡音リン"
                            ],
                "unit":  "",
                "defaultTags":  [
-
+                                   "6th感謝祭"
                                ]
            },
     "きのせい":  {
