@@ -128,9 +128,9 @@
     "assetbundleName": "jacket_s_019",
     "title": "シャルル",
     "cover": "./assets/covers/jacket_s_019.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["25時、ナイトコードで。"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["PP!!!!!"]
   },
   "脱法ロック": {
     "assetbundleName": "jacket_s_021",
@@ -1484,7 +1484,8 @@
     "unit": "MORE MORE JUMP!",
     "defaultTags": [
       "`22交響",
-      "セカライ3rd"
+      "セカライ3rd",
+      "PP!!!!!"
     ]
   },
   "心拍数♯0822": {
@@ -2000,7 +2001,8 @@
     ],
     "unit": "ワンダーランズ×ショウタイム",
     "defaultTags": [
-      "4th感謝祭"
+      "4th感謝祭",
+      "PP!!!!!"
     ]
   },
   "ゴーストルール": {
@@ -2029,7 +2031,8 @@
     ],
     "unit": "ワンダーランズ×ショウタイム",
     "defaultTags": [
-      "2nd感謝祭"
+      "2nd感謝祭",
+      "PP!!!!!"
     ]
   },
   "Q": {
@@ -2103,7 +2106,7 @@
       "KAITO"
     ],
     "unit": "Leo/need",
-    "defaultTags": []
+    "defaultTags": ["PP!!!!!"]
   },
   "メタモリボン": {
     "assetbundleName": "jacket_s_209",
@@ -2328,9 +2331,9 @@
     "assetbundleName": "jacket_s_229",
     "title": "脳漿炸裂ガール",
     "cover": "./assets/covers/jacket_s_229.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["初音ミク"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["PP!!!!!"]
   },
   "サラマンダー": {
     "assetbundleName": "jacket_s_230",
@@ -2489,9 +2492,9 @@
     "assetbundleName": "jacket_s_242",
     "title": "トリノコシティ",
     "cover": "./assets/covers/jacket_s_242.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["MORE MORE JUMP!", "初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["PP!!!!!"]
   },
   "Calc.": {
     "assetbundleName": "jacket_s_243",
@@ -3416,9 +3419,9 @@
     "assetbundleName": "jacket_s_329",
     "title": "ヤミナベ!!!!",
     "cover": "./assets/covers/jacket_s_329.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["初音ミク"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["PP!!!!!"]
   },
   "インタビュア": {
     "assetbundleName": "jacket_s_330",
@@ -3432,9 +3435,9 @@
     "assetbundleName": "jacket_s_331",
     "title": "39",
     "cover": "./assets/covers/jacket_s_331.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["初音ミク"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["PP!!!!!"]
   },
   "エピローグに君はいない": {
     "assetbundleName": "jacket_s_332",
@@ -4262,9 +4265,9 @@
     "assetbundleName": "jacket_s_408",
     "title": "CIRCUS PANIC!!!",
     "cover": "./assets/covers/jacket_s_408.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["初音ミク"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["PP!!!!!"]
   },
   "25時の情熱": {
     "assetbundleName": "jacket_s_409",
@@ -4740,7 +4743,8 @@
     ],
     "unit": "Leo/need",
     "defaultTags": [
-      "`24交響"
+      "`24交響",
+      "PP!!!!!"
     ]
   },
   "LEADER": {
@@ -5056,9 +5060,9 @@
     "assetbundleName": "jacket_s_491",
     "title": "キャットラビング",
     "cover": "./assets/covers/jacket_s_491.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["25時、ナイトコードで。", "巡音ルカ"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["PP!!!!!"]
   },
   "私は雨": {
     "assetbundleName": "jacket_s_492",
@@ -5814,9 +5818,9 @@
     "assetbundleName": "jacket_s_571",
     "title": "偽物人間40号",
     "cover": "./assets/covers/jacket_s_571.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["Vivid BAD SQUAD", "MEIKO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["PP!!!!!"]
   },
   "飾って": {
     "assetbundleName": "jacket_s_572",
@@ -6488,9 +6492,9 @@
     "assetbundleName": "jacket_s_667",
     "title": "㋰責任集合体",
     "cover": "./assets/covers/jacket_s_667.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["巡音ルカ"],
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["PP!!!!!"]
   },
   "ネクラチューンサーカス": {
     "assetbundleName": "jacket_s_668",

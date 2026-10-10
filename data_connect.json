@@ -888,6 +888,60 @@
               ]
             }
         ]
+    },
+    {
+     "id": 413,
+     "type":"online",
+     "title":"コネクトライブ Parallel Paaaarty!!!!",
+     "eventType":"4",
+     "date":"2026.5.10",
+     "location":"Online",
+     "image":"./assets/event_logo/Parallel Paaaarty!!!!.jpg",
+     "performers": ["Leo/need","MORE MORE JUMP!","Vivid BAD SQUAD","ワンダーランズ×ショウタイム","25時、ナイトコードで。","VIRTUAL SINGER"],
+     "sublists": [
+            {
+           "name":"14:00-",
+           "date":"2026.5.10 14:00",
+           "data": [
+              { "songId": "ヤミナベ!!!!","singers": ["初音ミク"] },
+              { "songId": "偽物人間40号","singers": ["神代類","暁山瑞希"] },
+              { "songId": "トリノコシティ","singers": ["望月穂波","宵崎奏"] },
+              { "songId": "キャットラビング","singers": ["天馬咲希","桃井愛莉","鳳えむ"] },
+              { "songId": "シャルル","singers": ["桐谷遥","白石杏"] },
+              { "songId": "脳漿炸裂ガール","singers": ["鏡音リン","巡音ルカ","MEIKO"] },
+              { "songId": "㋰責任集合体","singers": ["初音ミク","鏡音レン","KAITO"] },
+              { "songId": "僕らまだアンダーグラウンド","singers": ["青柳冬弥","天馬司"] },
+              { "songId": "抜錨","singers": ["日野森雫","朝比奈まふゆ"] },
+              { "songId": "地球最後の告白を","singers": ["星乃一歌","草薙寧々"] },
+              { "songId": "神のまにまに","singers": ["日野森志歩","花里みのり","小豆沢こはね"] },
+              { "songId": "グッバイ宣言","singers": ["東雲彰人","東雲絵名"] },
+              { "songId": "CIRCUS PANIC!!!","singers": ["初音ミク","鏡音リン","鏡音レン","巡音ルカ","MEIKO","KAITO","誰もいないセカイの鏡音リン","ステージのセカイの鏡音レン","ストリートのセカイの巡音ルカ","ワンダーランドのセカイのMEIKO","教室のセカイのKAITO"] },
+              { "type":"break","text":"アンコール" },
+              { "songId": "39","singers": ["初音ミク","鏡音リン","鏡音レン","巡音ルカ","MEIKO","KAITO"] }
+              ]
+            },
+            {
+           "name":"18:00-",
+           "date":"2026.5.10 18:00",
+           "data": [
+              { "songId": "ヤミナベ!!!!","singers": ["初音ミク"] },
+              { "songId": "偽物人間40号","singers": ["神代類","暁山瑞希"] },
+              { "songId": "トリノコシティ","singers": ["望月穂波","宵崎奏"] },
+              { "songId": "キャットラビング","singers": ["天馬咲希","桃井愛莉","鳳えむ"] },
+              { "songId": "シャルル","singers": ["桐谷遥","白石杏"] },
+              { "songId": "脳漿炸裂ガール","singers": ["鏡音リン","巡音ルカ","MEIKO"] },
+              { "songId": "㋰責任集合体","singers": ["初音ミク","鏡音レン","KAITO"] },
+              { "songId": "僕らまだアンダーグラウンド","singers": ["青柳冬弥","天馬司"] },
+              { "songId": "抜錨","singers": ["日野森雫","朝比奈まふゆ"] },
+              { "songId": "地球最後の告白を","singers": ["星乃一歌","草薙寧々"] },
+              { "songId": "神のまにまに","singers": ["日野森志歩","花里みのり","小豆沢こはね"] },
+              { "songId": "グッバイ宣言","singers": ["東雲彰人","東雲絵名"] },
+              { "songId": "CIRCUS PANIC!!!","singers": ["初音ミク","鏡音リン","鏡音レン","巡音ルカ","MEIKO","KAITO","誰もいないセカイの鏡音リン","ステージのセカイの鏡音レン","ストリートのセカイの巡音ルカ","ワンダーランドのセカイのMEIKO","教室のセカイのKAITO"] },
+              { "type":"break","text":"アンコール" },
+              { "songId": "39","singers": ["初音ミク","鏡音リン","鏡音レン","巡音ルカ","MEIKO","KAITO"] }
+              ]
+            }
+        ]
     }
   ]
 }
