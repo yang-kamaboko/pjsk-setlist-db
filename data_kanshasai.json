@@ -415,7 +415,41 @@
             ]
           },    
           {
-          "id": 208,
+            "id": 208,
+            "type": "offline",
+            "title": "プロセカユニットファンミーティング ワンダーランズ×ショウタイム in 愛知",
+            "eventType": "2",
+            "date": "2026.8.16",
+            "location": "Home & nicoホール 江南市民文化会館",
+            "image": "./assets/event_logo/wsfan.jpg",
+            "performers": ["廣瀬大介", "Machico", "土岐隼一"],
+            "sublists": [
+            {
+                "name": "昼公演",
+              "date": "2026.8.16 14:00",
+              "performers": ["廣瀬大介", "Machico", "土岐隼一"],
+                "data":
+                  [
+                { "songId": "Mr. Showtime", "singers": ["廣瀬大介", "Machico", "土岐隼一"], "liveVocals": true, "shortVer": true },
+                { "songId": "ショウタイム・ルーラー", "singers": ["廣瀬大介", "Machico", "土岐隼一"], "liveVocals": true, "shortVer": true },
+                { "songId": "Glory Steady Go!", "singers": ["廣瀬大介", "Machico", "土岐隼一"], "liveVocals": true, "shortVer": true }
+                  ]    
+              },
+              {
+                "name": "夜公演",
+              "date": "2026.8.16 18:30",
+              "performers": ["廣瀬大介", "Machico", "土岐隼一"],
+                "data":
+                  [
+                { "songId": "Mr. Showtime", "singers": ["廣瀬大介", "Machico", "土岐隼一"], "liveVocals": true, "shortVer": true },
+                { "songId": "ショウタイム・ルーラー", "singers": ["廣瀬大介", "Machico", "土岐隼一"], "liveVocals": true, "shortVer": true },
+                { "songId": "Glory Steady Go!", "singers": ["廣瀬大介", "Machico", "土岐隼一"], "liveVocals": true, "shortVer": true }
+                  ]    
+              }
+            ]
+          },    
+          {
+          "id": 209,
           "type": "offline",
           "title": "プロセカユニットファンミーティング 25時、ナイトコードで。 in 大分",
           "eventType": "2",
@@ -449,7 +483,7 @@
             ]
           },
           {
-          "id": 209,
+          "id": 210,
           "type": "offline",
           "title": "6th Anniversary 感謝祭",
           "eventType": "2",
