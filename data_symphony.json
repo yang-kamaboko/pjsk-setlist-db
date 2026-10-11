@@ -492,7 +492,154 @@
                     ]
             }
             ]
+        },
+        {
+            "id": 306,
+            "type": "offline",
+            "title": "セカイシンフォニー 2026",
+            "eventType": "3",
+            "date": "2026.6.7 & 2026.6.13",
+            "location": "グランキューブ大阪 & パシフィコ横浜 国立大ホール",
+            "image": "./assets/event_logo/sym2026.png",
+            "performers": ["東京フィルハーモニー交響楽団・セカイシンフォニースペシャルバンド","礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],
+            "sublists": [
+                {
+                    "name": "大阪公演",
+                    "date": "2026.6.7",
+                    "location": "グランキューブ大阪",
+                    "performers": ["大阪交響楽団・セカイシンフォニースペシャルバンド","礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],
+                    "data": [
+                        { "songId": "ハローセカイ","comment": "フルオーケストラ" },
+                        { "songId": "流星のパルス" },
+                        { "songId": "その音が鳴るなら","singers": ["礒部花凜"],"liveVocals": true },
+                        { "songId": "フィラメントフィーバー" },
+                        { "songId": "征け","singers": ["Machico"],"liveVocals": true },
+                        { "songId": "その絵の名前は" },
+                        { "songId": "君の夜をくれ","singers": ["佐藤日向"],"liveVocals": true },
+                        { "songId": "カラフルファンデーション" },
+                        { "songId": "Polar Star","singers": ["吉岡茉祐"],"liveVocals": true },
+                        { "songId": "光線歌" },
+                        { "songId": "街","singers": ["鷲見友美ジェナ"],"liveVocals": true },
+                        { "type": "mc","text": "休憩（20分）" },
+                        { "songId": "オルターエゴ","singers": ["鷲見友美ジェナ"],"liveVocals": true,"medley": true },
+                        { "songId": "エンヴィーベイビー","singers": ["佐藤日向"],"liveVocals": true,"medley": true },
+                        { "songId": "モザイクロール (Reloaded)","singers": ["礒部花凜"],"liveVocals": true,"medley": true },
+                        { "type": "mc","text": "MC" },
+                        { "songId": "如月アテンション","singers": ["吉岡茉祐"],"liveVocals": true,"medley": true },
+                        { "songId": "グッバイ宣言","singers": ["Machico"],"liveVocals": true,"medley": true },
+                        { "type": "mc","text": "MC" },
+                        { "songId": "群青讃歌","singers": ["礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],"liveVocals": true },
+                        { "type": "break","text": "アンコール" },
+                        { "songId": "Worlders","comment": "フルオーケストラ" },
+                        { "songId": "ペンタトニック","singers": ["礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],"liveVocals": true }
+                    ]
+                },
+                {
+                    "name": "横浜公演",
+                    "date": "2026.6.13",
+                    "location": "パシフィコ横浜 国立大ホール",
+                    "performers": ["東京フィルハーモニー交響楽団・セカイシンフォニースペシャルバンド","礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],
+                    "data": [
+                        { "songId": "ペンタトニック","comment": "フルオーケストラ" },
+                        { "songId": "Sympathy" },
+                        { "songId": "その音が鳴るなら","singers": ["礒部花凜"],"liveVocals": true },
+                        { "songId": "アイリッド" },
+                        { "songId": "征け","singers": ["Machico"],"liveVocals": true },
+                        { "songId": "ザムザ" },
+                        { "songId": "君の夜をくれ","singers": ["佐藤日向"],"liveVocals": true },
+                        { "songId": "私は、私達は" },
+                        { "songId": "Polar Star","singers": ["吉岡茉祐"],"liveVocals": true },
+                        { "songId": "透過する温度" },
+                        { "songId": "街","singers": ["鷲見友美ジェナ"],"liveVocals": true },
+                        { "type": "mc","text": "休憩（20分）" },
+                        { "songId": "オルターエゴ","singers": ["鷲見友美ジェナ"],"liveVocals": true,"medley": true },
+                        { "songId": "エンヴィーベイビー","singers": ["佐藤日向"],"liveVocals": true,"medley": true },
+                        { "songId": "モザイクロール (Reloaded)","singers": ["礒部花凜"],"liveVocals": true,"medley": true },
+                        { "type": "mc","text": "MC" },
+                        { "songId": "如月アテンション","singers": ["吉岡茉祐"],"liveVocals": true,"medley": true },
+                        { "songId": "グッバイ宣言","singers": ["Machico"],"liveVocals": true,"medley": true },
+                        { "type": "mc","text": "MC" },
+                        { "songId": "群青讃歌","singers": ["礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],"liveVocals": true },
+                        { "type": "break","text": "アンコール" },
+                        { "songId": "Worlders","comment": "フルオーケストラ" },
+                        { "songId": "ペンタトニック","singers": ["礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],"liveVocals": true }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 307,
+            "type": "offline",
+            "title": "セカイシンフォニー 2026 - Instrumental Harmony -",
+            "eventType": "3",
+            "date": "2026.8.11",
+            "location": "東京国際フォーラム ホールC",
+            "image": "./assets/event_logo/sym2026.png",
+            "performers": ["東京フィルハーモニー交響楽団・セカイシンフォニースペシャルバンド","野口瑠璃子","じん"],
+            "sublists": [
+                {
+                    "name": "東京昼公演",
+                    "date": "2026.8.11 14:00",
+                    "location": "東京国際フォーラム ホールC",
+                    "performers": ["東京フィルハーモニー交響楽団・セカイシンフォニースペシャルバンド","野口瑠璃子","じん"],
+                    "data": [
+                        { "songId": "ペンタトニック","singers": [],"comment": "フルオーケストラ" },
+                        { "type": "mc","text": "MC" },
+                        { "songId": "透明なパレット","singers": [],"comment": "フルオーケストラ","shortVer": true },
+                        { "songId": "フロート・プランナー","singers": [],"comment": "フルオーケストラ","shortVer": true },
+                        { "songId": "オールイン・ワン","singers": [],"comment": "フルオーケストラ","shortVer": true },
+                        { "songId": "CR詠ZY","singers": [],"comment": "フルオーケストラ","shortVer": true },
+                        { "songId": "化けの花","singers": [],"comment": "フルオーケストラ","shortVer": true },
+                        { "songId": "あなたの空が泣くのなら","singers": [],"comment": "フルオーケストラ" },
+                        { "songId": "ワンスアポンアドリーム","singers": [],"comment": "フルオーケストラ" },
+                        { "songId": "光","singers": [],"comment": "フルオーケストラ" },
+                        { "songId": "羽歌","singers": [],"comment": "フルオーケストラ" },
+                        { "songId": "天秤、指先で触れて","singers": [],"comment": "フルオーケストラ" },
+                        { "type": "mc","text": "休憩（20分）" },
+                        { "songId": "ステラ","singers": [],"comment": "フルオーケストラ" },
+                        { "type": "mc","text": "MC（じんさん登壇）" },
+                        { "songId": "あちこちデートさん","singers": [],"comment": "フルオーケストラ" },
+                        { "songId": "ミルククラウン・オン・ソーネチカ","singers": [],"comment": "フルオーケストラ" },
+                        { "songId": "NEO","singers": [],"comment": "フルオーケストラ" },
+                        { "type": "break","text": "アンコール" },
+                        { "songId": "Be The MUSIC!","singers": [],"comment": "フルオーケストラ","shortVer": true },
+                        { "songId": "セカイ","singers": [],"comment": "フルオーケストラ" },
+                        { "type": "mc","text": "一歌誕生日記念" },
+                        { "songId": "Happy Birthday to You","singers": [],"comment": "フルオーケストラ","shortVer": true }
+                    ]
+                },
+                {
+                    "name": "東京夜公演",
+                    "date": "2026.8.11 18:00",
+                    "location": "東京国際フォーラム ホールC",
+                    "performers": ["東京フィルハーモニー交響楽団・セカイシンフォニースペシャルバンド","野口瑠璃子","じん"],
+                    "data": [
+                        { "songId": "ペンタトニック","singers": [],"comment": "フルオーケストラ" },
+                        { "type": "mc","text": "MC" },
+                        { "songId": "透明なパレット","singers": [],"comment": "フルオーケストラ","shortVer": true },
+                        { "songId": "フロート・プランナー","singers": [],"comment": "フルオーケストラ","shortVer": true },
+                        { "songId": "オールイン・ワン","singers": [],"comment": "フルオーケストラ","shortVer": true },
+                        { "songId": "CR詠ZY","singers": [],"comment": "フルオーケストラ","shortVer": true },
+                        { "songId": "化けの花","singers": [],"comment": "フルオーケストラ","shortVer": true },
+                        { "songId": "あなたの空が泣くのなら","singers": [],"comment": "フルオーケストラ" },
+                        { "songId": "ワンスアポンアドリーム","singers": [],"comment": "フルオーケストラ" },
+                        { "songId": "光","singers": [],"comment": "フルオーケストラ" },
+                        { "songId": "羽歌","singers": [],"comment": "フルオーケストラ" },
+                        { "songId": "天秤、指先で触れて","singers": [],"comment": "フルオーケストラ" },
+                        { "type": "mc","text": "休憩（20分）" },
+                        { "songId": "ステラ","singers": [],"comment": "フルオーケストラ" },
+                        { "type": "mc","text": "MC（じんさん登壇）" },
+                        { "songId": "あちこちデートさん","singers": [],"comment": "フルオーケストラ" },
+                        { "songId": "ミルククラウン・オン・ソーネチカ","singers": [],"comment": "フルオーケストラ" },
+                        { "songId": "NEO","singers": [],"comment": "フルオーケストラ" },
+                        { "type": "break","text": "アンコール" },
+                        { "songId": "Be The MUSIC!","singers": [],"comment": "フルオーケストラ","shortVer": true },
+                        { "songId": "セカイ","singers": [],"comment": "フルオーケストラ" },
+                        { "type": "mc","text": "一歌誕生日記念" },
+                        { "songId": "Happy Birthday to You","singers": [],"comment": "フルオーケストラ","shortVer": true }
+                    ]
+                }
+            ]
         }
     ]
 }
-    

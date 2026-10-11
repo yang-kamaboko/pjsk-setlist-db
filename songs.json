@@ -1332,7 +1332,8 @@
       "3rd感謝祭",
       "4th感謝祭",
       "ニゴバチャ",
-      "5th感謝祭"
+      "5th感謝祭",
+      "`26交響"
     ]
   },
   "再生": {
@@ -1631,7 +1632,8 @@
     ],
     "unit": "Vivid BAD SQUAD",
     "defaultTags": [
-      "2nd感謝祭"
+      "2nd感謝祭",
+      "`26交響"
     ]
   },
   "ダーリンダンス": {
@@ -1714,7 +1716,8 @@
       "2nd感謝祭",
       "レオビビ",
       "コネライ4th",
-      "ファンミ"
+      "ファンミ",
+      "`26交響"
     ]
   },
   "いーあるふぁんくらぶ": {
@@ -2002,7 +2005,8 @@
     "unit": "ワンダーランズ×ショウタイム",
     "defaultTags": [
       "4th感謝祭",
-      "PP!!!!!"
+      "PP!!!!!",
+      "`26交響"
     ]
   },
   "ゴーストルール": {
@@ -2218,7 +2222,8 @@
     "defaultTags": [
       "コネライ2nd",
       "セカライ2nd",
-      "セカライ3rd"
+      "セカライ3rd",
+      "`26交響"
     ]
   },
   "メリュー": {
@@ -2439,7 +2444,8 @@
     ],
     "unit": "25時、ナイトコードで。",
     "defaultTags": [
-      "4th感謝祭"
+      "4th感謝祭",
+      "`26交響"
     ]
   },
   "ブラック★ロックシューター": {
@@ -2995,7 +3001,8 @@
     "unit": "MORE MORE JUMP!",
     "defaultTags": [
       "コネライ3rd",
-      "6th感謝祭"
+      "6th感謝祭",
+      "`26交響"
     ]
   },
   "アンハッピーリフレイン": {
@@ -3135,7 +3142,8 @@
       "コネライ3rd",
       "セカライ3rd",
       "セカライ5th",
-      "6th感謝祭"
+      "6th感謝祭",
+      "`26交響"
     ]
   },
   "私の恋はヘルファイア": {
@@ -4148,7 +4156,8 @@
     "defaultTags": [
       "コネライ4th",
       "プロ×あん",
-      "セカライ5th"
+      "セカライ5th",
+      "`26交響"
     ]
   },
   "Beyond the way": {
@@ -4201,7 +4210,8 @@
     "unit": "25時、ナイトコードで。",
     "defaultTags": [
       "4th感謝祭",
-      "プロ×あん"
+      "プロ×あん",
+      "`26交響"
     ]
   },
   "番凩": {
@@ -4933,7 +4943,8 @@
     ],
     "unit": "Leo/need",
     "defaultTags": [
-      "6th感謝祭"
+      "6th感謝祭",
+      "`26交響"
     ]
   },
   "フューエル": {
@@ -5287,9 +5298,9 @@
     "assetbundleName": "jacket_s_511",
     "title": "如月アテンション",
     "cover": "./assets/covers/jacket_s_511.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["MORE MORE JUMP!", "巡音ルカ"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["`26交響"]
   },
   "合成するミライ": {
     "assetbundleName": "jacket_s_512",
@@ -5604,7 +5615,8 @@
     "unit": "Leo/need",
     "defaultTags": [
       "セカライ5th",
-      "6th感謝祭"
+      "6th感謝祭",
+      "`26交響"
     ]
   },
   "終焉逃避行": {
@@ -5738,7 +5750,8 @@
     "defaultTags": [
       "わんもあ",
       "セカライ5th",
-      "6th感謝祭"
+      "6th感謝祭",
+      "`26交響"
     ]
   },
   "プロトディスコ": {
@@ -5902,17 +5915,19 @@
     "unit": "VIRTUAL SINGER",
     "defaultTags": [
       "5th感謝祭",
-      "セカライ5th"
+      "セカライ5th",
+      "`26交響"
     ]
   },
   "Worlders": {
     "assetbundleName": "jacket_s_579",
     "title": "Worlders",
     "cover": "./assets/covers/jacket_s_579.webp",
-    "singers": [],
-    "unit": "",
+    "singers": ["星乃一歌", "花里みのり", "小豆沢こはね", "天馬司", "宵崎奏", "初音ミク"],
+    "unit": "Rainbow",
     "defaultTags": [
-      "5th感謝祭"
+      "5th感謝祭",
+      "`26交響"
     ]
   },
   "三日月ステップ": {
@@ -5980,11 +5995,12 @@
       "宵崎奏",
       "初音ミク"
     ],
-    "unit": "",
+    "unit": "Rainbow",
     "defaultTags": [
       "`25交響",
       "5th感謝祭",
-      "セカライ5th"
+      "セカライ5th",
+      "`26交響"
     ]
   },
   "ルルブ": {
@@ -6077,17 +6093,17 @@
     "assetbundleName": "jacket_s_597",
     "title": "その絵の名前は",
     "cover": "./assets/covers/jacket_s_597.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["25時、ナイトコードで。", "初音ミク"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["`26交響"]
   },
   "征け": {
     "assetbundleName": "jacket_s_600",
     "title": "征け",
     "cover": "./assets/covers/jacket_s_600.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["ワンダーランズ×ショウタイム", "鏡音リン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["`26交響"]
   },
   "ルマ": {
     "assetbundleName": "jacket_s_601",
@@ -6128,7 +6144,8 @@
     ],
     "unit": "Leo/need",
     "defaultTags": [
-      "セカライ5th"
+      "セカライ5th",
+      "`26交響"
     ]
   },
   "スーサイドパレヱド": {
@@ -6283,7 +6300,8 @@
     ],
     "unit": "Vivid BAD SQUAD",
     "defaultTags": [
-      "6th感謝祭"
+      "6th感謝祭",
+      "`26交響"
     ]
   },
   "ありのままのストーリーを": {
@@ -6696,9 +6714,9 @@
     "assetbundleName": "jacket_s_610",
     "title": "Polar Star",
     "cover": "./assets/covers/jacket_s_610.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["MORE MORE JUMP!", "鏡音レン"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["`26交響"]
   },
   "好き！雪！本気マジック": {
     "assetbundleName": "jacket_s_611",
@@ -6887,9 +6905,9 @@
     "assetbundleName": "jacket_s_683",
     "title": "カラフルファンデーション",
     "cover": "./assets/covers/jacket_s_683.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["MORE MORE JUMP!", "KAITO"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["`26交響"]
   },
   "惑星ループ": {
     "assetbundleName": "jacket_s_690",
@@ -7063,9 +7081,9 @@
     "assetbundleName": "jacket_s_716",
     "title": "透過する温度",
     "cover": "./assets/covers/jacket_s_716.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["Vivid BAD SQUAD", "KAITO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["`26交響"]
   },
   "Ribbon": {
     "assetbundleName": "jacket_s_717",
@@ -7656,6 +7674,22 @@
     "assetbundleName": "jacket_s_814",
     "title": "こわれちゃった！！",
     "cover": "./assets/covers/jacket_s_814.webp",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "羽撃く": {
+    "assetbundleName": "",
+    "title": "羽撃く",
+    "cover": "",
+    "singers": [],
+    "unit": "",
+    "defaultTags": []
+  },
+  "Happy Birthday to You": {
+    "assetbundleName": "",
+    "title": "Happy Birthday to You",
+    "cover": "",
     "singers": [],
     "unit": "",
     "defaultTags": []
