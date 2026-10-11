@@ -1032,8 +1032,8 @@
     "title": "＊ハロー、プラネット。",
     "cover": "./assets/covers/jacket_s_118.webp",
     "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["`26交響inst"]
   },
   "ワールズエンド・ダンスホール": {
     "assetbundleName": "jacket_s_119",
@@ -5338,7 +5338,7 @@
     "title": "あちこちデートさん",
     "cover": "./assets/covers/jacket_s_516.webp",
     "singers": ["めろう"],
-    "unit": "",
+    "unit": "VIRTUAL SINGER",
     "defaultTags": ["`26交響inst"]
   },
   "メリーゴーラウンド": {
@@ -7099,8 +7099,8 @@
     "title": "Ribbon",
     "cover": "./assets/covers/jacket_s_717.webp",
     "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "unit": "VIRTUAL SINGER",
+    "defaultTags": ["`26交響inst"]
   },
   "幕を下ろそう、パレードへ": {
     "assetbundleName": "jacket_s_718",
