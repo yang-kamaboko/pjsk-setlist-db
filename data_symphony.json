@@ -509,7 +509,7 @@
                     "location": "グランキューブ大阪",
                     "performers": ["大阪交響楽団・セカイシンフォニースペシャルバンド","礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],
                     "data": [
-                        { "songId": "ハローセカイ","comment": "フルオーケストラ" },
+                        { "songId": "ハローセカイ","singers": [],"comment": "フルオーケストラ" },
                         { "songId": "流星のパルス" },
                         { "songId": "その音が鳴るなら","singers": ["礒部花凜"],"liveVocals": true },
                         { "songId": "フィラメントフィーバー" },
@@ -530,7 +530,7 @@
                         { "type": "mc","text": "MC" },
                         { "songId": "群青讃歌","singers": ["礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],"liveVocals": true },
                         { "type": "break","text": "アンコール" },
-                        { "songId": "Worlders","comment": "フルオーケストラ" },
+                        { "songId": "Worlders","singers": [],"comment": "フルオーケストラ" },
                         { "songId": "ペンタトニック","singers": ["礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],"liveVocals": true }
                     ]
                 },
@@ -540,7 +540,7 @@
                     "location": "パシフィコ横浜 国立大ホール",
                     "performers": ["東京フィルハーモニー交響楽団・セカイシンフォニースペシャルバンド","礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],
                     "data": [
-                        { "songId": "ペンタトニック","comment": "フルオーケストラ" },
+                        { "songId": "ペンタトニック","singers": [],"comment": "フルオーケストラ" },
                         { "songId": "Sympathy" },
                         { "songId": "その音が鳴るなら","singers": ["礒部花凜"],"liveVocals": true },
                         { "songId": "アイリッド" },
@@ -561,7 +561,7 @@
                         { "type": "mc","text": "MC" },
                         { "songId": "群青讃歌","singers": ["礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],"liveVocals": true },
                         { "type": "break","text": "アンコール" },
-                        { "songId": "Worlders","comment": "フルオーケストラ" },
+                        { "songId": "Worlders","singers": [],"comment": "フルオーケストラ" },
                         { "songId": "ペンタトニック","singers": ["礒部花凜","吉岡茉祐","鷲見友美ジェナ","Machico","佐藤日向"],"liveVocals": true }
                     ]
                 }
