@@ -464,7 +464,8 @@
       "セカライ2nd",
       "コネライ3rd",
       "セカライ4th",
-      "6th感謝祭"
+      "6th感謝祭",
+      "`26交響inst"
     ]
   },
   "ハロ／ハワユ": {
@@ -582,7 +583,8 @@
       "2nd感謝祭",
       "コネライ2nd",
       "3rd感謝祭",
-      "セカライ3rd"
+      "セカライ3rd",
+      "`26交響inst"
     ]
   },
   "ワーワーワールド": {
@@ -893,7 +895,8 @@
     "unit": "ワンダーランズ×ショウタイム",
     "defaultTags": [
       "コネライ2nd",
-      "3rd感謝祭"
+      "3rd感謝祭",
+      "`26交響inst"
     ]
   },
   "お気に召すまま": {
@@ -908,9 +911,9 @@
     "assetbundleName": "jacket_s_107",
     "title": "ミルククラウン・オン・ソーネチカ",
     "cover": "./assets/covers/jacket_s_107.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["MORE MORE JUMP!", "初音ミク"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["`26交響inst"]
   },
   "愛されなくても君がいる": {
     "assetbundleName": "jacket_s_108",
@@ -3089,7 +3092,8 @@
     ],
     "unit": "MORE MORE JUMP!",
     "defaultTags": [
-      "コネライ3rd"
+      "コネライ3rd",
+      "`26交響inst"
     ]
   },
   "カンタレラ": {
@@ -3502,7 +3506,8 @@
     "unit": "VIRTUAL SINGER",
     "defaultTags": [
       "セカライ4th",
-      "セカライ5th"
+      "セカライ5th",
+      "`26交響inst"
     ]
   },
   "METEOR": {
@@ -3844,7 +3849,8 @@
       "コネライ4th",
       "セカライ4th",
       "`25交響",
-      "5th感謝祭"
+      "5th感謝祭",
+      "`26交響inst"
     ]
   },
   "すきなことだけでいいです": {
@@ -4395,7 +4401,8 @@
     ],
     "unit": "Vivid BAD SQUAD",
     "defaultTags": [
-      "レオビビ"
+      "レオビビ",
+      "`26交響inst"
     ]
   },
   "JUMPIN’ OVER !": {
@@ -5330,9 +5337,9 @@
     "assetbundleName": "jacket_s_516",
     "title": "あちこちデートさん",
     "cover": "./assets/covers/jacket_s_516.webp",
-    "singers": [],
+    "singers": ["めろう"],
     "unit": "",
-    "defaultTags": []
+    "defaultTags": ["`26交響inst"]
   },
   "メリーゴーラウンド": {
     "assetbundleName": "jacket_s_517",
@@ -5650,7 +5657,8 @@
     ],
     "unit": "25時、ナイトコードで。",
     "defaultTags": [
-      "ニゴバチャ"
+      "ニゴバチャ",
+      "`26交響inst"
     ]
   },
   "ロストアンブレラ": {
@@ -6000,7 +6008,8 @@
       "`25交響",
       "5th感謝祭",
       "セカライ5th",
-      "`26交響"
+      "`26交響",
+      "`26交響inst"
     ]
   },
   "ルルブ": {
@@ -6370,9 +6379,9 @@
     "assetbundleName": "jacket_s_646",
     "title": "透明なパレット",
     "cover": "./assets/covers/jacket_s_646.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["Leo/need", "鏡音リン"],
+    "unit": "Leo/need",
+    "defaultTags": ["`26交響inst"]
   },
   "SAN値直葬": {
     "assetbundleName": "jacket_s_647",
@@ -6465,9 +6474,9 @@
     "assetbundleName": "jacket_s_659",
     "title": "あなたの空が泣くのなら",
     "cover": "./assets/covers/jacket_s_659.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["MORE MORE JUMP!", "MEIKO"],
+    "unit": "MORE MORE JUMP!",
+    "defaultTags": ["`26交響inst"]
   },
   "ヴィーナス": {
     "assetbundleName": "jacket_s_663",
@@ -7279,9 +7288,9 @@
     "assetbundleName": "jacket_s_740",
     "title": "羽歌",
     "cover": "./assets/covers/jacket_s_740.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["Vivid BAD SQUAD", "KAITO"],
+    "unit": "Vivid BAD SQUAD",
+    "defaultTags": ["`26交響inst"]
   },
   "アイ・メイカー！": {
     "assetbundleName": "jacket_s_741",
@@ -7408,9 +7417,9 @@
     "assetbundleName": "jacket_s_754",
     "title": "光",
     "cover": "./assets/covers/jacket_s_754.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["25時、ナイトコードで。", "MEIKO"],
+    "unit": "25時、ナイトコードで。",
+    "defaultTags": ["`26交響inst"]
   },
   "初音狂奏曲第01番「彗惺」": {
     "assetbundleName": "jacket_s_755",
@@ -7461,9 +7470,9 @@
     "assetbundleName": "jacket_s_760",
     "title": "オールイン・ワン",
     "cover": "./assets/covers/jacket_s_760.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["ワンダーランズ×ショウタイム", "鏡音レン"],
+    "unit": "ワンダーランズ×ショウタイム",
+    "defaultTags": ["`26交響inst"]
   },
   "ハイドレンジア": {
     "assetbundleName": "jacket_s_763",
@@ -7573,9 +7582,9 @@
     "assetbundleName": "jacket_s_789",
     "title": "天秤、指先で触れて",
     "cover": "./assets/covers/jacket_s_789.webp",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
+    "singers": ["Leo/need", "鏡音リン"],
+    "unit": "Leo/need",
+    "defaultTags": ["`26交響inst"]
   },
   "ピッコーン！！": {
     "assetbundleName": "jacket_s_790",
@@ -7678,20 +7687,12 @@
     "unit": "",
     "defaultTags": []
   },
-  "羽撃く": {
-    "assetbundleName": "",
-    "title": "羽撃く",
-    "cover": "",
-    "singers": [],
-    "unit": "",
-    "defaultTags": []
-  },
   "Happy Birthday to You": {
     "assetbundleName": "",
     "title": "Happy Birthday to You",
     "cover": "",
     "singers": [],
     "unit": "",
-    "defaultTags": []
+    "defaultTags": ["`26交響inst"]
   }
 }

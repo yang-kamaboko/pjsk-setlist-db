@@ -574,7 +574,7 @@
             "eventType": "3",
             "date": "2026.8.11",
             "location": "東京国際フォーラム ホールC",
-            "image": "./assets/event_logo/sym2026.png",
+            "image": "./assets/event_logo/sym2026inst.png",
             "performers": ["東京フィルハーモニー交響楽団・セカイシンフォニースペシャルバンド","野口瑠璃子","じん"],
             "sublists": [
                 {
